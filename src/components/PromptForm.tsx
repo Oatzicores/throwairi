@@ -151,7 +151,6 @@ export function PromptForm() {
   const [budget, setBudget] = useState<Budget>("");
   // Budget is optional, so it stays folded away until asked for.
   const [showOptions, setShowOptions] = useState(false);
-  const optionsSet = budget ? 1 : 0;
 
   // Set when the prompt looks like an image/video prompt: the visitor is asked
   // which one before the results page opens (see categoryDetect.ts).
@@ -209,21 +208,38 @@ export function PromptForm() {
         className="w-full resize-none rounded-2xl border border-violet-400/30 bg-slate-900/80 p-5 text-lg text-white shadow-[0_0_44px_-12px_rgba(124,58,237,0.65)] placeholder:text-slate-500 focus:border-violet-400 focus:outline-none"
       />
 
-      <div className="mt-3 flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-3 flex flex-col gap-3 sm:grid sm:grid-cols-[1fr_auto_1fr] sm:items-center">
         <button
           type="button"
           onClick={() => setShowOptions((v) => !v)}
           aria-expanded={showOptions}
           aria-controls="prompt-options"
-          className="flex min-h-[44px] items-center gap-1 self-start text-sm text-violet-400 hover:text-violet-300 hover:underline sm:min-h-0"
+          className="order-2 flex min-h-[44px] items-center gap-1 self-start text-sm sm:self-center sm:order-1 sm:col-start-1 text-violet-400 hover:text-violet-300 hover:underline sm:min-h-0"
         >
-          ตัวเลือกเพิ่มเติม (งบ){optionsSet > 0 && ` · เลือกแล้ว ${optionsSet}`} {showOptions ? "▴" : "▾"}
+          ตัวเลือกเพิ่มเติม (งบ) {showOptions ? "▴" : "▾"}
         </button>
+        {showOptions && (
+          <div id="prompt-options" className="order-3 w-full sm:order-2 sm:col-start-2 sm:w-64">
+            <ToggleGroup
+              label="งบประมาณ"
+              value={budget}
+              onChange={(v) => {
+                setBudget(v as Budget);
+                setPending(null);
+              }}
+              options={[
+                { value: "", label: "ไม่ระบุ" },
+                { value: "free-only", label: "ฟรี" },
+                { value: "paid-ok", label: "เสียเงิน" },
+              ]}
+            />
+          </div>
+        )}
         <button
           ref={submitRef}
           type="submit"
           disabled={!prompt.trim()}
-          className="w-full rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 px-8 py-3 text-base font-semibold sm:w-auto text-white transition hover:from-violet-500 hover:to-indigo-500 disabled:cursor-not-allowed disabled:opacity-40"
+          className="order-1 w-full sm:order-3 sm:col-start-3 sm:justify-self-end rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 px-8 py-3 text-base font-semibold sm:w-auto text-white transition hover:from-violet-500 hover:to-indigo-500 disabled:cursor-not-allowed disabled:opacity-40"
         >
           ค้นหา AI
         </button>
@@ -270,24 +286,6 @@ export function PromptForm() {
               ข้าม / ไม่แน่ใจ
             </button>
           </div>
-        </div>
-      )}
-
-      {showOptions && (
-        <div id="prompt-options" className="mx-auto mt-4 w-full sm:w-[calc(50%-6px)]">
-          <ToggleGroup
-            label="งบประมาณ"
-            value={budget}
-            onChange={(v) => {
-              setBudget(v as Budget);
-              setPending(null);
-            }}
-            options={[
-              { value: "", label: "ไม่ระบุ" },
-              { value: "free-only", label: "ฟรี" },
-              { value: "paid-ok", label: "เสียเงิน" },
-            ]}
-          />
         </div>
       )}
 
