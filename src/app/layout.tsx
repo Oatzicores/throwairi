@@ -87,7 +87,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="flex-1 flex flex-col pb-16 sm:pb-0">{children}</main>
         <footer className="border-t border-slate-800 py-6 pb-20 text-center text-xs text-slate-500 sm:pb-6">
           <div className="mb-4 flex flex-wrap items-center justify-center gap-3">
-            <span className="text-sm text-slate-400">เว็บนี้ใช้ฟรี ถ้าชอบ ช่วยสนับสนุนได้</span>
+            <span className="text-sm text-slate-400">เว็บนี้ใช้ฟรี ถ้าชอบ สนับสนุนเลี้ยงค่าข้าวได้ที่</span>
             <DonateButton variant="bar" />
             <MembershipSlot variant="bar" />
           </div>
