@@ -274,7 +274,7 @@ export function PromptForm() {
       )}
 
       {showOptions && (
-        <div id="prompt-options" className="mx-auto mt-5 w-full max-w-sm">
+        <div id="prompt-options" className="mx-auto mt-4 w-full sm:w-[calc(50%-6px)]">
           <ToggleGroup
             label="งบประมาณ"
             value={budget}
@@ -338,14 +338,14 @@ function ToggleGroup({
 }) {
   return (
     <div>
-      <div className="mb-2 text-center text-xs text-slate-400">{label}</div>
-      <div className="flex overflow-hidden rounded-xl border border-slate-700 divide-x divide-slate-700">
+      <div className="mb-1.5 text-center text-xs text-slate-400">{label}</div>
+      <div className="flex overflow-hidden rounded-lg border border-slate-700">
         {options.map((opt) => (
           <button
             type="button"
             key={opt.value}
             onClick={() => onChange(opt.value)}
-            className={`min-h-[44px] flex-1 px-3 py-2 text-xs transition ${
+            className={`min-h-[44px] flex-1 px-2 py-1.5 text-xs transition sm:min-h-0 ${
               value === opt.value
                 ? "bg-violet-600 text-white"
                 : "bg-slate-900 text-slate-400 hover:bg-slate-800"
