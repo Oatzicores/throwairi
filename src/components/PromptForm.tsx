@@ -7,7 +7,6 @@ import { buildQuestion, pickableList, type PickableCategory } from "@/lib/match/
 import { buildResultsHref } from "@/lib/resultsUrl";
 import { MAX_QUERY_LENGTH } from "@/lib/security/input";
 import { ALL_PROMPT_IDEAS, buildFullPrompt, type PromptIdea } from "@/lib/prompts/promptIdeas";
-import { CopyValueButton } from "@/components/CopyValueButton";
 
 type Budget = "" | "free-only" | "paid-ok";
 
@@ -42,8 +41,10 @@ export function PromptForm() {
 
   // Server-rendered markup must be deterministic, so start with a fixed
   // slice and only randomize after mount (real refresh = fresh mount).
-  // The idea whose full prompt is open under the chips (set when a chip is clicked).
-  const [openIdea, setOpenIdea] = useState<PromptIdea | null>(null);
+  // The idea whose full prompt was put into the box by clicking a chip. While it is set, the search uses
+  // the idea's short keyword phrase, because the full prompt (1,000+ characters) is meant to be copied into
+  // an AI tool, not searched. It is cleared as soon as the visitor replaces the text.
+  const [activeIdea, setActiveIdea] = useState<PromptIdea | null>(null);
   const [chipIdeas, setChipIdeas] = useState(() => ALL_PROMPT_IDEAS.slice(0, CHIP_COUNT));
 
   useEffect(() => {
@@ -60,8 +61,10 @@ export function PromptForm() {
     }
   }, [pending]);
 
+  const searchText = () => (activeIdea ? activeIdea.kw : prompt.trim().slice(0, MAX_QUERY_LENGTH));
+
   function go(category?: PickableCategory) {
-    const q = prompt.trim();
+    const q = searchText();
     if (!q) return;
     startNavigation(() => {
       router.push(buildResultsHref({ q, budget, category }));
@@ -70,7 +73,7 @@ export function PromptForm() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const q = prompt.trim();
+    const q = searchText();
     if (!q) return;
     const found = detectGenerativeCategories(q);
     if (found.length === 0) go();
@@ -82,12 +85,15 @@ export function PromptForm() {
       <textarea
         value={prompt}
         onChange={(e) => {
-          setPrompt(e.target.value);
+          const v = e.target.value;
+          setPrompt(v);
           setPending(null);
+          // Keep the idea only while its full prompt is still in the box.
+          if (activeIdea && !v.includes(buildFullPrompt(activeIdea).split("\n")[0])) setActiveIdea(null);
         }}
         placeholder="พิมพ์สิ่งที่อยากทำ เช่น 'อยากสร้างภาพโปรไฟล์การ์ตูนฟรีๆ ไม่เอาลายน้ำ'"
-        rows={4}
-        maxLength={MAX_QUERY_LENGTH}
+        rows={activeIdea ? 12 : 4}
+        maxLength={activeIdea ? 4000 : MAX_QUERY_LENGTH}
         className="w-full resize-none rounded-2xl border border-violet-400/30 bg-slate-900/80 p-5 text-lg text-white shadow-[0_0_44px_-12px_rgba(124,58,237,0.65)] placeholder:text-slate-500 focus:border-violet-400 focus:outline-none"
       />
 
@@ -172,8 +178,8 @@ export function PromptForm() {
         </div>
       )}
 
-      {/* Chips show a short keyword phrase (also the search text). Clicking one opens the long, ready-to-paste
-          Thai prompt underneath. Centered, three per row on sm+, one per line on phones. */}
+      {/* Chips show a short keyword phrase. Clicking one puts the long, ready-to-use Thai prompt into the box above.
+          Centered, three per row on sm+, one per line on phones. */}
       <div className="mt-6 flex flex-col items-center gap-3 text-xs">
         <div className="flex items-center justify-center gap-3">
           <span className="text-slate-500">ลองดู:</span>
@@ -191,14 +197,14 @@ export function PromptForm() {
               type="button"
               key={item.kw}
               onClick={() => {
-                setPrompt(item.kw);
+                setPrompt(buildFullPrompt(item));
                 setPending(null);
-                setOpenIdea(item);
+                setActiveIdea(item);
               }}
-              aria-pressed={openIdea?.kw === item.kw}
+              aria-pressed={activeIdea?.kw === item.kw}
               title={item.kw}
               className={`truncate rounded-full border px-3 py-2.5 text-center sm:py-1.5 ${
-                openIdea?.kw === item.kw
+                activeIdea?.kw === item.kw
                   ? "border-violet-400 bg-violet-500/15 text-violet-200"
                   : "border-slate-700 bg-slate-900/60 text-slate-300 hover:border-violet-500 hover:text-violet-300"
               }`}
@@ -208,29 +214,11 @@ export function PromptForm() {
           ))}
         </div>
 
-        {openIdea && (
-          <div className="w-full rounded-2xl border border-violet-500/30 bg-slate-900/70 p-4 text-left">
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <p className="text-sm font-medium text-white">Prompt ตัวเต็ม: {openIdea.kw}</p>
-              <div className="flex items-center gap-2">
-                <CopyValueButton value={buildFullPrompt(openIdea)} label="Prompt ตัวเต็ม" />
-                <button
-                  type="button"
-                  onClick={() => setOpenIdea(null)}
-                  className="min-h-[44px] rounded-lg border border-slate-600 px-3 py-1.5 text-xs text-slate-300 hover:border-slate-400 hover:text-white sm:min-h-[36px]"
-                >
-                  ปิด
-                </button>
-              </div>
-            </div>
-            <p className="mt-1 text-slate-400">
-              คัดลอกไปวางในเครื่องมือ AI ได้เลย แล้วแทนที่ข้อความในวงเล็บเหลี่ยม [ ] ด้วยข้อมูลของคุณ
-              หรือกด &quot;ค้นหา AI&quot; ด้านบนเพื่อดูว่าตัวไหนเหมาะกับงานนี้
-            </p>
-            <pre className="mt-3 max-h-72 overflow-auto whitespace-pre-wrap break-words rounded-xl bg-slate-950/70 p-3 font-sans text-xs leading-relaxed text-slate-300">
-              {buildFullPrompt(openIdea)}
-            </pre>
-          </div>
+        {activeIdea && (
+          <p className="text-center text-slate-400">
+            ใส่ Prompt ตัวเต็มในช่องด้านบนแล้ว แทนที่ข้อความใน [ ] ด้วยข้อมูลของคุณ แล้วคัดลอกไปใช้กับ AI ได้เลย
+            หรือกด &quot;ค้นหา AI&quot; เพื่อดูว่าตัวไหนเหมาะกับงานนี้
+          </p>
         )}
       </div>
     </form>
