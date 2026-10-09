@@ -6,6 +6,7 @@ import { detectGenerativeCategories, type CategoryDetection } from "@/lib/match/
 import { buildQuestion, pickableList, type PickableCategory } from "@/lib/match/categoryRegistry";
 import { buildResultsHref } from "@/lib/resultsUrl";
 import { MAX_QUERY_LENGTH } from "@/lib/security/input";
+import { EXAMPLE_PROMPTS } from "@/lib/prompts/examplePrompts";
 
 type Budget = "" | "free-only" | "paid-ok";
 
@@ -133,6 +134,12 @@ const ALL_TRENDING_PROMPTS = [
 
 const TRENDING_COUNT = 4;
 
+// "สุ่มใหม่" draws from the sourced ideas above plus our own plain example requests.
+const ALL_PROMPT_CHIPS: { text: string }[] = [
+  ...ALL_TRENDING_PROMPTS,
+  ...EXAMPLE_PROMPTS.map((text) => ({ text })),
+];
+
 function pickRandom<T>(pool: T[], count: number, exclude: T[] = []): T[] {
   // "Shuffle" must change every chip, so anything already on screen is left out
   // (as long as the rest of the pool can still fill the slots).
@@ -161,11 +168,11 @@ export function PromptForm() {
 
   // Server-rendered markup must be deterministic, so start with a fixed
   // slice and only randomize after mount (real refresh = fresh mount).
-  const [trendingPrompts, setTrendingPrompts] = useState(() => ALL_TRENDING_PROMPTS.slice(0, TRENDING_COUNT));
+  const [trendingPrompts, setTrendingPrompts] = useState(() => ALL_PROMPT_CHIPS.slice(0, TRENDING_COUNT));
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setTrendingPrompts(pickRandom(ALL_TRENDING_PROMPTS, TRENDING_COUNT));
+    setTrendingPrompts(pickRandom(ALL_PROMPT_CHIPS, TRENDING_COUNT));
   }, []);
 
   // Move focus to the question when it appears (not to a button, so Enter
@@ -297,7 +304,7 @@ export function PromptForm() {
         <div className="flex items-center gap-3 sm:row-span-2 sm:self-start sm:pt-1.5">
           <button
             type="button"
-            onClick={() => setTrendingPrompts((current) => pickRandom(ALL_TRENDING_PROMPTS, TRENDING_COUNT, current))}
+            onClick={() => setTrendingPrompts((current) => pickRandom(ALL_PROMPT_CHIPS, TRENDING_COUNT, current))}
             className="flex min-h-[44px] items-center gap-1 text-violet-400 hover:text-violet-300 hover:underline sm:min-h-0"
           >
             ↻ สุ่มใหม่
