@@ -8,7 +8,7 @@ import { PricingBadge } from "./Badges";
 import { BookmarkButton } from "./BookmarkButton";
 import { ConfidenceBadge } from "./Badges";
 import { PromptAnalysisBlock } from "./PromptAnalysisBlock";
-import { isRecentlyUpdated } from "@/lib/freshness";
+import { UpdateStamp } from "./UpdateStamp";
 import { SubscribeButton } from "./SubscribeButton";
 import { ToolLogo } from "./ToolLogo";
 
@@ -25,7 +25,6 @@ export function ToolCard({
 }) {
   const { tool, breakdown, reasons, warnings } = result;
   const productUpdate = tool.lastProductUpdate;
-  const productFreshlyUpdated = productUpdate ? isRecentlyUpdated(productUpdate.value) : false;
   const promptSegments = buildAnnotatedSegments(rawPrompt, keywordHits, tool, result);
 
   return (
@@ -44,14 +43,6 @@ export function ToolCard({
             </Link>
             <span className="text-xs text-slate-500">{tool.vendor}</span>
             <PricingBadge tier={tool.pricing.tier} />
-            {productUpdate && (
-              <span className="text-[11px]">
-                <span className="text-slate-500">อัปเดต </span>
-                <span className={productFreshlyUpdated ? "rainbow-text" : "text-slate-500"}>
-                  {productUpdate.value}
-                </span>
-              </span>
-            )}
           </div>
           <div className="mt-1 flex flex-wrap gap-1.5">
             {tool.categories.map((c) => (
@@ -67,6 +58,7 @@ export function ToolCard({
       {/* Below the header row so it uses the full card width on phones; lines up with the title from sm up. */}
       <div className="mt-3 sm:pl-14">
         <p className="text-sm text-slate-300">{tool.shortDescription}</p>
+        <UpdateStamp update={productUpdate} showNote className="mt-1.5" />
         <p className="mt-1.5 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
           <span>สิทธิ์เชิงพาณิชย์: {tool.pricing.commercialUseSummary.value}</span>
           <ConfidenceBadge confidence={tool.pricing.commercialUseSummary.confidence} source={{ url: tool.pricing.commercialUseSummary.sourceUrl, topic: "สิทธิ์เชิงพาณิชย์" }} />

@@ -8,6 +8,7 @@ import { getToolById, loadCatalog } from "@/lib/data/loadCatalog";
 import { buildFinderPool } from "@/lib/prompts/finderPool";
 import { ToolPoolProvider } from "@/components/ToolPoolProvider";
 import { ToolFinder } from "@/components/ToolFinder";
+import { UpdateStamp } from "@/components/UpdateStamp";
 import { CopyPromptButton } from "@/components/CopyPromptButton";
 import { ToolLogo } from "@/components/ToolLogo";
 
@@ -90,6 +91,7 @@ function PickCard({ pick, lib }: { pick: Pick; lib: PromptLibrary }) {
         <span className="text-slate-400">โมเดล: {pick.model}</span>
       </p>
       <p className="mt-1.5 text-sm text-slate-300">{pick.reason}</p>
+      <UpdateStamp update={tool?.lastProductUpdate} showNote className="mt-1.5" />
       {pick.caveat && <p className="mt-1.5 text-xs text-amber-400">⚠️ {pick.caveat}</p>}
       <EvidenceList keys={pick.evidence} lib={lib} />
     </div>

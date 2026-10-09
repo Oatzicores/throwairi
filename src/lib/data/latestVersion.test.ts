@@ -33,5 +33,5 @@ test("a release date is only present when the vendor page gave one (never invent
   }
   // Only these vendor pages state a date; every other entry must be null.
   const dated = withVersion.filter((t) => t.latestVersion!.releaseDate).map((t) => t.id).sort();
-  assert.deepEqual(dated, ["claude-ai", "deepseek-chat", "midjourney", "suno"]);
+  assert.deepEqual(dated, ["claude-ai", "claude-code", "deepseek-chat", "microsoft-copilot", "midjourney", "n8n", "suno", "tabnine"]);
 });

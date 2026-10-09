@@ -11,11 +11,11 @@
       "longDescription": "Midjourney ขึ้นชื่อเรื่องคุณภาพภาพเชิงศิลปะที่สวยงามโดดเด่น ไม่มีแผนฟรี (ยกเลิกตั้งแต่มี.ค. 2023) ใช้ระบบ GPU hours รายเดือน ทุกแผนเสียเงินมีสิทธิ์เชิงพาณิชย์ทั่วไปรวมอยู่ด้วย",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-24",
+        "value": "2026-10-08",
         "confidence": "probable",
         "sourceUrl": "https://updates.midjourney.com",
-        "lastVerified": "2026-09-30",
-        "note": "Midjourney ประกาศ \"Edit updates, thumbnail previews, and more\" (24 ก.ย. 2026) และมี Alpha Changelog ต่อเนื่อง (ยังไม่ได้อ่านเนื้อหาเต็มของโพสต์ อ้างตามหัวข้อบนหน้าอัปเดตทางการ)"
+        "lastVerified": "2026-10-09",
+        "note": "หน้า updates ของ Midjourney ลงโพสต์ล่าสุดเมื่อ 8 ต.ค. (หน้าไม่แสดงปี อนุมานเป็น 2026 จากท้ายหน้าและชื่อโพสต์)"
       },
       "capabilities": [],
       "pricing": {
@@ -58,11 +58,43 @@
           "label": "Artificial Analysis Text-to-Image Arena ELO (Midjourney v7 Alpha)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "Testing Thinking Mode",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "probable",
+            "sourceUrl": "https://updates.midjourney.com",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โพสต์ทดสอบ Thinking Mode (หน้ารายการของ Midjourney แสดงแค่หัวข้อ ยังไม่ได้อ่านเนื้อหาในโพสต์) หน้าไม่ระบุปีจึงอนุมานเป็น 2026"
+        },
+        {
+          "version": "Alpha Changelog 7 ต.ค.",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "probable",
+            "sourceUrl": "https://updates.midjourney.com",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "บันทึกการเปลี่ยนแปลงของรุ่นอัลฟา ลงโพสต์ 8 ต.ค. อ้างถึงวันที่ 10/7/26 ในชื่อโพสต์ (ยังไม่ได้อ่านเนื้อหา)"
+        },
+        {
+          "version": "Edit updates, thumbnail previews, and more",
+          "releaseDate": {
+            "value": "2026-09-24",
+            "confidence": "probable",
+            "sourceUrl": "https://updates.midjourney.com",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "อัปเดตการแก้ไขภาพ ตัวอย่างภาพย่อ และอื่น ๆ ตามหัวข้อโพสต์ (ยังไม่ได้อ่านเนื้อหาในโพสต์) หน้าไม่ระบุปีจึงอนุมานเป็น 2026"
+        }
+      ],
       "strengths": ["คุณภาพภาพเชิงศิลปะสวยงามที่สุดในกลุ่ม", "สิทธิ์เชิงพาณิชย์ชัดเจนทุกแผนเสียเงิน", "ชั่วโมง GPU ไม่หมดอายุ"],
       "weaknesses": ["ไม่มีแผนฟรี ต้องจ่ายเงินก่อนลองใช้", "ไม่เหมาะมือใหม่ที่งบจำกัดสุดๆ", "ใช้งานผ่าน Discord ซึ่งอาจไม่คุ้นเคยสำหรับมือใหม่"],
       "bestFor": ["นักออกแบบ/ศิลปินที่ต้องการภาพสไตล์สวยงามระดับมืออาชีพ", "งานโฆษณา/โปสเตอร์ที่เน้นความสวยงามเชิงศิลปะ"],
       "promptWorkflow": {"steps":["อ่านคำอธิบายวัตถุ/ฉากหลัก (subject) ก่อนเป็นอันดับแรก","อ่านคำบอกสไตล์/บรรยากาศ/แสงถัดมา","อ่าน parameter ท้ายประโยค เช่น --ar, --style, --v เป็นลำดับสุดท้าย"],"recommendedStructure":"[สิ่งที่ต้องการ] + [สไตล์/บรรยากาศ/แสง] + [มุมกล้อง] + [--ar อัตราส่วนภาพ] [--v เวอร์ชันโมเดล]","example":"a cozy coffee shop interior, warm cinematic lighting, shot on 35mm film, --ar 16:9 --v 6"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "roadmap": { "checkedAt": "2026-09-30", "note": "ตรวจหน้าอัปเดตทางการของ Midjourney (updates.midjourney.com) ล่าสุด 24 ก.ย. 2026: ไม่มีข้อความระบุแผนหรือกำหนดเวลาล่วงหน้า", "items": [] },
       "latestVersion": { "name": "Midjourney V8.2", "releaseDate": "2026-07-24", "sourceUrl": "https://updates.midjourney.com/version-8-2/", "lastVerified": "2026-09-21", "note": "ประกาศบนหน้าอัปเดตทางการของ Midjourney" },
       "plansUrl": { "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans", "lastVerified": "2026-09-21" }
@@ -88,11 +120,62 @@
       "pricing": {
         "tier": "freemium",
         "plans": [
-          { "name": "Free", "priceUsdPerMonth": 0, "quota": "25 generative credits/เดือน อนุญาตใช้เชิงพาณิชย์ได้", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html", "lastVerified": "2026-09-20", "note": "FAQ ทางการ: ใช้เชิงพาณิชย์ได้ทุกฟีเจอร์ที่ไม่มีป้าย beta ไม่แยกตามแผน แต่ฟีเจอร์ beta อาจมีเงื่อนไขเพิ่มเติมที่ระบุไว้ในหน้าฟีเจอร์นั้น" } },
-          { "name": "Standard", "priceUsdPerMonth": 9.99, "quota": "2,000 generative credits/เดือน ใช้ฟีเจอร์ภาพมาตรฐาน (Generative Fill, mood board) ไม่จำกัด", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/", "lastVerified": "2026-09-03" } },
-          { "name": "Pro", "priceUsdPerMonth": 19.99, "quota": "4,000 generative credits/เดือน รวม Adobe Express Premium และ Photoshop บนเว็บ/มือถือ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/", "lastVerified": "2026-09-03" } },
-          { "name": "Pro Plus", "priceUsdPerMonth": 49.99, "quota": "10,000 generative credits/เดือน รวม Adobe Express Premium และ Photoshop เต็มรูปแบบ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/", "lastVerified": "2026-09-03" } },
-          { "name": "Premium", "priceUsdPerMonth": 199.99, "quota": "50,000 generative credits/เดือน สำหรับใช้งานปริมาณสูง", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/", "lastVerified": "2026-09-03" } }
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "สร้างภาพได้ตามโควตารายวันที่รีเซ็ตทุกวัน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html",
+              "lastVerified": "2026-09-20",
+              "note": "FAQ ทางการ: ใช้เชิงพาณิชย์ได้ทุกฟีเจอร์ที่ไม่มีป้าย beta ไม่แยกตามแผน แต่ฟีเจอร์ beta อาจมีเงื่อนไขเพิ่มเติมที่ระบุไว้ในหน้าฟีเจอร์นั้น"
+            }
+          },
+          {
+            "name": "Standard",
+            "priceUsdPerMonth": 9.99,
+            "quota": "2,000 เครดิตต่อเดือน, วิดีโอ 5 วินาทีได้ถึง 20 คลิป, เสียงเอฟเฟกต์ถึง 200, ดนตรีถึง 100 นาที, ฟีเจอร์ภาพมาตรฐานไม่จำกัด",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 19.99,
+            "quota": "4,000 เครดิตต่อเดือน, วิดีโอ 5 วินาทีได้ถึง 40 คลิป, เสียงเอฟเฟกต์ถึง 400, ดนตรีถึง 200 นาที, ฟีเจอร์ภาพมาตรฐานไม่จำกัด",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Pro Plus",
+            "priceUsdPerMonth": 49.99,
+            "quota": "10,000 เครดิตต่อเดือน, วิดีโอ 5 วินาทีได้ถึง 100 คลิป, เสียงเอฟเฟกต์ถึง 1,000, ดนตรีถึง 500 นาที, ฟีเจอร์ภาพมาตรฐานไม่จำกัด",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Premium",
+            "priceUsdPerMonth": 199.99,
+            "quota": "50,000 เครดิตต่อเดือน, ใช้โมเดลวิดีโอ Firefly ได้ไม่จำกัด, เสียงเอฟเฟกต์ถึง 5,000, ดนตรีถึง 2,500 นาที, ฟีเจอร์ภาพมาตรฐานไม่จำกัด",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/",
+              "lastVerified": "2026-09-03"
+            }
+          }
         ],
         "freeQuota": "25 generative credits/เดือน",
         "commercialUseSummary": {
@@ -114,12 +197,29 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "What's new ใน Adobe Firefly (กันยายน 2026)",
+          "releaseDate": {
+            "value": "2026-09-18",
+            "confidence": "verified",
+            "sourceUrl": "https://community.adobe.com/announcements-402/what-s-new-in-adobe-firefly-september-2026-1642552",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่ม Remove Background สำหรับวิดีโอ (ตรวจจับวัตถุแล้วลบพื้นหลังทั้งคลิปโดยไม่ต้องทำมาสก์ทีละเฟรม), ตัวเลือกอัตราส่วนภาพของ GPT Image 2 เพิ่มจาก 3 เป็น 10 แบบ, ใส่ภาพอ้างอิงให้ Kling 3.0 Omni ได้, ปรับน้ำเสียงของ Firefly AI Assistant และรับพรอมต์ยาวขึ้นบนเว็บ (Boards กำลังทำ)"
+        }
+      ],
       "strengths": ["ความเสี่ยงด้านลิขสิทธิ์ต่ำที่สุดในกลุ่ม เหมาะธุรกิจ", "ใช้เชิงพาณิชย์ได้ตั้งแต่แผนฟรี", "มี commercial indemnity สำหรับองค์กร"],
       "weaknesses": ["คุณภาพเชิงศิลปะอาจไม่โดดเด่นเท่า Midjourney ในบางสไตล์", "ระบบเครดิตซับซ้อนต้องทำความเข้าใจ"],
       "bestFor": ["ธุรกิจ/มือใหม่ที่กังวลเรื่องความเสี่ยงด้านลิขสิทธิ์", "งานที่ต้องใช้เชิงพาณิชย์แบบปลอดภัยที่สุด"],
       "promptWorkflow": {"steps":["อ่านประโยคบรรยายภาพแบบภาษาธรรมชาติทั้งหมด","ใช้คำคุณศัพท์ด้านแสง/สไตล์ที่ใส่ไว้เพื่อปรับโทนภาพ","รวมค่า Style preset ที่เลือกจากพาเนลด้านข้าง (ถ้าตั้งไว้) เข้ากับข้อความ"],"recommendedStructure":"[สิ่งที่ต้องการ] + [บรรยากาศ/แสง] + [สไตล์ภาพ เช่น ภาพถ่าย, ภาพวาด, 3D]","example":"โปสเตอร์ร้านกาแฟสไตล์มินิมอล แสงธรรมชาติยามเช้า วาดแบบ flat illustration"},
-      "lastUpdated": "2026-09-07",
-      "plansUrl": { "url": "https://www.adobe.com/products/firefly/plans.html", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://www.adobe.com/products/firefly/plans.html", "lastVerified": "2026-09-21" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจประกาศ What's new in Adobe Firefly เดือน ก.ย. 2026 บน community.adobe.com (มีหมายเหตุว่า Boards กำลังพัฒนารองรับพรอมต์ยาว แต่ไม่ระบุกำหนด)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "ideogram",
@@ -179,11 +279,23 @@
           "label": "Artificial Analysis Text-to-Image Arena ELO (Ideogram 4.0 Quality)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "Ideogram 4.0",
+          "releaseDate": {
+            "value": "2026-06-03",
+            "confidence": "probable",
+            "sourceUrl": "https://ideogram.ai/news/ideogram-4.0/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เปิดตัว Ideogram 4.0 โมเดล open-weight พร้อมไลเซนส์เชิงพาณิชย์ (เอกสารทางการระบุเป็นรุ่นล่าสุด แต่ไม่ระบุวันเปิดตัว วันที่ในระบบเป็นระดับ probable)"
+        }
+      ],
       "strengths": ["เขียนตัวอักษร/ข้อความในภาพแม่นยำที่สุดในกลุ่ม", "มีแผนฟรีที่ใช้เชิงพาณิชย์ได้", "ราคาเริ่มต้นถูกกว่า Midjourney"],
       "weaknesses": ["ภาพแผนฟรีเป็นสาธารณะ ไม่มีความเป็นส่วนตัว", "ราคาแผน Pro/Team สูงขึ้นเมื่อจ่ายรายเดือนแทนรายปี (Pro $60 เทียบ $42 แบบรายปี)"],
       "bestFor": ["งานออกแบบโลโก้/โปสเตอร์ที่มีข้อความ", "มือใหม่ที่งบจำกัดและต้องการภาพมีตัวอักษรถูกต้อง"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายภาพหลักก่อน","มองหาข้อความในเครื่องหมายคำพูดเพื่อ render เป็นตัวอักษรในภาพโดยเฉพาะ","อ่านคำสไตล์ที่ใส่ต่อท้ายเพื่อปรับโทนภาพ"],"recommendedStructure":"[คำบรรยายภาพ] + ข้อความที่ต้องการให้ปรากฏในภาพใส่ใน \"เครื่องหมายคำพูด\" + [สไตล์]","example":"โปสเตอร์ร้านกาแฟ มีข้อความ \"OPEN 24/7\" สีทองตัวใหญ่ตรงกลาง สไตล์ retro"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "latestVersion": { "name": "Ideogram 4.0", "releaseDate": null, "sourceUrl": "https://docs.ideogram.ai/", "lastVerified": "2026-09-21", "note": "เอกสารทางการระบุเป็นโมเดลรุ่นใหม่สุด (ไม่ระบุวันเปิดตัว)" },
       "plansUrl": { "url": "https://ideogram.ai/pricing", "lastVerified": "2026-09-21" }
     },
@@ -245,11 +357,24 @@
           "label": "Artificial Analysis Text-to-Image Arena ELO (Leonardo Lucid Origin Ultra)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "Phoenix 2.0",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": "https://flowith.io/blog/leonardo-phoenix-2-0-redefining-ai-image-generation-serious-creative-work/",
+            "lastVerified": "2026-10-09",
+            "note": "ไม่มีวันที่ที่ชัดเจน (ต้นปี 2026 ตามบุคคลที่สาม)"
+          },
+          "summary": "โมเดล Phoenix 2.0 เปิดตัวช่วงต้นปี 2026 ตามบทความของบุคคลที่สาม ไม่พบวันที่แน่ชัด"
+        }
+      ],
       "strengths": ["โควตาแผนฟรีสูงที่สุดในกลุ่มสำหรับทดลองใช้งาน", "ราคาแผนเสียเงินเริ่มต้นถูกที่สุดกลุ่มหนึ่ง ($12)", "relaxed generation ไม่จำกัดในแผน Premium ขึ้นไป (Essential ได้เฉพาะโควตา fast token รายเดือน)"],
       "weaknesses": ["แผนฟรีห้ามใช้เชิงพาณิชย์เด็ดขาด", "Production API แยกจ่ายต่างหาก"],
       "bestFor": ["มือใหม่ที่อยากทดลองสร้างภาพจำนวนมากก่อนตัดสินใจจ่ายเงิน", "ผู้ใช้งบน้อยที่ต้องการอัปเกรดราคาประหยัดเมื่อพร้อมใช้เชิงพาณิชย์"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายเชิงบวก (positive prompt) เป็นหลัก","หักคำที่ไม่ต้องการออกผ่าน negative prompt ที่ใส่แยกช่าง","ปรับโทนภาพเพิ่มเติมตาม Model/Preset ที่เลือกไว้"],"recommendedStructure":"Positive: [สิ่งที่ต้องการ+สไตล์] / Negative: [สิ่งที่ไม่ต้องการ เช่น blurry, low quality]","example":"Positive: a majestic dragon on a mountain peak, fantasy art, highly detailed / Negative: blurry, low quality, extra limbs"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://leonardo.ai/pricing/", "lastVerified": "2026-09-21" }
     },
     {
@@ -263,11 +388,11 @@
       "longDescription": "Recraft เฉพาะทางด้านการสร้างภาพเวกเตอร์ (SVG) ไอคอน และงานดีไซน์แบรนด์ ต่างจาก AI สร้างภาพทั่วไปที่เน้น raster image อย่างเดียว เหมาะกับนักออกแบบกราฟิกที่ต้องการไฟล์ที่แก้ไขต่อได้",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-01",
-        "confidence": "inference",
-        "sourceUrl": "https://www.recraft.ai/blog/meet-recraft-v4-1-flash",
-        "lastVerified": "2026-09-30",
-        "note": "Recraft เปิดตัว V4.1 Flash โมเดลภาพที่เร็วและถูกที่สุดของ API ในเดือน ก.ย. 2026 (ไม่พบวันที่แน่ชัดภายในเดือน จึงใช้วันที่ 1 เป็นค่าประมาณ)"
+        "value": "2026-10-08",
+        "confidence": "verified",
+        "sourceUrl": "https://www.recraft.ai/blog",
+        "lastVerified": "2026-10-09",
+        "note": "Recraft ลงโพสต์ 'Nano Banana 2.1 is now in Recraft Studio' เมื่อ 8 ต.ค. 2026 บนบล็อกของ recraft.ai"
       },
       "capabilities": [],
       "pricing": {
@@ -310,13 +435,30 @@
           "label": "Artificial Analysis Text-to-Image Arena ELO (Recraft V4.1 Utility)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "Nano Banana 2.1 ใน Recraft Studio",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "verified",
+            "sourceUrl": "https://www.recraft.ai/blog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่มโมเดล Nano Banana 2.1 ให้เลือกใช้ใน Recraft Studio (บล็อกลงเฉพาะหัวข้อ ยังไม่ได้อ่านรายละเอียด)"
+        }
+      ],
       "strengths": ["เฉพาะทางงานเวกเตอร์/ไอคอน/แบรนด์ดีไซน์ ไม่มีคู่แข่งตรงมากนัก", "ไฟล์ SVG แก้ไขต่อในโปรแกรมออกแบบได้จริง"],
       "weaknesses": ["ราคาเครดิตงานเวกเตอร์แพงกว่า raster 2 เท่า", "ไม่เหมาะกับงานภาพสไตล์ศิลปะทั่วไปเท่า Midjourney"],
       "bestFor": ["นักออกแบบกราฟิก/แบรนด์ที่ต้องการไฟล์เวกเตอร์แก้ไขได้", "งานทำโลโก้/ไอคอนชุดใหญ่"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายภาพหลักก่อน","ตรวจจับคำว่า vector/icon/flat design เพื่อสลับโหมดเอาต์พุตเป็นเวกเตอร์","ปรับสไตล์ตาม Brand kit ที่ตั้งค่าไว้ (ถ้ามี)"],"recommendedStructure":"[สิ่งที่ต้องการ] + ระบุประเภทงาน เช่น \"vector icon\", \"flat illustration\", \"logo\" + [โทนสี]","example":"vector icon of a rocket ship, flat design, minimal, blue and orange color palette"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "latestVersion": { "name": "Recraft V4.1", "releaseDate": null, "sourceUrl": "https://www.recraft.ai/docs", "lastVerified": "2026-09-21", "note": "เอกสารทางการระบุเป็นโมเดลรุ่นล่าสุด (ไม่ระบุวันเปิดตัว)" },
-      "plansUrl": { "url": "https://www.recraft.ai/pricing", "lastVerified": "2026-09-21" }
+      "plansUrl": { "url": "https://www.recraft.ai/pricing", "lastVerified": "2026-09-21" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจบล็อกของ Recraft (recraft.ai/blog)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "stable-diffusion-dreamstudio",
@@ -374,11 +516,23 @@
           "label": "HuggingFace Model Downloads (Stable Diffusion checkpoints)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "Stable Diffusion 4 (SD4 Base และ SD4 Ultra)",
+          "releaseDate": {
+            "value": "2026-04-06",
+            "confidence": "probable",
+            "sourceUrl": "https://www.novareviewhub.com/news/stable-diffusion-4-announcement",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Stability AI เปิดตัว Stable Diffusion 4 สองรุ่น (อ้างตามสื่อบุคคลที่สาม ไม่ใช่หน้าทางการ)"
+        }
+      ],
       "strengths": ["ฟรี 100% หากรันเอง ไม่มีค่าบริการรายเดือน", "ปรับแต่ง/เทรนโมเดลเองได้เต็มรูปแบบ", "คอมมูนิตี้โอเพนซอร์สใหญ่ที่สุดในกลุ่ม AI สร้างภาพ"],
       "weaknesses": ["ต้องมีความรู้เทคนิคในการติดตั้ง/ใช้งาน ไม่เหมาะมือใหม่แท้จริง", "ค่าใช้จ่ายฮาร์ดแวร์ GPU สูงหากไม่มีเครื่องอยู่แล้ว", "ราคาเครดิตบริการคลาวด์ปรับขึ้นแบบไม่แจ้งล่วงหน้า"],
       "bestFor": ["ผู้ใช้สายเทคนิคที่ต้องการควบคุมโมเดลเต็มรูปแบบ", "นักพัฒนาที่ต้องการปรับแต่ง/เทรนโมเดลเฉพาะทาง"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายบวกเรียงตามลำดับคำที่ให้น้ำหนักมาก่อน","รองรับการถ่วงน้ำหนักคำด้วยวงเล็บ เช่น (word:1.2)","หักคำที่ไม่ต้องการออกผ่าน negative prompt"],"recommendedStructure":"[subject], [detail], [style], (คำที่อยากเน้น:1.2) | Negative: [สิ่งที่ไม่ต้องการ]","example":"portrait of a warrior, (glowing eyes:1.3), fantasy armor, digital painting | Negative: blurry, extra fingers"},
-      "lastUpdated": "2026-09-03",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://platform.stability.ai/pricing", "lastVerified": "2026-09-21" }
     },
     {
@@ -455,6 +609,19 @@
         "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "ยังไม่มีข้อมูลอัปเดตที่ยืนยันวันที่ได้",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": null,
+            "lastVerified": "2026-10-09",
+            "note": "ไม่มีวันที่ที่ชัดเจน"
+          },
+          "summary": "ยังไม่พบประกาศรุ่นหรืออัปเดตของ Canva ที่ระบุวันที่ชัดเจน (หน้าข่าวทางการตอบ 403 เปิดอัตโนมัติไม่ได้)"
+        }
+      ],
       "strengths": [
         "ใช้เชิงพาณิชย์ได้ตั้งแต่บัญชีฟรี (ยกเว้น Branded Content ของแบรนด์คู่ค้า)",
         "รวมเครื่องมือ AI (สร้างภาพ ลบพื้นหลัง ขยายภาพ) ไว้ในเวิร์กโฟลว์ออกแบบเดียว ไม่ต้องสลับแอป",
@@ -478,7 +645,7 @@
         "recommendedStructure": "[สิ่งที่ต้องการ] + [สไตล์/โทนสี] + [อัตราส่วนภาพที่ต้องการ]",
         "example": "โปสเตอร์โปรโมชั่นร้านกาแฟ โทนสีอบอุ่น มินิมอล ขนาดโพสต์ Instagram สี่เหลี่ยมจัตุรัส"
       },
-      "lastUpdated": "2026-09-20",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://www.canva.com/pricing/", "lastVerified": "2026-09-21" }
     },
     {
@@ -567,6 +734,19 @@
         "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "ยังไม่มีข้อมูลอัปเดตที่ยืนยันวันที่ได้",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": null,
+            "lastVerified": "2026-10-09",
+            "note": "ไม่มีวันที่ที่ชัดเจน"
+          },
+          "summary": "ยังไม่พบประกาศรุ่นหรืออัปเดตของ Photoroom ที่ระบุวันที่ชัดเจน หน้าราคาทางการแสดงแผน Pro/Max/Ultra (เครดิต AI 8,000 / 25,000 / 75,000 ต่อเดือน) โดยไม่ระบุราคาแบบรายเดือน"
+        }
+      ],
       "strengths": [
         "เฉพาะทางด้านภาพสินค้า: ลบพื้นหลัง รีทัช สร้างฉากหลัง AI ในเครื่องมือเดียว",
         "มีฟีเจอร์ AI Fashion Models จำลองนางแบบใส่เสื้อผ้าโดยไม่ต้องถ่ายจริง",
@@ -590,7 +770,7 @@
         "recommendedStructure": "[อัปโหลดภาพสินค้า] + [เลือกเครื่องมือ] + [อธิบายฉากหลังที่ต้องการ ถ้ามี]",
         "example": "ภาพขวดน้ำหอมวางบนโต๊ะหินอ่อน แสงธรรมชาติจากหน้าต่าง โทนสีครีมทอง"
       },
-      "lastUpdated": "2026-09-20",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://www.photoroom.com/pricing", "lastVerified": "2026-09-21" }
     }
   ]

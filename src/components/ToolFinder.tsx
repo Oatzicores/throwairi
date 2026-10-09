@@ -7,6 +7,8 @@ import type { FinderTool } from "@/lib/prompts/finder";
 import { useToolPool } from "./ToolPoolProvider";
 import { SubscribeButton } from "./SubscribeButton";
 import { ToolLogo } from "./ToolLogo";
+import { UpdateStamp } from "./UpdateStamp";
+import { formatUpdateDate } from "@/lib/freshness";
 
 const KIND_LABEL = {
   "vendor-guide": "คู่มือของผู้ให้บริการ",
@@ -71,6 +73,9 @@ export function ToolFinder({
                 <ToolLogo id={t.id} name={t.name} size={18} />
                 {t.name}
               </span>
+              <span className="mt-0.5 block text-[10px] font-normal text-slate-500">
+                {t.lastUpdate ? `อัปเดต ${formatUpdateDate(t.lastUpdate.value)}` : "ยังไม่มีวันอัปเดต"}
+              </span>
               {recommended[t.id] && <span className="ml-1 text-emerald-300">★</span>}
             </button>
           </li>
@@ -104,6 +109,7 @@ function ToolDetail({ tool, role }: { tool: FinderTool; role: "best" | "alt" | u
         <span className="text-xs text-slate-500">{tool.vendor}</span>
       </p>
       <p className="mt-1 text-slate-400">{tool.shortDescription}</p>
+      <UpdateStamp update={tool.lastUpdate} showNote className="mt-1.5" />
 
       {role ? (
         <p className="mt-2 text-xs text-emerald-300">

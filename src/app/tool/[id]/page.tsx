@@ -13,7 +13,7 @@ import { ToolLogo } from "@/components/ToolLogo";
 import { RoadmapSection } from "@/components/RoadmapSection";
 import { SubscribeButton } from "@/components/SubscribeButton";
 import { activeTools } from "@/lib/data/toolStatus";
-import { isRecentlyUpdated } from "@/lib/freshness";
+import { UpdateStamp } from "@/components/UpdateStamp";
 
 interface ToolPageProps {
   params: Promise<{ id: string }>;
@@ -50,7 +50,6 @@ export default async function ToolDetailPage({ params }: ToolPageProps) {
   }
 
   const productUpdate = tool.lastProductUpdate;
-  const productFreshlyUpdated = productUpdate ? isRecentlyUpdated(productUpdate.value) : false;
 
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-8">
@@ -81,25 +80,7 @@ export default async function ToolDetailPage({ params }: ToolPageProps) {
               </span>
             ))}
           </div>
-          {productUpdate && (
-            <p className="mt-2 text-xs">
-              <span className="text-slate-500">{tool.vendor} อัปเดตล่าสุดเมื่อ </span>
-              <span className={productFreshlyUpdated ? "rainbow-text" : "text-slate-400"}>
-                {productUpdate.value}
-              </span>
-              {productFreshlyUpdated && <span className="ml-1 text-slate-500">(เพิ่งอัปเดต)</span>}
-              {productUpdate.sourceUrl && (
-                <a
-                  href={productUpdate.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ml-1.5 text-violet-400 hover:underline"
-                >
-                  แหล่งที่มา ↗
-                </a>
-              )}
-            </p>
-          )}
+          <UpdateStamp update={productUpdate} label={`${tool.vendor} อัปเดตล่าสุดเมื่อ`} showNote className="mt-2" />
         </div>
         <div className="flex flex-wrap items-center justify-end gap-2">
           <BookmarkButton toolId={tool.id} />

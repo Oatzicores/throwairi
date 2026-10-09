@@ -135,11 +135,13 @@ const versionUpdate = z.object({
   version: z.string().min(1),
   releaseDate: sourcedFact(isoDate),
   summary: z.string(),
-  userSentiment: z.object({
-    summary: z.string(),
-    starRating: z.number().min(0).max(5),
-    sourceUrls: z.array(httpUrl),
-  }),
+  userSentiment: z
+    .object({
+      summary: z.string(),
+      starRating: z.number().min(0).max(5),
+      sourceUrls: z.array(httpUrl),
+    })
+    .optional(),
 });
 
 export const toolSchema = z.object({

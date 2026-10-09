@@ -14,19 +14,80 @@
         "value": "2026-09-28",
         "confidence": "verified",
         "sourceUrl": "https://elevenlabs.io/blog/eleven-v4",
-        "lastVerified": "2026-09-30",
+        "lastVerified": "2026-10-09",
         "note": "ElevenLabs เปิดตัว Eleven v4 (28 ก.ย. 2026) โมเดลเสียงที่สื่ออารมณ์ได้ดีที่สุด พร้อม v4 Turbo หน่วงประมาณ 150ms"
       },
       "capabilities": [],
       "pricing": {
         "tier": "freemium",
         "plans": [
-          { "name": "Free", "priceUsdPerMonth": 0, "quota": "10,000 เครดิต/เดือน (~10 นาทีเสียง) ไม่มีสิทธิ์เชิงพาณิชย์", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://magichour.ai/blog/elevenlabs-pricing", "lastVerified": "2026-09-03" } },
-          { "name": "Starter", "priceUsdPerMonth": 6, "quota": "30,000 เครดิต/เดือน", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-07" } },
-          { "name": "Creator", "priceUsdPerMonth": 22, "quota": "121,000 เครดิต/เดือน + voice cloning ระดับมืออาชีพ (เดือนแรก $11)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-20", "note": "หน้าราคาระบุ Creator เป็น 'Everything in Starter, plus…' และ Starter มี Commercial License แล้ว" } },
-          { "name": "Pro", "priceUsdPerMonth": 99, "quota": "600,000 เครดิต/เดือน", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-20" } },
-          { "name": "Scale", "priceUsdPerMonth": 299, "quota": "1,800,000 เครดิต/เดือน + 3 Workspace seats", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-20" } },
-          { "name": "Business", "priceUsdPerMonth": 990, "quota": "6,000,000 เครดิต/เดือน + 10 Workspace seats", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-07" } }
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "10,000 เครดิต/เดือน (~10 นาทีเสียง) ไม่มีสิทธิ์เชิงพาณิชย์",
+            "commercialUseAllowed": {
+              "value": false,
+              "confidence": "probable",
+              "sourceUrl": "https://magichour.ai/blog/elevenlabs-pricing",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Starter",
+            "priceUsdPerMonth": 6,
+            "quota": "30,000 เครดิต/เดือน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://elevenlabs.io/pricing",
+              "lastVerified": "2026-09-07"
+            }
+          },
+          {
+            "name": "Creator",
+            "priceUsdPerMonth": 22,
+            "quota": "121,000 เครดิต/เดือน + voice cloning ระดับมืออาชีพ (เดือนแรก $11)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://elevenlabs.io/pricing",
+              "lastVerified": "2026-09-20",
+              "note": "หน้าราคาระบุ Creator เป็น 'Everything in Starter, plus…' และ Starter มี Commercial License แล้ว"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 99,
+            "quota": "600,000 เครดิต/เดือน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://elevenlabs.io/pricing",
+              "lastVerified": "2026-09-20"
+            }
+          },
+          {
+            "name": "Scale",
+            "priceUsdPerMonth": 299,
+            "quota": "1,800,000 เครดิต/เดือน + 3 Workspace seats",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://elevenlabs.io/pricing",
+              "lastVerified": "2026-09-20"
+            }
+          },
+          {
+            "name": "Business",
+            "priceUsdPerMonth": 990,
+            "quota": "6,000,000 เครดิต/เดือน + 10 Workspace seats",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://elevenlabs.io/pricing",
+              "lastVerified": "2026-09-07"
+            }
+          }
         ],
         "freeQuota": "10,000 เครดิต/เดือน (~10 นาทีเสียง) ไม่มีสิทธิ์เชิงพาณิชย์",
         "commercialUseSummary": {
@@ -36,7 +97,7 @@
           "lastVerified": "2026-09-07"
         },
         "sourceUrl": "https://elevenlabs.io/pricing",
-        "lastVerified": "2026-09-07"
+        "lastVerified": "2026-10-09"
       },
       "reviews": {
         "positiveThemes": ["คุณภาพเสียงสังเคราะห์และ voice cloning เป็นผู้นำตลาด", "รองรับ dubbing หลายภาษาในราคาที่ชัดเจน ($0.33-2.20/นาที)", "ระบบเครดิตรวมใช้งานง่าย ครอบคลุมทุกฟีเจอร์"],
@@ -48,13 +109,30 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Eleven v4",
+          "releaseDate": {
+            "value": "2026-09-28",
+            "confidence": "verified",
+            "sourceUrl": "https://elevenlabs.io/blog/eleven-v4",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โมเดลแปลงข้อความเป็นเสียงที่สื่ออารมณ์ได้มากที่สุดของ ElevenLabs บนสถาปัตยกรรมใหม่ มีรุ่น Eleven v4 Turbo หน่วงต่ำสำหรับเอเจนต์เสียง ใช้ได้ใน ElevenAgents, ElevenCreative และ API ควบคุมการพูดด้วยคำสั่งภาษาธรรมชาติและแท็กเสียงในข้อความ รองรับกว่า 90 ภาษาและคงสำเนียงได้ดีขึ้น บทสนทนาหลายคนเป็นธรรมชาติขึ้น และโคลนเสียงจากตัวอย่างเพียง 10 วินาที"
+        }
+      ],
       "strengths": ["คุณภาพเสียง/voice cloning เป็นผู้นำตลาด", "รองรับ dubbing หลายภาษาราคาชัดเจน", "ระบบเครดิตรวมใช้งานง่าย"],
       "weaknesses": ["แผนฟรีไม่มีสิทธิ์เชิงพาณิชย์เลย", "ราคาสูงขึ้นเร็วเมื่อใช้งานหนัก"],
       "bestFor": ["งานพากย์เสียง/dubbing มืออาชีพ", "นักพัฒนาที่ต้องการ voice cloning คุณภาพสูง"],
       "promptWorkflow": {"steps":["อ่านสคริปต์ข้อความที่จะพากย์เป็นหลัก","ใช้เสียง (voice) และค่าอารมณ์/น้ำเสียงที่เลือกแยกจากข้อความ","อ่านเครื่องหมายวรรคตอนเพื่อกำหนดจังหวะหยุด/เน้นเสียง"],"recommendedStructure":"[สคริปต์ข้อความที่ต้องการพากย์ พร้อมเครื่องหมายวรรคตอนที่ถูกต้อง] (เลือกเสียง+อารมณ์แยกจากแผงควบคุม)","example":"ยินดีต้อนรับสู่ร้านกาแฟของเรา... วันนี้เรามีเมนูใหม่ให้คุณได้ลองชิมด้วยนะครับ!"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "latestVersion": { "name": "Eleven v4", "releaseDate": null, "sourceUrl": "https://elevenlabs.io/docs/overview/models", "lastVerified": "2026-09-30", "note": "หน้าโมเดลของ ElevenLabs ระบุ Eleven v4 เป็นรุ่นแรก (90+ ภาษา) และ v4 Turbo สำหรับงานเรียลไทม์ (ไม่ระบุวันเปิดตัว)" },
-      "plansUrl": { "url": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-21" }
+      "plansUrl": { "url": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-21" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจบล็อกของ ElevenLabs (elevenlabs.io/blog)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "suno",
@@ -67,11 +145,11 @@
       "longDescription": "Suno เป็น AI สร้างเพลงที่ได้รับความนิยมสูงสุดในตลาด สร้างเพลงพร้อมเนื้อร้อง/ทำนอง/เสียงร้องจากข้อความบรรยายได้ในไม่กี่วินาที มีข้อจำกัดเรื่องจำนวนดาวน์โหลดที่เพิ่งประกาศเปลี่ยนแปลง (มีผล ก.ย. 2026)",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-09",
-        "confidence": "probable",
-        "sourceUrl": "https://suno.com/release-notes/introducing-v6",
-        "lastVerified": "2026-09-30",
-        "note": "Suno เปิดตัวโมเดล v6 (9 ก.ย. 2026) มี v6, v6-wild สำหรับผู้ใช้เสียเงิน และ v6-mini ใช้ได้ทุกคน แก้ไขเพลงเฉพาะส่วนและทำ mashup ได้ (อ้างตามหน้า release notes ทางการผ่านผลค้นหา ยังไม่ได้เปิดอ่านเต็ม)"
+        "value": "2026-10-08",
+        "confidence": "verified",
+        "sourceUrl": "https://suno.com/release-notes",
+        "lastVerified": "2026-10-09",
+        "note": "Suno อัปเดต Studio (ตรวจจับ downbeat ดีขึ้น ยืดคลิปด้วย shift-click เฟดโค้ง หน้าต่างปลั๊กอินแบบ pop-out) เมื่อ 8 ต.ค. 2026 ตามหมายเหตุการออกรุ่นบน suno.com"
       },
       "capabilities": [],
       "pricing": {
@@ -101,13 +179,70 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "อัปเดต Suno Studio",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "verified",
+            "sourceUrl": "https://suno.com/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ตรวจจับ downbeat แม่นขึ้น ยืดคลิปด้วย shift-click เฟดแบบโค้ง และเปิดหน้าต่างปลั๊กอินแบบ pop-out"
+        },
+        {
+          "version": "Albums",
+          "releaseDate": {
+            "value": "2026-10-05",
+            "confidence": "verified",
+            "sourceUrl": "https://suno.com/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ครีเอเตอร์เผยแพร่ผลงานเป็นอัลบั้มได้ และผู้ติดตามได้รับการแจ้งเตือน"
+        },
+        {
+          "version": "Speech (เบต้า)",
+          "releaseDate": {
+            "value": "2026-10-01",
+            "confidence": "verified",
+            "sourceUrl": "https://suno.com/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โมเดลใหม่สร้างเสียงพูดพร้อมซาวด์แทร็กที่เข้าคู่กันในครั้งเดียว บนมือถือและเว็บ"
+        },
+        {
+          "version": "Studio MIDI update",
+          "releaseDate": {
+            "value": "2026-09-17",
+            "confidence": "verified",
+            "sourceUrl": "https://suno.com/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "แปลง MIDI เป็นเสียงและสั่งงานด้วย MIDI แม่นขึ้น และเปลี่ยนชื่อคลิปทีละอันหรือผ่านแชทได้"
+        },
+        {
+          "version": "Suno v6 (v6, v6-wild, v6-mini)",
+          "releaseDate": {
+            "value": "2026-09-09",
+            "confidence": "verified",
+            "sourceUrl": "https://suno.com/release-notes/introducing-v6",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เปิดตัวตระกูลโมเดล v6: v6 (เรือธง), v6-wild (ทดลอง) และ v6-mini (เร็วกว่า ใช้ฟรีทุกคน) โดย v6 และ v6-wild จำกัดเฉพาะผู้ใช้เสียเงิน"
+        }
+      ],
       "strengths": ["ใช้งานง่ายที่สุดในกลุ่ม สร้างเพลงเต็มเพลงจากข้อความสั้นๆ", "ความนิยมสูงสุดในตลาด AI สร้างเพลง", "ราคาแผน Pro เข้าถึงง่าย"],
       "weaknesses": ["นโยบายจำกัดดาวน์โหลดใหม่ (ก.ย. 2026) แม้แผนเสียเงิน", "แผนฟรีห้ามใช้เชิงพาณิชย์เด็ดขาด"],
       "bestFor": ["มือใหม่ที่อยากลองแต่งเพลงโดยไม่มีพื้นฐานดนตรี", "ครีเอเตอร์ที่ต้องการเพลงประกอบคอนเทนต์เร็วๆ"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายแนวเพลง/อารมณ์/เครื่องดนตรีก่อนเพื่อกำหนดสไตล์เพลง","อ่านโครงสร้างเนื้อเพลงจากแท็ก [Verse], [Chorus], [Bridge]","อ่านเนื้อร้องที่ใส่ต่อจากแต่ละแท็กเพื่อร้องตามนั้น"],"recommendedStructure":"[แนวเพลง/อารมณ์/เครื่องดนตรี] จากนั้นใส่เนื้อเพลงพร้อมแท็ก [Verse] [Chorus] [Bridge] คั่นแต่ละท่อน","example":"genre: lofi chill, mellow piano and soft drums\n[Verse]\nสายลมพัดผ่านหน้าต่างยามเย็น\n[Chorus]\nแค่เพลงนี้ก็พอ ให้ใจสงบลง"},
-      "lastUpdated": "2026-09-03",
+      "lastUpdated": "2026-10-09",
       "latestVersion": { "name": "Suno v6", "releaseDate": "2026-09-09", "sourceUrl": "https://suno.com/blog/introducing-v6", "lastVerified": "2026-09-21", "note": "ประกาศ \"Introducing v6\" บนบล็อกทางการของ Suno" },
-      "plansUrl": { "url": "https://suno.com/pricing", "lastVerified": "2026-09-21" }
+      "plansUrl": { "url": "https://suno.com/pricing", "lastVerified": "2026-09-21" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจหน้า release notes ของ Suno (suno.com/release-notes)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "udio",
@@ -154,11 +289,23 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้ — การเปลี่ยนแปลงสิทธิ์การใช้งานเป็นข้อมูลสำคัญที่ยืนยันจากหลายแหล่ง"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "ข้อตกลงไลเซนส์เพลงกับ Kobalt",
+          "releaseDate": {
+            "value": "2026-04-09",
+            "confidence": "probable",
+            "sourceUrl": "https://www.digitalmusicnews.com/2026/04/09/udio-kobalt-deal/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Udio เซ็นสัญญาไลเซนส์เพลงกับ Kobalt ก่อนเปิดตัวแพลตฟอร์มใหม่ (อ้างตามสื่อ Digital Music News ไม่ใช่หน้าทางการ) อัปเดตรุ่นของตัวผลิตภัณฑ์ไม่พบวันที่ที่ชัดเจน"
+        }
+      ],
       "strengths": ["คุณภาพเพลงใกล้เคียง Suno", "มีแพ็กเครดิตเสริมซื้อเพิ่มยืดหยุ่น"],
       "weaknesses": ["⚠️ ดาวน์โหลดออกไปใช้อิสระไม่ได้แล้วหลังดีล UMG — กระทบผู้ใช้เชิงพาณิชย์อย่างมาก", "โควตาแผนฟรีน้อยกว่า Suno"],
       "bestFor": ["ผู้ใช้ที่ต้องการฟังเพลงในแอปเป็นหลัก ไม่ได้เน้นดาวน์โหลดออกไปใช้ที่อื่น"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายแนวเพลง/บรรยากาศก่อนเพื่อกำหนดทำนองและเครื่องดนตรี","อ่านเนื้อเพลงที่ใส่ต่อจากคำบรรยายสไตล์","รองรับการระบุความยาวเพลงและจุดเปลี่ยนท่อนคร่าวๆ"],"recommendedStructure":"[แนวเพลง/บรรยากาศ/เครื่องดนตรี], เนื้อเพลง: [เนื้อร้อง]","example":"upbeat indie pop, acoustic guitar and claps, เนื้อเพลง: วันนี้ฟ้าใส หัวใจก็พลอยเบิกบาน"},
-      "lastUpdated": "2026-09-03",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://www.udio.com/pricing", "lastVerified": "2026-09-21" }
     },
     {
@@ -206,11 +353,24 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Falcon 2",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": "https://murf.ai/api/docs/changelog",
+            "lastVerified": "2026-10-09",
+            "note": "ไม่มีวันที่ที่ชัดเจน (บุคคลที่สามระบุราว 16 มิ.ย. 2026 ยังไม่ยืนยัน)"
+          },
+          "summary": "รายงานว่าเปิดตัวโมเดล Falcon 2 ราวกลางเดือน มิ.ย. 2026 (จากบทวิเคราะห์ของบุคคลที่สาม ยังไม่ได้ยืนยันจาก changelog ทางการ จึงไม่ลงวันที่)"
+        }
+      ],
       "strengths": ["เสียงให้เลือกหลากหลายที่สุดกลุ่มหนึ่ง (200+ เสียง)", "เหมาะงานนำเสนอ/อีเลิร์นนิงองค์กรโดยเฉพาะ", "สิทธิ์เชิงพาณิชย์ชัดเจน"],
       "weaknesses": ["แผนฟรีดาวน์โหลดไม่ได้เลย ทดลองจำกัดมาก", "ราคาต่อชั่วโมงเสียงค่อนข้างแพง"],
       "bestFor": ["งานนำเสนอ/วิดีโอองค์กร/อีเลิร์นนิง", "ธุรกิจที่ต้องการเสียงพากย์หลายภาษาแบบมืออาชีพ"],
       "promptWorkflow": {"steps":["อ่านสคริปต์ข้อความเป็นหลัก","ใช้เสียงพากย์และภาษาที่เลือกจากคลังเสียงแยกต่างหาก","รองรับการปรับจังหวะ/emphasis เฉพาะคำผ่านตัวแก้ไขแบบ visual"],"recommendedStructure":"[สคริปต์ข้อความสำหรับพากย์ เขียนเป็นประโยคสมบูรณ์] (ปรับเสียง/ความเร็ว/emphasis ผ่านแผงควบคุมแยก)","example":"สวัสดีค่ะ ยินดีต้อนรับเข้าสู่บทเรียนที่ 1 วันนี้เราจะมาเรียนรู้พื้นฐานของการตลาดออนไลน์กันค่ะ"},
-      "lastUpdated": "2026-09-03",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://murf.ai/pricing", "lastVerified": "2026-09-21" }
     },
     {
@@ -310,6 +470,19 @@
         "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "ยังไม่มีข้อมูลอัปเดตที่ยืนยันวันที่ได้",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": null,
+            "lastVerified": "2026-10-09",
+            "note": "ไม่มีวันที่ที่ชัดเจน"
+          },
+          "summary": "ยังไม่พบประกาศรุ่นหรืออัปเดตของ Botnoi Voice ที่ระบุวันที่ชัดเจนจากผู้ให้บริการ ข้อมูลที่มีคือแผนราคาและคุณสมบัติในหน้าอื่นของเรา"
+        }
+      ],
       "strengths": [
         "รองรับภาษาไทยเป็นหลัก และอีก 20+ ภาษา",
         "ราคาเป็นบาท แพ็กพอยท์เริ่มที่ 99 บาท",
@@ -333,7 +506,7 @@
         "recommendedStructure": "[สคริปต์ที่ต้องการพากย์ แบ่งประโยคชัดเจน] (เลือกภาษา เสียง และความเร็วจากแผงควบคุม)",
         "example": "สวัสดีครับ วันนี้ผมจะมาแนะนำวิธีทำกาแฟดริปง่ายๆ ที่ทำได้เองที่บ้าน"
       },
-      "lastUpdated": "2026-09-19",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://voice.botnoi.ai/payment/quote", "lastVerified": "2026-09-21" }
     },
     {
@@ -398,6 +571,19 @@
         "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "ยังไม่มีข้อมูลอัปเดตที่ยืนยันวันที่ได้",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": null,
+            "lastVerified": "2026-10-09",
+            "note": "ไม่มีวันที่ที่ชัดเจน"
+          },
+          "summary": "ยังไม่พบประกาศรุ่นหรืออัปเดตของ Adobe Podcast ที่ระบุวันที่ชัดเจน (ผลิตภัณฑ์พ่วงกับแผน Firefly Pro ดูความเคลื่อนไหวของฟีเจอร์ได้ที่หน้า Adobe Firefly)"
+        }
+      ],
       "strengths": [
         "ล้างเสียงรบกวนและเสียงก้องได้ในไม่กี่คลิก",
         "ตัดต่อเสียงจากข้อความถอดเสียงได้เหมือนแก้เอกสาร",
@@ -421,7 +607,7 @@
         "recommendedStructure": "ไม่ใช้ Prompt — อัปโหลดไฟล์เสียงที่อัดไว้แล้ว",
         "example": "อัปโหลดไฟล์ episode1.wav (ไม่เกิน 30 นาที) แล้วกด Enhance"
       },
-      "lastUpdated": "2026-09-19",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://podcast.adobe.com/en/plans", "lastVerified": "2026-09-21" }
     },
     {
@@ -509,6 +695,18 @@
         "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Stable Audio 3.0",
+          "releaseDate": {
+            "value": "2026-05-20",
+            "confidence": "probable",
+            "sourceUrl": "https://stability.ai/news-updates",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ประกาศ Stable Audio 3.0 ตระกูลโมเดลที่สร้างมาสำหรับการทดลองเชิงศิลป์ พร้อมโมเดลน้ำหนักเปิด (ตามหัวข้อข่าวของ Stability AI ยังไม่ได้อ่านเนื้อหา)"
+        }
+      ],
       "strengths": [
         "ทุกแผนใช้เว็บแอปและปลั๊กอิน DAW ได้ครบ ต่างกันแค่จำนวนเครดิต",
         "ข้อกำหนดโอนสิทธิ์ใน Output ให้ผู้ใช้",
@@ -531,8 +729,15 @@
         "recommendedStructure": "[ประเภทงาน] + [แนว/อารมณ์] + [เครื่องดนตรีหรือรายละเอียดเสียง]",
         "example": "upbeat lo-fi hip hop background track, warm piano and soft drums, relaxed mood"
       },
-      "lastUpdated": "2026-09-19",
-      "plansUrl": { "url": "https://stableaudio.com/pricing", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://stableaudio.com/pricing", "lastVerified": "2026-09-21" },
+      "lastProductUpdate": {
+        "value": "2026-08-18",
+        "confidence": "probable",
+        "sourceUrl": "https://stability.ai/news-updates",
+        "lastVerified": "2026-10-09",
+        "note": "Stability AI ลงโพสต์ 'Sharing a new way to work with Stable Audio' เมื่อ 18 ส.ค. 2026 (ยังไม่ได้อ่านเนื้อหาในโพสต์ ระดับ probable เพราะโดเมน stability.ai ไม่ใช่โดเมน stableaudio.com ของตัวผลิตภัณฑ์)"
+      }
     },
     {
       "id": "fish-audio",
@@ -622,6 +827,19 @@
         "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "ยังไม่มีข้อมูลอัปเดตที่ยืนยันวันที่ได้",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": null,
+            "lastVerified": "2026-10-09",
+            "note": "ไม่มีวันที่ที่ชัดเจน"
+          },
+          "summary": "ยังไม่พบประกาศรุ่นหรืออัปเดตของ Fish Audio ที่ระบุวันที่ชัดเจนจากผู้ให้บริการ (หน้าราคาที่ลองเปิดตอบ 404)"
+        }
+      ],
       "strengths": [
         "ใส่แท็กอารมณ์ในข้อความได้ เช่น [whispering] [laughing] [long pause]",
         "แผนฟรีทดลองได้โดยไม่ต้องใช้บัตรเครดิต",
@@ -645,7 +863,7 @@
         "recommendedStructure": "[แท็กอารมณ์] ข้อความที่ต้องการพากย์ ... [pause] [แท็กอารมณ์] ข้อความถัดไป",
         "example": "[excited] You won't believe what just happened! [long pause] [whispering] Let me tell you a secret."
       },
-      "lastUpdated": "2026-09-19",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://fish.audio/plan/", "lastVerified": "2026-09-21" }
     }
   ]

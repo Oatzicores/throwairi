@@ -7,6 +7,7 @@ import { useBookmarks } from "@/lib/hooks/useBookmarks";
 import { CATEGORY_LABELS } from "@/lib/labels";
 import { PricingBadge } from "@/components/Badges";
 import { BookmarkButton } from "@/components/BookmarkButton";
+import { UpdateStamp } from "@/components/UpdateStamp";
 
 export default function FavoritesPage() {
   const { bookmarks, hydrated } = useBookmarks();
@@ -67,6 +68,7 @@ export default function FavoritesPage() {
                   ))}
                 </div>
                 <p className="mt-2 text-sm text-slate-300">{tool.shortDescription}</p>
+                <UpdateStamp update={tool.lastProductUpdate} showNote className="mt-1.5" />
               </div>
               <BookmarkButton toolId={tool.id} compact />
             </div>

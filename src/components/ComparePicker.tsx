@@ -5,6 +5,7 @@ import type { AITool } from "@/lib/types/ai-tool";
 import { CATEGORY_LABELS } from "@/lib/labels";
 import { matchFinder } from "@/lib/prompts/finder";
 import { ToolLogo } from "./ToolLogo";
+import { UpdateStamp } from "./UpdateStamp";
 
 const formatDate = (iso: string): string => {
   const d = new Date(iso);
@@ -173,6 +174,7 @@ function HoverCard({ id, tool, top, left }: { id: string; tool: AITool; top: num
       className="fixed z-50 w-80 max-w-[calc(100vw-1rem)] rounded-lg border border-slate-600 bg-slate-950 p-3 text-xs leading-relaxed text-slate-300 shadow-xl"
     >
       <p className="text-slate-500">{tool.name} · รุ่นล่าสุดที่ผู้ให้บริการระบุ</p>
+      <UpdateStamp update={tool.lastProductUpdate} showNote className="mt-1" />
       {v ? (
         <>
           <p className="mt-1 text-base font-semibold text-white">{v.name}</p>

@@ -45,6 +45,9 @@ export function buildFinderPool(lib: PromptLibrary, catalog: AITool[]): FinderTo
           pricing: { tier: t.pricing.tier },
         },
         evidence,
+        lastUpdate: t.lastProductUpdate
+          ? { value: t.lastProductUpdate.value, note: t.lastProductUpdate.note ?? null, sourceUrl: t.lastProductUpdate.sourceUrl }
+          : null,
         signal: elo
           ? {
               label: elo.label,

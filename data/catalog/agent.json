@@ -11,11 +11,11 @@
       "longDescription": "Manus เป็น agent ที่ทำงานอัตโนมัติแบบ end-to-end ได้หลากหลาย ตั้งแต่ deep research, สร้างสไลด์นำเสนอ, ไปจนถึงเขียนเว็บไซต์และ deploy จริง ใช้ระบบเครดิตต่อ task ที่คิดตาม token, เวลาเครื่อง VM และ API ภายนอกที่ใช้ในงานนั้นๆ",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-28",
+        "value": "2026-10-01",
         "confidence": "verified",
         "sourceUrl": "https://manus.im/blog",
-        "lastVerified": "2026-09-30",
-        "note": "Manus เปิดตัว Manus 2.0 (28 ก.ย. 2026) พร้อม Cascade agent harness, Cloud Computer, Automations, Manus Studio และ Cue"
+        "lastVerified": "2026-10-09",
+        "note": "Manus เปิดตัว Video Editor ใน Manus 2.0 และ Game Dev เมื่อ 1 ต.ค. 2026"
       },
       "capabilities": [],
       "pricing": {
@@ -47,12 +47,59 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Video Editor ใน Manus 2.0",
+          "releaseDate": {
+            "value": "2026-10-01",
+            "confidence": "verified",
+            "sourceUrl": "https://manus.im/blog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่มตัวตัดต่อวิดีโอใน Manus 2.0 ให้ใครก็ทำวิดีโอที่ควรค่าแก่การโพสต์ได้ (บล็อกแสดงเฉพาะหัวข้อ)"
+        },
+        {
+          "version": "Game Dev",
+          "releaseDate": {
+            "value": "2026-10-01",
+            "confidence": "verified",
+            "sourceUrl": "https://manus.im/blog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เปิดตัวเครื่องมือพัฒนาเกมให้ทุกคนสร้างเกมที่อยากเล่น (บล็อกแสดงเฉพาะหัวข้อ)"
+        },
+        {
+          "version": "Manus Flex",
+          "releaseDate": {
+            "value": "2026-09-29",
+            "confidence": "verified",
+            "sourceUrl": "https://manus.im/blog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ใช้ API key ของตัวเองใน Manus workspace ได้ (บล็อกแสดงเฉพาะหัวข้อ)"
+        },
+        {
+          "version": "Manus 2.0",
+          "releaseDate": {
+            "value": "2026-09-28",
+            "confidence": "verified",
+            "sourceUrl": "https://manus.im/blog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เปิดตัว Manus 2.0 พร้อม Cascade agent harness, Cloud Computer และ Automations, Manus Studio สำหรับงานสร้างสรรค์ระดับมืออาชีพ และ Cue แอปเอเจนต์ส่วนตัว"
+        }
+      ],
       "strengths": ["ทำงานอัตโนมัติครบวงจรตั้งแต่ research ถึง deploy จริง", "แผนฟรีเครดิตรีเซ็ตทุกวัน ทดลองต่อเนื่องได้", "รองรับงานพร้อมกันหลายงานในแผนเสียเงิน"],
       "weaknesses": ["ระบบเครดิตซับซ้อน คาดเดาต้นทุนจริงยาก", "แผนสูงสุดราคาสูงมาก ($200/เดือน)", "แผนฟรีตั้งใจไว้สำหรับทดลอง/ไม่ใช่เชิงพาณิชย์เท่านั้น"],
       "bestFor": ["ผู้ใช้ที่ต้องการมอบหมายงานวิจัย/สร้างเว็บไซต์ให้ AI ทำแทนทั้งหมด", "ทีมที่ต้องรัน deep research ต่อเนื่อง"],
       "promptWorkflow": {"steps":["อ่านเป้าหมายงานโดยรวมก่อน","วางแผนขั้นตอนย่อยที่ต้องทำเองอัตโนมัติ","ลงมือทำทีละขั้น พร้อมรายงานความคืบหน้าให้เห็น"],"recommendedStructure":"อธิบายเป้าหมายสุดท้ายที่ต้องการให้ชัดเจน พร้อมเงื่อนไข/ข้อจำกัดที่สำคัญ","example":"ช่วยหาข้อมูลคู่แข่ง 5 เจ้าในธุรกิจร้านกาแฟพรีเมียม สรุปจุดแข็ง-จุดอ่อน แล้วทำเป็นตารางเปรียบเทียบ"},
-      "lastUpdated": "2026-09-03",
-      "plansUrl": { "url": "https://manus.im/pricing", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://manus.im/pricing", "lastVerified": "2026-09-21" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจบล็อกของ Manus (manus.im/blog)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "perplexity-comet",
@@ -100,11 +147,23 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Comet เปิดให้ใช้ฟรีทั่วโลก",
+          "releaseDate": {
+            "value": "2025-10-02",
+            "confidence": "probable",
+            "sourceUrl": "https://www.cnbc.com/2025/10/02/perplexity-ai-comet-browser-free-.html",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Perplexity เปิดเบราว์เซอร์ Comet ให้ใช้ฟรีทั่วโลกเมื่อ 2 ต.ค. 2025 (วันที่เปิดตัว Comet ครั้งแรกเป็นคนละวัน) อ้างตามสื่อ CNBC ไม่ใช่หน้าทางการ ส่วนอัปเดตล่าสุดของตัว Comet ไม่พบวันที่ที่ชัดเจน"
+        }
+      ],
       "strengths": ["ฟีเจอร์หลัก AI agent ฟรีทั้งหมด — คุ้มค่าที่สุดในกลุ่ม", "เป็นเบราว์เซอร์เต็มรูปแบบ ไม่ใช่แค่ปลั๊กอิน"],
       "weaknesses": ["Background automation ขั้นสูงต้องจ่าย Max ราคาสูงถึง $200/เดือน", "ยังเป็นผลิตภัณฑ์ค่อนข้างใหม่ ฟีเจอร์อาจเปลี่ยนแปลงบ่อย", "⚠️ แผน consumer (Free/Pro/Max) น่าจะจำกัดเพื่อใช้ส่วนตัวตาม ToS หลักของ Perplexity — ธุรกิจควรพิจารณา Comet for Enterprise"],
       "bestFor": ["มือใหม่ที่อยากลอง AI agent ท่องเว็บโดยไม่เสียเงินเลย", "ผู้ใช้ที่ต้องการเบราว์เซอร์ผสาน AI ในการค้นข้อมูล"],
       "promptWorkflow": {"steps":["อ่านหน้าเว็บที่เปิดอยู่เป็นบริบทก่อน","อ่านคำสั่งงานที่พิมพ์เป็นเป้าหมาย","ท่องเว็บ/คลิก/กรอกข้อมูลแทนตามขั้นตอนที่วางแผนไว้"],"recommendedStructure":"ระบุเว็บไซต์/หน้าที่เกี่ยวข้อง + สิ่งที่ต้องการให้ทำบนหน้านั้น","example":"เข้าเว็บจองตั๋วหนัง หารอบฉายรอบดึกสุดของหนังที่กำลังฉายอยู่ แล้วสรุปราคาที่นั่งว่างให้ดู"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://www.perplexity.ai/pro", "lastVerified": "2026-09-21" }
     },
     {
@@ -152,11 +211,23 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Zapier connector ใน Muse ของ Meta",
+          "releaseDate": {
+            "value": "2026-09-29",
+            "confidence": "probable",
+            "sourceUrl": "https://zapier.com/blog/zapier-connector-in-muse/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Zapier เปิด connector ใน Muse ของ Meta เชื่อมกว่า 9,000 แอปผ่าน Zapier MCP (อ้างตามผลค้นหาบล็อกทางการ ยังไม่ได้เปิดอ่านเต็ม) หน้าเอเจนต์ของ Zapier ไม่ระบุวันอัปเดตตัวผลิตภัณฑ์เอง"
+        }
+      ],
       "strengths": ["ผสานกับแอปธุรกิจนับพันตัวได้ทันที ไม่ต้องเขียนโค้ด", "เหมาะต่อยอดจากระบบ Zapier ที่มีอยู่แล้ว"],
       "weaknesses": ["โครงสร้างราคาสับสนระหว่าง Agents กับ AI step ใน Zaps", "โควตา activities หมดเร็วสำหรับงานที่ต้องค้นหลายแหล่ง"],
       "bestFor": ["ธุรกิจที่ใช้ Zapier เชื่อมต่อเครื่องมือต่างๆ อยู่แล้ว", "ทีมที่ไม่ต้องการเขียนโค้ดเชื่อมต่อ API เอง"],
       "promptWorkflow": {"steps":["อ่านทริกเกอร์ (เหตุการณ์ที่จะเริ่มทำงาน) ก่อน","อ่านคำอธิบายงานที่ต้องการให้ทำเป็นภาษาธรรมชาติ","แมปงานนั้นเข้ากับแอปที่เชื่อมต่อไว้โดยอัตโนมัติ"],"recommendedStructure":"เมื่อ [เหตุการณ์ทริกเกอร์] เกิดขึ้น ให้ทำ [สิ่งที่ต้องการ] ในแอป [ชื่อแอปปลายทาง]","example":"เมื่อมีอีเมลใหม่จากลูกค้าเข้า Gmail ให้สรุปใจความสำคัญแล้วส่งเข้า Slack ช่อง #customer-support"},
-      "lastUpdated": "2026-09-03",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://zapier.com/pricing", "lastVerified": "2026-09-21" }
     },
     {
@@ -170,11 +241,11 @@
       "longDescription": "n8n เป็นเครื่องมือ automation แบบ low-code ที่รองรับ AI agent node ในตัว จุดเด่นคือ self-hosted แบบโอเพนซอร์สฟรีสมบูรณ์ (ต้องมีเซิร์ฟเวอร์เอง) หรือใช้เวอร์ชันคลาวด์ที่คิดราคาตาม 'execution' ไม่ใช่ตาม step ทำให้ workflow ซับซ้อนไม่แพงขึ้นตามจำนวน node",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-15",
-        "confidence": "probable",
+        "value": "2026-10-06",
+        "confidence": "verified",
         "sourceUrl": "https://docs.n8n.io/release-notes/",
-        "lastVerified": "2026-09-30",
-        "note": "n8n อัปเดตต่อเนื่องในเดือน ก.ย. 2026 เช่น Grist node รองรับ OAuth2 (15 ก.ย.) และ Edit Image node (8 ก.ย.) (อ้างตามผลค้นหาหน้าทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+        "lastVerified": "2026-10-09",
+        "note": "n8n 2.43 ออกเมื่อ 6 ต.ค. 2026 ตาม release notes บน docs.n8n.io"
       },
       "capabilities": [],
       "pricing": {
@@ -205,12 +276,66 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "n8n 2.43",
+          "releaseDate": {
+            "value": "2026-10-06",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.n8n.io/release-notes/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เปิด Browser Use ใน n8n Assistant ให้ทุกคนเป็นค่าเริ่มต้น (ปิดได้ด้วย N8N_INSTANCE_AI_BROWSER_USE_ENABLED และใช้บนมือถือ/แท็บเล็ตไม่ได้), โหนด Azure OpenAI Chat Model เลือก deployment จากรายการได้ และรายงานการย้ายระบบใช้ป้ายผลกระทบ เช่น \"Upgrade blocked\" แทนระดับความรุนแรง"
+        },
+        {
+          "version": "n8n 2.42",
+          "releaseDate": {
+            "value": "2026-09-29",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.n8n.io/release-notes/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โหนด Anthropic มีตัวเลือก prompt caching (5 นาทีหรือ 1 ชั่วโมง ปิดเป็นค่าเริ่มต้น), โหนด Azure OpenAI Chat Model เปลี่ยนชื่อเป็น Azure AI Foundry Chat Model และหน้าล็อกอินเน้นปุ่ม SSO เมื่อเปิด SAML/OIDC"
+        },
+        {
+          "version": "n8n 2.41",
+          "releaseDate": {
+            "value": "2026-09-22",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.n8n.io/release-notes/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โหนด Microsoft Teams ใส่ @mention จริงที่ส่งการแจ้งเตือนได้, โหนด MiniMax ดึงรายชื่อโมเดลจาก API และบทบาทกำหนดเองมีสิทธิ์ Tags: View เป็นค่าเริ่มต้น (บทบาทเดิมต้องให้แอดมินปรับเอง)"
+        },
+        {
+          "version": "n8n 2.40",
+          "releaseDate": {
+            "value": "2026-09-15",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.n8n.io/release-notes/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่มโหนดหลัก Microsoft Dataverse (สร้าง/แก้ไข/Upsert/ลบ/ดู/แสดงแถว), เปลี่ยนคำสั่ง git-connections ของ CLI เป็นกลุ่มคำสั่ง promotion-provider/promotion-connection (สคริปต์เดิมอาจพัง) และเปลี่ยนชื่อ AI Assistant เป็น n8n Assistant"
+        }
+      ],
       "strengths": ["self-hosted ฟรีสมบูรณ์ ควบคุมได้เต็มรูปแบบ", "คิดราคาตาม execution ไม่ใช่ตาม node ทำให้ workflow ซับซ้อนไม่แพงขึ้น", "รองรับ AI agent node ในตัว"],
       "weaknesses": ["ต้องมีความรู้เทคนิคพอสมควรสำหรับ self-hosted", "แผน Business ราคาสูงมากสำหรับองค์กรใหญ่"],
       "bestFor": ["นักพัฒนา/ทีมเทคนิคที่ต้องการควบคุม automation เต็มรูปแบบโดยไม่เสียค่าบริการรายเดือน", "ธุรกิจที่มี workflow ซับซ้อนหลายขั้นตอน"],
       "promptWorkflow": {"steps":["อ่านโครงสร้าง workflow/node ที่วางไว้ก่อน","อ่านคำอธิบายสิ่งที่ต้องการให้ node นั้นทำ","แนะนำการเชื่อมต่อ node ถัดไปให้เหมาะกับเป้าหมาย"],"recommendedStructure":"อธิบายทีละขั้นว่าข้อมูลเข้ามาจากไหน ต้องแปลง/กรองอย่างไร แล้วส่งออกไปที่ไหน","example":"ดึงข้อมูลออเดอร์ใหม่จาก Shopify ทุก 1 ชั่วโมง กรองเฉพาะออเดอร์เกิน 1000 บาท แล้วส่งแจ้งเตือนเข้า Line"},
-      "lastUpdated": "2026-09-03",
-      "plansUrl": { "url": "https://n8n.io/pricing/", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://n8n.io/pricing/", "lastVerified": "2026-09-21" },
+      "latestVersion": {
+        "name": "n8n 2.43",
+        "releaseDate": "2026-10-06",
+        "sourceUrl": "https://docs.n8n.io/release-notes/",
+        "lastVerified": "2026-10-09",
+        "note": "ตาม release notes ทางการบน docs.n8n.io (n8n ออกรุ่นย่อยรายสัปดาห์)"
+      },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจหน้า release notes ของ n8n (docs.n8n.io/release-notes)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     }
   ]
 }

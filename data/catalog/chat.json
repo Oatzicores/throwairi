@@ -220,11 +220,11 @@
       "longDescription": "Claude เป็นผู้นำอันดับต้นๆ บน LMArena text leaderboard เด่นเรื่องคุณภาพงานเขียน การให้เหตุผลซับซ้อน และการเขียนโค้ด รองรับ Claude Code สำหรับงานพัฒนาซอฟต์แวร์โดยเฉพาะ",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-28",
+        "value": "2026-10-07",
         "confidence": "verified",
         "sourceUrl": "https://www.anthropic.com/news",
-        "lastVerified": "2026-09-30",
-        "note": "Anthropic ประกาศ Claude Sonnet 5.5 (28 ก.ย. 2026), Claude Opus 5.5 (22 ก.ย. 2026) และ Claude Fable 5.1 / Mythos 5.1 (1 ก.ย. 2026) ตามหน้าข่าวทางการ"
+        "lastVerified": "2026-10-09",
+        "note": "Anthropic เปิดตัว Claude Haiku 5.5 เมื่อ 7 ต.ค. 2026 (หน้า anthropic.com/news)"
       },
       "capabilities": [
         {
@@ -303,8 +303,8 @@
           "sourceUrl": "https://www.anthropic.com/legal/commercial-terms",
           "lastVerified": "2026-09-03"
         },
-        "sourceUrl": "https://www.anthropic.com/pricing",
-        "lastVerified": "2026-09-03"
+        "sourceUrl": "https://claude.com/pricing",
+        "lastVerified": "2026-10-09"
       },
       "reviews": {
         "positiveThemes": ["คุณภาพงานเขียนและการให้เหตุผลดีที่สุดกลุ่มหนึ่ง", "เขียนโค้ดแม่นยำ เป็นตัวเลือกยอดนิยมของนักพัฒนา", "แผน Pro ราคาถูกกว่า ChatGPT Plus เล็กน้อยแต่คุณภาพใกล้เคียงหรือดีกว่า"],
@@ -328,6 +328,38 @@
           "label": "LMArena Text ELO (Claude Opus 4.8)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "Claude Haiku 5.5",
+          "releaseDate": {
+            "value": "2026-10-07",
+            "confidence": "verified",
+            "sourceUrl": "https://support.claude.com/en/articles/12138966-release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เปิดตัวโมเดลเล็กที่เร็วและราคาถูกสำหรับงานปริมาณมาก (บน API ราคา $0.10/$0.50 ต่อล้าน token ส่วนพรอมต์เกิน 100,000 token คิดเรตสูงกว่า) และในวันเดียวกันแผน Max กับ Team ได้เครดิต API รายเดือนสำหรับรันแอป/เอเจนต์ของตัวเองโดยผูกกับองค์กร Claude Console"
+        },
+        {
+          "version": "Claude Sonnet 5.5",
+          "releaseDate": {
+            "value": "2026-09-28",
+            "confidence": "verified",
+            "sourceUrl": "https://support.claude.com/en/articles/12138966-release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เปิดตัวโมเดลที่เร็วและถูกกว่าคู่กับ Claude Opus 5.5"
+        },
+        {
+          "version": "Claude Opus 5.5",
+          "releaseDate": {
+            "value": "2026-09-22",
+            "confidence": "verified",
+            "sourceUrl": "https://support.claude.com/en/articles/12138966-release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เปิดตัวเป็นโมเดลแรกของตระกูล 5.5 ให้ประสิทธิภาพใกล้เคียง Fable 5.1 ในงานส่วนใหญ่ด้วยต้นทุนต่ำกว่า"
+        }
+      ],
       "strengths": ["คุณภาพงานเขียนและการให้เหตุผลระดับแนวหน้า", "เขียนโค้ดแม่นยำ มี Claude Code แยกสำหรับงานพัฒนา", "ราคา Pro คุ้มค่าเมื่อเทียบกับคุณภาพ"],
       "weaknesses": ["โควตาแผนฟรี/Pro จำกัดกว่าคู่แข่งบางเจ้า", "ระบบเสริม/ปลั๊กอินยังน้อยกว่า ChatGPT", "แผน Max ราคาสูงสำหรับผู้ใช้ทั่วไป"],
       "bestFor": ["นักพัฒนาและนักเขียนที่เน้นคุณภาพเนื้อหา", "งานที่ต้องการการให้เหตุผลซับซ้อน", "ทีมที่ต้องการผู้ช่วยเขียนโค้ด"],
@@ -344,14 +376,20 @@
         }
       },
       "promptWorkflow": {"steps":["อ่านบริบททั้งหมดในแชทอย่างละเอียดรวมถึงไฟล์แนบ","ให้ความสำคัญกับโครงสร้างคำสั่งที่ชัดเจน เช่น การแบ่งหัวข้อ","ตอบตามรูปแบบที่ระบุไว้อย่างเคร่งครัดเมื่อบอกไว้ชัดเจน"],"recommendedStructure":"[บริบท/เป้าหมาย] + [ขั้นตอนหรือหัวข้อที่ต้องการให้ทำตามลำดับ] + [รูปแบบผลลัพธ์ที่ต้องการ]","example":"ช่วยสรุปเอกสารนี้ โดยแบ่งเป็น 3 หัวข้อ: ประเด็นหลัก, ข้อเสนอแนะ, ความเสี่ยง ตอบเป็นภาษาไทย"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "roadmap": { "checkedAt": "2026-09-30", "note": "กำหนดด้านบนคือ \"วันเลิกใช้โมเดลที่เร็วที่สุด (ไม่เร็วกว่า)\" ตามตารางสถานะโมเดลของ Anthropic สำหรับ API ไม่ใช่กำหนดของแอปแชต หน้าข่าวของ Anthropic ที่ตรวจไม่มีแผนรุ่นถัดไปที่ประกาศล่วงหน้า", "items": [
           { "kind": "retirement", "text": "Claude Haiku 4.5 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic", "when": "ไม่เร็วกว่า 15 ต.ค. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
           { "kind": "retirement", "text": "Claude Opus 4.5 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic", "when": "ไม่เร็วกว่า 24 พ.ย. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
           { "kind": "retirement", "text": "Claude Opus 4.6 และ Sonnet 4.6 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic (Opus 4.6: 5 ก.พ. 2027, Sonnet 4.6: 17 ก.พ. 2027)", "when": "ไม่เร็วกว่า 5 ก.พ. 2027", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
           { "kind": "intent", "text": "Anthropic ระบุว่าหวังจะนำโมเดลรุ่นเก่ากลับมาให้ใช้สาธารณะอีกครั้ง \"ในบางเวลา\" และยืนยันเก็บน้ำหนักโมเดลไว้ระยะยาว", "when": null, "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" }
         ] },
-      "latestVersion": { "name": "Claude Opus 5.5 และ Sonnet 5.5", "releaseDate": "2026-09-28", "sourceUrl": "https://www.anthropic.com/news", "lastVerified": "2026-09-30", "note": "ตามหน้าข่าว Anthropic: Sonnet 5.5 (28 ก.ย. 2026) เร็วขึ้น 30% และถูกลงสูงสุด 30%, Opus 5.5 (22 ก.ย. 2026) ทำงานระดับ Fable 5.1 ในงานส่วนใหญ่และลดต้นทุน 40% เทียบ Opus 5; รุ่นบนสุดคือ Fable 5.1 (1 ก.ย. 2026)" },
+      "latestVersion": {
+        "name": "Claude Haiku 5.5 (ล่าสุด), Sonnet 5.5 และ Opus 5.5",
+        "releaseDate": "2026-10-07",
+        "sourceUrl": "https://www.anthropic.com/news",
+        "lastVerified": "2026-10-09",
+        "note": "Haiku 5.5 ประกาศ 7 ต.ค. 2026; Sonnet 5.5 เมื่อ 28 ก.ย. และ Opus 5.5 เมื่อ 22 ก.ย. 2026 ตามหน้าข่าวทางการ"
+      },
       "plansUrl": { "url": "https://claude.com/pricing", "lastVerified": "2026-09-21" }
     },
     {
@@ -365,11 +403,11 @@
       "longDescription": "Gemini เชื่อมต่อกับระบบนิเวศ Google (Search, Docs, Gmail) ได้ลึก มี context window ถึง 1M token ในแผน Pro เหมาะกับงานที่ต้องอ้างอิงเอกสารยาวๆ หรือค้นข้อมูลควบคู่การแชท",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-22",
+        "value": "2026-10-06",
         "confidence": "verified",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
-        "lastVerified": "2026-09-30",
-        "note": "Google ปล่อย Gemini 3.8 Flash แบบ GA (2 ก.ย.), Gemini 3.8 Live (15 ก.ย.) และ Gemini 3.8 Flash TTS (22 ก.ย. 2026) ตามหน้า changelog ทางการ"
+        "lastVerified": "2026-10-09",
+        "note": "Gemini Nano Banana 2.1 เข้าสู่ GA เมื่อ 6 ต.ค. 2026 ตาม changelog ของ Gemini API"
       },
       "capabilities": [
         {
@@ -458,6 +496,58 @@
           "label": "LMArena Text ELO (Gemini 3.1 Pro)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "Gemini Nano Banana 2.1 (GA)",
+          "releaseDate": {
+            "value": "2026-10-06",
+            "confidence": "verified",
+            "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โมเดลสร้าง/แก้ไขภาพเข้าสู่ GA บน Gemini API พร้อมประกาศเลิกใช้ gemini-3.1-flash-image"
+        },
+        {
+          "version": "Skills ในแอป Gemini",
+          "releaseDate": {
+            "value": "2026-09-30",
+            "confidence": "verified",
+            "sourceUrl": "https://gemini.google/release-notes/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ทยอยเปิดทั่วโลก: Skills คือชุดคำสั่งที่ใช้ซ้ำได้เพื่อบอก Gemini ว่าจะทำงานเฉพาะอย่างไร และ Gems จะถูกย้ายไปเป็น skills ในภายหลัง"
+        },
+        {
+          "version": "Gemini 3.8 Flash TTS และ Flash-Lite TTS (GA)",
+          "releaseDate": {
+            "value": "2026-09-22",
+            "confidence": "verified",
+            "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โมเดลแปลงข้อความเป็นเสียงเข้าสู่ GA พร้อมการออกแบบเสียง การจำลองเสียง และคลังเสียงที่ขยายขึ้น"
+        },
+        {
+          "version": "Gemini 3.8 Live และ Live Extended Thinking (GA)",
+          "releaseDate": {
+            "value": "2026-09-15",
+            "confidence": "verified",
+            "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โมเดลเสียงแบบเรียลไทม์เข้าสู่ GA"
+        },
+        {
+          "version": "แอป Gemini สำหรับ Windows",
+          "releaseDate": {
+            "value": "2026-09-10",
+            "confidence": "verified",
+            "sourceUrl": "https://gemini.google/release-notes/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "แอปบน Windows 10 ขึ้นไป กด Alt + Space เพื่อเรียก Gemini จากโปรแกรมไหนก็ได้"
+        }
+      ],
       "strengths": ["เชื่อมต่อ Google Search/Workspace ได้ดีที่สุดในกลุ่ม", "Context window ยาวถึง 1M token", "ราคาลดลงมากในปี 2026 ทำให้เข้าถึงง่ายขึ้น"],
       "weaknesses": ["โครงสร้างแผนราคาหลายชั้นทำให้เลือกยาก", "ไม่มี indemnification คุ้มครองลิขสิทธิ์ชัดเจนเท่า Microsoft Enterprise"],
       "bestFor": ["ผู้ใช้ที่อยู่ในระบบนิเวศ Google อยู่แล้ว", "งานที่ต้องอ่าน/สรุปเอกสารยาวมาก", "งานค้นข้อมูลควบคู่แชท"],
@@ -473,7 +563,7 @@
         }
       },
       "promptWorkflow": {"steps":["อ่านข้อมูลจากแอป Google ที่เชื่อมต่อไว้ก่อน (ถ้าเปิดใช้งาน)","อ่านข้อความคำสั่งในแชทเป็นเป้าหมายหลัก","ค้นข้อมูลเสริมจาก Google Search อัตโนมัติเมื่อจำเป็น"],"recommendedStructure":"[สิ่งที่ต้องการ] + ระบุแหล่งข้อมูล เช่น \"จากอีเมลล่าสุด\" หรือ \"จากเอกสารที่แชร์ไว้\" ถ้าต้องการให้ดึงข้อมูลจริง","example":"สรุปอีเมล 5 ฉบับล่าสุดจากหัวหน้าทีม แล้วช่วยร่างคำตอบให้แบบสุภาพ"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "roadmap": { "checkedAt": "2026-09-30", "note": "ตามหน้า deprecations ของ Gemini API (ฝั่งนักพัฒนา ไม่ใช่แอป Gemini) รุ่นเสถียรล่าสุด (3.8 Flash, 3.8 Live) ยังไม่มีกำหนดเลิกให้บริการ", "items": [
           { "kind": "retirement", "text": "gemini-2.5-flash-image จะปิดให้บริการ แนะนำย้ายไป gemini-3.1-flash-image-preview", "when": "2 ต.ค. 2026", "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations", "lastVerified": "2026-09-30" }
         ] },
@@ -492,10 +582,10 @@
       "launchDate": null,
       "lastProductUpdate": {
         "value": "2026-09-25",
-        "confidence": "probable",
+        "confidence": "verified",
         "sourceUrl": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
-        "lastVerified": "2026-09-30",
-        "note": "Microsoft เปิดตัว Copilot แบบใหม่ที่มี Home, Code และ Autopilot (25 ก.ย. 2026) โดย Home กับ Code เริ่มทยอยให้ผู้ใช้ Frontier ส่วน Autopilot ขยายเป็น private preview (อ้างตามผลค้นหาบล็อกทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+        "lastVerified": "2026-10-09",
+        "note": "Microsoft เปิดตัว Copilot ใหม่ (Home, Code, Autopilot) เมื่อ 25 ก.ย. 2026 บน blogs.microsoft.com"
       },
       "capabilities": [],
       "pricing": {
@@ -516,20 +606,50 @@
           {
             "name": "Microsoft 365 Premium",
             "priceUsdPerMonth": 19.99,
-            "quota": "รวมฟีเจอร์ที่เคยอยู่ใน Copilot Pro (ยกเลิก Copilot Pro แยกเดี่ยว รองรับถึง 1 ส.ค. 2026)",
-            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303", "lastVerified": "2026-09-03", "note": "เป็นผลิตภัณฑ์ consumer จึงยังไม่ครอบคลุมด้วย Copyright Commitment เช่นกัน" }
+            "quota": "รวมทุกอย่างใน Family พร้อมการใช้ Copilot แชท ภาพ เสียงมากขึ้น เข้าถึงฟีเจอร์เฉพาะ Premium/Pro และการใช้ AI เชิงเอเจนต์แบบจำกัดสำหรับวิจัย/วิเคราะห์ (แทน Copilot Pro เดี่ยวที่ยกเลิก รองรับถึง 1 ส.ค. 2026)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303",
+              "lastVerified": "2026-09-03",
+              "note": "เป็นผลิตภัณฑ์ consumer จึงยังไม่ครอบคลุมด้วย Copyright Commitment เช่นกัน"
+            }
+          },
+          {
+            "name": "Microsoft 365 Pro",
+            "priceUsdPerMonth": 99.99,
+            "quota": "รวมทุกอย่างใน Premium พร้อมพื้นที่เก็บข้อมูลร่วม 5 TB และขีดจำกัดการใช้ Copilot (แชท เอเจนต์ ภาพ เสียง) สูงสุด คิดเงินรายเดือนเท่านั้น (ตามหน้าแผนส่วนบุคคลของ Microsoft)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303",
+              "lastVerified": "2026-09-03",
+              "note": "เป็นผลิตภัณฑ์ consumer จึงยังไม่ครอบคลุมด้วย Copyright Commitment เช่นกัน"
+            }
           },
           {
             "name": "Microsoft 365 Copilot Business",
             "priceUsdPerMonth": 21,
             "quota": "ต่อผู้ใช้/เดือน (โปรโมชัน $18 ถึง 30 ก.ย. 2026)",
-            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303", "lastVerified": "2026-09-03", "note": "ระดับ Business/Enterprise ได้รับความคุ้มครองจาก Microsoft Copilot Copyright Commitment (ตั้งแต่ 1 ต.ค. 2023)" }
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303",
+              "lastVerified": "2026-09-03",
+              "note": "ระดับ Business/Enterprise ได้รับความคุ้มครองจาก Microsoft Copilot Copyright Commitment (ตั้งแต่ 1 ต.ค. 2023)"
+            }
           },
           {
             "name": "Microsoft 365 Copilot Enterprise",
             "priceUsdPerMonth": 30,
             "quota": "ต่อผู้ใช้/เดือน บิลรายปี",
-            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303", "lastVerified": "2026-09-03", "note": "ได้รับความคุ้มครองจาก Copyright Commitment เต็มรูปแบบ" }
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303",
+              "lastVerified": "2026-09-03",
+              "note": "ได้รับความคุ้มครองจาก Copyright Commitment เต็มรูปแบบ"
+            }
           }
         ],
         "freeQuota": "ใช้งานพื้นฐานฟรีผ่าน copilot.microsoft.com",
@@ -539,8 +659,8 @@
           "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303",
           "lastVerified": "2026-09-03"
         },
-        "sourceUrl": "https://www.gosearch.ai/blog/microsoft-copilot-pricing/",
-        "lastVerified": "2026-09-03"
+        "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365-copilot/personal",
+        "lastVerified": "2026-10-09"
       },
       "reviews": {
         "positiveThemes": ["ผสานเข้ากับ Microsoft 365 ได้ลึกที่สุดในกลุ่ม", "เหมาะกับองค์กรที่ใช้ Microsoft อยู่แล้ว"],
@@ -552,12 +672,31 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Copilot ใหม่: Home, Code และ Autopilot",
+          "releaseDate": {
+            "value": "2026-09-25",
+            "confidence": "verified",
+            "sourceUrl": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Microsoft ปรับ Copilot ใหม่: Home เป็นจุดเริ่มต้นรวม Chat กับ Cowork, Office ใน Copilot, Code สำหรับสร้างแอปเฉพาะทาง และ Autopilot เอเจนต์ที่ทำงานต่อเนื่องและเชิงรุก พร้อมความสามารถ FinOps สำหรับควบคุมต้นทุน AI"
+        }
+      ],
       "strengths": ["ผสานกับ Word/Excel/Outlook/Teams โดยตรง", "เหมาะกับองค์กรที่มี Microsoft 365 อยู่แล้ว"],
       "weaknesses": ["โครงสร้างแผนราคาสับสนและเปลี่ยนบ่อย", "Copyright Commitment (คุ้มครองการฟ้องร้องลิขสิทธิ์) ไม่ครอบคลุมแผนฟรี/consumer ต้องอัปเป็น Business ขึ้นไป"],
       "bestFor": ["องค์กรที่ใช้ Microsoft 365 อยู่แล้ว", "งานเอกสาร/สเปรดชีต/อีเมลในระบบนิเวศ Microsoft"],
       "promptWorkflow": {"steps":["อ่านเนื้อหาไฟล์/อีเมลที่เปิดอยู่ในแอป Microsoft 365 เป็นบริบทก่อน","อ่านคำสั่งที่พิมพ์เป็นเป้าหมาย","ปรับผลลัพธ์ให้เข้ากับรูปแบบของแอปนั้นๆ เช่น สร้างสไลด์ใน PowerPoint"],"recommendedStructure":"[สิ่งที่ต้องการให้ทำกับไฟล์/อีเมลที่เปิดอยู่] + [รูปแบบผลลัพธ์ที่ต้องการ]","example":"สรุปเอกสาร Word นี้เป็นสไลด์ PowerPoint 5 หน้า เน้นประเด็นสำคัญ 3 ข้อแรก"},
-      "lastUpdated": "2026-09-03",
-      "plansUrl": { "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/personal", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/personal", "lastVerified": "2026-09-21" },
+      "latestVersion": {
+        "name": "Copilot ใหม่ (Home, Code, Autopilot)",
+        "releaseDate": "2026-09-25",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+        "lastVerified": "2026-10-09",
+        "note": "ตามบล็อกทางการของ Microsoft เมื่อ 25 ก.ย. 2026"
+      }
     },
     {
       "id": "perplexity",
@@ -604,11 +743,34 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "API: Claude Haiku 5.5, Decisions API และเครื่องมือ image_search",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": "https://docs.perplexity.ai/changelog",
+            "lastVerified": "2026-10-09",
+            "note": "ไม่มีวันที่ที่ชัดเจน"
+          },
+          "summary": "changelog ของ Perplexity API ลงรายการเดือน ต.ค. 2026 แต่ไม่ระบุวัน: Agent API รองรับ Claude Haiku 5.5 (พรอมต์เกิน 100k token เรตสูงกว่า), Decisions API ใหม่ที่ตอบเป็นความน่าจะเป็น (ราคา input $0.04 ต่อล้าน token ลดเหลือ $0.02 เมื่อใช้ pplx-decider-v1.1-27b), Agent API รับไฟล์ PDF/DOC/DOCX/TXT/RTF และเครื่องมือ image_search ($2.50 ต่อ 1,000 ครั้งที่สำเร็จ)"
+        },
+        {
+          "version": "Hybrid compute สำหรับแอป Mac",
+          "releaseDate": {
+            "value": "2026-09-01",
+            "confidence": "probable",
+            "sourceUrl": "https://www.explainx.ai/blog/perplexity-mac-hybrid-compute-local-pii-september-2026",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ประกาศว่า Perplexity Computer บน Mac จะรันโมเดลบางส่วนในเครื่อง Apple Silicon สำหรับงานที่แตะไฟล์ส่วนตัว (อ้างตามบล็อกบุคคลที่สาม ไม่ใช่หน้าทางการ)"
+        }
+      ],
       "strengths": ["อ้างอิงแหล่งที่มาชัดเจน เหมาะงานวิจัย", "เลือกโมเดลเบื้องหลังได้หลายตัวในแผน Pro"],
       "weaknesses": ["⚠️ แผน Free/Pro/Max จำกัดให้ใช้ส่วนตัวเท่านั้น ไม่ใช่เชิงพาณิชย์ตาม ToS ล่าสุด", "ไม่เหมาะกับงาน Creative writing เท่าแชทบอททั่วไป", "แผน Max ราคาสูง"],
       "bestFor": ["งานค้นคว้าวิจัยที่ต้องการอ้างอิงแหล่งที่มา", "นักเรียน/นักศึกษาที่ต้องการตรวจสอบข้อมูล"],
       "promptWorkflow": {"steps":["อ่านคำถามเป็น search query ก่อนเพื่อค้นข้อมูลจริงจากเว็บ","สังเคราะห์คำตอบจากแหล่งที่ค้นเจอ","แนบอ้างอิงแหล่งที่มาให้ตรวจสอบได้"],"recommendedStructure":"ตั้งคำถามให้ชัดเจนเหมือนพิมพ์ค้นหา ระบุช่วงเวลา/ขอบเขตถ้าต้องการข้อมูลล่าสุด","example":"ราคาน้ำมันดิบ Brent ล่าสุดวันนี้เท่าไหร่ เทียบกับเมื่อสัปดาห์ที่แล้ว"},
-      "lastUpdated": "2026-09-07",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://www.perplexity.ai/pro", "lastVerified": "2026-09-21" }
     },
     {
@@ -622,11 +784,11 @@
       "longDescription": "Grok ผสานกับ X (Twitter) ทำให้เข้าถึงข้อมูล/เทรนด์เรียลไทม์ได้ดี มีหลายระดับแผนตั้งแต่ฟรีจนถึง SuperGrok Heavy สำหรับงาน multi-agent ที่ซับซ้อน",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-20",
-        "confidence": "probable",
+        "value": "2026-09-21",
+        "confidence": "verified",
         "sourceUrl": "https://x.ai/news/grok-4-7",
-        "lastVerified": "2026-09-30",
-        "note": "xAI (SpaceXAI) เปิดตัว Grok 4.7 วันที่ 20 ก.ย. 2026 โมเดลเรือธงสำหรับเขียนโค้ดและงานเอเจนต์ context 500k (อ้างอิงหน้าข่าวทางการผ่านผลค้นหา ยังไม่ได้เปิดอ่านเต็ม)"
+        "lastVerified": "2026-10-09",
+        "note": "เปิดตัว Grok 4.7 เมื่อ 21 ก.ย. 2026 (ประกาศบน x.ai)"
       },
       "capabilities": [],
       "pricing": {
@@ -657,12 +819,36 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Grok 4.7",
+          "releaseDate": {
+            "value": "2026-09-21",
+            "confidence": "verified",
+            "sourceUrl": "https://x.ai/news/grok-4-7",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ผู้พัฒนาเปิดตัว Grok 4.7 เป็นโมเดลที่เก่งที่สุดสำหรับงานโค้ดและงานความรู้ ราคาและความเร็วเท่า Grok 4.6 (บน API ชื่อ grok-4.7 context 500k ตาม docs.x.ai ซึ่งลงเดือน ก.ย. ไม่ระบุวัน)"
+        }
+      ],
       "strengths": ["ข้อมูลเรียลไทม์จากแพลตฟอร์ม X", "มีแผนราคาเริ่มต้นต่ำ (Lite)"],
       "weaknesses": ["แผนสูงสุดราคาแพงที่สุดในกลุ่มแชทบอท ($300)", "ไม่มี IP indemnification เลยในระดับ consumer — เสี่ยงเองถ้า Output ละเมิดลิขสิทธิ์บุคคลที่สาม"],
       "bestFor": ["ผู้ใช้ X ที่ต้องการติดตามเทรนด์เรียลไทม์", "งานที่ต้องอ้างอิงเหตุการณ์ปัจจุบัน"],
       "promptWorkflow": {"steps":["อ่านคำถาม/คำสั่งเป็นเป้าหมายหลัก","ดึงข้อมูลโพสต์ล่าสุดจาก X มาประกอบคำตอบเมื่อเกี่ยวข้อง","ตอบด้วยน้ำเสียงตรงไปตรงมา/มีอารมณ์ขันได้ตามสไตล์ของโมเดล"],"recommendedStructure":"[คำถาม/สิ่งที่ต้องการ] ระบุว่าอยากให้อ้างอิงกระแสบน X ล่าสุดหรือไม่","example":"ตอนนี้คนบน X พูดถึงเรื่องอะไรเกี่ยวกับการแข่งขันฟุตบอลคืนนี้บ้าง สรุปกระแสให้หน่อย"},
-      "lastUpdated": "2026-09-03",
-      "roadmap": { "checkedAt": "2026-09-30", "note": "ตรวจหน้าโมเดลของ xAI: ไม่พบกำหนดเลิกใช้หรือรุ่นที่ประกาศล่วงหน้า", "items": [] },
+      "lastUpdated": "2026-10-09",
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "รายการด้านล่างเป็นกำหนดเลิกโมเดลฝั่ง API ตามหน้า release notes ของ docs.x.ai ไม่ใช่แผนของแอป Grok และไม่พบประกาศรุ่นใหม่ล่วงหน้า",
+        "items": [
+          {
+            "kind": "retirement",
+            "text": "โมเดลสร้างภาพ grok-imagine-image-quality (API) จะเลิกใช้ และคำขอจะถูกส่งไป grok-imagine-image-2.0 ที่ quality=low",
+            "when": "2 พ.ย. 2026",
+            "sourceUrl": "https://docs.x.ai/docs/release-notes",
+            "lastVerified": "2026-10-09"
+          }
+        ]
+      },
       "latestVersion": { "name": "Grok 4.7", "releaseDate": null, "sourceUrl": "https://docs.x.ai/docs/models", "lastVerified": "2026-09-30", "note": "หน้าโมเดลของ xAI ระบุว่า \"the most capable model we've built\" และแนะนำเป็นค่าเริ่มต้น (ไม่ระบุวันเปิดตัว)" },
       "plansUrl": { "url": "https://grok.com/plans", "lastVerified": "2026-09-21" }
     },
@@ -680,7 +866,7 @@
         "value": "2026-09-10",
         "confidence": "verified",
         "sourceUrl": "https://api-docs.deepseek.com/updates",
-        "lastVerified": "2026-09-30",
+        "lastVerified": "2026-10-09",
         "note": "DeepSeek เปิดตัว DeepSeek-V4.1-Flash (10 ก.ย. 2026) รองรับภาพแบบ native และลดราคา API พร้อมให้บริการ V4 Pro ต่อหลัง 14 ก.ย. 2026"
       },
       "capabilities": [
@@ -731,12 +917,44 @@
           "label": "LMArena Text ELO (DeepSeek V4 Pro)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "DeepSeek-V4.1-Flash",
+          "releaseDate": {
+            "value": "2026-09-10",
+            "confidence": "verified",
+            "sourceUrl": "https://api-docs.deepseek.com/updates",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โมเดลที่เล็กที่สุดในสถาปัตยกรรมใหม่ มีความเข้าใจภาพแบบมัลติโมดัลในตัว"
+        },
+        {
+          "version": "DeepSeek-V4-Flash-Vision-Exp",
+          "releaseDate": {
+            "value": "2026-08-21",
+            "confidence": "verified",
+            "sourceUrl": "https://api-docs.deepseek.com/updates",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "โมเดลวิชันแบบทดลอง เรียกผ่าน model='deepseek-v4-flash-vision-exp'"
+        },
+        {
+          "version": "DeepSeek-V4-Pro (GA)",
+          "releaseDate": {
+            "value": "2026-08-13",
+            "confidence": "verified",
+            "sourceUrl": "https://api-docs.deepseek.com/updates",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เข้าสู่ GA บนแอป เว็บ และ API พร้อมความสามารถเอเจนต์ที่แข็งแรงขึ้น ชื่อโมเดล API ยังเป็น deepseek-v4-pro"
+        }
+      ],
       "strengths": ["ฟรี 100% ไม่จำกัดการใช้งาน", "ราคา API ถูกที่สุดกลุ่มหนึ่งในตลาด", "คุณภาพโมเดลใกล้เคียงผู้นำตลาด"],
       "weaknesses": ["ข้อกังวลด้านความเป็นส่วนตัว/แหล่งกำเนิดข้อมูลจากบริษัทจีน", "ไม่มีสิทธิ์เชิงพาณิชย์ที่ระบุชัดเจน"],
       "bestFor": ["มือใหม่ที่ไม่มีงบเลย", "นักพัฒนาที่ต้องการ API ราคาถูก"],
       "promptAdherence": { "imageAdherence": null, "videoAdherence": null, "audioAdherence": null, "chatInstructionFollowing": { "value": 80, "confidence": "inference", "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text", "lastVerified": "2026-09-03" } },
       "promptWorkflow": {"steps":["อ่านโจทย์/คำถามทั้งหมดก่อนเริ่มคิด","ให้น้ำหนักกับคำสั่งที่บอกให้ \"คิดทีละขั้น\" หรือ \"อธิบายเหตุผล\" เป็นพิเศษ","ตอบพร้อมแสดงเหตุผลประกอบเมื่อถูกร้องขอ"],"recommendedStructure":"[โจทย์/คำถาม] + \"ช่วยคิดทีละขั้นตอน\" หรือ \"อธิบายเหตุผลประกอบ\" ถ้าต้องการคำตอบที่ละเอียด","example":"ช่วยแก้โจทย์นี้ทีละขั้นตอนพร้อมอธิบายเหตุผล: ร้านค้าลดราคา 20% แล้วลดเพิ่มอีก 10% จากราคาลดแล้ว ราคาสุทธิลดไปกี่เปอร์เซ็นต์จากราคาเดิม"},
-      "lastUpdated": "2026-09-03",
+      "lastUpdated": "2026-10-09",
       "roadmap": { "checkedAt": "2026-09-30", "note": "หน้าอัปเดต API ของ DeepSeek ที่ตรวจไม่มีกำหนดเวลาในอนาคตที่ระบุไว้ (ชื่อโมเดลเก่า deepseek-chat/deepseek-reasoner ถูกเลิกแล้ว 24 ก.ค. 2026)", "items": [] },
       "latestVersion": { "name": "DeepSeek-V4.1-Flash", "releaseDate": "2026-09-10", "sourceUrl": "https://api-docs.deepseek.com/updates", "lastVerified": "2026-09-30", "note": "ตามหน้าอัปเดตของ DeepSeek: รุ่น Flash ขนาดเล็กสุดของสถาปัตยกรรมใหม่ รองรับภาพแบบ native; V4 Pro ยังให้บริการต่อหลัง 14 ก.ย. 2026 ราคาเดิม" }
     },
@@ -748,22 +966,54 @@
       "logoUrl": null,
       "websiteUrl": "https://chat.mistral.ai",
       "shortDescription": "แชทบอท AI จากบริษัทยุโรป (ฝรั่งเศส) ราคาแผนเสียเงินถูกที่สุดในกลุ่มผู้เล่นหลัก",
-      "longDescription": "Le Chat จาก Mistral AI เป็นทางเลือกจากยุโรป จุดขายคือราคา ถูกกว่า ChatGPT Plus และ Claude Pro ($14.99 เทียบกับ $20) แม้จะมี fair-use soft cap ที่จำกัดการใช้งานแบบ 'unlimited' จริงๆ ไว้ที่ราว 6 เท่าของแผนฟรี",
+      "longDescription": "Le Chat จาก Mistral AI เป็นทางเลือกจากยุโรป จุดขายคือราคา ถูกกว่า ChatGPT Plus และ Claude Pro ($14.99 เทียบกับ $20) แม้จะมี fair-use soft cap ที่จำกัดการใช้งานแบบ 'unlimited' จริงๆ ไว้ที่ราว 6 เท่าของแผนฟรี ปัจจุบัน Mistral รวม Chat กับ Work เป็นประสบการณ์เดียวชื่อ Vibe (ย้ายบัญชี Free/Pro/Teams ตั้งแต่ 14 ก.ย. 2026 และ Enterprise ตั้งแต่ 1 ต.ค. 2026)",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-14",
-        "confidence": "probable",
+        "value": "2026-09-22",
+        "confidence": "verified",
         "sourceUrl": "https://docs.mistral.ai/resources/release-notes",
-        "lastVerified": "2026-09-30",
-        "note": "Mistral เริ่มทยอยรวม Chat กับ Work เป็น Vibe (14 ก.ย. 2026) บัญชี Free/Pro/Teams ก่อน ส่วน Enterprise เริ่ม 1 ต.ค. (อ้างตามผลค้นหาหน้าทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+        "lastVerified": "2026-10-09",
+        "note": "Mistral รวม Chat กับ Work เป็นประสบการณ์ Vibe เดียว และเพิ่ม Spreadsheets/Mini App Canvas เมื่อ 22 ก.ย. 2026 (release notes บน docs.mistral.ai)"
       },
       "capabilities": [],
       "pricing": {
         "tier": "freemium",
         "plans": [
-          { "name": "Free", "priceUsdPerMonth": 0, "quota": "ใช้งานพื้นฐานฟรี", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://help.mistral.ai/en/articles/347630-who-owns-input-and-output-both-in-le-chat-or-mistral-s-apis", "lastVerified": "2026-09-03", "note": "Mistral ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output ผู้ใช้เป็นเจ้าของและใช้เชิงพาณิชย์ได้ แต่แผน Free/Vibe เทรนโมเดลจากข้อมูลผู้ใช้โดยดีฟอลต์ (มี opt-out)" } },
-          { "name": "Pro", "priceUsdPerMonth": 14.99, "quota": "การันตี 'unlimited' แต่มี fair-use soft cap ~6 เท่าของ Free (ประมาณ 120-150 ข้อความมาตรฐาน)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://help.mistral.ai/en/articles/347630-who-owns-input-and-output-both-in-le-chat-or-mistral-s-apis", "lastVerified": "2026-09-03" } },
-          { "name": "Team", "priceUsdPerMonth": 24.99, "quota": "ต่อผู้ใช้/เดือน (หรือ $19.99 หากจ่ายรายปี)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://legal.mistral.ai/terms/commercial-terms-of-service", "lastVerified": "2026-09-03", "note": "หากนำ Mistral ไปผสานกับผลิตภัณฑ์ของตัวเองที่แจกจ่ายให้ผู้ใช้ปลายทาง ต้องอ่าน Commercial Terms of Service แยกต่างหาก" } }
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "ข้อความและการค้นเว็บจำกัด, เซสชันเขียนโค้ดจำกัด, สร้าง/แก้ไขภาพพื้นฐาน, ตัวเชื่อม 100+ ตัว, Vibe บนเว็บและมือถือ",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://help.mistral.ai/en/articles/347630-who-owns-input-and-output-both-in-le-chat-or-mistral-s-apis",
+              "lastVerified": "2026-09-03",
+              "note": "Mistral ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output ผู้ใช้เป็นเจ้าของและใช้เชิงพาณิชย์ได้ แต่แผน Free/Vibe เทรนโมเดลจากข้อมูลผู้ใช้โดยดีฟอลต์ (มี opt-out)"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 14.99,
+            "quota": "ข้อความมากถึง 6 เท่าของ Free และค้นเว็บมากถึง 5 เท่า, ตอบเร็วขึ้น, เขียนโค้ดได้ทั้งวัน (CLI, IDE, เว็บ), สเปรดชีตและสไลด์, คลังเอกสาร 15GB, เครดิต API $15/เดือน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://help.mistral.ai/en/articles/347630-who-owns-input-and-output-both-in-le-chat-or-mistral-s-apis",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Team",
+            "priceUsdPerMonth": 24.99,
+            "quota": "ขีดจำกัดสูงกว่า Pro, ตอบเร็วขึ้น, พื้นที่ 30GB ต่อผู้ใช้, ยืนยันโดเมน, ส่งออกข้อมูล, Admin API",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://legal.mistral.ai/terms/commercial-terms-of-service",
+              "lastVerified": "2026-09-03",
+              "note": "หากนำ Mistral ไปผสานกับผลิตภัณฑ์ของตัวเองที่แจกจ่ายให้ผู้ใช้ปลายทาง ต้องอ่าน Commercial Terms of Service แยกต่างหาก"
+            }
+          }
         ],
         "freeQuota": "ใช้งานพื้นฐานฟรี",
         "commercialUseSummary": {
@@ -772,8 +1022,8 @@
           "sourceUrl": "https://help.mistral.ai/en/articles/347630-who-owns-input-and-output-both-in-le-chat-or-mistral-s-apis",
           "lastVerified": "2026-09-03"
         },
-        "sourceUrl": "https://www.grizzlypeaksoftware.com/articles/p/mistral-ai-pricing-in-2026-pro-costs-free-tier-limits-and-api-rates-lx4o2n2v",
-        "lastVerified": "2026-09-03"
+        "sourceUrl": "https://mistral.ai/pricing/",
+        "lastVerified": "2026-10-09"
       },
       "reviews": {
         "positiveThemes": ["ราคาแผน Pro ถูกที่สุดในกลุ่มผู้เล่นหลัก ($14.99)", "บริษัทยุโรป เหมาะผู้ใช้ที่ให้ความสำคัญกับ data residency ในยุโรป"],
@@ -797,12 +1047,36 @@
           "label": "LMArena Text ELO (Mistral Large 3)"
         }
       ],
+      "versionHistory": [
+        {
+          "version": "Vibe: รวม Chat กับ Work",
+          "releaseDate": {
+            "value": "2026-09-22",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.mistral.ai/resources/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Mistral รวม Chat และ Work เป็นประสบการณ์ Vibe เดียว (ย้ายบัญชี Free/Pro/Teams ตั้งแต่ 14 ก.ย. 2026 และ Enterprise ตั้งแต่ 1 ต.ค. 2026) พร้อมเพิ่ม Spreadsheets (วิเคราะห์/สร้าง Excel และ CSV ดาวน์โหลด .xlsx ได้ ในแผนเสียเงิน), Mini App Canvas (สร้างแดชบอร์ดจากพรอมต์) และ Agentic Knowledge Base (Public Preview)"
+        }
+      ],
       "strengths": ["ราคาแผนเสียเงินถูกที่สุดในกลุ่มผู้เล่นหลัก", "บริษัทยุโรป เหมาะกับผู้ที่กังวลเรื่อง data residency"],
       "weaknesses": ["'Unlimited' มี soft cap แอบแฝง", "ฐานผู้ใช้และคอมมูนิตี้เล็ก หาความช่วยเหลือยากกว่า"],
       "bestFor": ["ผู้ใช้งบจำกัดที่ต้องการแผนเสียเงินราคาประหยัด", "ผู้ใช้ในยุโรปที่ต้องการ data residency ในยุโรป"],
       "promptWorkflow": {"steps":["อ่านข้อความคำสั่งในแชทเป็นหลัก","รองรับหลายภาษาในยุโรปได้ดีเป็นพิเศษ","ให้น้ำหนักกับคำสั่งรูปแบบผลลัพธ์ที่ระบุไว้ชัดเจน"],"recommendedStructure":"[สิ่งที่ต้องการ] + [ภาษาที่ต้องการให้ตอบ ถ้าไม่ใช่ภาษาเดียวกับที่พิมพ์] + [รูปแบบคำตอบ]","example":"แปลอีเมลนี้เป็นภาษาฝรั่งเศสแบบเป็นทางการ แล้วตอบกลับเป็นภาษาฝรั่งเศสเท่านั้น"},
-      "lastUpdated": "2026-09-03",
-      "roadmap": { "checkedAt": "2026-09-30", "note": "ตรวจหน้ารายการโมเดลของ Mistral: กำหนดเลิกใช้ที่แสดงอยู่เป็นของอดีตทั้งหมด ไม่พบกำหนดในอนาคต", "items": [] },
+      "lastUpdated": "2026-10-09",
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจหน้า release notes ของ Mistral แล้ว ไม่พบแผนรุ่นใหม่ล่วงหน้า พบแต่กำหนดย้ายบัญชี Enterprise ไป Vibe",
+        "items": [
+          {
+            "kind": "announced",
+            "text": "บัญชี Enterprise จะถูกย้ายไปใช้ประสบการณ์ Vibe (รวม Chat กับ Work) เหมือนแผน Free/Pro/Teams ที่ย้ายตั้งแต่ 14 ก.ย. 2026",
+            "when": "เริ่ม 1 ต.ค. 2026",
+            "sourceUrl": "https://docs.mistral.ai/resources/release-notes",
+            "lastVerified": "2026-10-09"
+          }
+        ]
+      },
       "latestVersion": { "name": "Mistral Medium 3.5", "releaseDate": null, "sourceUrl": "https://docs.mistral.ai/getting-started/models/models_overview/", "lastVerified": "2026-09-21", "note": "รุ่นแรกในรายการ (เวอร์ชัน v26.04 ตามหน้าทางการ)" },
       "plansUrl": { "url": "https://mistral.ai/pricing/", "lastVerified": "2026-09-21" }
     }

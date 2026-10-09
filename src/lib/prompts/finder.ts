@@ -19,6 +19,8 @@ export interface FinderTool {
   shortDescription: string;
   /** Just enough for getSubscribeLink; affiliate data was already stripped at load when the switch is off. */
   link: LinkableTool;
+  /** Last product update with what the source said; null when the catalog has no sourced date. */
+  lastUpdate?: { value: string; note: string | null; sourceUrl: string | null } | null;
   /** Evidence this library already holds about the tool (guides, leaderboard snapshots). */
   evidence: FinderEvidence[];
   /** The catalog's own leaderboard signal, only when it measures this page's category. */

@@ -91,7 +91,8 @@ export interface UsageSignal {
 
 export interface VersionUpdate {
   version: string; // e.g. "GPT-5.2", "Gemini 3.7 Flash"
-  releaseDate: SourcedFact<string>; // ISO date the vendor actually shipped this version
+  /** ISO date the vendor actually shipped this version; value is null when no clear date exists (shown as "ไม่มีวันที่ที่ชัดเจน"). */
+  releaseDate: SourcedFact<string | null>;
   summary: string; // Thai: what changed in this version
 
   /**
@@ -101,7 +102,7 @@ export interface VersionUpdate {
    * sentiment (0-5, 0.5 steps), not a scraped review-site score unless one
    * was actually found and cited via sourceUrls.
    */
-  userSentiment: {
+  userSentiment?: {
     summary: string; // Thai
     starRating: number; // 0-5
     sourceUrls: string[];

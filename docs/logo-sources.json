@@ -32,8 +32,8 @@
     "from": "https://voice.botnoi.ai/assets/favicon.ico"
   },
   "adobe-podcast": {
-    "file": "/logos/adobe-podcast.ico",
-    "from": "https://podcast.adobe.com/favicon.ico"
+    "file": "/logos/adobe-podcast.svg",
+    "from": "https://podcast.adobe.com/adobe-podcast-favicon.svg"
   },
   "stable-audio": {
     "file": "/logos/stable-audio.png",
@@ -77,7 +77,7 @@
   },
   "claude-code": {
     "file": "/logos/claude-code.png",
-    "from": "https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67d31dd7aa394792257596c5_webclip.png"
+    "from": "https://code.claude.com/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon/apple-touch-icon.png"
   },
   "amazon-q-developer": {
     "file": "/logos/amazon-q-developer.png",

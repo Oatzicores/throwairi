@@ -379,7 +379,8 @@ function VersionCard({ v, isLatest }: { v: VersionUpdate; isLatest: boolean }) {
           </span>
         )}
         <span className="text-xs text-slate-500">
-          เปิดตัว {v.releaseDate.value}
+          {v.releaseDate.value ? `เปิดตัว ${v.releaseDate.value}` : "ไม่มีวันที่ที่ชัดเจน"}
+          {v.releaseDate.value && v.releaseDate.confidence !== "verified" && ` (วันที่ระดับ ${v.releaseDate.confidence})`}
           {v.releaseDate.sourceUrl && (
             <>
               {" "}
@@ -408,6 +409,12 @@ function VersionCard({ v, isLatest }: { v: VersionUpdate; isLatest: boolean }) {
         </button>
       )}
 
+      {!v.userSentiment && (
+        <p className="mt-3 text-xs text-slate-500">
+          ยังไม่ได้ค้นคว้าปฏิกิริยาของผู้ใช้จริงต่อเวอร์ชั่นนี้ จึงไม่แสดงคะแนนความรู้สึก
+        </p>
+      )}
+      {v.userSentiment && (
       <div className="mt-3 rounded-lg bg-slate-800/60 p-3">
         <div className="flex items-center justify-between gap-2">
           <h4 className="text-xs font-semibold text-slate-300">ผู้ใช้รู้สึกอย่างไรกับเวอร์ชั่นนี้</h4>
@@ -430,6 +437,7 @@ function VersionCard({ v, isLatest }: { v: VersionUpdate; isLatest: boolean }) {
           </div>
         )}
       </div>
+      )}
     </div>
   );
 }

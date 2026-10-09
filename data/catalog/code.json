@@ -11,21 +11,74 @@
       "longDescription": "GitHub Copilot เป็นผู้บุกเบิกตลาดผู้ช่วยเขียนโค้ด AI ผสานกับ GitHub/VS Code ได้ลึก ในปี 2026 เปลี่ยนมาใช้ระบบ AI Credits แบบ usage-based สำหรับ agent mode/chat/code review ขณะที่ code completion ยังฟรีในทุกแผนเสียเงิน",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-29",
+        "value": "2026-10-07",
         "confidence": "probable",
         "sourceUrl": "https://github.blog/changelog/label/copilot/",
-        "lastVerified": "2026-09-30",
-        "note": "GitHub เพิ่มโมเดล GPT-6.1 Sol (29 ก.ย. 2026) และ Claude Sonnet 5.5 (28 ก.ย.) ใน Copilot ตามหน้า changelog ทางการ"
+        "lastVerified": "2026-10-09",
+        "note": "GitHub Copilot รองรับ Claude Haiku 5.5 และ local sandboxing GA เมื่อ 7 ต.ค. 2026 (github.blog จึงได้แค่ probable ตามกฎ catalog:check)"
       },
       "capabilities": [],
       "pricing": {
         "tier": "freemium",
         "plans": [
-          { "name": "Free", "priceUsdPerMonth": 0, "quota": "โควตาจำกัด เหมาะทดลองใช้", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/", "lastVerified": "2026-09-03", "note": "GitHub ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output — โค้ดเป็นของผู้ใช้ แต่ไม่มี IP indemnification และตั้งแต่ เม.ย. 2026 ข้อมูลถูกใช้เทรนโมเดล AI (มี opt-out)" } },
-          { "name": "Pro", "priceUsdPerMonth": 10, "quota": "Code completion ฟรีไม่จำกัด, agent mode/chat/code review ใช้ AI Credits รวม $15/เดือน (พื้นฐาน $10 + flex $5)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/", "lastVerified": "2026-09-03", "note": "เช่นเดียวกับ Free — โค้ดเป็นของผู้ใช้ แต่ไม่มี IP indemnification และข้อมูลถูกใช้เทรนโมเดล (มี opt-out)" } },
-          { "name": "Pro+", "priceUsdPerMonth": 39, "quota": "AI Credits pool $70/เดือน (มากกว่า Pro 4 เท่าขึ้นไป) รวมเข้าถึงโมเดลระดับพรีเมียมอย่าง Opus", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/", "lastVerified": "2026-09-03" } },
-          { "name": "Max", "priceUsdPerMonth": 100, "quota": "AI Credits pool $200/เดือน สูงสุดสำหรับผู้ใช้งานหนัก เข้าถึงโมเดล/ฟีเจอร์ใหม่ก่อน", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/", "lastVerified": "2026-09-03" } },
-          { "name": "Business", "priceUsdPerMonth": 19, "quota": "ต่อผู้ใช้/เดือน รวมเครดิต AI $19/ที่นั่ง (ลดจากช่วงโปรโมชั่น $30 หลังโปรโมชั่นหมดอายุ 31 ส.ค. 2026 มีผล 1 ก.ย. 2026) พร้อมระบบ pooled credits และ admin controls", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/", "lastVerified": "2026-09-03", "note": "ระดับ Business/Enterprise เท่านั้นที่มี IP indemnification และไม่ถูกใช้ข้อมูลไปเทรนโมเดล" } }
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "ใช้แชท/เอเจนต์ได้จำกัด รองรับ CLI และโหมดเอเจนต์ มีโค้ดแนะนำอินไลน์ 2,000 ครั้งต่อเดือน (FAQ: 2,000 completions และ 50 chat requests รวม Copilot Edits) ซื้อเครดิตเพิ่มไม่ได้",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/",
+              "lastVerified": "2026-09-03",
+              "note": "GitHub ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output — โค้ดเป็นของผู้ใช้ แต่ไม่มี IP indemnification และตั้งแต่ เม.ย. 2026 ข้อมูลถูกใช้เทรนโมเดล AI (มี opt-out)"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 10,
+            "quota": "เครดิต AI พื้นฐาน $10 (รวม flex เป็น $15) โค้ดแนะนำอินไลน์ไม่จำกัด ซื้อเครดิตเพิ่มได้ (หน้าราคาเปลี่ยนจาก premium requests เป็น GitHub AI Credits: 1 เครดิต = $0.01)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/",
+              "lastVerified": "2026-09-03",
+              "note": "เช่นเดียวกับ Free — โค้ดเป็นของผู้ใช้ แต่ไม่มี IP indemnification และข้อมูลถูกใช้เทรนโมเดล (มี opt-out)"
+            }
+          },
+          {
+            "name": "Pro+",
+            "priceUsdPerMonth": 39,
+            "quota": "เครดิต AI พื้นฐาน $39 (รวม flex เป็น $70) โค้ดแนะนำอินไลน์ไม่จำกัด ซื้อเครดิตเพิ่มได้",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Max",
+            "priceUsdPerMonth": 100,
+            "quota": "เครดิต AI พื้นฐาน $100 (รวม flex เป็น $200) โค้ดแนะนำอินไลน์ไม่จำกัด ซื้อเครดิตเพิ่มได้",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Business",
+            "priceUsdPerMonth": 19,
+            "quota": "ต่อผู้ใช้/เดือน รวมเครดิต AI $19/ที่นั่ง (ลดจากช่วงโปรโมชั่น $30 หลังโปรโมชั่นหมดอายุ 31 ส.ค. 2026 มีผล 1 ก.ย. 2026) พร้อมระบบ pooled credits และ admin controls",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://terms.law/ai-output-rights/github-copilot/",
+              "lastVerified": "2026-09-03",
+              "note": "ระดับ Business/Enterprise เท่านั้นที่มี IP indemnification และไม่ถูกใช้ข้อมูลไปเทรนโมเดล"
+            }
+          }
         ],
         "freeQuota": "โควตาจำกัดสำหรับทดลองใช้",
         "commercialUseSummary": {
@@ -35,7 +88,7 @@
           "lastVerified": "2026-09-03"
         },
         "sourceUrl": "https://github.com/features/copilot/plans",
-        "lastVerified": "2026-09-07"
+        "lastVerified": "2026-10-09"
       },
       "reviews": {
         "positiveThemes": ["ผสานกับ GitHub/VS Code ได้ลึกที่สุด", "Code completion ฟรีไม่จำกัดในทุกแผนเสียเงิน", "แผน Business เหมาะกับทีมที่ใช้ GitHub อยู่แล้ว"],
@@ -47,12 +100,59 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา/ข่าวการเปลี่ยนระบบ billing ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Claude Haiku 5.5 ใน GitHub Copilot",
+          "releaseDate": {
+            "value": "2026-10-07",
+            "confidence": "probable",
+            "sourceUrl": "https://github.blog/changelog/label/copilot/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่ม Claude Haiku 5.5 เป็นโมเดลที่เลือกใช้ได้ใน Copilot (github.blog ระบุแค่หัวข้อ)"
+        },
+        {
+          "version": "Local sandboxing เข้าสู่ GA",
+          "releaseDate": {
+            "value": "2026-10-07",
+            "confidence": "probable",
+            "sourceUrl": "https://github.blog/changelog/label/copilot/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ฟีเจอร์ sandbox ในเครื่องสำหรับ GitHub Copilot เปิดให้ใช้ทั่วไป"
+        },
+        {
+          "version": "โมเดลตรวจจับความลับที่รั่ว",
+          "releaseDate": {
+            "value": "2026-10-07",
+            "confidence": "probable",
+            "sourceUrl": "https://github.blog/changelog/label/copilot/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "แนะนำโมเดลเฉพาะทางสำหรับตรวจจับความลับ (secrets) ที่รั่วไหล"
+        },
+        {
+          "version": "Copilot code review: รองรับ API และเปลี่ยนระดับ effort เริ่มต้น",
+          "releaseDate": {
+            "value": "2026-10-02",
+            "confidence": "probable",
+            "sourceUrl": "https://github.blog/changelog/label/copilot/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่ม API สำหรับ code review และปรับระดับ effort ค่าเริ่มต้น"
+        }
+      ],
       "strengths": ["ผสานกับ GitHub/VS Code ลึกที่สุดในตลาด", "Code completion ฟรีไม่จำกัดทุกแผนเสียเงิน", "รองรับ IDE หลากหลาย"],
       "weaknesses": ["เปลี่ยนเป็น usage-based billing ทำให้ค่าใช้จ่ายคาดเดายากขึ้น", "IP indemnification มีเฉพาะ Business/Enterprise — แผน Free/Pro เสี่ยงเองถ้าโค้ดที่ได้ละเมิดลิขสิทธิ์บุคคลที่สาม", "ข้อมูล Free/Pro/Pro+ ถูกใช้เทรนโมเดล AI โดยดีฟอลต์ตั้งแต่ เม.ย. 2026"],
       "bestFor": ["นักพัฒนาที่ใช้ GitHub/VS Code เป็นหลัก", "ทีมองค์กรที่ต้องการ admin controls"],
       "promptWorkflow": {"steps":["อ่านโค้ดรอบเคอร์เซอร์และไฟล์ที่เปิดอยู่เป็นบริบทหลัก","อ่านคอมเมนต์ที่พิมพ์บอกสิ่งที่ต้องการทำเป็นคำสั่งหลัก","เดาความต่อเนื่องจากชื่อฟังก์ชัน/ตัวแปรที่ตั้งไว้"],"recommendedStructure":"// คอมเมนต์บอกสิ่งที่ต้องการให้ฟังก์ชันทำ ตามด้วยชื่อฟังก์ชันที่สื่อความหมาย","example":"// ฟังก์ชันคำนวณราคารวมหลังหักส่วนลด รับ array ของราคาสินค้าและเปอร์เซ็นต์ส่วนลด\nfunction calculateDiscountedTotal(prices, discountPercent) {"},
-      "lastUpdated": "2026-09-07",
-      "plansUrl": { "url": "https://github.com/features/copilot/plans", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://github.com/features/copilot/plans", "lastVerified": "2026-09-21" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจหน้า changelog ของ GitHub Copilot (github.blog/changelog/label/copilot) พบหัวข้อ 'Selected models in GitHub Copilot deprecated' ลงวันที่ 2 ต.ค. 2026 แต่หน้ารายการไม่แสดงรายละเอียดว่าโมเดลใดและเมื่อไร จึงไม่ลงเป็นกำหนดการแล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "cursor",
@@ -65,11 +165,11 @@
       "longDescription": "Cursor เป็น code editor ที่สร้างขึ้นมาเพื่อ AI โดยเฉพาะ (ไม่ใช่ปลั๊กอินเสริม) มี agent mode ที่ทำงานอัตโนมัติหลายไฟล์พร้อมกัน ราคาแบบ credit-based ทำให้ต้นทุนจริงขึ้นกับการเลือกโมเดล",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-23",
+        "value": "2026-10-06",
         "confidence": "verified",
         "sourceUrl": "https://cursor.com/changelog",
-        "lastVerified": "2026-09-30",
-        "note": "Cursor เปิดตัว Rollouts และ Security Review (23 ก.ย. 2026); ก่อนหน้านี้มี Projects (10 ก.ย.) และ Self-hosted Machines (2 ก.ย.)"
+        "lastVerified": "2026-10-09",
+        "note": "Cursor เพิ่มการควบคุมเอเจนต์ในเครื่องจากแอป iOS เมื่อ 6 ต.ค. 2026"
       },
       "capabilities": [],
       "pricing": {
@@ -102,12 +202,69 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Remote control สำหรับเอเจนต์ในเครื่อง",
+          "releaseDate": {
+            "value": "2026-10-06",
+            "confidence": "verified",
+            "sourceUrl": "https://cursor.com/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ดูและตอบเอเจนต์ที่รันบนคอมพิวเตอร์ของคุณได้จากแอป Cursor บน iOS"
+        },
+        {
+          "version": "Rollouts และ Security Review",
+          "releaseDate": {
+            "value": "2026-09-23",
+            "confidence": "verified",
+            "sourceUrl": "https://cursor.com/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "บอทใหม่ 2 ตัว: Rollouts ตรวจสุขภาพการ deploy แยกตามสภาพแวดล้อม และ Security Review รายงานบั๊กที่ถูกโจมตีได้บน pull request (แผน Teams และ Enterprise)"
+        },
+        {
+          "version": "Cursor Projects (เบต้า)",
+          "releaseDate": {
+            "value": "2026-09-10",
+            "confidence": "verified",
+            "sourceUrl": "https://cursor.com/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "พื้นที่ทำงานสำหรับงานใหญ่ เช่น ฟีเจอร์ การย้ายระบบ หรือแอปทั้งตัว โดยเอเจนต์ผู้ประสานงานวางแผน มอบหมายให้เอเจนต์อื่น และเก็บบริบทร่วมต่อเนื่อง"
+        },
+        {
+          "version": "Self-hosted machines",
+          "releaseDate": {
+            "value": "2026-09-02",
+            "confidence": "verified",
+            "sourceUrl": "https://cursor.com/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ให้การรันเครื่องมืออยู่ในเครือข่ายของคุณเอง และตั้งกลุ่ม worker ของทีมที่ขยายตามความต้องการ"
+        },
+        {
+          "version": "เริ่มงานโดยไม่ต้องมี repo",
+          "releaseDate": {
+            "value": "2026-08-27",
+            "confidence": "verified",
+            "sourceUrl": "https://cursor.com/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Cloud Agents เริ่มได้โดยไม่ต้องเชื่อมผู้ให้บริการ source control และบันทึกงานไปที่ repo ของ Cursor Origin ทีหลังได้"
+        }
+      ],
       "strengths": ["Agent mode ทรงพลัง เขียนโค้ดข้ามหลายไฟล์ได้", "เป็น editor แยกเดี่ยวออกแบบมาเพื่อ AI โดยเฉพาะ"],
       "weaknesses": ["ค่าใช้จ่ายจริงคาดเดายากเพราะเป็นระบบเครดิต", "แผนสูงสุดราคาแพงมาก"],
       "bestFor": ["นักพัฒนาที่ต้องการ agent เขียนโค้ดอัตโนมัติ", "ทีมที่พร้อมจ่ายเพื่อความเร็วในการพัฒนา"],
       "promptWorkflow": {"steps":["อ่านไฟล์/โค้ดที่เลือกไว้หรือเปิดอยู่เป็นบริบทหลัก","อ่านคำสั่งแชทที่พิมพ์เป็นเป้าหมายการแก้ไข","อ้างอิงไฟล์อื่นในโปรเจกต์เพิ่มเติมเมื่อพิมพ์ @ชื่อไฟล์"],"recommendedStructure":"อธิบายเป้าหมายที่ต้องการแก้ + ระบุไฟล์ที่เกี่ยวข้องด้วย @filename ถ้าจำเป็น","example":"แก้ฟังก์ชันใน @utils/auth.ts ให้ตรวจสอบ token หมดอายุก่อน แล้ว refresh อัตโนมัติ"},
-      "lastUpdated": "2026-09-07",
-      "plansUrl": { "url": "https://cursor.com/pricing", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://cursor.com/pricing", "lastVerified": "2026-09-21" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจหน้า changelog ของ Cursor (cursor.com/changelog)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "windsurf",
@@ -130,10 +287,51 @@
       "pricing": {
         "tier": "freemium",
         "plans": [
-          { "name": "Free", "priceUsdPerMonth": 0, "quota": "Tab autocomplete ไม่จำกัด + โควตา agent จำกัดรายวัน/สัปดาห์", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://windsurf.com/terms-of-service-individual", "lastVerified": "2026-09-03", "note": "Cognition มอบสิทธิ์ทรัพย์สินทางปัญญาใน Output ให้ผู้ใช้เต็มรูปแบบทุกแผน" } },
-          { "name": "Pro", "priceUsdPerMonth": 20, "quota": "โควตา agent สูงขึ้น รวมโมเดล Claude Sonnet 4.6, GPT-5.4, SWE-1.5", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://windsurf.com/terms-of-service-individual", "lastVerified": "2026-09-03" } },
-          { "name": "Max", "priceUsdPerMonth": 200, "quota": "โควตาสูงสุดสำหรับบุคคล", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://windsurf.com/terms-of-service-individual", "lastVerified": "2026-09-03" } },
-          { "name": "Teams", "priceUsdPerMonth": 40, "quota": "$40/เดือนต่อที่นั่งเต็มสิทธิ์ + ค่าแพ็กเกจทีม $80/เดือน (ตามหน้าราคา devin.ai ณ 2026-09-30)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://windsurf.com/terms-of-service-teams", "lastVerified": "2026-09-03" } }
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "Tab autocomplete ไม่จำกัด + โควตา agent จำกัดรายวัน/สัปดาห์",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://windsurf.com/terms-of-service-individual",
+              "lastVerified": "2026-09-03",
+              "note": "Cognition มอบสิทธิ์ทรัพย์สินทางปัญญาใน Output ให้ผู้ใช้เต็มรูปแบบทุกแผน"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 20,
+            "quota": "โควตา agent สูงขึ้น รวมโมเดล Claude Sonnet 4.6, GPT-5.4, SWE-1.5",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://windsurf.com/terms-of-service-individual",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Max",
+            "priceUsdPerMonth": 200,
+            "quota": "โควตาสูงสุดสำหรับบุคคล",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://windsurf.com/terms-of-service-individual",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Teams",
+            "priceUsdPerMonth": 40,
+            "quota": "$40/เดือนต่อที่นั่งเต็มสิทธิ์ + ค่าแพ็กเกจทีม $80/เดือน (ตามหน้าราคา devin.ai ณ 2026-09-30)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://windsurf.com/terms-of-service-teams",
+              "lastVerified": "2026-09-03"
+            }
+          }
         ],
         "freeQuota": "Tab autocomplete ไม่จำกัด แม้ในแผนฟรี",
         "commercialUseSummary": {
@@ -142,8 +340,8 @@
           "sourceUrl": "https://windsurf.com/terms-of-service-individual",
           "lastVerified": "2026-09-03"
         },
-        "sourceUrl": "https://www.cloudzero.com/blog/windsurf-pricing/",
-        "lastVerified": "2026-09-03"
+        "sourceUrl": "https://devin.ai/pricing",
+        "lastVerified": "2026-10-09"
       },
       "reviews": {
         "positiveThemes": ["Tab autocomplete ไม่จำกัดแม้แผนฟรี", "เปลี่ยนจากระบบเครดิตเป็นโควตาชัดเจน คาดเดาค่าใช้จ่ายง่ายขึ้น", "มีส่วนลดนักศึกษา ~50%"],
@@ -155,11 +353,23 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "ปรับโครงสร้างราคาใหม่ (เลิกเครดิต เปลี่ยนเป็นโควตา) และเปลี่ยนชื่อเป็น Devin",
+          "releaseDate": {
+            "value": "2026-03-19",
+            "confidence": "probable",
+            "sourceUrl": "https://www.cloudzero.com/blog/windsurf-pricing/",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "วันที่ปรับโครงสร้างราคาใหม่ทั้งหมดตามบทวิเคราะห์ของ CloudZero (บุคคลที่สาม) ปัจจุบันหน้าราคาทางการ devin.ai/pricing ใช้ชื่อ Devin และแผน Free/Pro $20/Max $200/Teams $80 + $40 ต่อที่นั่ง ไม่ระบุวันที่เปลี่ยนชื่อ"
+        }
+      ],
       "strengths": ["Tab autocomplete ไม่จำกัดทุกแผนรวมฟรี", "โควตาแบบรายวัน/สัปดาห์คาดเดาง่ายกว่าระบบเครดิต", "มีส่วนลดนักศึกษา"],
       "weaknesses": ["ราคา Pro ปรับขึ้นเมื่อต้นปี 2026", "แผน Max ราคาสูง"],
       "bestFor": ["นักพัฒนาที่ต้องการ autocomplete ไม่จำกัดแบบฟรี", "นักศึกษาที่มีอีเมล .edu"],
       "promptWorkflow": {"steps":["อ่านบริบทโปรเจกต์ทั้งหมดที่เกี่ยวข้องผ่านระบบ Cascade","อ่านคำสั่งที่พิมพ์เป็นเป้าหมายงาน","วางแผนขั้นตอนแก้ไขหลายไฟล์อัตโนมัติก่อนลงมือ"],"recommendedStructure":"อธิบายเป้าหมายระดับงาน (ไม่ต้องบอกทีละไฟล์) ให้ AI วางแผนเองว่าต้องแก้ไฟล์ไหนบ้าง","example":"เพิ่มระบบ dark mode ให้ทั้งแอป โดยใช้ CSS variable และจำค่าที่ผู้ใช้เลือกไว้ใน localStorage"},
-      "lastUpdated": "2026-09-03",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://devin.ai/pricing", "lastVerified": "2026-09-30" }
     },
     {
@@ -173,11 +383,11 @@
       "longDescription": "Claude Code เป็นเครื่องมือ agentic แบบ command-line ที่เชื่อมกับโมเดล Claude โดยตรง ไม่มีค่าบริการแยกต่างหาก แต่ใช้โควตาร่วมกับแผน Claude ปกติ (Pro/Max/Team) หรือจ่ายตามการใช้งานจริงผ่าน API key",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-28",
-        "confidence": "probable",
+        "value": "2026-10-08",
+        "confidence": "verified",
         "sourceUrl": "https://code.claude.com/docs/en/changelog",
-        "lastVerified": "2026-09-30",
-        "note": "Claude Code เวอร์ชัน 2.1.284 (28 ก.ย. 2026) ตั้ง Claude Sonnet 5.5 เป็น Sonnet ค่าเริ่มต้น context 1M (อ้างตามผลค้นหา changelog ทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+        "lastVerified": "2026-10-09",
+        "note": "Claude Code 2.1.295 ออกเมื่อ 8 ต.ค. 2026 ตาม changelog บน code.claude.com"
       },
       "capabilities": [],
       "pricing": {
@@ -185,7 +395,7 @@
         "plans": [
           { "name": "รวมอยู่ใน Claude Pro", "priceUsdPerMonth": 20, "quota": "ใช้โควตาร่วมกับ Claude Pro (ไม่มีโควตาแยกสำหรับ Claude Code)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://www.anthropic.com/legal/commercial-terms", "lastVerified": "2026-09-03" } },
           { "name": "รวมอยู่ใน Claude Max 5x", "priceUsdPerMonth": 100, "quota": "โควตาสูงขึ้นราว 5 เท่าของ Pro", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://www.anthropic.com/legal/commercial-terms", "lastVerified": "2026-09-03" } },
-          { "name": "จ่ายตามการใช้งาน (API key)", "priceUsdPerMonth": null, "quota": "Sonnet 5.5 $2/$10, Opus 5.5 $4/$20, Fable 5.1 $10/$50, Haiku 4.5 $1/$5 ต่อล้าน token (input/output) ตามตารางราคา API ของ Anthropic ณ 30 ก.ย. 2026", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://www.anthropic.com/legal/commercial-terms", "lastVerified": "2026-09-03" } }
+          { "name": "จ่ายตามการใช้งาน (API key)", "priceUsdPerMonth": null, "quota": "Sonnet 5.5 $2/$10, Opus 5.5 $4/$20, Fable 5.1 $10/$50, Haiku 5.5 $0.10/$0.50 (พรอมต์ไม่เกิน 100,000 token; เกินนั้น $0.50/$2.50) ต่อล้าน token (input/output) ตามตารางราคา API ของ Anthropic ณ 9 ต.ค. 2026", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://www.anthropic.com/legal/commercial-terms", "lastVerified": "2026-09-03" } }
         ],
         "freeQuota": null,
         "commercialUseSummary": {
@@ -195,7 +405,7 @@
           "lastVerified": "2026-09-03"
         },
         "sourceUrl": "https://claude.com/pricing",
-        "lastVerified": "2026-09-07"
+        "lastVerified": "2026-10-09"
       },
       "reviews": {
         "positiveThemes": ["เขียนโค้ดคุณภาพสูงในเทอร์มินัลโดยตรง ไม่ต้องสลับ IDE", "ใช้โควตาร่วมกับ Claude Pro/Max ที่มีอยู่แล้ว ไม่ต้องจ่ายซ้ำซ้อนถ้ามีแผนอยู่แล้ว"],
@@ -207,13 +417,78 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "2.1.295",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "verified",
+            "sourceUrl": "https://code.claude.com/docs/en/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่ม onFailure: \"block\" ให้ hook แบบคำสั่งและ HTTP (ถ้า hook เริ่มไม่ได้ หมดเวลา หรือจบผิดปกติ จะบล็อกการกระทำแทนที่จะปล่อยผ่าน) และเปลี่ยนให้ตัวเชื่อม claude.ai เจรจา MCP protocol เวอร์ชัน 2026-07-28 เป็นค่าเริ่มต้น (ปิดได้ด้วย MCP_PROTOCOL_NEGOTIATION=legacy) ข้อความ WebSocket MCP ที่เกิน 16 MiB จะไม่ถูกอ่านและปิดการเชื่อมต่อ"
+        },
+        {
+          "version": "2.1.294",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "verified",
+            "sourceUrl": "https://code.claude.com/docs/en/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "รุ่นแก้บั๊กอย่างเดียว: hook แบบ prompt/agent ที่เขียนเป็นคำสั่ง (เช่น \"บล็อกคำสั่งที่...\") บังคับตามที่เขียนจริง และ hook Stop/SubagentStop ถูกตัดสินรัดกุมขึ้น ลดโอกาสที่ Claude หยุดก่อนงานเสร็จ"
+        },
+        {
+          "version": "2.1.293",
+          "releaseDate": {
+            "value": "2026-10-07",
+            "confidence": "verified",
+            "sourceUrl": "https://code.claude.com/docs/en/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ใช้ Claude Haiku 5.5 (claude-haiku-5-5) เป็น Haiku เริ่มต้นบน Anthropic API (context 1M, $0.10/$0.50 ต่อล้าน token) ย้อนกลับการเปลี่ยนข้อความปฏิเสธของ auto mode และลดความถี่ซิงก์ skill จาก claude.ai เหลือราว 40 นาทีเมื่อไม่มี session ใช้งาน"
+        },
+        {
+          "version": "2.1.292",
+          "releaseDate": {
+            "value": "2026-10-06",
+            "confidence": "verified",
+            "sourceUrl": "https://code.claude.com/docs/en/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่ม --marketplace <source> ให้ claude plugin install (เพิ่ม marketplace ให้ถ้ายังไม่มีแล้วติดตั้ง), พารามิเตอร์ effort ของเครื่องมือ Agent, ตัวแปร CLAUDE_CODE_OVERLOADED_RETRY_BASE_DELAY_MS สำหรับ retry 529 และให้ MCP แบบ stdio ในเครื่องเจรจา protocol 2026-07-28 เป็นค่าเริ่มต้น ชื่อ agent ที่ยาวเกิน 256 ตัวอักษรจะถูกปฏิเสธ"
+        },
+        {
+          "version": "2.1.290",
+          "releaseDate": {
+            "value": "2026-10-05",
+            "confidence": "verified",
+            "sourceUrl": "https://code.claude.com/docs/en/changelog",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "claude attach/logs รับชื่อ session บางส่วนแทน ID ได้, เปิด Claude in Chrome จากไฟล์ตั้งค่าของโปรเจกต์ไม่ได้อีก (ต้องใช้ --chrome, /chrome หรือการตั้งค่าผู้ใช้) และโควตา WebSearch ใน session โต้ตอบเติมรอบละ 100 ครั้งต่อชั่วโมงแทนการหมดที่ 200 ครั้ง"
+        }
+      ],
       "strengths": ["เขียน/แก้โค้ดในเทอร์มินัลโดยตรง เหมาะ workflow นักพัฒนาสาย CLI", "ใช้โควตาร่วมกับ Claude Pro/Max ที่มีอยู่แล้วได้", "สิทธิ์เชิงพาณิชย์ชัดเจนตาม Anthropic ToS"],
       "weaknesses": ["ไม่มีแผนฟรีเฉพาะ ต้องมี Claude Pro ขึ้นไป", "โควตาใช้ร่วมกับแชท Claude ทำให้หมดเร็วถ้าใช้หนักทั้งคู่"],
       "bestFor": ["นักพัฒนาที่ถนัดทำงานผ่านเทอร์มินัล/CLI", "ผู้ใช้ Claude Pro/Max อยู่แล้วที่อยากได้เครื่องมือเขียนโค้ด"],
       "promptWorkflow": {"steps":["อ่านโครงสร้างโปรเจกต์และไฟล์ที่เกี่ยวข้องเองโดยอัตโนมัติ","อ่านคำสั่งที่พิมพ์เป็นเป้าหมายงานระดับสูง","วางแผนและลงมือแก้ไขหลายไฟล์/รันคำสั่งเทอร์มินัลได้เองตามบริบท"],"recommendedStructure":"อธิบายเป้าหมายเป็นภาษาพูดธรรมชาติ ระบุไฟล์/โฟลเดอร์ที่เกี่ยวข้องถ้ารู้ ปล่อยให้ AI สำรวจโค้ดเองได้","example":"ช่วยแก้บั๊กที่หน้า login แล้ว error เวลากรอกอีเมลผิดฟอร์แมต ให้โชว์ข้อความแจ้งเตือนใต้ช่องกรอกแทน"},
-      "lastUpdated": "2026-09-07",
-      "plansUrl": { "url": "https://claude.com/pricing", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://claude.com/pricing", "lastVerified": "2026-09-21" },
+      "latestVersion": {
+        "name": "Claude Code 2.1.295",
+        "releaseDate": "2026-10-08",
+        "sourceUrl": "https://code.claude.com/docs/en/changelog",
+        "lastVerified": "2026-10-09",
+        "note": "ตาม changelog ทางการของ Claude Code (ออก 2.1.293–2.1.295 ภายใน 7–8 ต.ค. 2026)"
+      },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "หน้าผลิตภัณฑ์ claude.com/product/claude-code และ changelog ไม่ประกาศกำหนดการล่วงหน้าหรือการเลิกใช้งานของ Claude Code เอง รายการที่เห็นเป็นฟีเจอร์ที่เปิดแล้วหรืออยู่ใน preview (fast mode เป็น research preview, self-hosted environments เป็น public beta) ไม่ใช่แผนในอนาคต",
+        "items": []
+      }
     },
+
     {
       "id": "amazon-q-developer",
       "name": "Amazon Q Developer",
@@ -235,8 +510,30 @@
       "pricing": {
         "tier": "freemium",
         "plans": [
-          { "name": "Free", "priceUsdPerMonth": 0, "quota": "50 agentic requests/เดือน, code transform สูงสุด 1,000 บรรทัด Java, chat และ security scanning", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aws.amazon.com/q/developer/faqs/", "lastVerified": "2026-09-03", "note": "ใช้เชิงพาณิชย์ได้ แต่ไม่มี IP indemnity และโค้ด/บทสนทนาในแผนฟรีอาจถูกเก็บ/ประมวลผลเพื่อพัฒนาบริการ" } },
-          { "name": "Pro", "priceUsdPerMonth": 19, "quota": "ต่อผู้ใช้/เดือน, code transform 4,000 บรรทัด/เดือน (pooled), agent interactions ไม่จำกัด", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aws.amazon.com/q/developer/faqs/", "lastVerified": "2026-09-03", "note": "แผน Pro มี IP indemnity รวมอยู่ด้วย และไม่ใช้เนื้อหาผู้ใช้เพื่อพัฒนาบริการ" } }
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "คำขอแบบเอเจนต์ (แชท/เขียนโค้ด) 50 ครั้งต่อเดือน, แปลงโค้ด Java 1,000 บรรทัดต่อผู้ใช้ต่อเดือน, เลือกไม่ให้เก็บข้อมูลได้เอง",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://aws.amazon.com/q/developer/faqs/",
+              "lastVerified": "2026-09-03",
+              "note": "ใช้เชิงพาณิชย์ได้ แต่ไม่มี IP indemnity และโค้ด/บทสนทนาในแผนฟรีอาจถูกเก็บ/ประมวลผลเพื่อพัฒนาบริการ"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 19,
+            "quota": "$19 ต่อผู้ใช้ต่อเดือน ขีดจำกัดสูงขึ้น, แปลงโค้ด Java 4,000 บรรทัดต่อผู้ใช้ต่อเดือน (รวมเป็นกองกลางของบัญชี) เกินคิด $0.003 ต่อบรรทัด, แดชบอร์ดผู้ดูแล, IP indemnity, ไม่เก็บข้อมูลอัตโนมัติ",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://aws.amazon.com/q/developer/faqs/",
+              "lastVerified": "2026-09-03",
+              "note": "แผน Pro มี IP indemnity รวมอยู่ด้วย และไม่ใช้เนื้อหาผู้ใช้เพื่อพัฒนาบริการ"
+            }
+          }
         ],
         "freeQuota": "50 agentic requests/เดือน",
         "commercialUseSummary": {
@@ -245,8 +542,8 @@
           "sourceUrl": "https://aws.amazon.com/q/developer/faqs/",
           "lastVerified": "2026-09-03"
         },
-        "sourceUrl": "https://www.superblocks.com/blog/amazon-qdeveloper-pricing",
-        "lastVerified": "2026-09-03"
+        "sourceUrl": "https://aws.amazon.com/q/developer/pricing/",
+        "lastVerified": "2026-10-09"
       },
       "reviews": {
         "positiveThemes": ["ผสานกับบริการ AWS ได้ลึก เหมาะทีมที่ใช้ AWS", "แผนฟรีให้ agentic requests และ security scanning"],
@@ -258,11 +555,23 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "AWS ปิดรับสมัครสมาชิกใหม่",
+          "releaseDate": {
+            "value": "2026-05-15",
+            "confidence": "probable",
+            "sourceUrl": "https://www.superblocks.com/blog/amazon-qdeveloper-pricing",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "วันที่ AWS ปิดรับสมัครสมาชิกใหม่ของผลิตภัณฑ์นี้ตามบทวิเคราะห์ของบุคคลที่สาม ซึ่งเป็นการเปลี่ยนแปลงล่าสุดที่ยืนยันได้ (หน้าราคาทางการยังแสดงแผน Free และ Pro $19 ต่อผู้ใช้)"
+        }
+      ],
       "strengths": ["ผสานกับ AWS ได้ลึก", "แผนฟรีใช้งานได้จริงสำหรับงานเล็กๆ"],
       "weaknesses": ["กำลังถูกยุติ/แทนที่ด้วย Kiro — ไม่เหมาะลงทุนระยะยาว", "ปิดรับสมัครสมาชิกใหม่ตั้งแต่ พ.ค. 2026"],
       "bestFor": ["ทีมที่ผูกกับ AWS อยู่แล้วและต้องการทดลองระยะสั้น"],
       "promptWorkflow": {"steps":["อ่านโค้ดและบริบท AWS resource ที่เชื่อมต่อไว้เป็นหลัก","อ่านคำสั่ง/คำถามที่พิมพ์เป็นเป้าหมาย","แนะนำโค้ดที่สอดคล้องกับ AWS best practice โดยอัตโนมัติ"],"recommendedStructure":"ระบุ service/resource AWS ที่เกี่ยวข้อง + สิ่งที่ต้องการให้โค้ดทำ","example":"เขียน Lambda function ที่อ่านไฟล์จาก S3 bucket แล้วบันทึกข้อมูลลง DynamoDB table ชื่อ Orders"},
-      "lastUpdated": "2026-09-03",
+      "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://aws.amazon.com/q/developer/pricing/", "lastVerified": "2026-09-21" }
     },
     {
@@ -276,11 +585,11 @@
       "longDescription": "Tabnine เน้นตลาดองค์กรที่ต้องการควบคุมความเป็นส่วนตัวของโค้ด (IP protection, self-hosted deployment) ยกเลิกแผนฟรีไปแล้วตั้งแต่ปี 2025 ปัจจุบันมีเฉพาะแผนเสียเงินราคาสูง (หมายเหตุ 2026-09-30: เว็บ tabnine.com ถูกส่งต่อไปที่ Tricentis จึงยังยืนยันจากผู้ให้บริการไม่ได้ว่าผลิตภัณฑ์และราคายังเปิดขายตามข้อมูลนี้หรือไม่)",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-08-30",
-        "confidence": "probable",
+        "value": "2026-10-08",
+        "confidence": "verified",
         "sourceUrl": "https://docs.tabnine.com/main/administering-tabnine/release-notes",
-        "lastVerified": "2026-09-03",
-        "note": "เวอร์ชัน v6.5.4 — แก้บั๊ก attribution feedback และปรับปรุง web fetch tool"
+        "lastVerified": "2026-10-09",
+        "note": "Tabnine v6.6.9 (8 ต.ค. 2026) เพิ่มการอ่านปัญหา Jira แบบอ่านอย่างเดียวใน Tabnine CLI ตามหมายเหตุการออกรุ่นบน docs.tabnine.com (หมายเหตุ: tabnine.com เด้งไป Tricentis ยืนยันสถานะผลิตภัณฑ์ไม่ได้)"
       },
       "capabilities": [],
       "pricing": {
@@ -309,12 +618,66 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้ — ไม่เหมาะกับมือใหม่เพราะไม่มีแผนฟรี"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "v6.6.9",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.tabnine.com/main/administering-tabnine/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่มการเข้าถึง Jira issue แบบอ่านอย่างเดียวใน Tabnine CLI (OpenCode) และเซ็นรับรองโค้ดตัวติดตั้ง Windows MDM"
+        },
+        {
+          "version": "v6.6.8",
+          "releaseDate": {
+            "value": "2026-10-04",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.tabnine.com/main/administering-tabnine/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "แก้ข้อมูลการใช้งานและต้นทุนของ Gemini ที่นับ cached token ซ้ำ และปัญหาความเข้ากันได้กับเอเจนต์ OpenCode ใน IDE"
+        },
+        {
+          "version": "v6.6.6",
+          "releaseDate": {
+            "value": "2026-09-28",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.tabnine.com/main/administering-tabnine/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่มคำสั่ง /tabnine-status ใน Tabnine CLI และแก้ปัญหาแอปค้างตอนเปิดบน macOS (ข้ามรุ่น 6.6.4 และ 6.6.5)"
+        },
+        {
+          "version": "v6.6.3",
+          "releaseDate": {
+            "value": "2026-09-24",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.tabnine.com/main/administering-tabnine/release-notes",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เพิ่มคำแนะนำการอัปเกรดปลั๊กอิน Tabnine สำหรับ OpenCode และปรับการจัดการนโยบาย \"Ask first\""
+        }
+      ],
       "strengths": ["เน้นความปลอดภัย/ความเป็นส่วนตัวของโค้ดองค์กร", "รองรับ self-hosted deployment เต็มรูปแบบ"],
       "weaknesses": ["ไม่มีแผนฟรี ไม่เหมาะมือใหม่", "ราคาแพงที่สุดในกลุ่มเมื่อเทียบต่อผู้ใช้", "IP indemnification เต็มรูปแบบต้องเป็นสัญญา Enterprise แยกต่างหาก ไม่รวมอัตโนมัติในแผน $39/$59"],
       "bestFor": ["องค์กรที่ต้องการควบคุมความเป็นส่วนตัวของโค้ดอย่างเข้มงวด"],
       "promptWorkflow": {"steps":["อ่านโค้ดในไฟล์ปัจจุบันและบริบทใกล้เคียงเคอร์เซอร์เป็นหลัก","เดาความต่อเนื่องจาก pattern โค้ดที่เขียนไปแล้วในโปรเจกต์","เน้น autocomplete ระหว่างพิมพ์ ไม่ได้อ่านคำสั่งแชทเป็นหลัก"],"recommendedStructure":"เขียนชื่อฟังก์ชัน/ตัวแปรให้สื่อความหมายชัดเจน แล้วปล่อยให้ระบบเดาโค้ดต่อจาก pattern ที่เขียนไปก่อนหน้า","example":"function validateEmailFormat(email) {  // Tabnine จะเดาบรรทัดถัดไปจาก pattern regex ที่เคยเขียนในไฟล์"},
-      "lastUpdated": "2026-09-03",
-      "plansUrl": { "url": "https://www.tabnine.com/pricing/", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://www.tabnine.com/pricing/", "lastVerified": "2026-09-21" },
+      "latestVersion": {
+        "name": "Tabnine v6.6.9",
+        "releaseDate": "2026-10-08",
+        "sourceUrl": "https://docs.tabnine.com/main/administering-tabnine/release-notes",
+        "lastVerified": "2026-10-09",
+        "note": "ตามหมายเหตุการออกรุ่นของ Tabnine บน docs.tabnine.com"
+      },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจหน้าหมายเหตุการออกรุ่นของ Tabnine (docs.tabnine.com)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "replit-agent",
@@ -327,11 +690,11 @@
       "longDescription": "Replit Agent เด่นเรื่องการสร้างแอปทั้งตัวจากคำสั่งภาษาธรรมชาติในเบราว์เซอร์ ไม่ต้องติดตั้งอะไรเลย เหมาะกับมือใหม่ที่อยากลองสร้างแอปโดยไม่ต้องตั้งค่าเครื่องมือพัฒนาเอง ใช้ระบบ effort-based pricing ที่คิดค่าใช้จ่ายตามความซับซ้อนของงานจริง",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-25",
+        "value": "2026-10-02",
         "confidence": "verified",
         "sourceUrl": "https://docs.replit.com/updates",
-        "lastVerified": "2026-09-30",
-        "note": "Replit อัปเดต (25 ก.ย. 2026) สร้างแอปสำหรับอุปกรณ์ Meta, สร้างแอปผ่าน Muse, กราฟแบบ inline และรองรับโมเดล OpenAI/Anthropic ใหม่"
+        "lastVerified": "2026-10-09",
+        "note": "Replit Agent เพิ่ม GPT-6.1 Sol และ Claude Sonnet 5.5 และหน้า Settings ใหม่ เมื่อ 2 ต.ค. 2026"
       },
       "capabilities": [],
       "pricing": {
@@ -361,12 +724,59 @@
         "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
       },
       "usageSignals": [],
+      "versionHistory": [
+        {
+          "version": "Jev ใน Replit AI Integrations",
+          "releaseDate": {
+            "value": "2026-10-02",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.replit.com/updates",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Jev ใช้จัดประเภทเนื้อหา กำหนดเส้นทางคำขอ และให้คะแนนลีด โดยไม่ต้องจัดการ API key (ให้เอเจนต์ใช้ jev-latest ผ่าน OpenRouter)"
+        },
+        {
+          "version": "โมเดลใหม่จาก OpenAI และ Anthropic",
+          "releaseDate": {
+            "value": "2026-10-02",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.replit.com/updates",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "เลือก GPT-6.1 Sol (โหมด Max) และ Claude Sonnet 5.5 (โหมด Power) ใน Agent ได้"
+        },
+        {
+          "version": "หน้า Settings ใหม่",
+          "releaseDate": {
+            "value": "2026-10-02",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.replit.com/updates",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "Settings เปิดเป็นหน้าเต็มแทนหน้าต่างป๊อปอัป โดย Integrations และ Security มีหน้าของตัวเอง"
+        },
+        {
+          "version": "Workspace settings",
+          "releaseDate": {
+            "value": "2026-10-02",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.replit.com/updates",
+            "lastVerified": "2026-10-09"
+          },
+          "summary": "ผู้ดูแลตั้งกฎทั้งบริษัท สร้างข้อยกเว้นระดับทีม และมอบหมายการตั้งค่าบางส่วนให้แอดมิน Workspace"
+        }
+      ],
       "strengths": ["สร้างแอปครบวงจรในเบราว์เซอร์ ไม่ต้องตั้งค่าเครื่องมือ", "effort-based pricing ทำให้งานเล็กราคาประหยัด", "เหมาะมือใหม่ที่สุดในกลุ่ม code agent"],
       "weaknesses": ["ค่าใช้จ่ายรวมคาดเดายากสำหรับงานใหญ่/ซับซ้อน", "deployment มีค่าใช้จ่ายแยกต่างหาก", "⚠️ แผน Core ($20/เดือน) ไม่ครอบคลุมการใช้งานเชิงพาณิชย์ตาม ToS ต้องอัปเกรดเป็น Pro ($100) ขึ้นไป (แผน Teams เดิมถูกยกเลิกและรวมเข้า Pro ตั้งแต่ ก.พ. 2026)"],
       "bestFor": ["มือใหม่ที่อยากลองสร้างแอปโดยไม่ตั้งค่าเครื่องมือเอง", "การสร้างต้นแบบ (prototype) อย่างรวดเร็ว"],
       "promptWorkflow": {"steps":["อ่านคำอธิบายเป้าหมายแอปโดยรวมก่อนเป็นอันดับแรก","วางแผนโครงสร้างไฟล์/stack ที่จะใช้เอง","ลงมือสร้างและรันโปรเจกต์ทั้งหมดให้อัตโนมัติ"],"recommendedStructure":"อธิบายว่าอยากได้แอปแบบไหน ทำอะไรได้บ้าง กลุ่มผู้ใช้คือใคร ไม่ต้องระบุเทคนิคการเขียนโค้ด","example":"สร้างเว็บแอปจดบันทึกรายรับรายจ่ายส่วนตัว มีกราฟสรุปรายเดือน และให้ล็อกอินด้วยอีเมลได้"},
-      "lastUpdated": "2026-09-07",
-      "plansUrl": { "url": "https://replit.com/pricing", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-09",
+      "plansUrl": { "url": "https://replit.com/pricing", "lastVerified": "2026-09-21" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจหน้า updates ของ Replit (docs.replit.com/updates)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     }
   ]
 }
