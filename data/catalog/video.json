@@ -272,11 +272,11 @@
       "longDescription": "Veo เข้าถึงผ่านแอป Gemini โดยรวมอยู่ในแผนสมัครสมาชิก Google AI (ไม่แยกขายต่างหากสำหรับผู้ใช้ทั่วไป) แผนฟรีให้ Veo 2 แบบจำกัดโควตาและมีลายน้ำที่ 720p แผน Pro/Ultra ให้เครดิต Flow สำหรับสร้างวิดีโอ Veo 3.1 หลายระดับคุณภาพ",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-03-31",
-        "confidence": "probable",
-        "sourceUrl": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/",
-        "lastVerified": "2026-09-03",
-        "note": "Google ประกาศ Veo 3.1 Lite สำหรับนักพัฒนาใน Gemini API"
+        "value": "2026-06-15",
+        "confidence": "verified",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "lastVerified": "2026-10-09",
+        "note": "changelog ของ Gemini API (ai.google.dev) 15 มิ.ย. 2026 ประกาศเลิกใช้โมเดล Veo 2.0 และ Veo 3.0 (ปิด 30 มิ.ย. 2026) ให้ย้ายไป Veo 3.1 ก่อนหน้านั้น 31 มี.ค. 2026 เปิดตัว Veo 3.1 Lite Preview"
       },
       "capabilities": [],
       "pricing": {
@@ -322,6 +322,11 @@
       ],
       "versionHistory": [
         {
+          "version": "เลิกให้บริการ Veo 2.0 และ Veo 3.0 (ผ่าน Gemini API)",
+          "releaseDate": { "value": "2026-06-15", "confidence": "verified", "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog", "lastVerified": "2026-10-09" },
+          "summary": "Google ประกาศวันที่ 15 มิ.ย. 2026 ว่าโมเดล Veo 2.0 และ Veo 3.0 (รวม Fast) จะปิดวันที่ 30 มิ.ย. 2026 แนะนำให้ย้ายไป Veo 3.1 / 3.1 Fast"
+        },
+        {
           "version": "Veo 3.1 Lite",
           "releaseDate": {
             "value": "2026-03-31",
@@ -347,6 +352,11 @@
       "weaknesses": ["แผน Ultra ระดับสูงสุดยังราคาสูง ($200/เดือน)", "ระบบเครดิต Flow ต้องคำนวณเองว่าคุ้มค่าแค่ไหน"],
       "bestFor": ["ผู้ใช้ในระบบนิเวศ Google ที่ต้องการสร้างวิดีโอควบคู่งานอื่น", "นักพัฒนาที่ต้องการราคา API แบบจ่ายตามจริง"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายฉากและตัวละครก่อน","อ่านคำสั่งกล้องแบบภาพยนตร์ (crane shot, dolly zoom)","อ่านคำบอกอารมณ์/สไตล์ภาพยนตร์ปิดท้าย"],"recommendedStructure":"[ฉาก] + [การเคลื่อนกล้องแบบภาพยนตร์] + [อารมณ์/สไตล์]","example":"a lone astronaut walking across a red desert, slow crane shot rising, epic sci-fi atmosphere"},
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจ changelog ของ Gemini API (ai.google.dev/gemini-api/docs/changelog) เรื่อง Veo แล้ว กำหนดเลิกใช้ Veo 2.0/3.0 (30 มิ.ย. 2026) ผ่านไปแล้ว ไม่พบแผนล่วงหน้าอื่นที่ยังค้างอยู่",
+        "items": []
+      },
       "lastUpdated": "2026-10-09",
       "latestVersion": { "name": "Veo 3.1", "releaseDate": null, "sourceUrl": "https://ai.google.dev/gemini-api/docs/video", "lastVerified": "2026-09-30", "note": "เอกสารของ Google แนะนำ Gemini Omni Flash เป็นตัวเลือกเริ่มต้นสำหรับสร้างวิดีโอ ส่วน Veo 3.1 ใช้กับงานเฉพาะ เช่น ต่อคลิป/กำหนดเฟรม (ไม่ระบุวันเปิดตัว)" },
       "plansUrl": { "url": "https://gemini.google/subscriptions/", "lastVerified": "2026-09-21" }

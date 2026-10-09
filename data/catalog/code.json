@@ -500,11 +500,11 @@
       "longDescription": "Amazon Q Developer เชื่อมต่อกับบริการ AWS ได้ลึก เหมาะกับทีมที่ทำงานบน AWS เป็นหลัก อย่างไรก็ตาม AWS ประกาศยุติการรับสมัครใหม่สำหรับปลั๊กอิน/แผนเสียเงินตั้งแต่ 15 พ.ค. 2026 โดยจะย้ายไปยังผลิตภัณฑ์ตัวต่อไปชื่อ Kiro (สิ้นสุดการซัพพอร์ตเต็มรูปแบบ 30 เม.ย. 2027)",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-05-15",
-        "confidence": "probable",
-        "sourceUrl": "https://www.superblocks.com/blog/amazon-qdeveloper-pricing",
-        "lastVerified": "2026-09-03",
-        "note": "วันที่ AWS ปิดรับสมัครสมาชิกใหม่สำหรับผลิตภัณฑ์นี้ (เปลี่ยนแปลงล่าสุดที่ยืนยันได้)"
+        "value": "2026-08-17",
+        "confidence": "verified",
+        "sourceUrl": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html",
+        "lastVerified": "2026-10-09",
+        "note": "ประวัติเอกสารทางการของ AWS (17 ส.ค. 2026) ประกาศยุติการสนับสนุนปลั๊กอิน IDE ของ Amazon Q Developer วันที่ 30 เม.ย. 2027 ให้ย้ายไป Kiro"
       },
       "capabilities": [],
       "pricing": {
@@ -557,6 +557,11 @@
       "usageSignals": [],
       "versionHistory": [
         {
+          "version": "ประกาศยุติการสนับสนุนปลั๊กอิน IDE",
+          "releaseDate": { "value": "2026-08-17", "confidence": "verified", "sourceUrl": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html", "lastVerified": "2026-10-09" },
+          "summary": "AWS ประกาศว่าวันที่ 30 เม.ย. 2027 จะยุติการสนับสนุนปลั๊กอิน IDE ของ Amazon Q Developer และแนะนำให้ย้ายไป Kiro (ฟีเจอร์แนะนำโค้ด แชท และสร้างโค้ดมีใน Kiro)"
+        },
+        {
           "version": "AWS ปิดรับสมัครสมาชิกใหม่",
           "releaseDate": {
             "value": "2026-05-15",
@@ -571,6 +576,11 @@
       "weaknesses": ["กำลังถูกยุติ/แทนที่ด้วย Kiro — ไม่เหมาะลงทุนระยะยาว", "ปิดรับสมัครสมาชิกใหม่ตั้งแต่ พ.ค. 2026"],
       "bestFor": ["ทีมที่ผูกกับ AWS อยู่แล้วและต้องการทดลองระยะสั้น"],
       "promptWorkflow": {"steps":["อ่านโค้ดและบริบท AWS resource ที่เชื่อมต่อไว้เป็นหลัก","อ่านคำสั่ง/คำถามที่พิมพ์เป็นเป้าหมาย","แนะนำโค้ดที่สอดคล้องกับ AWS best practice โดยอัตโนมัติ"],"recommendedStructure":"ระบุ service/resource AWS ที่เกี่ยวข้อง + สิ่งที่ต้องการให้โค้ดทำ","example":"เขียน Lambda function ที่อ่านไฟล์จาก S3 bucket แล้วบันทึกข้อมูลลง DynamoDB table ชื่อ Orders"},
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจประวัติเอกสารและหน้าประกาศยุติการสนับสนุนบน docs.aws.amazon.com",
+        "items": [{ "kind": "retirement", "text": "AWS จะยุติการสนับสนุนปลั๊กอิน IDE ของ Amazon Q Developer และแนะนำให้ย้ายไป Kiro", "when": "30 เม.ย. 2027", "sourceUrl": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html", "lastVerified": "2026-10-09" }]
+      },
       "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://aws.amazon.com/q/developer/pricing/", "lastVerified": "2026-09-21" }
     },

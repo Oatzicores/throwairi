@@ -319,11 +319,11 @@
       "longDescription": "Murf AI เน้นตลาดงานนำเสนอ/วิดีโอองค์กร/อีเลิร์นนิง มีเสียงให้เลือกกว่า 200 เสียงหลายภาษา แผนฟรีให้ทดลองฟังได้แต่ดาวน์โหลดไม่ได้ ต้องอัปเกรดเป็น Creator ขึ้นไปจึงดาวน์โหลดและใช้เชิงพาณิชย์ได้",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-06-16",
-        "confidence": "inference",
+        "value": "2026-10-05",
+        "confidence": "verified",
         "sourceUrl": "https://murf.ai/api/docs/changelog",
-        "lastVerified": "2026-09-03",
-        "note": "เปิดตัวโมเดล Falcon 2 (จากบทวิเคราะห์ของบุคคลที่สาม ยังไม่ได้ยืนยันตรงจาก changelog ทางการ)"
+        "lastVerified": "2026-10-09",
+        "note": "changelog ทางการของ Murf API ระบุว่า 5 ต.ค. 2026 เลิกให้บริการ Gen2 แบบสตรีมมิง (ให้ย้ายไป Falcon 2) ส่วน Gen2 แบบ non-streaming ยังใช้ได้"
       },
       "capabilities": [],
       "pricing": {
@@ -355,21 +355,26 @@
       "usageSignals": [],
       "versionHistory": [
         {
+          "version": "Gen2 streaming retired",
+          "releaseDate": { "value": "2026-10-05", "confidence": "verified", "sourceUrl": "https://murf.ai/api/docs/changelog", "lastVerified": "2026-10-09" },
+          "summary": "เลิกให้บริการ Gen2 แบบสตรีมมิงแล้ว ต้องย้ายไป Falcon 2 บน Streaming API ส่วน Gen2 แบบ non-streaming (Synthesize Speech) ยังใช้ได้"
+        },
+        {
           "version": "Falcon 2",
-          "releaseDate": {
-            "value": null,
-            "confidence": "unknown",
-            "sourceUrl": "https://murf.ai/api/docs/changelog",
-            "lastVerified": "2026-10-09",
-            "note": "ไม่มีวันที่ที่ชัดเจน (บุคคลที่สามระบุราว 16 มิ.ย. 2026 ยังไม่ยืนยัน)"
-          },
-          "summary": "รายงานว่าเปิดตัวโมเดล Falcon 2 ราวกลางเดือน มิ.ย. 2026 (จากบทวิเคราะห์ของบุคคลที่สาม ยังไม่ได้ยืนยันจาก changelog ทางการ จึงไม่ลงวันที่)"
+          "releaseDate": { "value": "2026-06-16", "confidence": "verified", "sourceUrl": "https://murf.ai/api/docs/changelog", "lastVerified": "2026-10-09" },
+          "summary": "เปิดตัวโมเดล Falcon 2 ปรับปรุงคุณภาพเสียง ความหน่วง และความเสถียรในการสร้างเสียง"
         }
       ],
       "strengths": ["เสียงให้เลือกหลากหลายที่สุดกลุ่มหนึ่ง (200+ เสียง)", "เหมาะงานนำเสนอ/อีเลิร์นนิงองค์กรโดยเฉพาะ", "สิทธิ์เชิงพาณิชย์ชัดเจน"],
       "weaknesses": ["แผนฟรีดาวน์โหลดไม่ได้เลย ทดลองจำกัดมาก", "ราคาต่อชั่วโมงเสียงค่อนข้างแพง"],
       "bestFor": ["งานนำเสนอ/วิดีโอองค์กร/อีเลิร์นนิง", "ธุรกิจที่ต้องการเสียงพากย์หลายภาษาแบบมืออาชีพ"],
       "promptWorkflow": {"steps":["อ่านสคริปต์ข้อความเป็นหลัก","ใช้เสียงพากย์และภาษาที่เลือกจากคลังเสียงแยกต่างหาก","รองรับการปรับจังหวะ/emphasis เฉพาะคำผ่านตัวแก้ไขแบบ visual"],"recommendedStructure":"[สคริปต์ข้อความสำหรับพากย์ เขียนเป็นประโยคสมบูรณ์] (ปรับเสียง/ความเร็ว/emphasis ผ่านแผงควบคุมแยก)","example":"สวัสดีค่ะ ยินดีต้อนรับเข้าสู่บทเรียนที่ 1 วันนี้เราจะมาเรียนรู้พื้นฐานของการตลาดออนไลน์กันค่ะ"},
+      "latestVersion": { "name": "Falcon 2", "releaseDate": "2026-06-16", "sourceUrl": "https://murf.ai/api/docs/changelog", "lastVerified": "2026-10-09", "note": "changelog ของ Murf API ระบุเปิดตัว Falcon 2 วันที่ 16 มิ.ย. 2026" },
+      "roadmap": {
+        "checkedAt": "2026-10-09",
+        "note": "ตรวจ changelog ของ Murf API (murf.ai/api/docs/changelog) รายการเลิกใช้ Gen2 streaming ที่ประกาศ 20 ก.ค. มีผลแล้ว 5 ต.ค. จึงไม่มีกำหนดในอนาคตที่ยังค้างอยู่",
+        "items": []
+      },
       "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://murf.ai/pricing", "lastVerified": "2026-09-21" }
     },
