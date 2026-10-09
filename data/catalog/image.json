@@ -1,0 +1,597 @@
+{
+  "tools": [
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "vendor": "Midjourney Inc.",
+      "categories": ["image"],
+      "logoUrl": null,
+      "websiteUrl": "https://www.midjourney.com",
+      "shortDescription": "AI สร้างภาพที่มีสไตล์ศิลปะโดดเด่นที่สุด ได้รับความนิยมสูงในกลุ่มนักออกแบบ/ศิลปิน",
+      "longDescription": "Midjourney ขึ้นชื่อเรื่องคุณภาพภาพเชิงศิลปะที่สวยงามโดดเด่น ไม่มีแผนฟรี (ยกเลิกตั้งแต่มี.ค. 2023) ใช้ระบบ GPU hours รายเดือน ทุกแผนเสียเงินมีสิทธิ์เชิงพาณิชย์ทั่วไปรวมอยู่ด้วย",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-24",
+        "confidence": "probable",
+        "sourceUrl": "https://updates.midjourney.com",
+        "lastVerified": "2026-09-30",
+        "note": "Midjourney ประกาศ \"Edit updates, thumbnail previews, and more\" (24 ก.ย. 2026) และมี Alpha Changelog ต่อเนื่อง (ยังไม่ได้อ่านเนื้อหาเต็มของโพสต์ อ้างตามหัวข้อบนหน้าอัปเดตทางการ)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "paid",
+        "plans": [
+          { "name": "Basic", "priceUsdPerMonth": 10, "quota": "3.3 fast GPU hours/เดือน (annual: $8)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service", "lastVerified": "2026-09-20", "note": "ToS ข้อ 4: เจ้าของ Assets เต็มที่ตามกฎหมาย แต่ถ้าบริษัทมีรายได้เกิน $1 ล้าน/ปี ต้องใช้แผน Pro หรือ Mega ขึ้นไปจึงจะเป็นเจ้าของ Assets" } },
+          { "name": "Standard", "priceUsdPerMonth": 30, "quota": "15 fast GPU hours/เดือน (annual: $24)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service", "lastVerified": "2026-09-20", "note": "ToS ข้อ 4: เจ้าของ Assets เต็มที่ตามกฎหมาย แต่ถ้าบริษัทมีรายได้เกิน $1 ล้าน/ปี ต้องใช้แผน Pro หรือ Mega ขึ้นไปจึงจะเป็นเจ้าของ Assets" } },
+          { "name": "Pro", "priceUsdPerMonth": 60, "quota": "30 fast GPU hours/เดือน + Stealth Mode (annual: $48)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service", "lastVerified": "2026-09-20", "note": "ToS ข้อ 4: เจ้าของ Assets เต็มที่ตามกฎหมาย" } },
+          { "name": "Mega", "priceUsdPerMonth": 120, "quota": "60 fast GPU hours/เดือน (annual: $96)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service", "lastVerified": "2026-09-20", "note": "ToS ข้อ 4: เจ้าของ Assets เต็มที่ตามกฎหมาย" } }
+        ],
+        "freeQuota": null,
+        "commercialUseSummary": {
+          "value": "ข้อกำหนดของ Midjourney ระบุว่าผู้ใช้เป็นเจ้าของ Assets ที่สร้างเต็มที่ตามกฎหมาย ทุกแผน (ไม่มีแผนฟรี) ข้อยกเว้นเดียวคือ ถ้าเป็นบริษัทหรือพนักงานบริษัทที่มีรายได้เกิน 1 ล้านดอลลาร์สหรัฐต่อปี ต้องสมัครแผน Pro หรือ Mega เท่านั้นจึงจะเป็นเจ้าของ Assets ได้ นอกจากนี้ถ้า upscale ภาพของคนอื่น ภาพนั้นยังเป็นของเจ้าของเดิม",
+          "confidence": "verified",
+          "sourceUrl": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://www.eesel.ai/blog/midjourney-pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["คุณภาพภาพเชิงศิลปะสวยงามโดดเด่นที่สุดในกลุ่ม", "ทุกแผนเสียเงินมีสิทธิ์เชิงพาณิชย์ชัดเจน", "ชั่วโมง GPU ที่เหลือไม่หมดอายุ"],
+        "negativeThemes": ["ไม่มีแผนฟรีเลย ต้องจ่ายเงินตั้งแต่เริ่ม", "ใช้งานผ่าน Discord/เว็บเท่านั้น ไม่มี API แบบเป็นทางการที่เข้าถึงง่าย", "ชั่วโมง GPU หมดเร็วถ้าใช้งานหนัก ต้องซื้อเพิ่ม ($4/ชม.)"],
+        "paidVerifiedSummary": "ผู้ใช้ Standard/Pro ที่จ่ายเงินจริงมักพอใจคุณภาพภาพ แต่บ่นเรื่องชั่วโมง GPU ที่หมดเร็วเมื่อใช้งานหนัก",
+        "freeTierSummary": null,
+        "sourceUrls": ["https://www.eesel.ai/blog/midjourney-pricing", "https://www.banani.co/blog/midjourney-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 878,
+            "confidence": "verified",
+            "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+            "lastVerified": "2026-09-21",
+            "note": "Midjourney v7 Alpha (เวอร์ชันคะแนนสูงสุดของ Midjourney บนบอร์ดนี้) อันดับ 108 — ต่ำกว่า GPT Image 2.5 (1188) และ Ideogram 4.0 (1012) แม้จะได้รับความนิยมเชิงศิลปะสูงในหมู่ผู้ใช้ (ตัวอย่างของ v7 Alpha เก็บเมื่อเมษายน 2025)"
+          },
+          "label": "Artificial Analysis Text-to-Image Arena ELO (Midjourney v7 Alpha)"
+        }
+      ],
+      "strengths": ["คุณภาพภาพเชิงศิลปะสวยงามที่สุดในกลุ่ม", "สิทธิ์เชิงพาณิชย์ชัดเจนทุกแผนเสียเงิน", "ชั่วโมง GPU ไม่หมดอายุ"],
+      "weaknesses": ["ไม่มีแผนฟรี ต้องจ่ายเงินก่อนลองใช้", "ไม่เหมาะมือใหม่ที่งบจำกัดสุดๆ", "ใช้งานผ่าน Discord ซึ่งอาจไม่คุ้นเคยสำหรับมือใหม่"],
+      "bestFor": ["นักออกแบบ/ศิลปินที่ต้องการภาพสไตล์สวยงามระดับมืออาชีพ", "งานโฆษณา/โปสเตอร์ที่เน้นความสวยงามเชิงศิลปะ"],
+      "promptWorkflow": {"steps":["อ่านคำอธิบายวัตถุ/ฉากหลัก (subject) ก่อนเป็นอันดับแรก","อ่านคำบอกสไตล์/บรรยากาศ/แสงถัดมา","อ่าน parameter ท้ายประโยค เช่น --ar, --style, --v เป็นลำดับสุดท้าย"],"recommendedStructure":"[สิ่งที่ต้องการ] + [สไตล์/บรรยากาศ/แสง] + [มุมกล้อง] + [--ar อัตราส่วนภาพ] [--v เวอร์ชันโมเดล]","example":"a cozy coffee shop interior, warm cinematic lighting, shot on 35mm film, --ar 16:9 --v 6"},
+      "lastUpdated": "2026-09-07",
+      "roadmap": { "checkedAt": "2026-09-30", "note": "ตรวจหน้าอัปเดตทางการของ Midjourney (updates.midjourney.com) ล่าสุด 24 ก.ย. 2026: ไม่มีข้อความระบุแผนหรือกำหนดเวลาล่วงหน้า", "items": [] },
+      "latestVersion": { "name": "Midjourney V8.2", "releaseDate": "2026-07-24", "sourceUrl": "https://updates.midjourney.com/version-8-2/", "lastVerified": "2026-09-21", "note": "ประกาศบนหน้าอัปเดตทางการของ Midjourney" },
+      "plansUrl": { "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "vendor": "Adobe",
+      "categories": ["image"],
+      "logoUrl": null,
+      "websiteUrl": "https://firefly.adobe.com",
+      "shortDescription": "AI สร้างภาพจาก Adobe เทรนด้วยข้อมูลที่มีไลเซนส์ถูกต้อง ปลอดภัยด้านลิขสิทธิ์ที่สุด",
+      "longDescription": "Firefly เทรนเฉพาะจาก Adobe Stock ที่มีไลเซนส์ถูกต้อง เนื้อหา public domain และเนื้อหาที่เปิดไลเซนส์ ทำให้มีความเสี่ยงด้านลิขสิทธิ์ต่ำที่สุดในกลุ่ม เหมาะกับธุรกิจที่กังวลเรื่องกฎหมาย มี commercial indemnity สำหรับลูกค้า Enterprise",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-18",
+        "confidence": "probable",
+        "sourceUrl": "https://community.adobe.com/announcements-402/what-s-new-in-adobe-firefly-september-2026-1642552",
+        "lastVerified": "2026-09-30",
+        "note": "Adobe Firefly เพิ่มลบพื้นหลังวิดีโอ, GPT Image 2 รองรับ 10 สัดส่วนภาพ และใช้ภาพอ้างอิงกับ Kling 3.0 Omni ได้ (18 ก.ย. 2026) (อ้างตามผลค้นหาประกาศทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "25 generative credits/เดือน อนุญาตใช้เชิงพาณิชย์ได้", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html", "lastVerified": "2026-09-20", "note": "FAQ ทางการ: ใช้เชิงพาณิชย์ได้ทุกฟีเจอร์ที่ไม่มีป้าย beta ไม่แยกตามแผน แต่ฟีเจอร์ beta อาจมีเงื่อนไขเพิ่มเติมที่ระบุไว้ในหน้าฟีเจอร์นั้น" } },
+          { "name": "Standard", "priceUsdPerMonth": 9.99, "quota": "2,000 generative credits/เดือน ใช้ฟีเจอร์ภาพมาตรฐาน (Generative Fill, mood board) ไม่จำกัด", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/", "lastVerified": "2026-09-03" } },
+          { "name": "Pro", "priceUsdPerMonth": 19.99, "quota": "4,000 generative credits/เดือน รวม Adobe Express Premium และ Photoshop บนเว็บ/มือถือ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/", "lastVerified": "2026-09-03" } },
+          { "name": "Pro Plus", "priceUsdPerMonth": 49.99, "quota": "10,000 generative credits/เดือน รวม Adobe Express Premium และ Photoshop เต็มรูปแบบ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/", "lastVerified": "2026-09-03" } },
+          { "name": "Premium", "priceUsdPerMonth": 199.99, "quota": "50,000 generative credits/เดือน สำหรับใช้งานปริมาณสูง", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://aiproductivity.ai/pricing/adobe-firefly/", "lastVerified": "2026-09-03" } }
+        ],
+        "freeQuota": "25 generative credits/เดือน",
+        "commercialUseSummary": {
+          "value": "FAQ ทางการของ Adobe Firefly ระบุว่าใช้ output เชิงพาณิชย์ได้สำหรับฟีเจอร์ที่ไม่มีป้าย beta ไม่ได้แยกสิทธิ์ตามแผนฟรี/เสียเงิน ฟีเจอร์ที่อยู่ในสถานะ beta ใช้เชิงพาณิชย์ได้เช่นกัน เว้นแต่จะระบุไว้เป็นอย่างอื่นในหน้าฟีเจอร์นั้น ส่วนเรื่อง commercial indemnity สำหรับลูกค้า Enterprise ยังไม่ได้ตรวจยืนยันกับหน้าทางการรอบนี้",
+          "confidence": "verified",
+          "sourceUrl": "https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://www.adobe.com/products/firefly.html",
+        "lastVerified": "2026-09-07"
+      },
+      "reviews": {
+        "positiveThemes": ["ความเสี่ยงด้านลิขสิทธิ์ต่ำที่สุดในกลุ่ม เพราะเทรนจากข้อมูลมีไลเซนส์เท่านั้น", "มี commercial indemnity สำหรับองค์กร", "ใช้เชิงพาณิชย์ได้ตั้งแต่แผนฟรี"],
+        "negativeThemes": ["คุณภาพเชิงศิลปะบางครั้งสู้ Midjourney ไม่ได้ตามความเห็นนักออกแบบบางกลุ่ม", "ระบบเครดิตซับซ้อน แต่ละงานใช้เครดิตไม่เท่ากัน"],
+        "paidVerifiedSummary": "ธุรกิจที่จ่ายเงินจริงมักเลือก Firefly เพราะความปลอดภัยด้านลิขสิทธิ์เป็นหลัก ไม่ใช่คุณภาพภาพเพียงอย่างเดียว",
+        "freeTierSummary": "ผู้ใช้ฟรีพอใจที่ใช้เชิงพาณิชย์ได้ตั้งแต่แผนฟรี ต่างจากคู่แข่งหลายเจ้า",
+        "sourceUrls": ["https://aiproductivity.ai/pricing/adobe-firefly/"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["ความเสี่ยงด้านลิขสิทธิ์ต่ำที่สุดในกลุ่ม เหมาะธุรกิจ", "ใช้เชิงพาณิชย์ได้ตั้งแต่แผนฟรี", "มี commercial indemnity สำหรับองค์กร"],
+      "weaknesses": ["คุณภาพเชิงศิลปะอาจไม่โดดเด่นเท่า Midjourney ในบางสไตล์", "ระบบเครดิตซับซ้อนต้องทำความเข้าใจ"],
+      "bestFor": ["ธุรกิจ/มือใหม่ที่กังวลเรื่องความเสี่ยงด้านลิขสิทธิ์", "งานที่ต้องใช้เชิงพาณิชย์แบบปลอดภัยที่สุด"],
+      "promptWorkflow": {"steps":["อ่านประโยคบรรยายภาพแบบภาษาธรรมชาติทั้งหมด","ใช้คำคุณศัพท์ด้านแสง/สไตล์ที่ใส่ไว้เพื่อปรับโทนภาพ","รวมค่า Style preset ที่เลือกจากพาเนลด้านข้าง (ถ้าตั้งไว้) เข้ากับข้อความ"],"recommendedStructure":"[สิ่งที่ต้องการ] + [บรรยากาศ/แสง] + [สไตล์ภาพ เช่น ภาพถ่าย, ภาพวาด, 3D]","example":"โปสเตอร์ร้านกาแฟสไตล์มินิมอล แสงธรรมชาติยามเช้า วาดแบบ flat illustration"},
+      "lastUpdated": "2026-09-07",
+      "plansUrl": { "url": "https://www.adobe.com/products/firefly/plans.html", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "ideogram",
+      "name": "Ideogram",
+      "vendor": "Ideogram AI",
+      "categories": ["image"],
+      "logoUrl": null,
+      "websiteUrl": "https://ideogram.ai",
+      "shortDescription": "AI สร้างภาพที่เด่นเรื่องการเขียนตัวอักษร/ข้อความในภาพได้แม่นยำที่สุดในกลุ่ม",
+      "longDescription": "Ideogram โดดเด่นเฉพาะทางด้านการสร้างภาพที่มีข้อความ/ตัวอักษรฝังอยู่ได้อ่านง่ายและแม่นยำ (เช่น โลโก้ โปสเตอร์ที่มีตัวหนังสือ) ซึ่งเป็นจุดอ่อนของ AI สร้างภาพเจ้าอื่นหลายตัว",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-06-03",
+        "confidence": "probable",
+        "sourceUrl": "https://ideogram.ai/news/ideogram-4.0/",
+        "lastVerified": "2026-09-03",
+        "note": "เปิดตัว Ideogram 4.0 โมเดล open-weight พร้อมไลเซนส์เชิงพาณิชย์"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "10 slow credits/สัปดาห์ (~10-40 ภาพ) ภาพเป็นสาธารณะ มีสิทธิ์เชิงพาณิชย์", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://fluxnote.io/guides/ideogram-pricing-guide-2026", "lastVerified": "2026-09-03" } },
+          { "name": "Plus", "priceUsdPerMonth": 20, "quota": "1,000 priority credits/เดือน + ภาพส่วนตัว + generation พร้อมกันสูงสุด 8 งาน (annual: $15/เดือน หรือ $180/ปี)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" } },
+          { "name": "Pro", "priceUsdPerMonth": 60, "quota": "3,500 priority credits/เดือน + คิวใหญ่ที่สุด + generation พร้อมกันสูงสุด 32 งาน (annual: $42/เดือน หรือ $504/ปี)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" } },
+          { "name": "Team", "priceUsdPerMonth": 30, "quota": "1,500 credits/user/เดือน ขั้นต่ำ 2 users (annual: $20/user/เดือน)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" } }
+        ],
+        "freeQuota": "10 slow credits/สัปดาห์ (~10-40 ภาพ ขึ้นกับโมเดล)",
+        "commercialUseSummary": {
+          "value": "แผนฟรีมีสิทธิ์เชิงพาณิชย์รวมอยู่ด้วย แต่ภาพบนแผนฟรีเป็นสาธารณะ (ผู้อื่นเห็นได้) ต้องอัปเกรดเพื่อภาพส่วนตัว",
+          "confidence": "probable",
+          "sourceUrl": "https://fluxnote.io/guides/ideogram-pricing-guide-2026",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://ideogram.ai/pricing",
+        "lastVerified": "2026-09-07"
+      },
+      "reviews": {
+        "positiveThemes": ["เขียนตัวอักษร/ข้อความในภาพได้แม่นยำที่สุดในกลุ่ม", "แผนฟรีให้สิทธิ์เชิงพาณิชย์ตั้งแต่ต้น", "ราคาแผนเริ่มต้นถูกกว่า Midjourney"],
+        "negativeThemes": ["ภาพบนแผนฟรีเป็นสาธารณะ ไม่เป็นส่วนตัว", "แผนเสียเงินราคาสูงขึ้นชัดเจนเมื่อต้องการคิวเร็ว/เครดิตเยอะ (Pro $60/เดือน หรือ $42/เดือนแบบรายปี)"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "เหมาะทดลองสร้างภาพที่มีข้อความ/โลโก้แบบไม่เสียเงินก่อนตัดสินใจอัปเกรด",
+        "sourceUrls": ["https://www.eesel.ai/blog/ideogram-pricing", "https://ideogram.ai/pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา — ตัวเลขแผน Plus/Pro/Team ยืนยันตรงกับหน้าราคาทางการของ ideogram.ai แล้วเมื่อ 2026-09-07"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1012,
+            "confidence": "verified",
+            "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+            "lastVerified": "2026-09-21",
+            "note": "Ideogram 4.0 (Quality) อันดับ 33 (Ideogram 4.0 รุ่นมาตรฐานได้ 1004) — เป็นโมเดล open-weights"
+          },
+          "label": "Artificial Analysis Text-to-Image Arena ELO (Ideogram 4.0 Quality)"
+        }
+      ],
+      "strengths": ["เขียนตัวอักษร/ข้อความในภาพแม่นยำที่สุดในกลุ่ม", "มีแผนฟรีที่ใช้เชิงพาณิชย์ได้", "ราคาเริ่มต้นถูกกว่า Midjourney"],
+      "weaknesses": ["ภาพแผนฟรีเป็นสาธารณะ ไม่มีความเป็นส่วนตัว", "ราคาแผน Pro/Team สูงขึ้นเมื่อจ่ายรายเดือนแทนรายปี (Pro $60 เทียบ $42 แบบรายปี)"],
+      "bestFor": ["งานออกแบบโลโก้/โปสเตอร์ที่มีข้อความ", "มือใหม่ที่งบจำกัดและต้องการภาพมีตัวอักษรถูกต้อง"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายภาพหลักก่อน","มองหาข้อความในเครื่องหมายคำพูดเพื่อ render เป็นตัวอักษรในภาพโดยเฉพาะ","อ่านคำสไตล์ที่ใส่ต่อท้ายเพื่อปรับโทนภาพ"],"recommendedStructure":"[คำบรรยายภาพ] + ข้อความที่ต้องการให้ปรากฏในภาพใส่ใน \"เครื่องหมายคำพูด\" + [สไตล์]","example":"โปสเตอร์ร้านกาแฟ มีข้อความ \"OPEN 24/7\" สีทองตัวใหญ่ตรงกลาง สไตล์ retro"},
+      "lastUpdated": "2026-09-07",
+      "latestVersion": { "name": "Ideogram 4.0", "releaseDate": null, "sourceUrl": "https://docs.ideogram.ai/", "lastVerified": "2026-09-21", "note": "เอกสารทางการระบุเป็นโมเดลรุ่นใหม่สุด (ไม่ระบุวันเปิดตัว)" },
+      "plansUrl": { "url": "https://ideogram.ai/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "leonardo-ai",
+      "name": "Leonardo.Ai",
+      "vendor": "Leonardo AI (Canva)",
+      "categories": ["image"],
+      "logoUrl": null,
+      "websiteUrl": "https://leonardo.ai",
+      "shortDescription": "AI สร้างภาพที่มีแผนฟรีให้โควตาเยอะที่สุดในกลุ่ม เหมาะทดลองใช้งานหนักโดยไม่เสียเงิน",
+      "longDescription": "Leonardo.Ai (ปัจจุบันเป็นส่วนหนึ่งของ Canva) ให้โควตาแผนฟรีสูงถึง 150 token/วัน ทำให้ทดลองสร้างภาพจำนวนมากได้โดยไม่เสียเงิน แต่ผลงานจากแผนฟรีไม่มีสิทธิ์เชิงพาณิชย์ ต้องอัปเกรดเพื่อใช้งานเชิงพาณิชย์",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-02-19",
+        "confidence": "inference",
+        "sourceUrl": "https://flowith.io/blog/leonardo-phoenix-2-0-redefining-ai-image-generation-serious-creative-work/",
+        "lastVerified": "2026-09-03",
+        "note": "โมเดล Phoenix 2.0 เปิดตัวช่วงต้นปี 2026 — ไม่พบวันที่แน่ชัด ใช้วันที่เอกสารช่วยเหลือยืนยันว่าโมเดลใช้งานได้แล้วเป็นค่าประมาณ"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "150 token/วัน (~หลายร้อยภาพ/เดือน) แต่ห้ามใช้เชิงพาณิชย์", "commercialUseAllowed": { "value": false, "confidence": "verified", "sourceUrl": "https://leonardo.ai/terms-of-service", "lastVerified": "2026-09-20", "note": "ข้อ 8.7 ของ ToS: สิทธิ์ในทรัพย์สินทางปัญญาของ Output ที่สร้างด้วยบัญชีฟรีตกเป็นของ Leonardo เอง (ผู้ใช้โอนสิทธิ์ให้อัตโนมัติ) ไม่ใช่แค่ 'ห้ามใช้เชิงพาณิชย์' แต่ผู้ใช้ไม่ได้เป็นเจ้าของภาพเลย" } },
+          { "name": "Essential (Apprentice)", "priceUsdPerMonth": 12, "quota": "8,500 fast tokens/เดือน (token bank สูงสุด 25,500) มีสิทธิ์เชิงพาณิชย์ แต่ไม่รวม relaxed generation ไม่จำกัด (มีเฉพาะแผน Premium ขึ้นไป)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://leonardo.ai/pricing/", "lastVerified": "2026-09-07" } },
+          { "name": "Premium (Artisan)", "priceUsdPerMonth": 30, "quota": "25,000 fast tokens/เดือน (token bank สูงสุด 75,000) + relaxed image generation ไม่จำกัดบนบางโมเดลที่เลือก", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://leonardo.ai/pricing/", "lastVerified": "2026-09-07" } },
+          { "name": "Ultimate (Maestro)", "priceUsdPerMonth": 60, "quota": "60,000 fast tokens/เดือน (token bank สูงสุด 180,000) + relaxed generation ไม่จำกัดทั้งภาพและวิดีโอบนบางโมเดลที่เลือก", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://leonardo.ai/pricing/", "lastVerified": "2026-09-07" } }
+        ],
+        "freeQuota": "150 token/วัน (ไม่มีสิทธิ์เชิงพาณิชย์)",
+        "commercialUseSummary": {
+          "value": "ตาม ToS ข้อ 8.3 และ 8.7: ผู้ใช้แผนเสียเงิน (เริ่มต้น $12/เดือน) เป็นเจ้าของสิทธิ์ในทรัพย์สินทางปัญญาของ Output เต็มที่ ส่วนผู้ใช้แผนฟรี สิทธิ์ในทรัพย์สินทางปัญญาของ Output ตกเป็นของ Leonardo เองตั้งแต่สร้างเสร็จ (ผู้ใช้โอนสิทธิ์ให้อัตโนมัติ) จึงใช้เชิงพาณิชย์ไม่ได้และไม่ได้เป็นเจ้าของภาพด้วยซ้ำ",
+          "confidence": "verified",
+          "sourceUrl": "https://leonardo.ai/terms-of-service",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://leonardo.ai/pricing/",
+        "lastVerified": "2026-09-07"
+      },
+      "reviews": {
+        "positiveThemes": ["โควตาแผนฟรีเยอะที่สุดในกลุ่ม (150 token/วัน)", "ราคาแผนเสียเงินเริ่มต้นถูก ($12/เดือน)", "generation ไม่จำกัดในทุกแผนเสียเงิน"],
+        "negativeThemes": ["แผนฟรีห้ามใช้เชิงพาณิชย์เด็ดขาด ต้องอัปเกรดก่อนใช้จริง", "ต้องแยกจ่ายเพิ่มสำหรับ Production API"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "เหมาะทดลองสร้างภาพจำนวนมากฟรี แต่ต้องอัปเกรดทันทีที่จะใช้งานจริงเชิงพาณิชย์",
+        "sourceUrls": ["https://pricepertoken.com/leonardo-ai-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 912,
+            "confidence": "verified",
+            "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+            "lastVerified": "2026-09-21",
+            "note": "Lucid Origin Ultra อันดับ 90 (โมเดลคะแนนสูงสุดของ Leonardo.Ai บนบอร์ดนี้)"
+          },
+          "label": "Artificial Analysis Text-to-Image Arena ELO (Leonardo Lucid Origin Ultra)"
+        }
+      ],
+      "strengths": ["โควตาแผนฟรีสูงที่สุดในกลุ่มสำหรับทดลองใช้งาน", "ราคาแผนเสียเงินเริ่มต้นถูกที่สุดกลุ่มหนึ่ง ($12)", "relaxed generation ไม่จำกัดในแผน Premium ขึ้นไป (Essential ได้เฉพาะโควตา fast token รายเดือน)"],
+      "weaknesses": ["แผนฟรีห้ามใช้เชิงพาณิชย์เด็ดขาด", "Production API แยกจ่ายต่างหาก"],
+      "bestFor": ["มือใหม่ที่อยากทดลองสร้างภาพจำนวนมากก่อนตัดสินใจจ่ายเงิน", "ผู้ใช้งบน้อยที่ต้องการอัปเกรดราคาประหยัดเมื่อพร้อมใช้เชิงพาณิชย์"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายเชิงบวก (positive prompt) เป็นหลัก","หักคำที่ไม่ต้องการออกผ่าน negative prompt ที่ใส่แยกช่าง","ปรับโทนภาพเพิ่มเติมตาม Model/Preset ที่เลือกไว้"],"recommendedStructure":"Positive: [สิ่งที่ต้องการ+สไตล์] / Negative: [สิ่งที่ไม่ต้องการ เช่น blurry, low quality]","example":"Positive: a majestic dragon on a mountain peak, fantasy art, highly detailed / Negative: blurry, low quality, extra limbs"},
+      "lastUpdated": "2026-09-07",
+      "plansUrl": { "url": "https://leonardo.ai/pricing/", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "recraft",
+      "name": "Recraft",
+      "vendor": "Recraft",
+      "categories": ["image"],
+      "logoUrl": null,
+      "websiteUrl": "https://www.recraft.ai",
+      "shortDescription": "AI สร้างภาพที่เด่นเรื่องงานเวกเตอร์/ไอคอน/แบรนด์ดีไซน์ เหมาะงานกราฟิกที่ต้องปรับแก้ได้",
+      "longDescription": "Recraft เฉพาะทางด้านการสร้างภาพเวกเตอร์ (SVG) ไอคอน และงานดีไซน์แบรนด์ ต่างจาก AI สร้างภาพทั่วไปที่เน้น raster image อย่างเดียว เหมาะกับนักออกแบบกราฟิกที่ต้องการไฟล์ที่แก้ไขต่อได้",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-01",
+        "confidence": "inference",
+        "sourceUrl": "https://www.recraft.ai/blog/meet-recraft-v4-1-flash",
+        "lastVerified": "2026-09-30",
+        "note": "Recraft เปิดตัว V4.1 Flash โมเดลภาพที่เร็วและถูกที่สุดของ API ในเดือน ก.ย. 2026 (ไม่พบวันที่แน่ชัดภายในเดือน จึงใช้วันที่ 1 เป็นค่าประมาณ)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "50 เครดิต/วัน ภาพเป็นสาธารณะ", "commercialUseAllowed": { "value": false, "confidence": "verified", "sourceUrl": "https://www.recraft.ai/pricing", "lastVerified": "2026-09-07" } },
+          { "name": "Basic", "priceUsdPerMonth": 12, "quota": "1,000 เครดิต/เดือน (บิลรายเดือน) หรือ $10/เดือนถ้าจ่ายรายปี มีสิทธิ์เชิงพาณิชย์เต็ม", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://www.recraft.ai/docs/plans-and-billing/paid-plans", "lastVerified": "2026-09-07" } },
+          { "name": "Pro", "priceUsdPerMonth": 20, "quota": "เริ่ม 2,000 เครดิต/เดือนที่ $20 ปรับขนาดได้ถึง 16,000 เครดิต/เดือนที่ $160 (ราคาต่อเครดิตคงที่ราว $0.01)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://www.recraft.ai/docs/plans-and-billing/paid-plans", "lastVerified": "2026-09-07" }, "notes": "แทนที่แผน Advanced เดิม — Recraft ปรับโครงสร้างแผนใหม่ ไม่มีแผน Advanced แยกต่างหากแล้ว (เดิมไฟล์นี้เคยมี Advanced $27/4,000 เครดิต และ Pro คงที่ $48/8,400 เครดิต ซึ่งไม่ตรงกับหน้าเอกสารทางการปัจจุบันแล้ว)" },
+          { "name": "Teams", "priceUsdPerMonth": 22, "quota": "เริ่ม 2,000 เครดิต/ที่นั่ง/เดือนที่ $22 ปรับขนาดได้ถึง 16,000 เครดิตที่ $176 มี SSO และจัดการบัญชีส่วนกลาง", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://www.recraft.ai/docs/plans-and-billing/paid-plans", "lastVerified": "2026-09-07" } }
+        ],
+        "freeQuota": "50 เครดิต/วัน (ภาพเป็นสาธารณะ ไม่มีสิทธิ์เชิงพาณิชย์เต็ม)",
+        "commercialUseSummary": {
+          "value": "แผนเสียเงินทุกระดับ (Basic/Pro/Teams) ให้สิทธิ์เป็นเจ้าของและใช้เชิงพาณิชย์ได้เต็มรูปแบบแม้หลังยกเลิกสมัครสมาชิก ส่วนแผนฟรีภาพเป็นสาธารณะและเจ้าของสิทธิ์เป็นของ Recraft ไม่ใช่ผู้ใช้",
+          "confidence": "verified",
+          "sourceUrl": "https://www.recraft.ai/pricing",
+          "lastVerified": "2026-09-07"
+        },
+        "sourceUrl": "https://www.recraft.ai/docs/plans-and-billing/paid-plans",
+        "lastVerified": "2026-09-07"
+      },
+      "reviews": {
+        "positiveThemes": ["งานเวกเตอร์/ไอคอนคุณภาพสูง แก้ไขต่อได้จริง", "เหมาะงานแบรนด์ดีไซน์ที่ต้องการไฟล์ SVG"],
+        "negativeThemes": ["ราคาต่อเครดิตของงานเวกเตอร์แพงเป็น 2 เท่าของ raster image ปกติ", "แผนฟรีภาพเป็นสาธารณะและไม่มีสิทธิ์เชิงพาณิชย์"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": ["https://pricepertoken.com/recraft-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1020,
+            "confidence": "verified",
+            "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+            "lastVerified": "2026-09-21",
+            "note": "Recraft V4.1 Utility อันดับ 28 (โมเดลคะแนนสูงสุดของ Recraft บนบอร์ดนี้) — ใกล้เคียง Ideogram 4.0 (1012)"
+          },
+          "label": "Artificial Analysis Text-to-Image Arena ELO (Recraft V4.1 Utility)"
+        }
+      ],
+      "strengths": ["เฉพาะทางงานเวกเตอร์/ไอคอน/แบรนด์ดีไซน์ ไม่มีคู่แข่งตรงมากนัก", "ไฟล์ SVG แก้ไขต่อในโปรแกรมออกแบบได้จริง"],
+      "weaknesses": ["ราคาเครดิตงานเวกเตอร์แพงกว่า raster 2 เท่า", "ไม่เหมาะกับงานภาพสไตล์ศิลปะทั่วไปเท่า Midjourney"],
+      "bestFor": ["นักออกแบบกราฟิก/แบรนด์ที่ต้องการไฟล์เวกเตอร์แก้ไขได้", "งานทำโลโก้/ไอคอนชุดใหญ่"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายภาพหลักก่อน","ตรวจจับคำว่า vector/icon/flat design เพื่อสลับโหมดเอาต์พุตเป็นเวกเตอร์","ปรับสไตล์ตาม Brand kit ที่ตั้งค่าไว้ (ถ้ามี)"],"recommendedStructure":"[สิ่งที่ต้องการ] + ระบุประเภทงาน เช่น \"vector icon\", \"flat illustration\", \"logo\" + [โทนสี]","example":"vector icon of a rocket ship, flat design, minimal, blue and orange color palette"},
+      "lastUpdated": "2026-09-07",
+      "latestVersion": { "name": "Recraft V4.1", "releaseDate": null, "sourceUrl": "https://www.recraft.ai/docs", "lastVerified": "2026-09-21", "note": "เอกสารทางการระบุเป็นโมเดลรุ่นล่าสุด (ไม่ระบุวันเปิดตัว)" },
+      "plansUrl": { "url": "https://www.recraft.ai/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "stable-diffusion-dreamstudio",
+      "name": "Stable Diffusion (DreamStudio / API)",
+      "vendor": "Stability AI",
+      "categories": ["image"],
+      "logoUrl": null,
+      "websiteUrl": "https://stability.ai",
+      "shortDescription": "โมเดลโอเพนซอร์ส รันได้ฟรีบนเครื่องตัวเอง หรือใช้ผ่านบริการคลาวด์แบบจ่ายตามการใช้งาน",
+      "longDescription": "Stable Diffusion เป็นโมเดลโอเพนซอร์สที่ดาวน์โหลดรันบนเครื่องตัวเองได้ฟรีสมบูรณ์ (มีค่าใช้จ่ายแฝงเป็นฮาร์ดแวร์ GPU และไฟฟ้า) หรือใช้ผ่าน DreamStudio/API ของ Stability AI แบบจ่ายตามเครดิตที่ใช้จริง เหมาะกับผู้ใช้สายเทคนิคที่ต้องการควบคุมโมเดลเต็มรูปแบบ",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-04-06",
+        "confidence": "probable",
+        "sourceUrl": "https://www.novareviewhub.com/news/stable-diffusion-4-announcement",
+        "lastVerified": "2026-09-03",
+        "note": "Stability AI เปิดตัว Stable Diffusion 4 (SD4 Base และ SD4 Ultra)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "usage-based",
+        "plans": [
+          { "name": "Local (self-hosted)", "priceUsdPerMonth": 0, "quota": "ฟรีตลอดไป แต่ต้องมี GPU เอง (~$300-1,500) และจ่ายค่าไฟ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://stability.ai/license", "lastVerified": "2026-09-03", "note": "Community License ของ Stability AI ฟรีสำหรับใช้งานวิจัย ไม่เชิงพาณิชย์ และเชิงพาณิชย์ ยกเว้นบริษัทที่มีรายได้ต่อปีเกิน $1M ต้องซื้อ Enterprise License แยก" } },
+          { "name": "DreamStudio / Platform API", "priceUsdPerMonth": null, "quota": "$10 = 1,000 เครดิต (ราว 5,000 ภาพตามอัตราเดิม แต่ปรับขึ้นเป็น 8 เครดิต/ภาพ ส.ค. 2026 ทำให้ได้ภาพน้อยลงในราคาเดิม)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/stable-diffusion/", "lastVerified": "2026-09-03", "note": "DreamStudio ToS มอบความเป็นเจ้าของภาพที่สร้างให้ผู้ใช้ ใช้เชิงพาณิชย์ได้ ไม่ขึ้นกับเกณฑ์รายได้เหมือนการรันโมเดลเอง" } }
+        ],
+        "freeQuota": "รันบนเครื่องตัวเองได้ฟรี 100% (ไม่รวมค่าฮาร์ดแวร์/ไฟฟ้า)",
+        "commercialUseSummary": {
+          "value": "ใช้เชิงพาณิชย์ได้ทั้งสองทาง แต่เงื่อนไขต่างกัน: (1) รันเองผ่าน Community License ฟรีสำหรับทุกการใช้งานรวมเชิงพาณิชย์ ยกเว้นบริษัทรายได้เกิน $1M/ปี ต้องซื้อ Enterprise License แยก และสิทธิ์/ข้อจำกัดต่างกันไปตามเวอร์ชันโมเดล (เช่น SD3 มีเงื่อนไขต่างจากเวอร์ชันเก่า ควรอ่านไลเซนส์เฉพาะของแต่ละโมเดล) (2) ผ่าน DreamStudio ของ Stability AI เอง — Stability มอบความเป็นเจ้าของภาพให้ผู้ใช้เต็มรูปแบบ ไม่มีเกณฑ์รายได้",
+          "confidence": "probable",
+          "sourceUrl": "https://stability.ai/license",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://gptprompts.ai/ai-pricing/stable-diffusion-pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["รันบนเครื่องตัวเองได้ฟรีสมบูรณ์ ไม่มีค่าบริการรายเดือน", "ควบคุมโมเดล/ปรับแต่ง (fine-tune, LoRA) ได้เต็มรูปแบบ", "คอมมูนิตี้โอเพนซอร์สใหญ่มาก มี LoRA/checkpoint ให้เลือกเยอะบน Civitai/HuggingFace"],
+        "negativeThemes": ["ต้องมีความรู้ทางเทคนิคพอสมควรในการติดตั้ง/ใช้งาน ไม่เหมาะมือใหม่แท้จริง", "ราคาเครดิต DreamStudio ปรับขึ้นแบบไม่แจ้งล่วงหน้าในเดือนส.ค. 2026 ทำให้ได้ภาพน้อยลงในราคาเดิม"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "รันเองฟรี 100% แต่ต้องลงทุนฮาร์ดแวร์ GPU เอง",
+        "sourceUrls": ["https://gptprompts.ai/ai-pricing/stable-diffusion-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้ — ไม่แนะนำมือใหม่แท้จริงเพราะต้องมีความรู้เทคนิค"
+      },
+      "usageSignals": [
+        {
+          "metric": "huggingface-downloads",
+          "value": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": null,
+            "lastVerified": null,
+            "note": "ควรดึงยอดดาวน์โหลดจริงจาก HuggingFace API แบบ live แทนตัวเลข ณ เวลาค้นคว้า เนื่องจากเปลี่ยนแปลงทุกวัน"
+          },
+          "label": "HuggingFace Model Downloads (Stable Diffusion checkpoints)"
+        }
+      ],
+      "strengths": ["ฟรี 100% หากรันเอง ไม่มีค่าบริการรายเดือน", "ปรับแต่ง/เทรนโมเดลเองได้เต็มรูปแบบ", "คอมมูนิตี้โอเพนซอร์สใหญ่ที่สุดในกลุ่ม AI สร้างภาพ"],
+      "weaknesses": ["ต้องมีความรู้เทคนิคในการติดตั้ง/ใช้งาน ไม่เหมาะมือใหม่แท้จริง", "ค่าใช้จ่ายฮาร์ดแวร์ GPU สูงหากไม่มีเครื่องอยู่แล้ว", "ราคาเครดิตบริการคลาวด์ปรับขึ้นแบบไม่แจ้งล่วงหน้า"],
+      "bestFor": ["ผู้ใช้สายเทคนิคที่ต้องการควบคุมโมเดลเต็มรูปแบบ", "นักพัฒนาที่ต้องการปรับแต่ง/เทรนโมเดลเฉพาะทาง"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายบวกเรียงตามลำดับคำที่ให้น้ำหนักมาก่อน","รองรับการถ่วงน้ำหนักคำด้วยวงเล็บ เช่น (word:1.2)","หักคำที่ไม่ต้องการออกผ่าน negative prompt"],"recommendedStructure":"[subject], [detail], [style], (คำที่อยากเน้น:1.2) | Negative: [สิ่งที่ไม่ต้องการ]","example":"portrait of a warrior, (glowing eyes:1.3), fantasy armor, digital painting | Negative: blurry, extra fingers"},
+      "lastUpdated": "2026-09-03",
+      "plansUrl": { "url": "https://platform.stability.ai/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "vendor": "Canva",
+      "categories": [
+        "image"
+      ],
+      "logoUrl": null,
+      "websiteUrl": "https://www.canva.com",
+      "shortDescription": "แพลตฟอร์มออกแบบกราฟิกที่มีเครื่องมือ AI ในตัว (Magic Media, Magic Studio) ใช้งานง่ายที่สุดสำหรับครีเอเตอร์",
+      "longDescription": "Canva เป็นเครื่องมือออกแบบกราฟิกที่มีฟีเจอร์ AI ฝังอยู่ในเวิร์กโฟลว์เดียวกัน เช่น สร้างภาพจากข้อความ (Magic Media), ลบพื้นหลัง, ขยาย/ปรับแต่งภาพอัตโนมัติ เหมาะกับครีเอเตอร์ที่ต้องทำกราฟิกโซเชียลมีเดีย งานนำเสนอ และสื่อการตลาดโดยไม่ต้องมีพื้นฐานออกแบบ ราคาที่แสดงเป็นสกุลเงินบาทตามที่หน้าเว็บปรับให้ตามภูมิภาคที่ตรวจ",
+      "launchDate": null,
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "เข้าถึงเครื่องมือออกแบบหลักและฟีเจอร์ AI พื้นฐานได้ฟรี โควตาการใช้ฟีเจอร์ AI ต่อเดือนน้อยกว่าแผนเสียเงิน (หน้าเว็บไม่ได้ระบุตัวเลขโควตา AI ของแผนฟรีตรงๆ)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.canva.com/policies/content-license-agreement/",
+              "lastVerified": "2026-09-20",
+              "note": "Content License Agreement ให้ 'Free Content License' แบบไม่จำกัดเวลา ใช้ได้ในงานโฆษณา งานขาย สื่อสิ่งพิมพ์ โซเชียลมีเดีย ฯลฯ โดยไม่แยกว่าบัญชีฟรีหรือเสียเงิน ยกเว้น 'Branded Content' ของแบรนด์คู่ค้าที่ใช้ได้เฉพาะส่วนตัวเท่านั้น"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": null,
+            "priceLabel": "฿230/เดือน ต่อ 1 คน",
+            "quota": "ปลดล็อกคอนเทนต์/เทมเพลตพรีเมียม เครื่องมือออกแบบขั้นสูง และโควตาฟีเจอร์ AI สูงกว่าแผนฟรี",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.canva.com/policies/content-license-agreement/",
+              "lastVerified": "2026-09-20",
+              "note": "ครอบคลุมเพิ่มเติมด้วย 'Pro Content License' สำหรับคอนเทนต์พรีเมียมที่ใช้ในดีไซน์"
+            }
+          },
+          {
+            "name": "Business",
+            "priceUsdPerMonth": null,
+            "priceLabel": "฿320/เดือน ต่อคน",
+            "quota": "เพิ่มเครื่องมือสำหรับทีม/ธุรกิจ เช่น Brand Kit และโควตาฟีเจอร์ AI สูงขึ้น",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.canva.com/policies/content-license-agreement/",
+              "lastVerified": "2026-09-20"
+            }
+          }
+        ],
+        "freeQuota": "เครื่องมือออกแบบหลักและฟีเจอร์ AI พื้นฐานฟรี ไม่จำกัดเวลาใช้งาน",
+        "commercialUseSummary": {
+          "value": "Canva's Content License Agreement ให้สิทธิ์ใช้ 'Free Content' เชิงพาณิชย์แบบไม่จำกัดเวลาและไม่แยกตามระดับบัญชี ครอบคลุมงานโฆษณา บรรจุภัณฑ์ นำเสนองาน วิดีโอ โปสการ์ดเพื่อขาย ฯลฯ ข้อยกเว้นคือ 'Branded Content' (โลโก้/ทรัพย์สินของแบรนด์คู่ค้า) ที่ใช้ได้เฉพาะส่วนตัว ห้ามใช้เชิงพาณิชย์ และห้ามนำคอนเทนต์ของ Canva ไปขายต่อแบบเดี่ยวๆ (เช่น ทำเป็นคลิปอาร์ตขาย)",
+          "confidence": "verified",
+          "sourceUrl": "https://www.canva.com/policies/content-license-agreement/",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://www.canva.com/pricing/",
+        "lastVerified": "2026-09-20"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-20",
+        "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
+      },
+      "usageSignals": [],
+      "strengths": [
+        "ใช้เชิงพาณิชย์ได้ตั้งแต่บัญชีฟรี (ยกเว้น Branded Content ของแบรนด์คู่ค้า)",
+        "รวมเครื่องมือ AI (สร้างภาพ ลบพื้นหลัง ขยายภาพ) ไว้ในเวิร์กโฟลว์ออกแบบเดียว ไม่ต้องสลับแอป",
+        "เทมเพลตเยอะ เหมาะกับคนไม่มีพื้นฐานออกแบบ"
+      ],
+      "weaknesses": [
+        "โควตาฟีเจอร์ AI ของแผนฟรีจำกัดกว่าแผนเสียเงินมาก และหน้าเว็บไม่ระบุตัวเลขชัดเจน",
+        "ห้ามใช้คอนเทนต์ของ Canva ไปทำเป็นสต็อกขายต่อ",
+        "ฟีเจอร์ AI ขั้นสูง (Ultra) ต้องซื้อเพิ่มเป็น add-on แยกจากค่าสมาชิก"
+      ],
+      "bestFor": [
+        "ครีเอเตอร์/เจ้าของธุรกิจ SME ที่ทำกราฟิกโซเชียลมีเดียและสื่อการตลาดเอง",
+        "มือใหม่ที่ไม่มีพื้นฐานออกแบบแต่ต้องการงานดูเป็นมืออาชีพเร็ว"
+      ],
+      "promptWorkflow": {
+        "steps": [
+          "เลือกเครื่องมือ AI ที่ต้องการก่อน (Magic Media, ลบพื้นหลัง, ขยายภาพ ฯลฯ)",
+          "อธิบายสิ่งที่ต้องการเป็นข้อความสั้นๆ สำหรับฟีเจอร์สร้างภาพ",
+          "ปรับแต่งผลลัพธ์ต่อในเครื่องมือออกแบบปกติของ Canva"
+        ],
+        "recommendedStructure": "[สิ่งที่ต้องการ] + [สไตล์/โทนสี] + [อัตราส่วนภาพที่ต้องการ]",
+        "example": "โปสเตอร์โปรโมชั่นร้านกาแฟ โทนสีอบอุ่น มินิมอล ขนาดโพสต์ Instagram สี่เหลี่ยมจัตุรัส"
+      },
+      "lastUpdated": "2026-09-20",
+      "plansUrl": { "url": "https://www.canva.com/pricing/", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "photoroom",
+      "name": "Photoroom",
+      "vendor": "Photoroom",
+      "categories": [
+        "image"
+      ],
+      "logoUrl": null,
+      "websiteUrl": "https://www.photoroom.com",
+      "shortDescription": "แต่งภาพสินค้าด้วย AI: ลบพื้นหลัง เปลี่ยนฉาก ใส่แบบจำลองเสื้อผ้า AI เหมาะกับคนขายของออนไลน์",
+      "longDescription": "Photoroom เป็นเครื่องมือ AI เฉพาะทางสำหรับแต่งภาพสินค้า เช่น ลบพื้นหลัง (Background Remover), สร้างฉากหลังใหม่ด้วย AI, รีทัช, ขยาย/ปรับขนาดภาพ และสร้างวิดีโอสั้นจากภาพสินค้า เหมาะกับคนขายของออนไลน์ที่ต้องแต่งภาพจำนวนมากให้ดูเป็นมืออาชีพเร็วๆ หน้าราคาทางการที่ตรวจไม่ได้แสดงแผนฟรีในตารางราคา แต่เว็บระบุว่าเริ่มใช้งานฟรีได้ก่อนสมัครแผนเสียเงิน",
+      "launchDate": null,
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "ใช้เครื่องมือหลัก (ลบพื้นหลัง ฯลฯ) ได้ฟรีในโควตาจำกัด ภาพที่ export มีลายน้ำ Photoroom",
+            "commercialUseAllowed": {
+              "value": false,
+              "confidence": "verified",
+              "sourceUrl": "https://help.photoroom.com/en/articles/12523455-free-accounts-and-commercial-use",
+              "lastVerified": "2026-09-20",
+              "note": "Help Center อ้างข้อความจากข้อกำหนดของ Photoroom ตรงๆ: บัญชีฟรีได้รับสิทธิ์ใช้งานเพื่อวัตถุประสงค์ส่วนตัวที่ไม่ใช่เชิงพาณิชย์เท่านั้น ('for your own personal, non-commercial purposes')"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": null,
+            "priceLabel": "฿149/เดือน (บิลรายปี ฿83.50/เดือน)",
+            "quota": "4,500 AI credits/เดือน, export 1,000 ภาพ/เดือน, AI Backgrounds, AI Fashion Models",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://www.photoroom.com/pricing",
+              "lastVerified": "2026-09-20",
+              "note": "หน้าราคาไม่ได้เขียนคำว่าเชิงพาณิชย์ตรงๆ แต่ Help Center ระบุว่าบัญชีเสียเงินใช้เชิงพาณิชย์ได้ ต่างจากบัญชีฟรี"
+            }
+          },
+          {
+            "name": "Max",
+            "priceUsdPerMonth": null,
+            "priceLabel": "฿399/เดือน (บิลรายปี ฿205/เดือน)",
+            "quota": "14,000 AI credits/เดือน, export 3,000 ภาพ/เดือน, เพิ่ม Video Generator",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://www.photoroom.com/pricing",
+              "lastVerified": "2026-09-20"
+            }
+          },
+          {
+            "name": "Ultra",
+            "priceUsdPerMonth": null,
+            "priceLabel": "฿3,290/เดือน (บิลรายปี ฿2,742/เดือน)",
+            "quota": "75,000 AI credits/เดือน, export 10,000 ภาพ/เดือน, ความละเอียด 4K",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://www.photoroom.com/pricing",
+              "lastVerified": "2026-09-20"
+            }
+          }
+        ],
+        "freeQuota": "ใช้เครื่องมือหลักได้ฟรีในโควตาจำกัด แต่ภาพมีลายน้ำและใช้เชิงพาณิชย์ไม่ได้",
+        "commercialUseSummary": {
+          "value": "Photoroom Help Center อ้างข้อความจากข้อกำหนดของบริษัทตรงๆ ว่าบัญชีฟรี 'ได้รับสิทธิ์ใช้งานเพื่อวัตถุประสงค์ส่วนตัวที่ไม่ใช่เชิงพาณิชย์เท่านั้น' ต้องอัปเกรดเป็นแผนเสียเงิน (เริ่ม ฿149/เดือน) จึงจะใช้ภาพที่แต่งแล้วในเชิงพาณิชย์ได้ ภาพจากบัญชีฟรียังติดลายน้ำด้วย",
+          "confidence": "verified",
+          "sourceUrl": "https://help.photoroom.com/en/articles/12523455-free-accounts-and-commercial-use",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://www.photoroom.com/pricing",
+        "lastVerified": "2026-09-20"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-20",
+        "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
+      },
+      "usageSignals": [],
+      "strengths": [
+        "เฉพาะทางด้านภาพสินค้า: ลบพื้นหลัง รีทัช สร้างฉากหลัง AI ในเครื่องมือเดียว",
+        "มีฟีเจอร์ AI Fashion Models จำลองนางแบบใส่เสื้อผ้าโดยไม่ต้องถ่ายจริง",
+        "ใช้งานได้ทั้งเว็บและแอปมือถือ"
+      ],
+      "weaknesses": [
+        "บัญชีฟรีใช้เชิงพาณิชย์ไม่ได้เลยและภาพมีลายน้ำ ต่างจาก Canva ที่แผนฟรีใช้เชิงพาณิชย์ได้",
+        "ระบบเครดิต AI ใช้ร่วมกันหลายฟีเจอร์ เครดิตหมดเร็วถ้าใช้ฟีเจอร์ที่กินเครดิตสูงอย่าง Fashion Models 4K",
+        "ราคาที่เห็นเป็นบิลรายปีที่ผ่อนต่อเดือน ราคาบิลรายเดือนจริงสูงกว่าตัวเลขที่โชว์เด่น"
+      ],
+      "bestFor": [
+        "คนขายของออนไลน์ที่ต้องแต่งภาพสินค้าจำนวนมากให้ดูเป็นมืออาชีพ",
+        "ร้านเสื้อผ้าออนไลน์ที่อยากได้ภาพนางแบบโดยไม่ต้องจ้างถ่ายจริง"
+      ],
+      "promptWorkflow": {
+        "steps": [
+          "อัปโหลดภาพสินค้าที่ถ่ายไว้แล้วเป็นหลัก",
+          "เลือกเครื่องมือ (ลบพื้นหลัง/สร้างฉาก/รีทัช) แยกจากข้อความ",
+          "ถ้าใช้ AI Backgrounds ให้อธิบายฉากที่ต้องการเป็นข้อความสั้นๆ"
+        ],
+        "recommendedStructure": "[อัปโหลดภาพสินค้า] + [เลือกเครื่องมือ] + [อธิบายฉากหลังที่ต้องการ ถ้ามี]",
+        "example": "ภาพขวดน้ำหอมวางบนโต๊ะหินอ่อน แสงธรรมชาติจากหน้าต่าง โทนสีครีมทอง"
+      },
+      "lastUpdated": "2026-09-20",
+      "plansUrl": { "url": "https://www.photoroom.com/pricing", "lastVerified": "2026-09-21" }
+    }
+  ]
+}

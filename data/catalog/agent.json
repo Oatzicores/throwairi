@@ -1,0 +1,216 @@
+{
+  "tools": [
+    {
+      "id": "manus-ai",
+      "name": "Manus",
+      "vendor": "Manus AI",
+      "categories": ["agent"],
+      "logoUrl": null,
+      "websiteUrl": "https://manus.im",
+      "shortDescription": "AI agent อัตโนมัติทำงานแทนได้ครบวงจร ตั้งแต่ deep research ไปจนถึงสร้างเว็บไซต์/deploy จริง",
+      "longDescription": "Manus เป็น agent ที่ทำงานอัตโนมัติแบบ end-to-end ได้หลากหลาย ตั้งแต่ deep research, สร้างสไลด์นำเสนอ, ไปจนถึงเขียนเว็บไซต์และ deploy จริง ใช้ระบบเครดิตต่อ task ที่คิดตาม token, เวลาเครื่อง VM และ API ภายนอกที่ใช้ในงานนั้นๆ",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-28",
+        "confidence": "verified",
+        "sourceUrl": "https://manus.im/blog",
+        "lastVerified": "2026-09-30",
+        "note": "Manus เปิดตัว Manus 2.0 (28 ก.ย. 2026) พร้อม Cascade agent harness, Cloud Computer, Automations, Manus Studio และ Cue"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "300 เครดิต/วัน (รีเซ็ตทุก 24 ชม.), 1 งานพร้อมกัน, 2 งานตั้งเวลา, ใช้ Manus 1.6 Lite", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus", "lastVerified": "2026-09-03", "note": "⚠️ แม้ Manus จะไม่อ้างสิทธิ์ Output แต่แผนฟรีตั้งใจไว้สำหรับการใช้งานที่ไม่ใช่เชิงพาณิชย์/ทดลองใช้เท่านั้น ต้องใช้แผนเสียเงินสำหรับงานเชิงพาณิชย์จริงจัง" } },
+          { "name": "Pro (เริ่มต้น)", "priceUsdPerMonth": 20, "quota": "4,000 เครดิต/เดือน, 20 งานพร้อมกัน, เข้าถึง Manus 1.6/1.6 Max/1.6 Lite", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus", "lastVerified": "2026-09-03", "note": "Manus ไม่อ้างสิทธิ์ Input/Output ผู้ใช้เป็นเจ้าของงาน (เว็บไซต์/ภาพ/วิดีโอ/สไลด์) ที่สร้างและใช้เชิงพาณิชย์ได้ในแผนเสียเงิน" } },
+          { "name": "Pro (กลาง)", "priceUsdPerMonth": 40, "quota": "8,000 เครดิต/เดือน", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus", "lastVerified": "2026-09-03" } },
+          { "name": "Pro (สูงสุด)", "priceUsdPerMonth": 200, "quota": "40,000 เครดิต/เดือน เหมาะทีมที่รัน deep research ต่อเนื่อง", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus", "lastVerified": "2026-09-03" } },
+          { "name": "Team", "priceUsdPerMonth": 20, "quota": "ต่อผู้ใช้/เดือน ขั้นต่ำ 2 คน รวม 8,000+ เครดิต/seat/เดือน", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus", "lastVerified": "2026-09-03" } }
+        ],
+        "freeQuota": "300 เครดิต/วัน รีเซ็ตทุก 24 ชม.",
+        "commercialUseSummary": {
+          "value": "Manus ไม่อ้างสิทธิ์ความเป็นเจ้าของ Input/Output — งานที่สร้าง (เว็บไซต์ ภาพ วิดีโอ สไลด์) เป็นของผู้ใช้และใช้เชิงพาณิชย์ได้ ⚠️ แต่แผนฟรีตั้งใจไว้สำหรับการประเมิน/ใช้งานที่ไม่ใช่เชิงพาณิชย์เท่านั้น — งานเชิงพาณิชย์จริงจังควรใช้แผนเสียเงินขึ้นไป",
+          "confidence": "probable",
+          "sourceUrl": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.nocode.mba/articles/manus-ai-pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ทำงานอัตโนมัติได้ครบวงจรตั้งแต่ research ถึง deploy เว็บไซต์จริง", "แผนฟรีให้เครดิตรีเซ็ตทุกวัน ทดลองได้ต่อเนื่อง", "รองรับงานพร้อมกันหลายงาน (concurrent tasks) ในแผนเสียเงิน"],
+        "negativeThemes": ["ระบบเครดิตซับซ้อน คิดตาม token+เวลาเครื่อง+API ภายนอก ทำให้คาดเดาต้นทุนยาก", "แผนสูงสุดราคาสูงถึง $200/เดือน"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "เครดิตรีเซ็ตทุกวันทำให้ทดลองต่อเนื่องได้ แต่จำกัดที่ 1 งานพร้อมกัน",
+        "sourceUrls": ["https://www.nocode.mba/articles/manus-ai-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["ทำงานอัตโนมัติครบวงจรตั้งแต่ research ถึง deploy จริง", "แผนฟรีเครดิตรีเซ็ตทุกวัน ทดลองต่อเนื่องได้", "รองรับงานพร้อมกันหลายงานในแผนเสียเงิน"],
+      "weaknesses": ["ระบบเครดิตซับซ้อน คาดเดาต้นทุนจริงยาก", "แผนสูงสุดราคาสูงมาก ($200/เดือน)", "แผนฟรีตั้งใจไว้สำหรับทดลอง/ไม่ใช่เชิงพาณิชย์เท่านั้น"],
+      "bestFor": ["ผู้ใช้ที่ต้องการมอบหมายงานวิจัย/สร้างเว็บไซต์ให้ AI ทำแทนทั้งหมด", "ทีมที่ต้องรัน deep research ต่อเนื่อง"],
+      "promptWorkflow": {"steps":["อ่านเป้าหมายงานโดยรวมก่อน","วางแผนขั้นตอนย่อยที่ต้องทำเองอัตโนมัติ","ลงมือทำทีละขั้น พร้อมรายงานความคืบหน้าให้เห็น"],"recommendedStructure":"อธิบายเป้าหมายสุดท้ายที่ต้องการให้ชัดเจน พร้อมเงื่อนไข/ข้อจำกัดที่สำคัญ","example":"ช่วยหาข้อมูลคู่แข่ง 5 เจ้าในธุรกิจร้านกาแฟพรีเมียม สรุปจุดแข็ง-จุดอ่อน แล้วทำเป็นตารางเปรียบเทียบ"},
+      "lastUpdated": "2026-09-03",
+      "plansUrl": { "url": "https://manus.im/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "perplexity-comet",
+      "name": "Comet",
+      "vendor": "Perplexity AI",
+      "categories": ["agent", "search"],
+      "logoUrl": null,
+      "websiteUrl": "https://www.perplexity.ai/comet",
+      "shortDescription": "เบราว์เซอร์ AI agent จาก Perplexity ท่องเว็บ/ค้นข้อมูล/ทำงานอัตโนมัติแทนผู้ใช้ ตอนนี้ฟรีแล้ว",
+      "longDescription": "Comet เป็นเบราว์เซอร์ที่มี AI agent ในตัว ทำงานแทนผู้ใช้ได้ เช่น ค้นข้อมูล จองของ กรอกฟอร์ม Perplexity ยกเลิกกำแพงราคาตั้งแต่ 2 ต.ค. 2025 ทำให้ฟีเจอร์หลัก (agentic search, voice mode, Deep Research) ใช้ฟรีได้แล้วบนทุกแพลตฟอร์ม เหลือเฉพาะ background automation ขั้นสูงที่ยังต้องใช้แผน Max",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2025-10-02",
+        "confidence": "probable",
+        "sourceUrl": "https://www.cnbc.com/2025/10/02/perplexity-ai-comet-browser-free-.html",
+        "lastVerified": "2026-09-07",
+        "note": "แก้ไขวันที่ที่คลาดเคลื่อน: วันที่ Perplexity เปิด Comet ให้ใช้ฟรีทั่วโลกคือ 2 ต.ค. 2025 (ค่าเดิม 18 มี.ค. 2026 ที่บันทึกไว้ก่อนหน้านี้แท้จริงคือวันเปิดตัว Comet Enterprise ซึ่งเป็นคนละเหตุการณ์ — ยืนยันจาก CNBC และ TechRepublic ตรงกัน)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "ใช้ agentic search, voice mode, Deep Research ได้ฟรีทั้งหมด (ตั้งแต่ 18 มี.ค. 2026)", "commercialUseAllowed": { "value": false, "confidence": "inference", "sourceUrl": "https://www.perplexity.ai/hub/legal/comet-terms-of-service", "lastVerified": "2026-09-03", "note": "อนุมานจาก ToS หลักของ Perplexity ที่จำกัดผลิตภัณฑ์ consumer ไว้เพื่อใช้ส่วนตัวเท่านั้น (ไม่พบข้อความห้ามเชิงพาณิชย์ชัดเจนใน Comet ToS โดยตรงในรอบค้นคว้านี้ — เป็นการอนุมานจากบริบทเดียวกับ Perplexity หลัก ควรอ่าน Comet ToS ฉบับเต็มก่อนใช้จริง)" } },
+          { "name": "Comet Plus", "priceUsdPerMonth": 5, "quota": "เข้าถึงเนื้อหาพรีเมียมจากสำนักพิมพ์พันธมิตร", "commercialUseAllowed": { "value": null, "confidence": "unknown", "sourceUrl": null, "lastVerified": null } },
+          { "name": "Pro", "priceUsdPerMonth": 20, "quota": "โควตาสูงขึ้น", "commercialUseAllowed": { "value": false, "confidence": "inference", "sourceUrl": "https://www.perplexity.ai/hub/legal/terms-of-service", "lastVerified": "2026-09-03", "note": "อนุมานจาก ToS หลักของ Perplexity — แผน consumer (รวม Pro) จำกัดเพื่อใช้ส่วนตัว ธุรกิจที่ต้องการใช้เชิงพาณิชย์ควรพิจารณา Comet for Enterprise" } },
+          { "name": "Max", "priceUsdPerMonth": 200, "quota": "ปลดล็อก background automation/agent ทำงานอัตโนมัติเบื้องหลังแบบเต็มรูปแบบ, Perplexity Labs, Model Council", "commercialUseAllowed": { "value": false, "confidence": "inference", "sourceUrl": "https://www.perplexity.ai/hub/legal/terms-of-service", "lastVerified": "2026-09-03" } }
+        ],
+        "freeQuota": "ฟีเจอร์หลักทั้งหมดใช้ฟรีตั้งแต่ มี.ค. 2026",
+        "commercialUseSummary": {
+          "value": "⚠️ Comet เป็นผลิตภัณฑ์ของ Perplexity ซึ่ง ToS หลักจำกัดแผน consumer (Free/Pro/Max) ไว้เพื่อใช้ส่วนตัวเท่านั้น ไม่พบข้อความอนุญาต/ห้ามเชิงพาณิชย์ที่เจาะจงสำหรับ Comet โดยตรงในรอบค้นคว้านี้ — ผู้ที่ต้องการใช้ Comet เพื่องานธุรกิจควรพิจารณา 'Comet for Enterprise' ที่มีเงื่อนไขแยกต่างหากซึ่งออกแบบมาเพื่อใช้เชิงพาณิชย์โดยเฉพาะ",
+          "confidence": "inference",
+          "sourceUrl": "https://www.perplexity.ai/hub/legal/comet-terms-of-service",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.eesel.ai/blog/perplexity-comet-pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ฟีเจอร์หลักฟรีทั้งหมดตั้งแต่ มี.ค. 2026 — คุ้มค่าที่สุดในกลุ่ม agent browser", "เหมาะผู้ใช้ทั่วไปที่อยากลอง AI agent โดยไม่ต้องจ่ายเงินเลย"],
+        "negativeThemes": ["background automation ขั้นสูง (จุดขายหลักของ agent) ยังต้องจ่าย Max ถึง $200/เดือน", "ฟีเจอร์ฟรีอาจไม่ครอบคลุมงานอัตโนมัติที่ซับซ้อนจริงจัง"],
+        "paidVerifiedSummary": "ผู้ใช้งานหนักที่ต้องการ background automation เต็มรูปแบบส่วนใหญ่ต้องจ่าย Max ($200) ซึ่งเป็นการลงทุนสูง",
+        "freeTierSummary": "ผู้ใช้ทั่วไปส่วนใหญ่พอใจมากที่ฟีเจอร์หลักฟรีหมด",
+        "sourceUrls": ["https://www.eesel.ai/blog/perplexity-comet-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["ฟีเจอร์หลัก AI agent ฟรีทั้งหมด — คุ้มค่าที่สุดในกลุ่ม", "เป็นเบราว์เซอร์เต็มรูปแบบ ไม่ใช่แค่ปลั๊กอิน"],
+      "weaknesses": ["Background automation ขั้นสูงต้องจ่าย Max ราคาสูงถึง $200/เดือน", "ยังเป็นผลิตภัณฑ์ค่อนข้างใหม่ ฟีเจอร์อาจเปลี่ยนแปลงบ่อย", "⚠️ แผน consumer (Free/Pro/Max) น่าจะจำกัดเพื่อใช้ส่วนตัวตาม ToS หลักของ Perplexity — ธุรกิจควรพิจารณา Comet for Enterprise"],
+      "bestFor": ["มือใหม่ที่อยากลอง AI agent ท่องเว็บโดยไม่เสียเงินเลย", "ผู้ใช้ที่ต้องการเบราว์เซอร์ผสาน AI ในการค้นข้อมูล"],
+      "promptWorkflow": {"steps":["อ่านหน้าเว็บที่เปิดอยู่เป็นบริบทก่อน","อ่านคำสั่งงานที่พิมพ์เป็นเป้าหมาย","ท่องเว็บ/คลิก/กรอกข้อมูลแทนตามขั้นตอนที่วางแผนไว้"],"recommendedStructure":"ระบุเว็บไซต์/หน้าที่เกี่ยวข้อง + สิ่งที่ต้องการให้ทำบนหน้านั้น","example":"เข้าเว็บจองตั๋วหนัง หารอบฉายรอบดึกสุดของหนังที่กำลังฉายอยู่ แล้วสรุปราคาที่นั่งว่างให้ดู"},
+      "lastUpdated": "2026-09-07",
+      "plansUrl": { "url": "https://www.perplexity.ai/pro", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "zapier-agents",
+      "name": "Zapier Agents",
+      "vendor": "Zapier",
+      "categories": ["agent"],
+      "logoUrl": null,
+      "websiteUrl": "https://zapier.com/agents",
+      "shortDescription": "AI agent สร้างเองได้ ผสานกับแอปนับพันตัวที่ Zapier รองรับอยู่แล้ว เหมาะระบบอัตโนมัติทางธุรกิจ",
+      "longDescription": "Zapier Agents เป็นผลิตภัณฑ์แยกจาก Zaps ทั่วไป (แม้ชื่อคล้ายกัน) ให้สร้าง AI agent ที่เชื่อมกับแอปนับพันตัวในระบบนิเวศ Zapier ได้ เหมาะกับธุรกิจที่ต้องการระบบอัตโนมัติซับซ้อนที่ผูกกับเครื่องมือที่มีอยู่แล้ว",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-29",
+        "confidence": "probable",
+        "sourceUrl": "https://zapier.com/blog/zapier-connector-in-muse/",
+        "lastVerified": "2026-09-30",
+        "note": "Zapier เปิด connector ใน Muse ของ Meta (29 ก.ย. 2026) เชื่อมกว่า 9,000 แอปผ่าน Zapier MCP (อ้างตามผลค้นหาบล็อกทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Agents Free", "priceUsdPerMonth": 0, "quota": "400 activities/เดือน (แต่ละครั้งที่ agent ใช้เครื่องมือ/ค้นเว็บ/ดึงข้อมูลนับเป็น 1 activity)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://res.cloudinary.com/zapier-media/image/upload/v1745964743/Legal/Zapier_Terms_of_Service_2024-08-16_qgm4ho.pdf", "lastVerified": "2026-09-03", "note": "Zapier เป็น SaaS มาตรฐาน ไม่มีข้อจำกัดการใช้เชิงพาณิชย์แบบที่ Perplexity/n8n มี — ผู้ใช้เป็นเจ้าของ Customer Content เต็มรูปแบบทุกแผน" } },
+          { "name": "Agents Pro", "priceUsdPerMonth": 50, "quota": "1,500 activities/เดือน", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://res.cloudinary.com/zapier-media/image/upload/v1745964743/Legal/Zapier_Terms_of_Service_2024-08-16_qgm4ho.pdf", "lastVerified": "2026-09-03" } },
+          { "name": "Agents Enterprise", "priceUsdPerMonth": null, "quota": "ราคาตามการเจรจา", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://res.cloudinary.com/zapier-media/image/upload/v1745964743/Legal/Zapier_Terms_of_Service_2024-08-16_qgm4ho.pdf", "lastVerified": "2026-09-03" } }
+        ],
+        "freeQuota": "400 activities/เดือน",
+        "commercialUseSummary": {
+          "value": "Zapier ใช้เงื่อนไข SaaS มาตรฐาน — ผู้ใช้เป็นเจ้าของ Customer Content ทั้งหมดที่ส่งผ่านระบบ Zapier ไม่อ้างสิทธิ์เป็นเจ้าของหรือขายข้อมูลผู้ใช้ ใช้เชิงพาณิชย์ได้ทุกแผนรวมถึงแผนฟรี ไม่มีข้อจำกัด 'personal use only' แบบที่พบใน Perplexity",
+          "confidence": "probable",
+          "sourceUrl": "https://res.cloudinary.com/zapier-media/image/upload/v1745964743/Legal/Zapier_Terms_of_Service_2024-08-16_qgm4ho.pdf",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.selecthub.com/p/ai-agent-builder-software/zapier-agents/",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ผสานกับแอปนับพันตัวที่ Zapier รองรับอยู่แล้ว ไม่ต้องเขียนโค้ดเชื่อมต่อเอง", "เหมาะธุรกิจที่ใช้ Zapier อยู่แล้ว ต่อยอดเป็น agent ได้ทันที"],
+        "negativeThemes": ["โครงสร้างราคาสับสน เพราะ 'agent' มีทั้งผลิตภัณฑ์แยก (Agents) และ AI step ในผลิตภัณฑ์ Zaps เดิม ราคาคนละระบบ", "1 คำสั่งที่ต้องค้นหลายแหล่งอาจใช้ activities จำนวนมากอย่างรวดเร็ว ทำให้โควตาหมดเร็วกว่าที่คาด"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": ["https://www.selecthub.com/p/ai-agent-builder-software/zapier-agents/"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["ผสานกับแอปธุรกิจนับพันตัวได้ทันที ไม่ต้องเขียนโค้ด", "เหมาะต่อยอดจากระบบ Zapier ที่มีอยู่แล้ว"],
+      "weaknesses": ["โครงสร้างราคาสับสนระหว่าง Agents กับ AI step ใน Zaps", "โควตา activities หมดเร็วสำหรับงานที่ต้องค้นหลายแหล่ง"],
+      "bestFor": ["ธุรกิจที่ใช้ Zapier เชื่อมต่อเครื่องมือต่างๆ อยู่แล้ว", "ทีมที่ไม่ต้องการเขียนโค้ดเชื่อมต่อ API เอง"],
+      "promptWorkflow": {"steps":["อ่านทริกเกอร์ (เหตุการณ์ที่จะเริ่มทำงาน) ก่อน","อ่านคำอธิบายงานที่ต้องการให้ทำเป็นภาษาธรรมชาติ","แมปงานนั้นเข้ากับแอปที่เชื่อมต่อไว้โดยอัตโนมัติ"],"recommendedStructure":"เมื่อ [เหตุการณ์ทริกเกอร์] เกิดขึ้น ให้ทำ [สิ่งที่ต้องการ] ในแอป [ชื่อแอปปลายทาง]","example":"เมื่อมีอีเมลใหม่จากลูกค้าเข้า Gmail ให้สรุปใจความสำคัญแล้วส่งเข้า Slack ช่อง #customer-support"},
+      "lastUpdated": "2026-09-03",
+      "plansUrl": { "url": "https://zapier.com/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "vendor": "n8n GmbH",
+      "categories": ["agent"],
+      "logoUrl": null,
+      "websiteUrl": "https://n8n.io",
+      "shortDescription": "แพลตฟอร์ม workflow automation แบบโอเพนซอร์ส รองรับ AI agent node รันเองฟรีได้ 100%",
+      "longDescription": "n8n เป็นเครื่องมือ automation แบบ low-code ที่รองรับ AI agent node ในตัว จุดเด่นคือ self-hosted แบบโอเพนซอร์สฟรีสมบูรณ์ (ต้องมีเซิร์ฟเวอร์เอง) หรือใช้เวอร์ชันคลาวด์ที่คิดราคาตาม 'execution' ไม่ใช่ตาม step ทำให้ workflow ซับซ้อนไม่แพงขึ้นตามจำนวน node",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-15",
+        "confidence": "probable",
+        "sourceUrl": "https://docs.n8n.io/release-notes/",
+        "lastVerified": "2026-09-30",
+        "note": "n8n อัปเดตต่อเนื่องในเดือน ก.ย. 2026 เช่น Grist node รองรับ OAuth2 (15 ก.ย.) และ Edit Image node (8 ก.ย.) (อ้างตามผลค้นหาหน้าทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Self-hosted (Community)", "priceUsdPerMonth": 0, "quota": "ฟรีสมบูรณ์แบบโอเพนซอร์ส ต้องมีเซิร์ฟเวอร์เอง (~$5-7/เดือนสำหรับ VPS)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://docs.n8n.io/n8n-community-license", "lastVerified": "2026-09-19", "note": "⚠️ ใช้ได้ฟรีเพื่อ 'internal business purposes' คือใช้ automate งานภายในธุรกิจของตัวเอง (นับเป็นการใช้เชิงพาณิชย์ในความหมายที่ผู้ใช้ทั่วไปสนใจ) แต่ 'Sustainable Use License' ห้ามฝัง n8n เข้าไปในสินค้าที่ขาย หรือรีเซล n8n เป็นบริการโดยไม่มีไลเซนส์เชิงพาณิชย์แยก" } },
+          { "name": "Cloud Starter", "priceUsdPerMonth": 24, "quota": "2,500 executions/เดือน, AI credits 2,300/เดือน", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://docs.n8n.io/n8n-community-license", "lastVerified": "2026-09-19" } },
+          { "name": "Cloud Pro", "priceUsdPerMonth": 60, "quota": "10,000 executions/เดือน, AI credits สูงสุด 13,700/เดือน + เครื่องมือทีม", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://docs.n8n.io/n8n-community-license", "lastVerified": "2026-09-19" } },
+          { "name": "Cloud Business", "priceUsdPerMonth": 800, "quota": "40,000 executions/เดือน", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://docs.n8n.io/n8n-community-license", "lastVerified": "2026-09-19" } }
+        ],
+        "freeQuota": "self-hosted ฟรีสมบูรณ์ (ไม่รวมค่าเซิร์ฟเวอร์)",
+        "commercialUseSummary": {
+          "value": "n8n ใช้ 'Sustainable Use License' (fair-code) — ใช้ automate งานภายในธุรกิจของตัวเองได้ฟรีแม้เป็นบริษัทเชิงพาณิชย์ (นี่คือการใช้งานที่ผู้ใช้ทั่วไปต้องการ) รวมถึงรับงาน consulting/สร้าง workflow ให้ลูกค้าได้โดยไม่ต้องมีไลเซนส์แยก ข้อห้ามจริงๆ คือห้ามนำซอร์สโค้ด n8n ไปฝังในผลิตภัณฑ์ที่ขาย หรือเปิดให้บริการ n8n แบบรีเซลเป็นธุรกิจของตัวเอง ซึ่งต้องซื้อไลเซนส์เชิงพาณิชย์แยกต่างหาก",
+          "confidence": "probable",
+          "sourceUrl": "https://docs.n8n.io/n8n-community-license",
+          "lastVerified": "2026-09-19"
+        },
+        "sourceUrl": "https://costbench.com/software/ai-automation/n8n/",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["self-hosted ฟรีสมบูรณ์แบบโอเพนซอร์ส ควบคุมได้เต็มรูปแบบ", "คิดราคาตาม execution ไม่ใช่ตาม step ทำให้ workflow ซับซ้อนไม่แพงขึ้น", "มีส่วนลด 50% สำหรับ startup ขนาดเล็ก"],
+        "negativeThemes": ["ต้องมีความรู้เทคนิคพอสมควรในการตั้งค่า self-hosted เอง", "แผน Cloud Business ราคาสูงถึง $800/เดือน"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "self-hosted ฟรี 100% เหมาะผู้ใช้สายเทคนิคที่มีเซิร์ฟเวอร์เอง",
+        "sourceUrls": ["https://costbench.com/software/ai-automation/n8n/"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["self-hosted ฟรีสมบูรณ์ ควบคุมได้เต็มรูปแบบ", "คิดราคาตาม execution ไม่ใช่ตาม node ทำให้ workflow ซับซ้อนไม่แพงขึ้น", "รองรับ AI agent node ในตัว"],
+      "weaknesses": ["ต้องมีความรู้เทคนิคพอสมควรสำหรับ self-hosted", "แผน Business ราคาสูงมากสำหรับองค์กรใหญ่"],
+      "bestFor": ["นักพัฒนา/ทีมเทคนิคที่ต้องการควบคุม automation เต็มรูปแบบโดยไม่เสียค่าบริการรายเดือน", "ธุรกิจที่มี workflow ซับซ้อนหลายขั้นตอน"],
+      "promptWorkflow": {"steps":["อ่านโครงสร้าง workflow/node ที่วางไว้ก่อน","อ่านคำอธิบายสิ่งที่ต้องการให้ node นั้นทำ","แนะนำการเชื่อมต่อ node ถัดไปให้เหมาะกับเป้าหมาย"],"recommendedStructure":"อธิบายทีละขั้นว่าข้อมูลเข้ามาจากไหน ต้องแปลง/กรองอย่างไร แล้วส่งออกไปที่ไหน","example":"ดึงข้อมูลออเดอร์ใหม่จาก Shopify ทุก 1 ชั่วโมง กรองเฉพาะออเดอร์เกิน 1000 บาท แล้วส่งแจ้งเตือนเข้า Line"},
+      "lastUpdated": "2026-09-03",
+      "plansUrl": { "url": "https://n8n.io/pricing/", "lastVerified": "2026-09-21" }
+    }
+  ]
+}

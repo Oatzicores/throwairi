@@ -1,0 +1,37 @@
+name: เสนอ AI ตัวใหม่ (Suggest a tool)
+description: อยากให้เพิ่ม AI ที่ยังไม่มีในแคตตาล็อก
+labels: ["new-tool"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: ชื่อ AI
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: เว็บทางการ
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: หมวด
+      options: [chat, code, image, video, audio, agent]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: ทำไมควรเพิ่ม / ครีเอเตอร์ไทยใช้ทำอะไร
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: ยืนยัน
+      options:
+        - label: ฉันไม่ได้เป็นผู้ให้บริการที่ขอให้เพิ่มเพื่อดันอันดับ (อันดับไม่ได้ขาย, ADR 0001)
+          required: true

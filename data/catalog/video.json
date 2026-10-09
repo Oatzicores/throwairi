@@ -1,0 +1,566 @@
+{
+  "tools": [
+    {
+      "id": "sora",
+      "name": "Sora",
+      "vendor": "OpenAI",
+      "categories": ["video"],
+      "logoUrl": null,
+      "websiteUrl": "https://openai.com/sora",
+      "shortDescription": "AI สร้างวิดีโอจาก OpenAI — ปิดให้บริการแล้ว (เว็บและแอปปิด 26 เม.ย. 2026, API ปิด 24 ก.ย. 2026)",
+      "longDescription": "OpenAI ระบุในหน้าช่วยเหลือทางการว่าเว็บและแอป Sora ปิดตัวเมื่อ 26 เมษายน 2026 และ Sora API ปิดวันที่ 24 กันยายน 2026 ผู้ที่เคยสร้างงานไว้ส่งออกข้อมูลได้ตามขั้นตอนในบทความนั้น และข้อมูลที่เกี่ยวข้องจะถูกลบถาวรหลังหมดช่วงส่งออก (ถ้า OpenAI เปิดช่วงส่งออกสุดท้าย) เครดิต ChatGPT/Sora ที่ซื้อไว้ยังนำไปใช้กับ Codex ได้ตามที่บทความระบุ",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-04-26",
+        "confidence": "verified",
+        "sourceUrl": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation",
+        "lastVerified": "2026-09-21",
+        "note": "วันที่เว็บและแอป Sora ปิดตัวตามหน้าช่วยเหลือของ OpenAI"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "paid",
+        "plans": [],
+        "freeQuota": null,
+        "commercialUseSummary": {
+          "value": null,
+          "confidence": "unknown",
+          "sourceUrl": null,
+          "lastVerified": null,
+          "note": "ปิดให้บริการแล้ว จึงไม่รวบรวมเงื่อนไขการใช้งานเชิงพาณิชย์"
+        },
+        "sourceUrl": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation",
+        "lastVerified": "2026-09-21"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-21"
+      },
+      "usageSignals": [],
+      "strengths": [],
+      "weaknesses": [],
+      "bestFor": [],
+      "promptWorkflow": { "steps": [], "recommendedStructure": "", "example": "" },
+      "lastUpdated": "2026-09-21",
+      "discontinued": {
+        "since": "2026-04-26",
+        "note": "OpenAI ระบุว่าเว็บและแอป Sora ปิดตัวเมื่อ 26 เมษายน 2026 และ Sora API ปิดวันที่ 24 กันยายน 2026 คนที่เคยสร้างงานไว้ส่งออกข้อมูลได้ตามขั้นตอนในบทความของ OpenAI ข้อมูลจะถูกลบถาวรหลังหมดช่วงส่งออก (ถ้ามี) และเครดิตที่ซื้อไว้ใช้กับ Codex ได้",
+        "sourceUrl": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation",
+        "lastVerified": "2026-09-21"
+      }
+    },
+    {
+      "id": "runway",
+      "name": "Runway (Gen-4.5)",
+      "vendor": "Runway",
+      "categories": ["video", "image"],
+      "logoUrl": null,
+      "websiteUrl": "https://runwayml.com",
+      "shortDescription": "แพลตฟอร์มสร้างวิดีโอ AI ที่รวมหลายโมเดลไว้ในที่เดียว (Gen-4.5, Kling, Veo และอื่นๆ)",
+      "longDescription": "Runway เป็นแพลตฟอร์มที่รวมโมเดลวิดีโอ/ภาพจากหลายค่ายไว้ในที่เดียว (Gen-4.5 ของตัวเอง, Nano Banana Pro, Kling 3.0, Veo 3.1) ทำให้เปรียบเทียบและเลือกโมเดลที่เหมาะกับงานได้ในแพลตฟอร์มเดียว รองรับทีมงานสูงสุด 10 คนในแผน Pro",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-03",
+        "confidence": "probable",
+        "sourceUrl": "https://runway.com/news",
+        "lastVerified": "2026-09-30",
+        "note": "Runway ประกาศ GWM Worlds 2 (3 ก.ย. 2026) สร้างโลกเสมือนแบบโต้ตอบเรียลไทม์ และเปิดแผน Team ใหม่ (4 ก.ย.) (อ้างตามผลค้นหาหน้าทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "125 เครดิตแบบครั้งเดียว, 5GB storage, มีลายน้ำ Runway, ซื้อเครดิตเพิ่มไม่ได้", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://www.eesel.ai/blog/runway-ai-pricing", "lastVerified": "2026-09-03" } },
+          { "name": "Standard", "priceUsdPerMonth": 15, "quota": "625 เครดิต/เดือน (annual $12) เข้าถึงทุกโมเดลรวม Gen-4.5, Kling 3.0, Veo 3.1", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/runway/", "lastVerified": "2026-09-07", "note": "Runway ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output ผู้ใช้ และอนุญาตเชิงพาณิชย์ตั้งแต่แผน Standard ขึ้นไป (แผน Free เท่านั้นที่ห้ามใช้เชิงพาณิชย์)" } },
+          { "name": "Pro", "priceUsdPerMonth": 35, "quota": "2,250 เครดิต/เดือน ต่อผู้ใช้ รองรับทีมสูงสุด 10 คน (annual $28)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/runway/", "lastVerified": "2026-09-07" } },
+          { "name": "Max", "priceUsdPerMonth": 95, "quota": "9,500 เครดิต/เดือน ต่อผู้ใช้ (annual $76)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/runway/", "lastVerified": "2026-09-07" } }
+        ],
+        "freeQuota": "125 เครดิตแบบครั้งเดียว (ไม่ใช่รายเดือน) มีลายน้ำ",
+        "commercialUseSummary": {
+          "value": "แผนฟรีห้ามใช้เชิงพาณิชย์ (non-commercial only) แต่ทุกแผนเสียเงิน (Standard, Pro, Max) อนุญาตใช้เชิงพาณิชย์ได้เต็มที่ — Runway ไม่อ้างสิทธิ์ความเป็นเจ้าของ Input/Output ของผู้ใช้ ข้อควรระวัง: อินพุต/เอาต์พุตในทุกแผนที่ไม่ใช่ Enterprise ยังถูกใช้เทรนโมเดลของ Runway โดยดีฟอลต์",
+          "confidence": "probable",
+          "sourceUrl": "https://terms.law/ai-output-rights/runway/",
+          "lastVerified": "2026-09-07"
+        },
+        "sourceUrl": "https://checkthat.ai/brands/runway/pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["รวมหลายโมเดลชั้นนำไว้ในที่เดียว (Gen-4.5, Kling 3.0, Veo 3.1)", "เหมาะทีมงานที่ต้องการเปรียบเทียบโมเดลหลายตัว"],
+        "negativeThemes": ["โควตาเครดิตแผน Standard ใช้ได้จริงแค่ ~25 วินาทีของ Gen-4.5 ต่อเดือน ถือว่าน้อยมาก", "แผนฟรีมีลายน้ำและซื้อเครดิตเพิ่มไม่ได้เลย"],
+        "paidVerifiedSummary": "ผู้ใช้งานหนักส่วนใหญ่ต้องอัปเกรดไป Pro หรือ Max เพราะเครดิต Standard หมดเร็วมาก",
+        "freeTierSummary": "เหมาะทดลองใช้ครั้งเดียวเท่านั้น ไม่เหมาะใช้งานต่อเนื่อง",
+        "sourceUrls": ["https://www.eesel.ai/blog/runway-ai-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["รวมหลายโมเดลชั้นนำในแพลตฟอร์มเดียว เทียบผลลัพธ์ได้ง่าย", "รองรับทีมงานหลายคนในแผน Pro"],
+      "weaknesses": ["เครดิตแผนเริ่มต้นหมดเร็วมากเมื่อใช้โมเดลคุณภาพสูง", "แผนฟรีมีลายน้ำและซื้อเครดิตเพิ่มไม่ได้"],
+      "bestFor": ["ทีมงานสร้างวิดีโอที่ต้องการเปรียบเทียบหลายโมเดล", "มืออาชีพที่พร้อมจ่ายเพื่อความยืดหยุ่นในการเลือกโมเดล"],
+      "promptWorkflow": {"steps":["ถ้าอัปโหลดภาพ จะอ่านภาพเป็นฐานก่อน แล้วอ่าน prompt ข้อความเป็นคำสั่งการเคลื่อนไหว","อ่านคำอธิบายการเคลื่อนไหวของกล้อง/วัตถุ","ปรับความยาวคลิปและสไตล์จากค่าที่ตั้งเพิ่มเติม"],"recommendedStructure":"[คำอธิบายการเคลื่อนไหวของฉาก/กล้อง] (+ ภาพต้นทางถ้ามี)","example":"camera slowly zooms into the cafe window, steam rising from the coffee cup, soft morning light"},
+      "lastUpdated": "2026-09-07",
+      "plansUrl": { "url": "https://runway.com/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "kling-ai",
+      "name": "Kling AI",
+      "vendor": "Kuaishou",
+      "categories": ["video"],
+      "logoUrl": null,
+      "websiteUrl": "https://kling.ai",
+      "shortDescription": "AI สร้างวิดีโอจากจีน รองรับ 4K, digital human และ virtual try-on ราคาแผนกลางถูกกว่า Runway",
+      "longDescription": "Kling AI จาก Kuaishou (บริษัทแม่ของ Kwai) มีฟีเจอร์ครบเครื่องตั้งแต่ text-to-video, image-to-video, native 4K (เปิดตัว เม.ย. 2026), motion control, native audio, digital human ไปจนถึง virtual try-on ราคาแผนกลางถูกกว่า Runway/Luma อย่างชัดเจน",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-04-01",
+        "confidence": "inference",
+        "sourceUrl": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "lastVerified": "2026-09-03",
+        "note": "เปิดตัว native 4K ในเดือน เม.ย. 2026 (ไม่พบวันที่แน่ชัดภายในเดือน จึงใช้วันที่ 1 เป็นค่าประมาณ)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "เครดิตรายวันจำกัด (~1-3 คลิปสั้น/วัน) มีลายน้ำ ห้ามใช้เชิงพาณิชย์", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://www.atlascloud.ai/blog/tips/kling-ai-pricing", "lastVerified": "2026-09-03" } },
+          { "name": "Standard", "priceUsdPerMonth": 10, "quota": "เครดิตรายเดือนสูงขึ้น (เดือนแรกลด $6.99)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://www.atlascloud.ai/blog/tips/kling-ai-pricing", "lastVerified": "2026-09-07" } },
+          { "name": "Pro", "priceUsdPerMonth": 37, "quota": "เดือนแรกลด $25.99", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://www.atlascloud.ai/blog/tips/kling-ai-pricing", "lastVerified": "2026-09-07" } },
+          { "name": "Premier", "priceUsdPerMonth": 92, "quota": "เดือนแรกลด $64.99", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://www.atlascloud.ai/blog/tips/kling-ai-pricing", "lastVerified": "2026-09-07" } },
+          { "name": "Ultra", "priceUsdPerMonth": 180, "quota": "เดือนแรกลด $127.99", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://www.atlascloud.ai/blog/tips/kling-ai-pricing", "lastVerified": "2026-09-07" } }
+        ],
+        "freeQuota": "เครดิตรายวันจำกัด ~1-3 คลิปสั้น/วัน มีลายน้ำ",
+        "commercialUseSummary": {
+          "value": "ผลงานจากแผนฟรีโดยทั่วไปห้ามใช้เชิงพาณิชย์ตาม ToS ของ Kling ต้องอัปเกรดเป็นแผนเสียเงินก่อนใช้งานจริง",
+          "confidence": "probable",
+          "sourceUrl": "https://www.atlascloud.ai/blog/tips/kling-ai-pricing",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.eesel.ai/blog/kling-ai-pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ฟีเจอร์ครบเครื่องที่สุดกลุ่มหนึ่ง (4K, digital human, virtual try-on)", "ราคาแผนกลาง (Standard/Pro) ถูกกว่า Runway/Luma อย่างชัดเจน", "มีส่วนลดเดือนแรกสำหรับผู้สมัครใหม่"],
+        "negativeThemes": ["ระบบเครดิตแบบไดนามิกทำให้คาดเดาต้นทุนจริงยาก (คลิป 5 วิ 720p ~30 เครดิต)", "เครดิตแผนฟรีหมดเร็วมาก (1-3 คลิป/วัน)", "แผนฟรีห้ามใช้เชิงพาณิชย์"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "เครดิตหมดเร็วมาก เหมาะทดลองสั้นๆ เท่านั้น",
+        "sourceUrls": ["https://www.eesel.ai/blog/kling-ai-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1095,
+            "confidence": "verified",
+            "sourceUrl": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+            "lastVerified": "2026-09-21",
+            "note": "Kling 3.0 1080p (Pro) อันดับ 12 — สูงกว่า Veo 3.1 (1088) เล็กน้อยและอยู่ในช่วงความคลาดเคลื่อน ทั้งคู่ตามหลังโมเดลใหม่อย่าง Gemini Omni Flash (1233), Wan 3.0 และ MiniMax H3"
+          },
+          "label": "Artificial Analysis Text-to-Video Arena ELO (Kling 3.0 1080p Pro)"
+        }
+      ],
+      "strengths": ["ฟีเจอร์ครบเครื่องที่สุดกลุ่มหนึ่ง (4K, digital human)", "ราคาแผนกลางถูกกว่าคู่แข่งตะวันตกชัดเจน"],
+      "weaknesses": ["ระบบเครดิตไดนามิกคาดเดาต้นทุนยาก", "แผนฟรีหมดเร็วมากและห้ามใช้เชิงพาณิชย์"],
+      "bestFor": ["ผู้ใช้งบจำกัดที่ต้องการฟีเจอร์วิดีโอครบเครื่อง", "งานที่ต้องการ digital human หรือ virtual try-on"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายวัตถุ/ตัวละครหลักก่อน","อ่านคำอธิบายการเคลื่อนไหวที่ต้องการให้สมจริงตามฟิสิกส์","ปรับความยาว/อัตราส่วนภาพจากตัวเลือกเพิ่มเติม"],"recommendedStructure":"[วัตถุ/ตัวละคร] + [การเคลื่อนไหวที่ต้องการ] + [บรรยากาศ]","example":"a paper boat floating down a rain-soaked street, gentle bobbing motion, moody grey lighting"},
+      "lastUpdated": "2026-09-07",
+      "latestVersion": { "name": "Kling 4.0", "releaseDate": null, "sourceUrl": "https://kling.ai/app/membership/membership-plan", "lastVerified": "2026-09-30", "note": "แบนเนอร์บนหน้าสมาชิกของ Kling: \"Kling 4.0 Is Here\" ผู้ใช้ Ultra แบบรายปีเข้าถึง 4.0 Flash ก่อนใคร (ไม่ระบุวันเปิดตัว)" },
+      "plansUrl": { "url": "https://kling.ai/app/membership/membership-plan", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "google-veo",
+      "name": "Google Veo",
+      "vendor": "Google",
+      "categories": ["video"],
+      "logoUrl": null,
+      "websiteUrl": "https://deepmind.google/technologies/veo/",
+      "shortDescription": "AI สร้างวิดีโอจาก Google เข้าถึงผ่านแอป Gemini รวมกับแผนสมัครสมาชิก Google AI",
+      "longDescription": "Veo เข้าถึงผ่านแอป Gemini โดยรวมอยู่ในแผนสมัครสมาชิก Google AI (ไม่แยกขายต่างหากสำหรับผู้ใช้ทั่วไป) แผนฟรีให้ Veo 2 แบบจำกัดโควตาและมีลายน้ำที่ 720p แผน Pro/Ultra ให้เครดิต Flow สำหรับสร้างวิดีโอ Veo 3.1 หลายระดับคุณภาพ",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-03-31",
+        "confidence": "probable",
+        "sourceUrl": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/",
+        "lastVerified": "2026-09-03",
+        "note": "Google ประกาศ Veo 3.1 Lite สำหรับนักพัฒนาใน Gemini API"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "ฟรี (ผ่านแอป Gemini)", "priceUsdPerMonth": 0, "quota": "Veo 2 แบบจำกัดโควตา 720p มีลายน้ำ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03", "note": "Google ไม่อ้างสิทธิ์ Output รวมวิดีโอ ใช้เชิงพาณิชย์ได้แม้แผนฟรี แต่บทสนทนา/การใช้งานฟรีถูกใช้เทรนโมเดลโดยดีฟอลต์ (ปิดได้ผ่าน Gemini Apps Activity) และทุกวิดีโอมีลายน้ำ SynthID ที่มองไม่เห็นฝังอยู่เสมอ" } },
+          { "name": "Google AI Pro", "priceUsdPerMonth": 19.99, "quota": "1,000 Flow credits/เดือน (~100 Veo 3.1 Lite หรือ ~10 Veo 3.1 Quality)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" } },
+          { "name": "Google AI Ultra (20x)", "priceUsdPerMonth": 200, "quota": "25,000 Flow credits/เดือน (~250 Veo 3.1 Quality) — ใช้งานได้ 20 เท่าของแผน Pro", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03", "note": "ราคาลดจาก $249.99 เหลือ $200/เดือน ประกาศที่งาน Google I/O 2026 (พ.ค. 2026)" } },
+          { "name": "Google AI Ultra (5x, ใหม่)", "priceUsdPerMonth": 100, "quota": "ใช้งานได้ 5 เท่าของแผน Pro ในแอป Gemini/Antigravity (เครดิต Flow ที่แน่นอนยังไม่ยืนยันชัดเจน) เหมาะนักพัฒนา/ครีเอเตอร์ขั้นสูง", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-07", "note": "แผนใหม่เปิดตัวที่งาน Google I/O 2026 (19 พ.ค. 2026) แทรกกลางระหว่าง Pro และ Ultra เดิม" } },
+          { "name": "API (Gemini API)", "priceUsdPerMonth": null, "quota": "จ่ายตามวินาทีที่สร้างสำเร็จ: Veo 3.1 Lite $0.05/วิ, Fast $0.10/วิ, Standard $0.40/วิ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ai.google.dev/gemini-api/terms", "lastVerified": "2026-09-03", "note": "ข้อมูลผ่าน API ไม่ถูกใช้เทรนโมเดล ต่างจากการใช้งานฟรีผ่านแอป" } }
+        ],
+        "freeQuota": "Veo 2 โควตาจำกัด 720p มีลายน้ำ",
+        "commercialUseSummary": {
+          "value": "Google ไม่อ้างสิทธิ์ความเป็นเจ้าของวิดีโอที่สร้าง และอนุญาตใช้เชิงพาณิชย์ได้ทุกระดับรวมแผนฟรี จุดที่ควรรู้: (1) ทุกวิดีโอจาก Veo ฝังลายน้ำที่มองไม่เห็น SynthID ไว้เสมอเพื่อระบุว่าเป็น AI-generated (2) การใช้งานผ่านแผนฟรี/Gemini App ข้อมูลถูกใช้เทรนโมเดลโดยดีฟอลต์ (ปิดได้) ส่วนการใช้งานผ่าน API/Workspace ไม่ถูกใช้เทรน",
+          "confidence": "probable",
+          "sourceUrl": "https://terms.law/ai-output-rights/gemini/",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+        "lastVerified": "2026-09-07"
+      },
+      "reviews": {
+        "positiveThemes": ["มีแผนฟรีให้ทดลองผ่านแอป Gemini", "ราคา API ต่อวินาทีชัดเจนโปร่งใส", "ผสานกับระบบนิเวศ Google ได้ดี"],
+        "negativeThemes": ["แผน Ultra ระดับสูงสุดยังราคาสูงถึง $200/เดือน", "ไม่มีแผนแยกเฉพาะ Veo สำหรับคนที่ไม่ต้องการฟีเจอร์ Gemini อื่นๆ", "ระบบเครดิต Flow ซับซ้อนต้องคำนวณเอง"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "เหมาะทดลองสร้างวิดีโอสั้นๆ ก่อนตัดสินใจอัปเกรด",
+        "sourceUrls": ["https://www.finout.io/blog/gemini-pricing-in-2026", "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/"],
+        "lastVerified": "2026-09-07",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1088,
+            "confidence": "verified",
+            "sourceUrl": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+            "lastVerified": "2026-09-21",
+            "note": "Veo 3.1 อันดับ 14 — ต่ำกว่า Kling 3.0 Pro (1095) เล็กน้อยและอยู่ในช่วงความคลาดเคลื่อน ทั้งคู่ตามหลังโมเดลใหม่อย่าง Gemini Omni Flash (1233), Wan 3.0 และ MiniMax H3"
+          },
+          "label": "Artificial Analysis Text-to-Video Arena ELO (Veo 3.1)"
+        }
+      ],
+      "strengths": ["ผสานกับระบบนิเวศ Google/Gemini ได้ดี", "ราคา API ต่อวินาทีชัดเจน", "มีแผนฟรีให้ทดลอง"],
+      "weaknesses": ["แผน Ultra ระดับสูงสุดยังราคาสูง ($200/เดือน)", "ระบบเครดิต Flow ต้องคำนวณเองว่าคุ้มค่าแค่ไหน"],
+      "bestFor": ["ผู้ใช้ในระบบนิเวศ Google ที่ต้องการสร้างวิดีโอควบคู่งานอื่น", "นักพัฒนาที่ต้องการราคา API แบบจ่ายตามจริง"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายฉากและตัวละครก่อน","อ่านคำสั่งกล้องแบบภาพยนตร์ (crane shot, dolly zoom)","อ่านคำบอกอารมณ์/สไตล์ภาพยนตร์ปิดท้าย"],"recommendedStructure":"[ฉาก] + [การเคลื่อนกล้องแบบภาพยนตร์] + [อารมณ์/สไตล์]","example":"a lone astronaut walking across a red desert, slow crane shot rising, epic sci-fi atmosphere"},
+      "lastUpdated": "2026-09-07",
+      "latestVersion": { "name": "Veo 3.1", "releaseDate": null, "sourceUrl": "https://ai.google.dev/gemini-api/docs/video", "lastVerified": "2026-09-30", "note": "เอกสารของ Google แนะนำ Gemini Omni Flash เป็นตัวเลือกเริ่มต้นสำหรับสร้างวิดีโอ ส่วน Veo 3.1 ใช้กับงานเฉพาะ เช่น ต่อคลิป/กำหนดเฟรม (ไม่ระบุวันเปิดตัว)" },
+      "plansUrl": { "url": "https://gemini.google/subscriptions/", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "pika",
+      "name": "Pika",
+      "vendor": "Pika Labs",
+      "categories": ["video"],
+      "logoUrl": null,
+      "websiteUrl": "https://pika.art",
+      "shortDescription": "AI สร้างวิดีโอที่ราคาแผนฟรี/เริ่มต้นเข้าถึงง่าย เหมาะทดลองก่อนอัปเกรดเป็นแผนเชิงพาณิชย์",
+      "longDescription": "Pika มีแผน Free/Starter/Creator/Fancy ตามหน้าราคาทางการ ทุกแผนรวมถึง Free ไม่มีลายน้ำ แต่ Commercial license เริ่มที่แผน Creator ($35/เดือน จ่ายรายเดือน) ราคาในรายการนี้เป็นราคาจ่ายรายเดือน บิลรายปีลด 20% ตามที่หน้าราคาระบุ",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-24",
+        "confidence": "probable",
+        "sourceUrl": "https://pika.art/blog",
+        "lastVerified": "2026-09-30",
+        "note": "Pika เปิด Pika ตัวใหม่ที่รวมวิดีโอ ภาพ และเสียงไว้ในที่เดียว (24 ก.ย. 2026) และโมเดลที่สร้างเสียงประกอบจากวิดีโอ (17 ก.ย.) (อ้างตามผลค้นหาหน้าทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "ไม่มีเครดิตรายเดือน (ซื้อเครดิตเพิ่มเป็นแพ็กได้) ไม่มีลายน้ำ", "commercialUseAllowed": { "value": false, "confidence": "verified", "sourceUrl": "https://pika.art/pricing", "lastVerified": "2026-09-30" } },
+          { "name": "Starter", "priceUsdPerMonth": 10, "quota": "900 เครดิต/เดือน (จ่ายรายเดือน) ไม่มีลายน้ำ", "commercialUseAllowed": { "value": false, "confidence": "verified", "sourceUrl": "https://pika.art/pricing", "lastVerified": "2026-09-30" } },
+          { "name": "Creator", "priceUsdPerMonth": 35, "quota": "3,150 เครดิต/เดือน (จ่ายรายเดือน) ไม่มีลายน้ำ + มี Commercial license", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://pika.art/pricing", "lastVerified": "2026-09-30" } },
+          { "name": "Fancy", "priceUsdPerMonth": 95, "quota": "8,550 เครดิต/เดือน (จ่ายรายเดือน) ปรับเครดิตได้จนถึง 79k ไม่มีลายน้ำ + Commercial license + คิวด่วน", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://pika.art/pricing", "lastVerified": "2026-09-30", "note": "แถบเลื่อนปรับเครดิตรายเดือนได้ ราคาขึ้นตามเครดิต ตัวเลขที่แสดงคือขั้นเริ่มต้น" } }
+        ],
+        "freeQuota": "ไม่มีเครดิตรายเดือน (ซื้อเป็นแพ็กได้) ไม่มีลายน้ำ แต่ไม่มี Commercial license",
+        "commercialUseSummary": { "value": "หน้าราคาของ Pika ระบุว่า Commercial license มีตั้งแต่แผน Creator ($35/เดือน จ่ายรายเดือน) ขึ้นไป ส่วนแผน Free และ Starter ไม่มี", "confidence": "verified", "sourceUrl": "https://pika.art/pricing", "lastVerified": "2026-09-30" },
+        "sourceUrl": "https://pika.art/pricing",
+        "lastVerified": "2026-09-30"
+      },
+      "reviews": {
+        "positiveThemes": ["ทุกแผนไม่มีลายน้ำตามหน้าราคาทางการ", "ราคาเริ่มต้นแผนเสียเงิน $10/เดือน"],
+        "negativeThemes": ["ต้องจ่ายตั้งแต่ $35/เดือน (แผน Creator) จึงมี Commercial license", "แผน Free ไม่มีเครดิตรายเดือน ต้องซื้อแพ็กเครดิตเพิ่ม"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "ตามหน้าราคา แผน Free ไม่มีเครดิตรายเดือน ซื้อเครดิตเป็นแพ็กได้ ไม่มีลายน้ำ แต่ไม่มี Commercial license",
+        "sourceUrls": ["https://pika.art/pricing"],
+        "lastVerified": "2026-09-30",
+        "sampleSizeNote": "สรุปจากหน้าราคาทางการของ Pika ไม่ใช่รีวิวผู้ใช้จริง"
+      },
+      "usageSignals": [],
+      "strengths": ["ทุกแผนไม่มีลายน้ำ (ตามหน้าราคาทางการ)", "แผนเสียเงินเริ่มต้น $10/เดือน"],
+      "weaknesses": ["Commercial license เริ่มที่แผน Creator ($35/เดือน)", "แผน Free ไม่มีเครดิตรายเดือน"],
+      "bestFor": ["ครีเอเตอร์ที่ทำคลิปส่วนตัวในงบไม่สูง (Starter)", "ฟรีแลนซ์/เอเจนซี่ขนาดเล็กที่ต้องมี Commercial license (Creator ขึ้นไป)"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายวัตถุ/ฉากหลัก","ปรับการเคลื่อนกล้องผ่านปุ่ม/แท็กในอินเทอร์เฟซ ไม่จำเป็นต้องพิมพ์คำสั่งกล้องเอง","อ่านคำบอกสไตล์เพิ่มเติมจากข้อความ"],"recommendedStructure":"[สิ่งที่ต้องการเห็นเคลื่อนไหว] + [สไตล์] (เลือกทิศทางกล้องจากปุ่มในแอปเพิ่มได้)","example":"a cat chasing a laser pointer around a living room, playful, bright daylight"},
+      "lastUpdated": "2026-09-30",
+      "plansUrl": { "url": "https://pika.art/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "luma-dream-machine",
+      "name": "Luma Dream Machine",
+      "vendor": "Luma AI",
+      "categories": ["video"],
+      "logoUrl": null,
+      "websiteUrl": "https://lumalabs.ai/dream-machine",
+      "shortDescription": "แพลตฟอร์มสร้างวิดีโอ AI ที่เน้นระบบ 'Luma Agents' สำหรับ workflow อัตโนมัติหลายขั้นตอน",
+      "longDescription": "Luma Dream Machine ใช้ระบบ 'Luma Agents' จัดสรรโควตาแทนการคิดเครดิตต่อคลิปแบบทั่วไป เหมาะกับทีมที่ต้องการรัน workflow การสร้างวิดีโอแบบหลายขั้นตอนพร้อมกัน ราคาสูงกว่า Pika/Kling ในระดับเริ่มต้นชัดเจน",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-06-09",
+        "confidence": "probable",
+        "sourceUrl": "https://lumalabs.ai/news/introducing-ray-3-2",
+        "lastVerified": "2026-09-03",
+        "note": "เปิดตัวโมเดล Ray3.2 พร้อมระบบควบคุมระดับเฟรม"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "โควตาจำกัดมาก ไม่มี export แบบไม่มีลายน้ำ", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://www.aitoolcurator.com/learn/luma-guide/free-tier/", "lastVerified": "2026-09-03" } },
+          { "name": "Plus", "priceUsdPerMonth": 30, "quota": "Luma Agents ระดับพื้นฐาน + export ไม่มีลายน้ำ + สิทธิ์เชิงพาณิชย์", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://www.layer3labs.io/guides/is-luma-ai-worth-it", "lastVerified": "2026-09-03" } },
+          { "name": "Pro", "priceUsdPerMonth": 90, "quota": "Luma Agents 4 เท่าของ Plus", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://www.layer3labs.io/guides/is-luma-ai-worth-it", "lastVerified": "2026-09-03" } },
+          { "name": "Ultra", "priceUsdPerMonth": 300, "quota": "Luma Agents 15 เท่าของ Plus สำหรับเอเจนซี่/สตูดิโอ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://www.layer3labs.io/guides/is-luma-ai-worth-it", "lastVerified": "2026-09-03" } }
+        ],
+        "freeQuota": "โควตาจำกัดมาก ไม่มี export ไม่มีลายน้ำ",
+        "commercialUseSummary": {
+          "value": "ต้องอัปเกรดอย่างน้อยแผน Plus ($30/เดือน) จึงจะได้ export แบบไม่มีลายน้ำและสิทธิ์เชิงพาณิชย์",
+          "confidence": "probable",
+          "sourceUrl": "https://www.layer3labs.io/guides/is-luma-ai-worth-it",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://magichour.ai/blog/luma-dream-machine-pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ระบบ Luma Agents เหมาะ workflow อัตโนมัติหลายขั้นตอน", "เหมาะทีมงานแคมเปญที่ต้องการผลิตงานต่อเนื่อง"],
+        "negativeThemes": ["ราคาแผนเริ่มต้น ($30) แพงกว่า Pika/Kling ที่ระดับเริ่มต้นชัดเจน", "แผนฟรีจำกัดมาก แทบทดลองไม่ได้จริง"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "จำกัดมากจนแทบไม่พอประเมินคุณภาพจริง",
+        "sourceUrls": ["https://magichour.ai/blog/luma-dream-machine-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["ระบบ Luma Agents เหมาะ workflow อัตโนมัติซับซ้อน", "เหมาะทีมงานแคมเปญขนาดกลาง-ใหญ่"],
+      "weaknesses": ["ราคาเริ่มต้นแพงกว่าคู่แข่งหลายเจ้าในระดับเดียวกัน", "แผนฟรีจำกัดจนทดลองได้น้อยมาก"],
+      "bestFor": ["ทีมการตลาด/เอเจนซี่ที่ต้องการผลิตวิดีโอแคมเปญต่อเนื่อง", "ผู้ใช้ที่ต้องการ workflow อัตโนมัติหลายขั้นตอน"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายฉากหลักก่อน","ถ้าใส่ภาพต้น-ปลายทาง (keyframe) จะพยายามสร้างการเคลื่อนไหวเชื่อมสองภาพ","อ่านคำบอกจังหวะ/อารมณ์ปิดท้าย"],"recommendedStructure":"[ฉากเริ่มต้น] + [ฉากที่ต้องการให้เปลี่ยนไป] (หรือใส่ภาพ keyframe) + [จังหวะการเคลื่อนไหว]","example":"a flower bud slowly blooming into full blossom, timelapse feel, soft natural light"},
+      "lastUpdated": "2026-09-03",
+      "latestVersion": { "name": "Ray3.2", "releaseDate": null, "sourceUrl": "https://lumalabs.ai/dream-machine", "lastVerified": "2026-09-21", "note": "รุ่นวิดีโอใหม่สุดที่หน้าผลิตภัณฑ์ของ Luma ระบุ (ไม่ระบุวันเปิดตัว)" },
+      "plansUrl": { "url": "https://lumalabs.ai/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "vendor": "HeyGen",
+      "categories": [
+        "video"
+      ],
+      "logoUrl": null,
+      "websiteUrl": "https://www.heygen.com",
+      "shortDescription": "สร้างวิดีโอ AI avatar พูดแทนคน พากย์หลายภาษา เหมาะกับคลิปการตลาด/สอนงานแบบไม่โชว์หน้าตัวเอง",
+      "longDescription": "HeyGen เป็นเครื่องมือสร้างวิดีโอที่มี AI avatar พูดแทนคนจริง พิมพ์สคริปต์แล้วให้ avatar พูดตาม รองรับการแปล/พากย์เสียงมากกว่า 175 ภาษา และสร้าง avatar เสมือนจากวิดีโอตัวเองได้ (Custom Video Avatar) เหมาะกับงานคลิปการตลาด สอนงาน หรือคอนเทนต์แบบไม่ต้องออกกล้องเอง",
+      "launchDate": null,
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "3 วิดีโอ/เดือน ยาวไม่เกิน 1 นาที/คลิป, avatar สำเร็จรูป 500+ ตัว, avatar กำหนดเอง 1 ตัว, 30+ ภาษา (มีลายน้ำ)",
+            "commercialUseAllowed": {
+              "value": false,
+              "confidence": "verified",
+              "sourceUrl": "https://www.heygen.com/terms",
+              "lastVerified": "2026-09-20",
+              "note": "ข้อ 4 ของข้อกำหนด (License to your Content — For Users in the Free Plan) ระบุตรงๆ ว่า User Output จากบัญชีฟรี 'may not be sold, sublicensed, redistributed, monetized, or used in connection with commercial activities, advertising, client work, revenue-generating product or any other services'"
+            }
+          },
+          {
+            "name": "Creator",
+            "priceUsdPerMonth": 29,
+            "quota": "600 เครดิต/เดือน, วิดีโอยาวไม่เกิน 30 นาที, ส่งออก 1080p, ลบลายน้ำได้, 175+ ภาษา, voice cloning",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.heygen.com/terms",
+              "lastVerified": "2026-09-20",
+              "note": "ข้อ 3 ของข้อกำหนด (For Users In the Creator, Pro and Business Plans) ระบุว่าผู้ใช้เป็นเจ้าของสิทธิ์ทั้งหมดใน User Output และใช้เชิงพาณิชย์ได้"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 49,
+            "quota": "1,000 เครดิต/เดือน, ส่งออก 4K, ปรับโควตาการใช้งานรายเดือนได้เอง, เข้าถึงโมเดล AI ขั้นสูงทั้งหมด",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.heygen.com/terms",
+              "lastVerified": "2026-09-20"
+            }
+          },
+          {
+            "name": "Business",
+            "priceUsdPerMonth": 149,
+            "quota": "1,500 เครดิต/เดือน, วิดีโอยาวไม่เกิน 60 นาที, ส่งออก 4K, avatar กำหนดเอง 5 ตัว, ทำงานเป็นทีม (เพิ่มที่นั่งละ $20) ตามหน้าราคาทางการ ณ 30 ก.ย. 2026",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.heygen.com/terms",
+              "lastVerified": "2026-09-20"
+            }
+          }
+        ],
+        "freeQuota": "3 วิดีโอ/เดือน ยาวไม่เกิน 1 นาที มีลายน้ำ และใช้เชิงพาณิชย์ไม่ได้",
+        "commercialUseSummary": {
+          "value": "ข้อกำหนดของ HeyGen แยกข้อชัดเจน: แผนฟรี (ข้อ 4) ห้ามขาย ให้สิทธิช่วง เผยแพร่ซ้ำ นำไปหารายได้ หรือใช้กับงานโฆษณา/งานลูกค้าใดๆ ส่วนแผน Creator/Pro/Business (ข้อ 3) ให้ผู้ใช้เป็นเจ้าของสิทธิ์ใน Output เต็มที่และใช้เชิงพาณิชย์ได้ ต้องอัปเกรดอย่างน้อยแผน Creator ($29/เดือน) จึงจะหารายได้จากวิดีโอที่สร้างได้",
+          "confidence": "verified",
+          "sourceUrl": "https://www.heygen.com/terms",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://www.heygen.com/pricing",
+        "lastVerified": "2026-09-20"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-20",
+        "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
+      },
+      "usageSignals": [],
+      "strengths": [
+        "สร้าง avatar พูดแทนคนได้จากสคริปต์ข้อความล้วน ไม่ต้องถ่ายวิดีโอเอง",
+        "รองรับพากย์เสียง/แปล 175+ ภาษา เหมาะทำคอนเทนต์หลายตลาด",
+        "ข้อกำหนดสิทธิ์การใช้งานเขียนแยกชัดเจนระหว่างแผนฟรีกับแผนเสียเงิน ไม่คลุมเครือ"
+      ],
+      "weaknesses": [
+        "แผนฟรีใช้เชิงพาณิชย์ไม่ได้เลยแม้แต่นิดเดียว และมีลายน้ำ",
+        "วิดีโอแผนฟรียาวได้แค่ 1 นาที ไม่พอสำหรับคอนเทนต์ยาว",
+        "ต้องจ่ายอย่างน้อย $29/เดือนถึงจะหารายได้จากผลงานได้ตามข้อกำหนด"
+      ],
+      "bestFor": [
+        "ครีเอเตอร์ที่อยากทำคอนเทนต์แบบไม่โชว์หน้าตัวเอง (faceless) แต่ยังอยากมีคนพูดในคลิป",
+        "ธุรกิจที่ต้องทำวิดีโอสอนงานหรือการตลาดหลายภาษาบ่อยๆ"
+      ],
+      "promptWorkflow": {
+        "steps": [
+          "เลือก avatar (สำเร็จรูปหรือกำหนดเอง) ก่อน",
+          "ใส่สคริปต์ข้อความที่ต้องการให้ avatar พูด",
+          "เลือกภาษา/เสียงพากย์และเทมเพลตวิดีโอแยกจากสคริปต์"
+        ],
+        "recommendedStructure": "[เลือก avatar] + [สคริปต์ที่ต้องการให้พูด] + [เลือกภาษา/เสียง/เทมเพลต]",
+        "example": "สวัสดีค่ะ วันนี้เรามาแนะนำโปรโมชั่นพิเศษประจำเดือนนี้กันค่ะ ลดสูงสุด 50% เฉพาะสัปดาห์นี้เท่านั้น"
+      },
+      "lastUpdated": "2026-09-20",
+      "plansUrl": { "url": "https://www.heygen.com/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "vidu",
+      "name": "Vidu",
+      "vendor": "Shengshu Technology",
+      "categories": [
+        "video"
+      ],
+      "logoUrl": null,
+      "websiteUrl": "https://www.vidu.com",
+      "shortDescription": "สร้างวิดีโอจากข้อความ/ภาพ/ภาพอ้างอิงหลายรูป ราคาแผนเริ่มต้นต่ำ ระบุสิทธิ์เชิงพาณิชย์ชัดเจนบนหน้าราคา",
+      "longDescription": "Vidu (โดย Shengshu Technology) เป็นเครื่องมือสร้างวิดีโอด้วย AI จากข้อความ ภาพ หรือภาพอ้างอิงหลายรูปพร้อมกัน (multi-reference) รองรับวิดีโอยาว 3-16 วินาทีต่อคลิป จุดเด่นคือหน้าราคาทางการระบุคำว่า 'ใช้เชิงพาณิชย์ได้' ไว้ตรงๆ ในตารางเปรียบเทียบแผน ทำให้ตรวจสอบง่ายกว่าหลายเจ้า",
+      "launchDate": null,
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "จำกัดที่ 10 ภาพอ้างอิง (references) ต่อเดือน หน้าราคาไม่ได้ระบุว่ามีโควตาสร้างวิดีโอแยกต่างหากเท่าไหร่",
+            "commercialUseAllowed": {
+              "value": null,
+              "confidence": "unknown",
+              "sourceUrl": null,
+              "lastVerified": null
+            }
+          },
+          {
+            "name": "Standard",
+            "priceUsdPerMonth": 10,
+            "quota": "800 เครดิต/เดือน สร้างวิดีโอได้ถึง 200 คลิป, วิดีโอ 3-16 วินาที, ดาวน์โหลดไม่มีลายน้ำ (จ่ายรายเดือน $10; บิลรายปีเฉลี่ย $8/เดือน)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.vidu.com/pricing",
+              "lastVerified": "2026-09-20",
+              "note": "ตารางราคาระบุตรงๆ ว่า 'Generated content can be used commercially' และ 'Commercial use allowed' ในตารางเปรียบเทียบ"
+            }
+          },
+          {
+            "name": "Premium",
+            "priceUsdPerMonth": 35,
+            "quota": "4,000 เครดิต/เดือน สร้างวิดีโอได้ถึง 1,000 คลิป, เข้าถึงฟีเจอร์ก่อนใคร (จ่ายรายเดือน $35; บิลรายปีเฉลี่ย $28/เดือน)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.vidu.com/pricing",
+              "lastVerified": "2026-09-20"
+            }
+          },
+          {
+            "name": "Ultimate",
+            "priceUsdPerMonth": 99,
+            "quota": "8,000 เครดิต/เดือน, โหมด Off-Peak ส่งได้ 200 คลิป/วันฟรี, สร้างภาพ Q2 1080p ไม่จำกัด (จ่ายรายเดือน $99; บิลรายปีเฉลี่ย $79/เดือน)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.vidu.com/pricing",
+              "lastVerified": "2026-09-20"
+            }
+          }
+        ],
+        "freeQuota": "10 ภาพอ้างอิง/เดือน — หน้าราคาไม่ได้ระบุสิทธิ์เชิงพาณิชย์ของแผนฟรีไว้ชัดเจน",
+        "commercialUseSummary": {
+          "value": "หน้าราคาทางการของ Vidu ระบุคำว่า 'Generated content can be used commercially' ไว้ตรงๆ ในทุกแผนเสียเงิน (Standard/Premium/Ultimate) และมีแถว 'Commercial use allowed' ในตารางเปรียบเทียบ ส่วนแผนฟรีตารางไม่ได้ระบุชัดว่าได้หรือไม่ได้ จึงบันทึกเป็น 'ไม่ทราบ' แทนการเดา",
+          "confidence": "verified",
+          "sourceUrl": "https://www.vidu.com/pricing",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://www.vidu.com/pricing",
+        "lastVerified": "2026-09-20"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-20",
+        "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
+      },
+      "usageSignals": [],
+      "strengths": [
+        "หน้าราคาระบุสิทธิ์เชิงพาณิชย์ตรงๆ ในตาราง ไม่ต้องเดาเหมือนหลายเจ้า",
+        "ราคาแผนเริ่มต้นต่ำ ($8/เดือน บิลรายปี)",
+        "รองรับสร้างวิดีโอจากภาพอ้างอิงหลายรูปพร้อมกัน (multi-reference)"
+      ],
+      "weaknesses": [
+        "ราคาที่โชว์เด่นเป็นบิลรายปี ราคาบิลรายเดือนจริงสูงกว่านี้",
+        "แผนฟรีไม่ระบุสิทธิ์เชิงพาณิชย์ชัดเจน",
+        "วิดีโอต่อคลิปสั้น (3-16 วินาที) เมื่อเทียบกับเครื่องมืออื่นในตลาด"
+      ],
+      "bestFor": [
+        "ครีเอเตอร์ที่ต้องการวิดีโอสั้นสำหรับโซเชียลมีเดียในราคาประหยัด",
+        "งานที่ต้องคุมความสอดคล้องของตัวละคร/สินค้าข้ามหลายคลิปด้วยภาพอ้างอิง"
+      ],
+      "promptWorkflow": {
+        "steps": [
+          "เลือกโหมด: ข้อความ→วิดีโอ, ภาพ→วิดีโอ หรือภาพอ้างอิง→วิดีโอ",
+          "อัปโหลดภาพอ้างอิง (ถ้ามี) ก่อนใส่คำอธิบาย",
+          "อธิบายฉากและการเคลื่อนไหวที่ต้องการเป็นข้อความ"
+        ],
+        "recommendedStructure": "[โหมดที่เลือก] + [ภาพอ้างอิง ถ้ามี] + [คำอธิบายฉาก/การเคลื่อนไหว]",
+        "example": "แมวส้มตัวนี้ (จากภาพอ้างอิง) กำลังวิ่งเล่นบนสนามหญ้าสีเขียวตอนพระอาทิตย์ตก กล้องแพนตาม"
+      },
+      "lastUpdated": "2026-09-20",
+      "roadmap": { "checkedAt": "2026-09-30", "note": "หน้าราคาของ Vidu แจ้งว่าแผนจะมีการอัปเกรดในวันที่ 6 ต.ค. (ไม่บอกรายละเอียดบนหน้านั้น ให้ดู Platform Messages ในแอป) และส่วนลดเครดิตเพิ่มจบวันเดียวกัน", "items": [
+          { "kind": "announced", "text": "แผนสมาชิกจะถูกอัปเกรด (รายละเอียดอยู่ใน Platform Messages ของ Vidu) และส่วนลดเครดิตเพิ่ม (Credit add-ons ลด 45-55%) ใช้ได้ถึงวันนั้น", "when": "6 ต.ค. 2026", "sourceUrl": "https://www.vidu.com/pricing", "lastVerified": "2026-09-30" }
+        ] },
+      "plansUrl": { "url": "https://www.vidu.com/pricing", "lastVerified": "2026-09-21" }
+    }
+  ]
+}

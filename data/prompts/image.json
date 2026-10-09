@@ -1,0 +1,374 @@
+{
+  "category": "image",
+  "updatedAt": "2026-09-21",
+  "intro": "ชุด Prompt สร้างภาพ เขียนโดยทีม ThrowAirI ตามโครงสร้างที่คู่มือทางการแนะนำ (ลิงก์ท้ายหน้า) แต่ละชุดมีฉบับภาษาไทยก่อน แล้วตามด้วยฉบับอังกฤษแยกกัน พร้อมบอกว่าเหมาะสร้างงานแบบไหนและควรใช้เครื่องมือตัวไหน",
+  "overview": [
+    {
+      "headline": "ภาพทั่วไปและภาพที่มีข้อความ",
+      "toolId": "chatgpt",
+      "model": "GPT Image (OpenAI)",
+      "role": "best",
+      "reason": "โมเดล GPT Image ของ OpenAI ครองอันดับ 1-3 บนตารางโหวต และคู่มือของ OpenAI อธิบายวิธีสั่งข้อความในภาพ (ใส่ในเครื่องหมายคำพูด ระบุ \"verbatim\") ไว้ละเอียด",
+      "evidence": [
+        "aa-image-gpt",
+        "openai-guide"
+      ],
+      "caveat": "ตารางวัดตัวโมเดล ยังไม่ยืนยันว่าแผนฟรี/แผนไหนของ ChatGPT ใช้รุ่นนี้ได้ ตรวจที่หน้าแผนของ OpenAI"
+    },
+    {
+      "headline": "ตัวเลือกรอง",
+      "toolId": "grok",
+      "model": "Grok Imagine Image 2.0",
+      "role": "alt",
+      "reason": "อันดับ 4 บนตารางโหวต",
+      "evidence": [
+        "aa-image-grok"
+      ],
+      "caveat": "ตรวจสิทธิ์การใช้งานตามแผนที่หน้าแผนของ xAI"
+    },
+    {
+      "headline": "ตัวเลือกรอง",
+      "toolId": "gemini",
+      "model": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+      "role": "alt",
+      "reason": "อันดับ 7 บนตารางโหวต",
+      "evidence": [
+        "aa-image-nb"
+      ],
+      "caveat": "ตรวจสิทธิ์การใช้งานตามแผนที่หน้าแผนของ Google"
+    },
+    {
+      "headline": "โลโก้/ตัวอักษรอังกฤษสั้นๆ",
+      "toolId": "ideogram",
+      "model": "Ideogram 4.0",
+      "role": "alt",
+      "reason": "คู่มือของ Ideogram ระบุว่าแม่นที่สุดกับข้อความอังกฤษสั้นๆ ที่ใส่ในเครื่องหมายคำพูด แต่อันดับรวมบนตารางโหวตต่ำกว่า GPT Image มาก",
+      "evidence": [
+        "ideogram-text-guide",
+        "aa-image-ideogram"
+      ],
+      "caveat": "คู่มือเดียวกันเตือนว่าอักษรที่ไม่ใช่ละติน (รวมถึงไทย) ให้ผลไม่แน่นอนหรือล้มเหลว"
+    },
+    {
+      "headline": "ถ้าคุณใช้ Midjourney อยู่แล้ว",
+      "toolId": "midjourney",
+      "model": "Midjourney v7 (Alpha)",
+      "role": "alt",
+      "reason": "ใช้ Prompt ฉบับอังกฤษด้านล่างได้ แต่ตัวเลขโหวตที่เรามีอยู่ในระดับต่ำกว่าตัวอื่นชัดเจน",
+      "evidence": [
+        "aa-image-mj"
+      ],
+      "caveat": "ตัวเลขนี้เป็นของ v7 Alpha ตัวอย่างเมื่อเมษายน 2025 อาจไม่สะท้อนรุ่นล่าสุด และคะแนนโหวตทั่วไปไม่ได้วัดความชอบสไตล์ศิลป์เฉพาะทาง"
+    },
+    {
+      "headline": "ตัวเลือกเพิ่มเติม",
+      "toolId": "recraft",
+      "model": "Recraft V4.1 Utility",
+      "role": "alt",
+      "reason": "อันดับ 28 บนตารางโหวต (1020) ใกล้เคียง Ideogram 4.0",
+      "evidence": [
+        "aa-image-recraft"
+      ],
+      "caveat": "เรายังไม่พบคู่มือ Prompt ทางการของ Recraft ที่อ่านแล้ว จึงไม่รับรองว่าโครงสร้าง Prompt ในหน้านี้เหมาะกับ Recraft"
+    },
+    {
+      "headline": "ตัวเลือกเพิ่มเติม",
+      "toolId": "leonardo-ai",
+      "model": "Leonardo Lucid Origin Ultra",
+      "role": "alt",
+      "reason": "อันดับ 90 บนตารางโหวต (912) ต่ำกว่าตัวอื่นในรายการนี้มาก",
+      "evidence": [
+        "aa-image-leonardo"
+      ],
+      "caveat": "เลือกเมื่อคุณใช้ Leonardo อยู่แล้ว เรายังไม่พบคู่มือ Prompt ทางการที่อ่านแล้ว"
+    }
+  ],
+  "evidence": {
+    "aa-image-gpt": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Image Leaderboard ณ 2026-09-21: GPT Image 2.5 Flare (max) 1188 อันดับ 1, GPT Image 2.5 Sunburst (max) 1182 อันดับ 2, GPT Image 2 (high) 1171 อันดับ 3",
+      "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-image-grok": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Image Leaderboard ณ 2026-09-21: Grok Imagine Image 2.0 คะแนน 1154 อันดับ 4",
+      "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-image-nb": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Image Leaderboard ณ 2026-09-21: Nano Banana 2 (Gemini 3.1 Flash Image) คะแนน 1122 อันดับ 7",
+      "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-image-ideogram": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Image Leaderboard ณ 2026-09-21: Ideogram 4.0 (Quality) คะแนน 1012 อันดับ 33, Ideogram 4.0 คะแนน 1004 อันดับ 39",
+      "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-image-mj": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Image Leaderboard ณ 2026-09-21: Midjourney v7 Alpha คะแนน 878 อันดับ 108 (ตัวอย่างเดือนเมษายน 2025, ไม่มี API)",
+      "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "checkedAt": "2026-09-21"
+    },
+    "openai-guide": {
+      "kind": "vendor-guide",
+      "text": "OpenAI Cookbook: เรียง Prompt เป็น ฉาก → ตัวแบบ → รายละเอียดสำคัญ → ข้อจำกัด, ใส่ข้อความที่ต้องการในภาพในเครื่องหมายคำพูดหรือตัวพิมพ์ใหญ่ พร้อมบอกฟอนต์ ขนาด สี ตำแหน่ง, ระบุ \"verbatim\" กันโมเดลแก้ข้อความ, ระบุสิ่งที่ไม่ต้องการชัดเจน เช่น ไม่มีลายน้ำ ไม่มีโลโก้ (คู่มือไม่ได้ให้แนวทางสำหรับอักษรที่ไม่ใช่ละติน)",
+      "sourceUrl": "https://developers.openai.com/cookbook/examples/multimodal/image-gen-models-prompting-guide",
+      "checkedAt": "2026-09-21"
+    },
+    "ideogram-text-guide": {
+      "kind": "vendor-guide",
+      "text": "Ideogram Docs: ใส่ข้อความที่ต้องการในเครื่องหมายคำพูดและวางไว้ต้น Prompt, ข้อความสั้นๆ ให้ผลดีที่สุด, แม่นที่สุดกับภาษาอังกฤษ ส่วนอักษรที่ไม่ใช่ละตินให้ผลไม่แน่นอนหรือล้มเหลว, ระบุชื่อฟอนต์ไม่ได้ ให้บรรยายลักษณะแทน เช่น bold sans-serif",
+      "sourceUrl": "https://docs.ideogram.ai/using-ideogram/getting-started/prompting-guide/2-prompting-fundamentals/text-and-typography",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-image-recraft": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Image Leaderboard ณ 2026-09-21: Recraft V4.1 Utility คะแนน 1020 อันดับ 28 (ช่วงอันดับ 20-34)",
+      "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-image-leonardo": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Image Leaderboard ณ 2026-09-21: Leonardo.Ai Lucid Origin Ultra คะแนน 912 อันดับ 90 (ช่วงอันดับ 83-92)",
+      "sourceUrl": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "checkedAt": "2026-09-21"
+    }
+  },
+  "guides": [
+    {
+      "title": "OpenAI Cookbook: คู่มือ Prompt โมเดลสร้างภาพ",
+      "url": "https://developers.openai.com/cookbook/examples/multimodal/image-gen-models-prompting-guide"
+    },
+    {
+      "title": "Ideogram Docs: ข้อความและตัวอักษรในภาพ",
+      "url": "https://docs.ideogram.ai/using-ideogram/getting-started/prompting-guide/2-prompting-fundamentals/text-and-typography"
+    },
+    {
+      "title": "Artificial Analysis: ตารางโหวต Text to Image",
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "menu-food-photo",
+      "title": "ภาพอาหารสำหรับเมนู/โพสต์ร้าน",
+      "suitableFor": "ภาพถ่ายอาหารสไตล์โฆษณา สำหรับเมนูร้าน โพสต์เพจ หรือหน้าสั่งซื้อออนไลน์",
+      "thai": "ฉาก: โต๊ะไม้ริมหน้าต่างในร้านอาหาร แสงธรรมชาติจากด้านซ้าย ฉากหลังเบลอเล็กน้อย\nตัวแบบ: ข้าวมันไก่จานขาว เนื้อไก่ต้มหั่นเป็นชิ้น วางข้าวและแตงกวาข้างจาน มีถ้วยน้ำจิ้มเล็กๆ ด้านข้าง\nรายละเอียด: ถ่ายมุมเอียง 45 องศา เห็นไอร้อนบางๆ สีสดแต่ไม่อิ่มตัวเกินจริง สไตล์ภาพถ่ายอาหารเชิงพาณิชย์\nข้อจำกัด: ไม่มีตัวหนังสือ ไม่มีลายน้ำ ไม่มีโลโก้",
+      "english": "Scene: a wooden table by a restaurant window, soft natural light from the left, slightly blurred background.\nSubject: a white plate of Hainanese chicken rice with sliced poached chicken, rice and cucumber slices, and a small dipping-sauce bowl on the side.\nDetails: shot at a 45-degree angle, faint steam rising, vivid but not over-saturated colors, commercial food photography style.\nConstraints: no text, no watermark, no logos.",
+      "picks": [
+        {
+          "toolId": "chatgpt",
+          "model": "GPT Image (OpenAI)",
+          "role": "best",
+          "reason": "Prompt เรียงตามลำดับที่คู่มือ OpenAI แนะนำ (ฉาก → ตัวแบบ → รายละเอียด → ข้อจำกัด) และโมเดลอยู่อันดับต้นของตารางโหวต",
+          "evidence": [
+            "openai-guide",
+            "aa-image-gpt"
+          ]
+        },
+        {
+          "toolId": "grok",
+          "model": "Grok Imagine Image 2.0",
+          "role": "alt",
+          "reason": "อันดับ 4 บนตารางโหวต",
+          "evidence": [
+            "aa-image-grok"
+          ]
+        },
+        {
+          "toolId": "gemini",
+          "model": "Nano Banana 2",
+          "role": "alt",
+          "reason": "อันดับ 7 บนตารางโหวต",
+          "evidence": [
+            "aa-image-nb"
+          ]
+        }
+      ],
+      "tips": [
+        "ภาพ AI อาจไม่ตรงกับหน้าตาอาหารจริงของร้าน ถ้าใช้ขายจริงควรระบุว่าเป็นภาพประกอบ"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "poster-short-text",
+      "title": "โปสเตอร์ที่มีข้อความสั้นๆ",
+      "suitableFor": "โปสเตอร์งานอีเวนต์ ปกโพสต์โซเชียล หรือแบนเนอร์ที่ต้องมีหัวข้อสั้นๆ อยู่ในภาพ",
+      "thai": "ฉาก: ตลาดน้ำตอนเย็น โทนสีส้มอบอุ่น เรือขายของเรียงรายริมคลอง\nตัวแบบ: ข้อความตัวใหญ่หนาแบบไม่มีเชิงอยู่กึ่งกลางภาพว่า \"RIVER MARKET\" ตามตัวอักษรเป๊ะ (verbatim) สีขาว และใต้ข้อความมีบรรทัดเล็กว่า \"OPEN EVERY SAT\" สีขาว จัดกึ่งกลาง\nข้อจำกัด: ไม่มีข้อความอื่นใดในภาพ ไม่มีลายน้ำ",
+      "english": "Scene: a floating market at dusk, warm orange tones, vendor boats lined along the canal.\nSubject: large bold sans-serif text centered in the image reading \"RIVER MARKET\", exactly as written (verbatim), in white, with a smaller centered line below reading \"OPEN EVERY SAT\" in white.\nConstraints: no other text anywhere in the image, no watermark.",
+      "picks": [
+        {
+          "toolId": "chatgpt",
+          "model": "GPT Image (OpenAI)",
+          "role": "best",
+          "reason": "คู่มือ OpenAI แนะนำให้ใส่ข้อความในเครื่องหมายคำพูดและระบุ verbatim ซึ่ง Prompt นี้ทำไว้แล้ว และโมเดลอยู่อันดับต้นของตารางโหวต",
+          "evidence": [
+            "openai-guide",
+            "aa-image-gpt"
+          ]
+        },
+        {
+          "toolId": "ideogram",
+          "model": "Ideogram 4.0",
+          "role": "alt",
+          "reason": "คู่มือ Ideogram เน้นการวางข้อความสั้นในเครื่องหมายคำพูด",
+          "evidence": [
+            "ideogram-text-guide"
+          ]
+        }
+      ],
+      "tips": [
+        "ข้อความในภาพให้สั้นที่สุด ยิ่งยาวยิ่งสะกดผิดหรือตัวอักษรเพี้ยนตามคู่มือ Ideogram"
+      ],
+      "caveats": [
+        "ตัวอย่างนี้ใช้ข้อความอังกฤษโดยตั้งใจ ข้อความภาษาไทยในภาพยังไม่มีเอกสารทางการยืนยันว่าแม่นยำ (Ideogram เตือนชัดว่าอักษรที่ไม่ใช่ละตินไม่แน่นอน) แนะนำให้สร้างภาพโดยเว้นที่ว่างไว้ แล้วพิมพ์ข้อความไทยเพิ่มด้วยโปรแกรมออกแบบ เช่น Canva (ข้อเสนอแนะของทีมงาน)"
+      ]
+    },
+    {
+      "id": "realistic-portrait",
+      "title": "ภาพบุคคลสมจริง (ตัวละครสมมติ)",
+      "suitableFor": "ภาพบุคคลสมมติสำหรับประกอบบทความ สไลด์ หรือโพสต์ ที่ไม่ต้องการใช้ภาพสต็อกหน้าเดิมๆ",
+      "thai": "ฉาก: ร้านกาแฟเล็กๆ ยามบ่าย แสงอ่อนจากหน้าต่าง ฉากหลังเบลอ\nตัวแบบ: ชายไทยวัยสี่สิบ ผมสั้นเรียบร้อย สวมเสื้อเชิ้ตสีฟ้าอ่อน นั่งถือแก้วกาแฟ มองกล้องแล้วยิ้มเล็กน้อย\nรายละเอียด: ผิวหน้าดูเป็นธรรมชาติมีเท็กซ์เจอร์จริง ถ่ายด้วยเลนส์ระยะ 85 มม. สไตล์ภาพถ่ายพอร์เทรต\nข้อจำกัด: ไม่มีตัวหนังสือ ไม่มีลายน้ำ ไม่ใช่หน้าของบุคคลจริงหรือคนดัง",
+      "english": "Scene: a small café in the afternoon, soft window light, blurred background.\nSubject: a Thai man in his forties with neat short hair, wearing a light-blue shirt, sitting with a coffee cup, looking at the camera with a slight smile.\nDetails: natural skin with realistic texture, shot on an 85mm lens, portrait photography style.\nConstraints: no text, no watermark, not the likeness of any real person or celebrity.",
+      "picks": [
+        {
+          "toolId": "chatgpt",
+          "model": "GPT Image (OpenAI)",
+          "role": "best",
+          "reason": "โมเดลอยู่อันดับ 1-3 ของตารางโหวตโดยรวม",
+          "evidence": [
+            "aa-image-gpt"
+          ]
+        },
+        {
+          "toolId": "grok",
+          "model": "Grok Imagine Image 2.0",
+          "role": "alt",
+          "reason": "อันดับ 4 บนตารางโหวต",
+          "evidence": [
+            "aa-image-grok"
+          ]
+        },
+        {
+          "toolId": "gemini",
+          "model": "Nano Banana 2",
+          "role": "alt",
+          "reason": "อันดับ 7 บนตารางโหวต",
+          "evidence": [
+            "aa-image-nb"
+          ]
+        }
+      ],
+      "tips": [
+        "อย่าระบุชื่อบุคคลจริงหรือคนดังใน Prompt เครื่องมือหลายตัวปฏิเสธ และอาจมีปัญหาเรื่องสิทธิ์ใช้ภาพบุคคล"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "brand-mascot",
+      "title": "มาสคอต/ภาพประกอบการ์ตูนสำหรับแบรนด์",
+      "suitableFor": "ตัวละครประจำร้านหรือเพจ สติกเกอร์ ภาพประกอบบทความ ในสไตล์การ์ตูนแบนเส้นหนา",
+      "thai": "ฉาก: พื้นหลังสีครีมเรียบ\nตัวแบบ: มาสคอตแมวส้มยืนเต็มตัว สวมผ้ากันเปื้อนสีเขียว ถือถาดขนมปัง ยิ้มกว้าง\nรายละเอียด: สไตล์การ์ตูนแบน เส้นขอบหนา สีสดใส เงาเรียบง่าย\nข้อจำกัด: ไม่มีตัวหนังสือ ไม่มีลายน้ำ ไม่มีโลโก้",
+      "english": "Scene: plain cream background.\nSubject: a full-body orange cat mascot wearing a green apron, holding a tray of bread, smiling broadly.\nDetails: flat cartoon style, thick outlines, bright colors, simple shading.\nConstraints: no text, no watermark, no logos.",
+      "picks": [
+        {
+          "toolId": "chatgpt",
+          "model": "GPT Image (OpenAI)",
+          "role": "best",
+          "reason": "โมเดลอยู่อันดับ 1-3 ของตารางโหวตโดยรวม และคู่มือ OpenAI มีวิธีสั่งให้ตัวละครคงเดิมเมื่อแก้ภาพซ้ำ (ระบุสิ่งที่ต้องคงไว้)",
+          "evidence": [
+            "aa-image-gpt",
+            "openai-guide"
+          ]
+        },
+        {
+          "toolId": "midjourney",
+          "model": "Midjourney v7 (Alpha)",
+          "role": "alt",
+          "reason": "ใช้ฉบับอังกฤษได้ถ้าคุณมีบัญชีอยู่แล้ว",
+          "evidence": [
+            "aa-image-mj"
+          ],
+          "caveat": "ตัวเลขโหวตที่เรามีต่ำกว่าตัวอื่นชัดเจน (ตัวอย่างเก่าเดือนเมษายน 2025) สไตล์ศิลป์เป็นเรื่องรสนิยม ลองเทียบกันเองได้"
+        }
+      ],
+      "tips": [
+        "ถ้าต้องการตัวละครเดิมในหลายภาพ ให้สั่งแก้ทีละอย่างพร้อมระบุว่า \"keep everything else the same\" (แนวทางจากคู่มือ OpenAI)"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "logo-wordmark",
+      "title": "โลโก้ตัวอักษรอังกฤษสั้นๆ",
+      "suitableFor": "ไอเดียโลโก้ร้านหรือโปรเจกต์ที่มีชื่ออังกฤษสั้นๆ ไว้ดูแนวทางก่อนส่งให้นักออกแบบ",
+      "thai": "โลโก้แบบเรียบง่ายสำหรับร้านกาแฟ ข้อความตัวพิมพ์ใหญ่ว่า \"BREW HOUSE\" ตามตัวอักษรเป๊ะ ใช้ฟอนต์ sans-serif หนา สีน้ำตาลเข้มบนพื้นสีครีม มีไอคอนถ้วยกาแฟเส้นเดียวอยู่เหนือข้อความ จัดกึ่งกลาง พื้นหลังเรียบ ไม่มีข้อความอื่น",
+      "english": "A simple logo for a coffee shop. The text \"BREW HOUSE\" in capital letters, exactly as written, in a bold sans-serif style, dark brown on a cream background, with a single-line coffee-cup icon centered above the text. Plain background, no other text.",
+      "picks": [
+        {
+          "toolId": "ideogram",
+          "model": "Ideogram 4.0",
+          "role": "best",
+          "reason": "คู่มือ Ideogram เน้นข้อความสั้นในเครื่องหมายคำพูดและแม่นที่สุดกับภาษาอังกฤษ ตรงกับงานโลโก้ตัวอักษร",
+          "evidence": [
+            "ideogram-text-guide",
+            "aa-image-ideogram"
+          ],
+          "caveat": "อันดับรวมบนตารางโหวตต่ำกว่า GPT Image มาก จึงเลือก Ideogram เฉพาะงานตัวอักษรสั้น"
+        },
+        {
+          "toolId": "chatgpt",
+          "model": "GPT Image (OpenAI)",
+          "role": "alt",
+          "reason": "คู่มือ OpenAI มีวิธีสั่งข้อความ ฟอนต์ และตำแหน่ง อีกทั้งโมเดลอยู่อันดับต้น",
+          "evidence": [
+            "openai-guide",
+            "aa-image-gpt"
+          ]
+        }
+      ],
+      "tips": [
+        "ผลลัพธ์เป็นภาพ ไม่ใช่ไฟล์เวกเตอร์ ถ้าจะใช้พิมพ์หรือจดเครื่องหมายการค้า ให้ส่งต่อนักออกแบบและตรวจสิทธิ์ใช้เชิงพาณิชย์ของเครื่องมือก่อน"
+      ],
+      "caveats": [
+        "ชื่อภาษาไทยในโลโก้ยังไม่มีเอกสารทางการยืนยันว่าแม่นยำ ใช้ชื่ออังกฤษ หรือเติมข้อความไทยทีหลังด้วยโปรแกรมออกแบบ"
+      ]
+    },
+    {
+      "id": "post-background-space",
+      "title": "ภาพพื้นหลังเว้นที่ว่างสำหรับใส่ข้อความไทย",
+      "suitableFor": "ปกโพสต์/แบนเนอร์ที่ต้องพิมพ์ข้อความไทยทับเอง: สร้างภาพให้ก่อน แล้วใส่ตัวอักษรในโปรแกรมออกแบบ",
+      "thai": "ฉาก: ท้องทะเลยามพระอาทิตย์ตก ท้องฟ้าไล่สีส้มถึงม่วง\nตัวแบบ: เรือหางยาวลำเล็กอยู่มุมขวาล่างของภาพ\nรายละเอียด: ภาพแนวนอนสัดส่วน 16:9 เว้นพื้นที่ท้องฟ้าด้านซ้ายและด้านบนให้โล่ง เหมาะวางข้อความ\nข้อจำกัด: ไม่มีตัวหนังสือ ไม่มีลายน้ำ ไม่มีโลโก้",
+      "english": "Scene: the sea at sunset, sky fading from orange to purple.\nSubject: a small long-tail boat in the lower-right corner.\nDetails: landscape 16:9 image, keep the sky on the left and top clear and empty as space for text overlay.\nConstraints: no text, no watermark, no logos.",
+      "picks": [
+        {
+          "toolId": "chatgpt",
+          "model": "GPT Image (OpenAI)",
+          "role": "best",
+          "reason": "โมเดลอยู่อันดับ 1-3 ของตารางโหวต และคู่มือ OpenAI แนะนำให้ระบุข้อจำกัดชัดเจน เช่น ไม่มีข้อความ",
+          "evidence": [
+            "aa-image-gpt",
+            "openai-guide"
+          ]
+        },
+        {
+          "toolId": "gemini",
+          "model": "Nano Banana 2",
+          "role": "alt",
+          "reason": "อันดับ 7 บนตารางโหวต",
+          "evidence": [
+            "aa-image-nb"
+          ]
+        }
+      ],
+      "tips": [
+        "นำภาพไปพิมพ์ข้อความไทยด้วยโปรแกรมออกแบบ เพื่อควบคุมฟอนต์และการสะกดได้เอง (ข้อเสนอแนะของทีมงาน)"
+      ],
+      "caveats": []
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "manus-ai": {
+    "file": "/logos/manus-ai.png",
+    "from": "https://manus.im/apple-icon.png?apple-icon.153es_5lvwth1.png"
+  },
+  "perplexity-comet": {
+    "file": "/logos/perplexity-comet.png",
+    "from": "https://www.perplexity.ai/apple-touch-icon.png"
+  },
+  "zapier-agents": {
+    "file": "/logos/zapier-agents.ico",
+    "from": "https://zapier.com/favicon.ico"
+  },
+  "n8n": {
+    "file": "/logos/n8n.png",
+    "from": "https://n8n.io/apple-touch-icon.png"
+  },
+  "elevenlabs": {
+    "file": "/logos/elevenlabs.png",
+    "from": "https://elevenlabs.io/apple-icon.png?6592732ab34b1d42"
+  },
+  "suno": {
+    "file": "/logos/suno.png",
+    "from": "https://cdn-o.suno.com/apple-touch-icon.png"
+  },
+  "murf-ai": {
+    "file": "/logos/murf-ai.png",
+    "from": "https://cdn.prod.website-files.com/66b3765153a8a0c399c70981/67065c22d34646f3bb23b232_android-chrome-256x256.png"
+  },
+  "botnoi-voice": {
+    "file": "/logos/botnoi-voice.png",
+    "from": "https://voice.botnoi.ai/assets/favicon.ico"
+  },
+  "adobe-podcast": {
+    "file": "/logos/adobe-podcast.ico",
+    "from": "https://podcast.adobe.com/favicon.ico"
+  },
+  "stable-audio": {
+    "file": "/logos/stable-audio.png",
+    "from": "https://stableaudio.com/apple-touch-icon.png"
+  },
+  "fish-audio": {
+    "file": "/logos/fish-audio.png",
+    "from": "https://fish.audio/apple-touch-icon.png"
+  },
+  "chatgpt": {
+    "file": "/logos/chatgpt.webp",
+    "from": "https://chatgpt.com/cdn/assets/favicon-180x180-od45eci6.webp"
+  },
+  "claude-ai": {
+    "file": "/logos/claude-ai.png",
+    "from": "https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c129d018a-0ZbJsTbu.png"
+  },
+  "microsoft-copilot": {
+    "file": "/logos/microsoft-copilot.ico",
+    "from": "https://copilot.microsoft.com/static/cmc/favicon.ico"
+  },
+  "perplexity": {
+    "file": "/logos/perplexity.png",
+    "from": "https://www.perplexity.ai/apple-touch-icon.png"
+  },
+  "grok": {
+    "file": "/logos/grok.png",
+    "from": "https://grok.com/images/apple-touch-icon.png"
+  },
+  "github-copilot": {
+    "file": "/logos/github-copilot.png",
+    "from": "https://github.com/fluidicon.png"
+  },
+  "cursor": {
+    "file": "/logos/cursor.png",
+    "from": "https://cursor.com/marketing-static/apple-touch-icon-light.png"
+  },
+  "windsurf": {
+    "file": "/logos/windsurf.png",
+    "from": "https://devin.ai/apple-icon.png"
+  },
+  "claude-code": {
+    "file": "/logos/claude-code.png",
+    "from": "https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67d31dd7aa394792257596c5_webclip.png"
+  },
+  "amazon-q-developer": {
+    "file": "/logos/amazon-q-developer.png",
+    "from": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+  },
+  "tabnine": {
+    "file": "/logos/tabnine.png",
+    "from": "https://www.tabnine.com/wp-content/uploads/2024/09/cropped-tabnine-favicon-180x180.png"
+  },
+  "replit-agent": {
+    "file": "/logos/replit-agent.png",
+    "from": "https://replit.com/public/icons/favicon-prompt-192-rebrand.png"
+  },
+  "adobe-firefly": {
+    "file": "/logos/adobe-firefly.png",
+    "from": "https://firefly.adobe.com/releases/f2e87016be46100e9617228ea05fa12c8126a362/assets/fi_touch_icon_180-BmBtoxt-.png"
+  },
+  "ideogram": {
+    "file": "/logos/ideogram.ico",
+    "from": "https://ideogram.ai/favicon.ico"
+  },
+  "recraft": {
+    "file": "/logos/recraft.png",
+    "from": "https://framerusercontent.com/images/abL15N3UiE3oDA6S807KUBarXrQ.png"
+  },
+  "stable-diffusion-dreamstudio": {
+    "file": "/logos/stable-diffusion-dreamstudio.webp",
+    "from": "https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/804f0e8b-0028-4262-a8b0-b9f1c5de72c0/favicon.ico?format=100w"
+  },
+  "canva": {
+    "file": "/logos/canva.ico",
+    "from": "https://www.canva.com/favicon.ico"
+  },
+  "photoroom": {
+    "file": "/logos/photoroom.png",
+    "from": "https://www.photoroom.com/favicons/apple-touch-icon.png"
+  },
+  "runway": {
+    "file": "/logos/runway.png",
+    "from": "https://runway.com/icon.png?icon.35ps9bmugbe1e.png"
+  },
+  "kling-ai": {
+    "file": "/logos/kling-ai.png",
+    "from": "https://s16-kling.klingai.com/kos/s101/nlav112918/kling-homepage-aio/logo-180x180.png"
+  },
+  "google-veo": {
+    "file": "/logos/google-veo.ico",
+    "from": "https://deepmind.google/favicon.ico"
+  },
+  "pika": {
+    "file": "/logos/pika.png",
+    "from": "https://pika.art/apple-icon.png?apple-icon.1pc-f1mhs57mu.png"
+  },
+  "luma-dream-machine": {
+    "file": "/logos/luma-dream-machine.ico",
+    "from": "https://lumalabs.ai/favicons/favicon-black.ico"
+  },
+  "heygen": {
+    "file": "/logos/heygen.ico",
+    "from": "https://www.heygen.com/favicon.ico?favicon.2m321y0geyyfh.ico"
+  },
+  "vidu": {
+    "file": "/logos/vidu.png",
+    "from": "https://www.vidu.com/apple-touch-icon.png"
+  },
+  "gemini": {
+    "file": "/logos/gemini.png",
+    "from": "https://gemini.google/favicon.ico"
+  },
+  "deepseek-chat": {
+    "file": "/logos/deepseek-chat.ico",
+    "from": "https://www.deepseek.com/favicon.ico"
+  },
+  "mistral-le-chat": {
+    "file": "/logos/mistral-le-chat.ico",
+    "from": "https://mistral.ai/favicon.ico"
+  },
+  "midjourney": {
+    "file": "/logos/midjourney.ico",
+    "from": "https://updates.midjourney.com/favicon.ico"
+  }
+}

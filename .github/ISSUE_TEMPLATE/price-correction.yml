@@ -1,0 +1,33 @@
+name: แจ้งข้อมูลผิด / ราคาผิด (Data correction)
+description: ราคา แผน โควตา สิทธิ์เชิงพาณิชย์ หรือวันที่อัปเดตบนเว็บไม่ตรงกับผู้ให้บริการ
+labels: ["data"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: AI ตัวไหน
+      placeholder: เช่น Suno
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: หน้าบน ThrowAirI ที่เจอข้อมูลผิด
+      placeholder: https://throwairi.vercel.app/tool/...
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: ตอนนี้เว็บเราแสดงว่าอะไร / ควรเป็นอะไร
+      description: ราคาให้ระบุเป็นแบบรายเดือน (กดสวิตช์ "รายเดือน" ก่อนดู)
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: ลิงก์หน้าทางการของผู้ให้บริการที่ยืนยันได้ (บังคับ)
+      description: ต้องเป็นโดเมนของผู้ให้บริการเอง ไม่ใช่บล็อกหรือผลค้นหา
+      placeholder: https://...
+    validations:
+      required: true

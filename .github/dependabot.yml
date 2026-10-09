@@ -1,0 +1,17 @@
+# Free on GitHub: weekly PRs for outdated npm packages and GitHub Actions,
+# plus immediate security-fix PRs once "Dependabot security updates" is on
+# (Settings -> Code security). Review and merge them like any other PR.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

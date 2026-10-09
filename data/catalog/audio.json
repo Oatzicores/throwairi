@@ -1,0 +1,652 @@
+{
+  "tools": [
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "vendor": "ElevenLabs",
+      "categories": ["audio"],
+      "logoUrl": null,
+      "websiteUrl": "https://elevenlabs.io",
+      "shortDescription": "ผู้นำตลาด AI แปลงข้อความเป็นเสียง (TTS) และ voice cloning คุณภาพสูงสุดกลุ่มหนึ่ง",
+      "longDescription": "ElevenLabs เป็นผู้นำตลาดด้านเสียงสังเคราะห์คุณภาพสูง รองรับ voice cloning, พากย์เสียงหลายภาษา (dubbing), และ transcription ใช้ระบบเครดิตรวม (unified credits) ครอบคลุมทุกฟีเจอร์",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-28",
+        "confidence": "verified",
+        "sourceUrl": "https://elevenlabs.io/blog/eleven-v4",
+        "lastVerified": "2026-09-30",
+        "note": "ElevenLabs เปิดตัว Eleven v4 (28 ก.ย. 2026) โมเดลเสียงที่สื่ออารมณ์ได้ดีที่สุด พร้อม v4 Turbo หน่วงประมาณ 150ms"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "10,000 เครดิต/เดือน (~10 นาทีเสียง) ไม่มีสิทธิ์เชิงพาณิชย์", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://magichour.ai/blog/elevenlabs-pricing", "lastVerified": "2026-09-03" } },
+          { "name": "Starter", "priceUsdPerMonth": 6, "quota": "30,000 เครดิต/เดือน", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-07" } },
+          { "name": "Creator", "priceUsdPerMonth": 22, "quota": "121,000 เครดิต/เดือน + voice cloning ระดับมืออาชีพ (เดือนแรก $11)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-20", "note": "หน้าราคาระบุ Creator เป็น 'Everything in Starter, plus…' และ Starter มี Commercial License แล้ว" } },
+          { "name": "Pro", "priceUsdPerMonth": 99, "quota": "600,000 เครดิต/เดือน", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-20" } },
+          { "name": "Scale", "priceUsdPerMonth": 299, "quota": "1,800,000 เครดิต/เดือน + 3 Workspace seats", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-20" } },
+          { "name": "Business", "priceUsdPerMonth": 990, "quota": "6,000,000 เครดิต/เดือน + 10 Workspace seats", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-07" } }
+        ],
+        "freeQuota": "10,000 เครดิต/เดือน (~10 นาทีเสียง) ไม่มีสิทธิ์เชิงพาณิชย์",
+        "commercialUseSummary": {
+          "value": "แผนฟรีไม่มีสิทธิ์เชิงพาณิชย์ แต่ต้องอัปเกรดเพียงแผน Starter ($6/เดือน) ขึ้นไปก็จะได้ Commercial License ตามหน้าราคาทางการของ ElevenLabs แล้ว (ไม่จำเป็นต้องรอถึง Creator อย่างที่เคยเข้าใจ)",
+          "confidence": "verified",
+          "sourceUrl": "https://elevenlabs.io/pricing",
+          "lastVerified": "2026-09-07"
+        },
+        "sourceUrl": "https://elevenlabs.io/pricing",
+        "lastVerified": "2026-09-07"
+      },
+      "reviews": {
+        "positiveThemes": ["คุณภาพเสียงสังเคราะห์และ voice cloning เป็นผู้นำตลาด", "รองรับ dubbing หลายภาษาในราคาที่ชัดเจน ($0.33-2.20/นาที)", "ระบบเครดิตรวมใช้งานง่าย ครอบคลุมทุกฟีเจอร์"],
+        "negativeThemes": ["แผนฟรีไม่มีสิทธิ์เชิงพาณิชย์เลย", "ราคาแผนสูงขึ้นเร็วเมื่อใช้งานหนัก (Pro $99, Scale $299)"],
+        "paidVerifiedSummary": "ผู้ใช้ Creator/Pro ที่จ่ายเงินจริงส่วนใหญ่พอใจคุณภาพเสียง แต่ต้องวางแผนโควตาให้ดีเพราะเครดิตหมดเร็วเมื่อใช้งานหนัก",
+        "freeTierSummary": "เหมาะทดลองคุณภาพเสียงเท่านั้น ใช้งานจริงเชิงพาณิชย์ไม่ได้",
+        "sourceUrls": ["https://magichour.ai/blog/elevenlabs-pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["คุณภาพเสียง/voice cloning เป็นผู้นำตลาด", "รองรับ dubbing หลายภาษาราคาชัดเจน", "ระบบเครดิตรวมใช้งานง่าย"],
+      "weaknesses": ["แผนฟรีไม่มีสิทธิ์เชิงพาณิชย์เลย", "ราคาสูงขึ้นเร็วเมื่อใช้งานหนัก"],
+      "bestFor": ["งานพากย์เสียง/dubbing มืออาชีพ", "นักพัฒนาที่ต้องการ voice cloning คุณภาพสูง"],
+      "promptWorkflow": {"steps":["อ่านสคริปต์ข้อความที่จะพากย์เป็นหลัก","ใช้เสียง (voice) และค่าอารมณ์/น้ำเสียงที่เลือกแยกจากข้อความ","อ่านเครื่องหมายวรรคตอนเพื่อกำหนดจังหวะหยุด/เน้นเสียง"],"recommendedStructure":"[สคริปต์ข้อความที่ต้องการพากย์ พร้อมเครื่องหมายวรรคตอนที่ถูกต้อง] (เลือกเสียง+อารมณ์แยกจากแผงควบคุม)","example":"ยินดีต้อนรับสู่ร้านกาแฟของเรา... วันนี้เรามีเมนูใหม่ให้คุณได้ลองชิมด้วยนะครับ!"},
+      "lastUpdated": "2026-09-07",
+      "latestVersion": { "name": "Eleven v4", "releaseDate": null, "sourceUrl": "https://elevenlabs.io/docs/overview/models", "lastVerified": "2026-09-30", "note": "หน้าโมเดลของ ElevenLabs ระบุ Eleven v4 เป็นรุ่นแรก (90+ ภาษา) และ v4 Turbo สำหรับงานเรียลไทม์ (ไม่ระบุวันเปิดตัว)" },
+      "plansUrl": { "url": "https://elevenlabs.io/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "suno",
+      "name": "Suno",
+      "vendor": "Suno",
+      "categories": ["audio"],
+      "logoUrl": null,
+      "websiteUrl": "https://suno.com",
+      "shortDescription": "AI แต่งเพลงจากข้อความ ยอดนิยมที่สุดในกลุ่ม AI สร้างดนตรี ใช้งานง่ายมาก",
+      "longDescription": "Suno เป็น AI สร้างเพลงที่ได้รับความนิยมสูงสุดในตลาด สร้างเพลงพร้อมเนื้อร้อง/ทำนอง/เสียงร้องจากข้อความบรรยายได้ในไม่กี่วินาที มีข้อจำกัดเรื่องจำนวนดาวน์โหลดที่เพิ่งประกาศเปลี่ยนแปลง (มีผล ก.ย. 2026)",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-09",
+        "confidence": "probable",
+        "sourceUrl": "https://suno.com/release-notes/introducing-v6",
+        "lastVerified": "2026-09-30",
+        "note": "Suno เปิดตัวโมเดล v6 (9 ก.ย. 2026) มี v6, v6-wild สำหรับผู้ใช้เสียเงิน และ v6-mini ใช้ได้ทุกคน แก้ไขเพลงเฉพาะส่วนและทำ mashup ได้ (อ้างตามหน้า release notes ทางการผ่านผลค้นหา ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "50 เครดิต/วัน (~10 เพลง/วัน) มีลายน้ำ ห้ามใช้เชิงพาณิชย์เด็ดขาด และหน้าราคาทางการระบุว่าไม่มีโควตาดาวน์โหลดเพลงรายเดือนเลย (ก่อนหน้านี้เข้าใจผิดว่าดาวน์โหลดได้ 7 ครั้งตลอดชีพ)", "commercialUseAllowed": { "value": false, "confidence": "verified", "sourceUrl": "https://suno.com/pricing", "lastVerified": "2026-09-20" } },
+          { "name": "Pro", "priceUsdPerMonth": 10, "quota": "2,500 เครดิต/เดือน, ดาวน์โหลดเพลงได้ 20 เพลง/เดือน, มีสิทธิ์เชิงพาณิชย์ (annual $8/เดือน)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://suno.com/pricing", "lastVerified": "2026-09-20" } },
+          { "name": "Premier", "priceUsdPerMonth": 30, "quota": "10,000 เครดิต/เดือน + Suno Studio, ดาวน์โหลดเพลงได้ 60 เพลง/เดือน, มีสิทธิ์เชิงพาณิชย์ (annual $24/เดือน)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://suno.com/pricing", "lastVerified": "2026-09-20" } }
+        ],
+        "freeQuota": "50 เครดิต/วัน (~10 เพลง/วัน) — ห้ามใช้เชิงพาณิชย์ และไม่มีโควตาดาวน์โหลดเพลงรายเดือน",
+        "commercialUseSummary": {
+          "value": "หน้าราคาทางการระบุชัดว่าแผนฟรี \"No commercial rights\" ส่วน Pro และ Premier มี \"Commercial use rights\" ทั้งคู่ (ต้องดู ToS ประกอบสำหรับเงื่อนไขละเอียด)",
+          "confidence": "verified",
+          "sourceUrl": "https://suno.com/pricing",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://suno.com/pricing",
+        "lastVerified": "2026-09-20"
+      },
+      "reviews": {
+        "positiveThemes": ["ใช้งานง่ายที่สุดในกลุ่ม สร้างเพลงเต็มเพลงได้จากข้อความบรรยายสั้นๆ", "ราคาแผน Pro เข้าถึงง่าย ($10/เดือน)", "เป็นที่นิยมสูงสุดในกลุ่ม AI สร้างเพลง"],
+        "negativeThemes": ["เพิ่งปรับนโยบายจำกัดจำนวนดาวน์โหลดแม้แผนเสียเงิน (มีผล 3 ก.ย. 2026) ทำให้ผู้ใช้บางส่วนไม่พอใจ", "แผนฟรีจำกัดการใช้งานเชิงพาณิชย์เด็ดขาด"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "เหมาะทดลองสร้างเพลงเล่นส่วนตัวเท่านั้น",
+        "sourceUrls": ["https://sunowatermark.com/blog/suno-ai-pricing-2026/"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["ใช้งานง่ายที่สุดในกลุ่ม สร้างเพลงเต็มเพลงจากข้อความสั้นๆ", "ความนิยมสูงสุดในตลาด AI สร้างเพลง", "ราคาแผน Pro เข้าถึงง่าย"],
+      "weaknesses": ["นโยบายจำกัดดาวน์โหลดใหม่ (ก.ย. 2026) แม้แผนเสียเงิน", "แผนฟรีห้ามใช้เชิงพาณิชย์เด็ดขาด"],
+      "bestFor": ["มือใหม่ที่อยากลองแต่งเพลงโดยไม่มีพื้นฐานดนตรี", "ครีเอเตอร์ที่ต้องการเพลงประกอบคอนเทนต์เร็วๆ"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายแนวเพลง/อารมณ์/เครื่องดนตรีก่อนเพื่อกำหนดสไตล์เพลง","อ่านโครงสร้างเนื้อเพลงจากแท็ก [Verse], [Chorus], [Bridge]","อ่านเนื้อร้องที่ใส่ต่อจากแต่ละแท็กเพื่อร้องตามนั้น"],"recommendedStructure":"[แนวเพลง/อารมณ์/เครื่องดนตรี] จากนั้นใส่เนื้อเพลงพร้อมแท็ก [Verse] [Chorus] [Bridge] คั่นแต่ละท่อน","example":"genre: lofi chill, mellow piano and soft drums\n[Verse]\nสายลมพัดผ่านหน้าต่างยามเย็น\n[Chorus]\nแค่เพลงนี้ก็พอ ให้ใจสงบลง"},
+      "lastUpdated": "2026-09-03",
+      "latestVersion": { "name": "Suno v6", "releaseDate": "2026-09-09", "sourceUrl": "https://suno.com/blog/introducing-v6", "lastVerified": "2026-09-21", "note": "ประกาศ \"Introducing v6\" บนบล็อกทางการของ Suno" },
+      "plansUrl": { "url": "https://suno.com/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "udio",
+      "name": "Udio",
+      "vendor": "Udio",
+      "categories": ["audio"],
+      "logoUrl": null,
+      "websiteUrl": "https://www.udio.com",
+      "shortDescription": "AI แต่งเพลงคู่แข่ง Suno หลังเซ็นสัญญากับ Universal Music Group เปลี่ยนเป็นระบบ 'ฟังในแอปเท่านั้น'",
+      "longDescription": "Udio เป็นคู่แข่งหลักของ Suno แต่หลังจากเซ็นสัญญากับ Universal Music Group (ต.ค. 2025) เปลี่ยนโมเดลเป็น 'walled garden' คือผู้ใช้ฟังเพลงในแอปได้แต่ดาวน์โหลดออกไปใช้งานอิสระไม่ได้เหมือนเดิม เป็นการเปลี่ยนแปลงสำคัญที่ผู้ใช้ควรทราบก่อนตัดสินใจสมัคร",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-04-09",
+        "confidence": "probable",
+        "sourceUrl": "https://www.digitalmusicnews.com/2026/04/09/udio-kobalt-deal/",
+        "lastVerified": "2026-09-03",
+        "note": "เซ็นสัญญาไลเซนส์เพลงกับ Kobalt ก่อนเปิดตัวแพลตฟอร์มใหม่"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "100 เครดิต/เดือน จำกัด 10 เครดิต/24 ชม. ไม่ต้องใช้บัตรเครดิต", "commercialUseAllowed": { "value": null, "confidence": "unknown", "sourceUrl": null, "lastVerified": null } },
+          { "name": "Standard", "priceUsdPerMonth": 10, "quota": "2,400 เครดิต/เดือน (annual $8)", "commercialUseAllowed": { "value": null, "confidence": "unknown", "sourceUrl": null, "lastVerified": null } },
+          { "name": "Pro", "priceUsdPerMonth": 30, "quota": "6,000 เครดิต/เดือน (annual $24)", "commercialUseAllowed": { "value": null, "confidence": "unknown", "sourceUrl": null, "lastVerified": null } }
+        ],
+        "freeQuota": "100 เครดิต/เดือน (จำกัด 10 เครดิต/24 ชม.)",
+        "commercialUseSummary": {
+          "value": "⚠️ หลังสัญญากับ Universal Music Group (ต.ค. 2025) Udio เปลี่ยนเป็นระบบ 'walled garden' — ผู้ใช้สตรีมฟังในแอปได้แต่ไม่สามารถดาวน์โหลดออกไปใช้งานอิสระได้เหมือนก่อน ซึ่งกระทบสิทธิ์การใช้งานเชิงพาณิชย์อย่างมาก ควรตรวจสอบเงื่อนไขล่าสุดก่อนสมัครหากต้องการนำเพลงไปใช้นอกแอป",
+          "confidence": "probable",
+          "sourceUrl": "https://www.soundverse.ai/blog/article/is-udio-free-understanding-udios-pricing-and-access-options-0931",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.eesel.ai/blog/udio-pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["คุณภาพเพลงที่สร้างได้รับการยอมรับใกล้เคียง Suno", "มีแพ็กเครดิตเสริมให้ซื้อเพิ่มได้ยืดหยุ่น"],
+        "negativeThemes": ["การเปลี่ยนเป็นระบบ 'walled garden' หลังดีลกับ UMG ทำให้ดาวน์โหลดออกไปใช้อิสระไม่ได้เหมือนเดิม เป็นข้อจำกัดสำคัญที่กระทบผู้ใช้เชิงพาณิชย์อย่างมาก", "โควตาแผนฟรีน้อยกว่า Suno (100 เทียบกับ 50/วัน ของ Suno)"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": ["https://www.soundverse.ai/blog/article/is-udio-free-understanding-udios-pricing-and-access-options-0931"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้ — การเปลี่ยนแปลงสิทธิ์การใช้งานเป็นข้อมูลสำคัญที่ยืนยันจากหลายแหล่ง"
+      },
+      "usageSignals": [],
+      "strengths": ["คุณภาพเพลงใกล้เคียง Suno", "มีแพ็กเครดิตเสริมซื้อเพิ่มยืดหยุ่น"],
+      "weaknesses": ["⚠️ ดาวน์โหลดออกไปใช้อิสระไม่ได้แล้วหลังดีล UMG — กระทบผู้ใช้เชิงพาณิชย์อย่างมาก", "โควตาแผนฟรีน้อยกว่า Suno"],
+      "bestFor": ["ผู้ใช้ที่ต้องการฟังเพลงในแอปเป็นหลัก ไม่ได้เน้นดาวน์โหลดออกไปใช้ที่อื่น"],
+      "promptWorkflow": {"steps":["อ่านคำบรรยายแนวเพลง/บรรยากาศก่อนเพื่อกำหนดทำนองและเครื่องดนตรี","อ่านเนื้อเพลงที่ใส่ต่อจากคำบรรยายสไตล์","รองรับการระบุความยาวเพลงและจุดเปลี่ยนท่อนคร่าวๆ"],"recommendedStructure":"[แนวเพลง/บรรยากาศ/เครื่องดนตรี], เนื้อเพลง: [เนื้อร้อง]","example":"upbeat indie pop, acoustic guitar and claps, เนื้อเพลง: วันนี้ฟ้าใส หัวใจก็พลอยเบิกบาน"},
+      "lastUpdated": "2026-09-03",
+      "plansUrl": { "url": "https://www.udio.com/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "murf-ai",
+      "name": "Murf AI",
+      "vendor": "Murf",
+      "categories": ["audio"],
+      "logoUrl": null,
+      "websiteUrl": "https://murf.ai",
+      "shortDescription": "AI พากย์เสียง/TTS เน้นตลาดองค์กร มีเสียงให้เลือกกว่า 200 เสียง เหมาะงานนำเสนอ/อีเลิร์นนิง",
+      "longDescription": "Murf AI เน้นตลาดงานนำเสนอ/วิดีโอองค์กร/อีเลิร์นนิง มีเสียงให้เลือกกว่า 200 เสียงหลายภาษา แผนฟรีให้ทดลองฟังได้แต่ดาวน์โหลดไม่ได้ ต้องอัปเกรดเป็น Creator ขึ้นไปจึงดาวน์โหลดและใช้เชิงพาณิชย์ได้",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-06-16",
+        "confidence": "inference",
+        "sourceUrl": "https://murf.ai/api/docs/changelog",
+        "lastVerified": "2026-09-03",
+        "note": "เปิดตัวโมเดล Falcon 2 (จากบทวิเคราะห์ของบุคคลที่สาม ยังไม่ได้ยืนยันตรงจาก changelog ทางการ)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "เสียงครบ 200+ เสียง สร้างได้ ~10 นาที แต่ดาวน์โหลดไฟล์เสียงไม่ได้", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026", "lastVerified": "2026-09-03" } },
+          { "name": "Creator", "priceUsdPerMonth": 29, "quota": "24 ชม. เสียง/ปี, 1 seat, มีสิทธิ์เชิงพาณิชย์ (annual $19/เดือน)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://murf.ai/pricing", "lastVerified": "2026-09-20", "note": "หน้าราคาทางการ (แท็บ Studio) ระบุ Commercial Rights = ใช่ สำหรับแผน Creator" } },
+          { "name": "Business", "priceUsdPerMonth": 99, "quota": "96 ชม. เสียง/ปี (แผนรายปี), 1 editor seat, priority support (annual $66/เดือน)", "commercialUseAllowed": { "value": true, "confidence": "verified", "sourceUrl": "https://murf.ai/pricing", "lastVerified": "2026-09-20", "note": "หน้าราคาทางการ (แท็บ Studio) ระบุ Commercial Rights = ใช่ สำหรับแผน Business" } }
+        ],
+        "freeQuota": "ทดลองฟังได้ ~10 นาที แต่ดาวน์โหลดไม่ได้เลย",
+        "commercialUseSummary": {
+          "value": "หน้าราคาทางการ (Studio) ระบุ Commercial Rights ให้ทั้งแผน Creator และ Business แผนฟรีดาวน์โหลดไฟล์เสียงไม่ได้เลยจึงใช้งานจริงเชิงพาณิชย์ไม่ได้ในทางปฏิบัติ แต่หน้าราคาไม่ได้ระบุสิทธิ์เชิงพาณิชย์ของแผนฟรีไว้ตรงๆ",
+          "confidence": "probable",
+          "sourceUrl": "https://murf.ai/pricing",
+          "lastVerified": "2026-09-20"
+        },
+        "sourceUrl": "https://smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["มีเสียงให้เลือกมากกว่า 200 เสียงหลายภาษา", "เหมาะงานนำเสนอ/อีเลิร์นนิง/องค์กรโดยเฉพาะ", "สิทธิ์เชิงพาณิชย์ชัดเจนตั้งแต่แผน Creator"],
+        "negativeThemes": ["แผนฟรีดาวน์โหลดไม่ได้เลย ทดลองได้แค่ฟังในเว็บ", "ราคาต่อชั่วโมงเสียงค่อนข้างแพงเมื่อเทียบเป็นรายชั่วโมง (24 ชม./ปี ที่ $29/เดือน)"],
+        "paidVerifiedSummary": "ผู้ใช้องค์กรที่จ่าย Creator/Business ส่วนใหญ่พอใจความหลากหลายของเสียงและใช้งานเชิงพาณิชย์ได้ทันที",
+        "freeTierSummary": "ใช้ทดลองฟังเสียงเท่านั้น ใช้งานจริงไม่ได้เพราะดาวน์โหลดไม่ได้",
+        "sourceUrls": ["https://smallest.ai/blog/murf-ai-pricing-plans-cost-what-you-get-in-2026"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["เสียงให้เลือกหลากหลายที่สุดกลุ่มหนึ่ง (200+ เสียง)", "เหมาะงานนำเสนอ/อีเลิร์นนิงองค์กรโดยเฉพาะ", "สิทธิ์เชิงพาณิชย์ชัดเจน"],
+      "weaknesses": ["แผนฟรีดาวน์โหลดไม่ได้เลย ทดลองจำกัดมาก", "ราคาต่อชั่วโมงเสียงค่อนข้างแพง"],
+      "bestFor": ["งานนำเสนอ/วิดีโอองค์กร/อีเลิร์นนิง", "ธุรกิจที่ต้องการเสียงพากย์หลายภาษาแบบมืออาชีพ"],
+      "promptWorkflow": {"steps":["อ่านสคริปต์ข้อความเป็นหลัก","ใช้เสียงพากย์และภาษาที่เลือกจากคลังเสียงแยกต่างหาก","รองรับการปรับจังหวะ/emphasis เฉพาะคำผ่านตัวแก้ไขแบบ visual"],"recommendedStructure":"[สคริปต์ข้อความสำหรับพากย์ เขียนเป็นประโยคสมบูรณ์] (ปรับเสียง/ความเร็ว/emphasis ผ่านแผงควบคุมแยก)","example":"สวัสดีค่ะ ยินดีต้อนรับเข้าสู่บทเรียนที่ 1 วันนี้เราจะมาเรียนรู้พื้นฐานของการตลาดออนไลน์กันค่ะ"},
+      "lastUpdated": "2026-09-03",
+      "plansUrl": { "url": "https://murf.ai/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "botnoi-voice",
+      "name": "Botnoi Voice",
+      "vendor": "Botnoi Group (บอทน้อย)",
+      "categories": [
+        "audio"
+      ],
+      "logoUrl": null,
+      "websiteUrl": "https://voice.botnoi.ai",
+      "shortDescription": "แปลงข้อความเป็นเสียงพูดภาษาไทยและอีก 20+ ภาษา โดยบริษัทไทย ซื้อแพ็กเกจเป็นบาทได้",
+      "longDescription": "Botnoi Voice เป็นบริการแปลงข้อความเป็นเสียง (TTS) ของบริษัทไทย Botnoi Group รองรับกว่า 20 ภาษารวมภาษาไทย ปรับความเร็วและระดับเสียงได้ ใช้บนสมาร์ทโฟนได้ และมี API ระบบราคาเป็นพอยท์ซื้อเป็นบาท ผู้ให้บริการระบุเองว่ามีผู้ใช้ 1.5 ล้านคนทั่วโลก (ตัวเลขจากหน้าแรกของเขา ไม่ได้ตรวจกับแหล่งอิสระ)",
+      "launchDate": null,
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "ฟรี",
+            "priceUsdPerMonth": 0,
+            "quota": "สร้างเสียงฟรี 3 ครั้งต่อวัน มีโฆษณา และต้องซื้อแพ็กเกจเพื่อดาวน์โหลดเพิ่ม",
+            "commercialUseAllowed": {
+              "value": null,
+              "confidence": "unknown",
+              "sourceUrl": null,
+              "lastVerified": null
+            }
+          },
+          {
+            "name": "ซื้อพอยท์รายครั้ง",
+            "priceUsdPerMonth": null,
+            "priceLabel": "เริ่มที่ 99 บาท",
+            "quota": "ตัวอย่างเช่น 4,100 พอยท์ = 99 บาท (แพ็กอื่นและราคาโปรโมชันเปลี่ยนตามช่วงเวลา)",
+            "commercialUseAllowed": {
+              "value": null,
+              "confidence": "unknown",
+              "sourceUrl": null,
+              "lastVerified": null
+            }
+          },
+          {
+            "name": "Starter (สมาชิก)",
+            "priceUsdPerMonth": null,
+            "priceLabel": "600 บาท ต่อ 3 เดือน (เฉลี่ยราว 200 บาท/เดือน)",
+            "quota": "18,000 พอยท์/เดือน รีเซ็ตทุกเดือน ไม่มีโฆษณา",
+            "commercialUseAllowed": {
+              "value": null,
+              "confidence": "unknown",
+              "sourceUrl": null,
+              "lastVerified": null
+            },
+            "notes": "หน้าราคามีตัวเลือกรายปี ลดสูงสุด 20%"
+          },
+          {
+            "name": "Pro (สมาชิก)",
+            "priceUsdPerMonth": null,
+            "priceLabel": "1,200 บาท ต่อ 3 เดือน (เฉลี่ยราว 400 บาท/เดือน)",
+            "quota": "48,000 พอยท์/เดือน รีเซ็ตทุกเดือน ไม่มีโฆษณา ใช้ AI Tools ฟรี",
+            "commercialUseAllowed": {
+              "value": null,
+              "confidence": "unknown",
+              "sourceUrl": null,
+              "lastVerified": null
+            }
+          },
+          {
+            "name": "Elite (สมาชิก)",
+            "priceUsdPerMonth": null,
+            "priceLabel": "3,000 บาท ต่อ 3 เดือน (เฉลี่ยราว 1,000 บาท/เดือน)",
+            "quota": "160,000 พอยท์/เดือน รีเซ็ตทุกเดือน ไม่มีโฆษณา ใช้ AI Tools ฟรี",
+            "commercialUseAllowed": {
+              "value": null,
+              "confidence": "unknown",
+              "sourceUrl": null,
+              "lastVerified": null
+            }
+          }
+        ],
+        "freeQuota": "สร้างเสียงฟรี 3 ครั้งต่อวัน",
+        "commercialUseSummary": {
+          "value": "ข้อกำหนดของ Botnoi Voice ไม่ได้ระบุชัดว่าเสียงที่สร้างนำไปใช้เชิงพาณิชย์ได้หรือไม่ ข้อ 1.1 ระบุว่าเนื้อหาที่ดาวน์โหลดจากเว็บไซต์เป็นสิทธิ์ของบอทน้อยกรุ๊ปหรือผู้ให้อนุญาต ส่วนข้อ 3.1 ห้ามนำเสียงไปใช้ในทางเสียหายหรือละเมิดสิทธิ ขณะที่หน้าแรกโฆษณาว่าใช้ทำเสียงพากย์โฆษณาได้ ควรสอบถามผู้ให้บริการเป็นลายลักษณ์อักษร (admin@botnoigroup.com) ก่อนนำไปหารายได้",
+          "confidence": "unknown",
+          "sourceUrl": "https://voice.botnoi.ai/agreement",
+          "lastVerified": "2026-09-19"
+        },
+        "sourceUrl": "https://voice.botnoi.ai/payment/quote",
+        "lastVerified": "2026-09-19"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-19",
+        "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
+      },
+      "usageSignals": [],
+      "strengths": [
+        "รองรับภาษาไทยเป็นหลัก และอีก 20+ ภาษา",
+        "ราคาเป็นบาท แพ็กพอยท์เริ่มที่ 99 บาท",
+        "ปรับความเร็วและระดับเสียงการอ่านได้ มี API"
+      ],
+      "weaknesses": [
+        "ข้อกำหนดไม่ระบุสิทธิ์เชิงพาณิชย์ชัดเจน ต้องสอบถามผู้ให้บริการ",
+        "แผนฟรีมีโฆษณาและสร้างได้ 3 ครั้งต่อวัน",
+        "ระบบพอยท์และราคาโปรโมชันเปลี่ยนตามช่วงเวลา เทียบราคากับเจ้าอื่นยาก"
+      ],
+      "bestFor": [
+        "ครีเอเตอร์ที่ต้องการเสียงพากย์ภาษาไทยสำหรับคลิปหรือสื่อการสอน",
+        "คนที่ขายของออนไลน์และอยากได้เสียงพากย์โฆษณาภาษาไทย (หน้าแรกมี MarAds Studio ที่ใส่ชื่อสินค้าและราคาแล้วได้สคริปต์พร้อมเสียง)"
+      ],
+      "promptWorkflow": {
+        "steps": [
+          "เลือกภาษาก่อนพิมพ์ข้อความ",
+          "อ่านข้อความสคริปต์เป็นหลัก",
+          "เลือกเสียงและปรับความเร็ว/ระดับเสียงแยกจากข้อความ"
+        ],
+        "recommendedStructure": "[สคริปต์ที่ต้องการพากย์ แบ่งประโยคชัดเจน] (เลือกภาษา เสียง และความเร็วจากแผงควบคุม)",
+        "example": "สวัสดีครับ วันนี้ผมจะมาแนะนำวิธีทำกาแฟดริปง่ายๆ ที่ทำได้เองที่บ้าน"
+      },
+      "lastUpdated": "2026-09-19",
+      "plansUrl": { "url": "https://voice.botnoi.ai/payment/quote", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "adobe-podcast",
+      "name": "Adobe Podcast",
+      "vendor": "Adobe",
+      "categories": [
+        "audio"
+      ],
+      "logoUrl": null,
+      "websiteUrl": "https://podcast.adobe.com",
+      "shortDescription": "ล้างเสียงรบกวนและเสียงก้องของเสียงพูดที่อัดไว้ พร้อมอัดและตัดต่อพอดแคสต์บนเว็บ",
+      "longDescription": "Adobe Podcast เป็นเครื่องมือบนเว็บของ Adobe สำหรับปรับปรุงเสียงพูด (Enhance Speech) ที่ลบเสียงรบกวนและเสียงก้อง อัดพอดแคสต์แบบมีแขกรับเชิญทางไกล ถอดเสียงและตัดต่อเสียงจากข้อความ เสียงที่ปรับแล้วคือเสียงที่คุณอัปโหลดเอง ไม่ใช่เครื่องมือสร้างเสียงจากข้อความ แผนเสียเงินคือ Firefly Pro ซึ่งเป็นแผนรวมของ Adobe Firefly",
+      "launchDate": null,
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "Enhance Speech: เฉพาะเสียง ไฟล์ไม่เกิน 30 นาที/500 MB อัปโหลดทีละไฟล์ ประมวลผลไม่เกิน 1 ชั่วโมงต่อวัน · Studio: ดาวน์โหลดโปรเจกต์ไม่เกิน 30 นาที วันละ 2 โปรเจกต์ และ audiogram มีแบรนด์ Podcast",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://www.adobe.com/legal/terms.html",
+              "lastVerified": "2026-09-19",
+              "note": "ข้อกำหนดทั่วไปของ Adobe (มีผล 3 ต.ค. 2025) ระบุว่าผู้ใช้คงสิทธิ์และความเป็นเจ้าของ Content ของตัวเอง ทั้งบัญชีฟรีและเสียเงิน แต่ไม่ได้เขียนคำว่า 'เชิงพาณิชย์' ตรงๆ และไม่มีข้อกำหนดเฉพาะของ Adobe Podcast ในเอกสารนั้น"
+            }
+          },
+          {
+            "name": "Firefly Pro",
+            "priceUsdPerMonth": 19.99,
+            "quota": "Enhance Speech: รองรับวิดีโอและอัปโหลดหลายไฟล์ ปรับความแรงได้ ประมวลผลได้ถึง 4 ชั่วโมงต่อวัน ไฟล์ไม่เกิน 1 GB · Studio: ดาวน์โหลดไม่จำกัด ดาวน์โหลดไฟล์ต้นฉบับแยกผู้พูด ไม่มีแบรนด์ Podcast · เครดิต generative สูงสุด 4,000/เดือน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://www.adobe.com/legal/terms.html",
+              "lastVerified": "2026-09-19",
+              "note": "ข้อกำหนดทั่วไปของ Adobe (มีผล 3 ต.ค. 2025) ระบุว่าผู้ใช้คงสิทธิ์และความเป็นเจ้าของ Content ของตัวเอง ทั้งบัญชีฟรีและเสียเงิน แต่ไม่ได้เขียนคำว่า 'เชิงพาณิชย์' ตรงๆ และไม่มีข้อกำหนดเฉพาะของ Adobe Podcast ในเอกสารนั้น"
+            },
+            "notes": "เป็นแผนรวมของ Adobe Firefly ที่ให้สิทธิ์ Adobe Podcast Premium ด้วย ไม่ได้ขายแยกเฉพาะ Podcast"
+          }
+        ],
+        "freeQuota": "Enhance Speech ฟรีไม่เกิน 1 ชั่วโมงต่อวัน (เฉพาะเสียง ไฟล์ละไม่เกิน 30 นาที)",
+        "commercialUseSummary": {
+          "value": "Adobe ระบุในข้อกำหนดทั่วไปว่าผู้ใช้คงสิทธิ์และความเป็นเจ้าของ Content ของตัวเองทั้งหมด ทั้งบัญชีฟรีและเสียเงิน แต่ไม่ได้เขียนคำว่า 'เชิงพาณิชย์' ตรงๆ และเครื่องมือนี้ประมวลผลเสียงที่คุณอัปโหลดเอง audiogram แบบฟรีจะมีแบรนด์ Podcast ติดอยู่",
+          "confidence": "probable",
+          "sourceUrl": "https://www.adobe.com/legal/terms.html",
+          "lastVerified": "2026-09-19"
+        },
+        "sourceUrl": "https://podcast.adobe.com/en/plans",
+        "lastVerified": "2026-09-19"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-19",
+        "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
+      },
+      "usageSignals": [],
+      "strengths": [
+        "ล้างเสียงรบกวนและเสียงก้องได้ในไม่กี่คลิก",
+        "ตัดต่อเสียงจากข้อความถอดเสียงได้เหมือนแก้เอกสาร",
+        "มีแผนฟรีใช้งานได้จริง (จำกัดรายวัน)"
+      ],
+      "weaknesses": [
+        "แผนฟรีไม่รองรับวิดีโอ อัปโหลดทีละไฟล์ และประมวลผลไม่เกิน 1 ชั่วโมงต่อวัน",
+        "ไม่ใช่เครื่องมือสร้างเสียงจากข้อความ ปรับปรุงได้เฉพาะเสียงที่อัดไว้แล้ว",
+        "แผนเสียเงินเป็นแผนรวม Firefly Pro $19.99/เดือน ไม่ได้ขายแยกเฉพาะ Podcast"
+      ],
+      "bestFor": [
+        "พอดแคสเตอร์และครีเอเตอร์ที่อัดเสียงเอง แล้วอยากให้เสียงสะอาดเหมือนห้องอัด",
+        "คนตัดต่อวิดีโอที่ต้องการล้างเสียงพูดในคลิป (ต้องใช้แผนเสียเงินสำหรับไฟล์วิดีโอ)"
+      ],
+      "promptWorkflow": {
+        "steps": [
+          "อัปโหลดไฟล์เสียงที่อัดไว้ (แผนฟรีทีละไฟล์)",
+          "ระบบลดเสียงรบกวนและเสียงก้องอัตโนมัติ",
+          "ปรับความแรงของการปรับปรุงเสียง (เฉพาะแผนเสียเงิน)"
+        ],
+        "recommendedStructure": "ไม่ใช้ Prompt — อัปโหลดไฟล์เสียงที่อัดไว้แล้ว",
+        "example": "อัปโหลดไฟล์ episode1.wav (ไม่เกิน 30 นาที) แล้วกด Enhance"
+      },
+      "lastUpdated": "2026-09-19",
+      "plansUrl": { "url": "https://podcast.adobe.com/en/plans", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "stable-audio",
+      "name": "Stable Audio",
+      "vendor": "Stability AI",
+      "categories": [
+        "audio"
+      ],
+      "logoUrl": null,
+      "websiteUrl": "https://stableaudio.com",
+      "shortDescription": "สร้างเพลงและเสียงประกอบจากข้อความ ใช้ได้ทั้งบนเว็บและเป็นปลั๊กอิน DAW จาก Stability AI",
+      "longDescription": "Stable Audio เป็นบริการสร้างเพลงและเสียงด้วย AI จาก Stability AI ทุกแผนใช้เว็บแอปและปลั๊กอิน DAW ได้ครบ ต่างกันที่จำนวนเครดิตรายเดือนซึ่งรีเซ็ตทุกเดือน ตามหน้าราคาทางการ ณ วันที่ตรวจไม่มีแผนฟรีให้เลือก แผนเริ่มต้นคือ Solo $12 ต่อเดือน",
+      "launchDate": null,
+      "capabilities": [],
+      "pricing": {
+        "tier": "paid",
+        "plans": [
+          {
+            "name": "Solo",
+            "priceUsdPerMonth": 12,
+            "quota": "660 เครดิต/เดือน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://stability.ai/terms-of-service",
+              "lastVerified": "2026-09-19",
+              "note": "ข้อกำหนดของ Stability AI ระบุว่าบริษัทโอนสิทธิ์ใน Output ให้ผู้ใช้ ('you own the Output') แต่ไม่ได้เขียนคำว่าเชิงพาณิชย์แยกตามแผน และคำถามที่พบบ่อยบนหน้าราคายังอ้างชื่อแผนเก่า ('Pro และสูงกว่า') ทั้งที่แผนปัจจุบันชื่อ Solo/Session/Producer/Studio"
+            }
+          },
+          {
+            "name": "Session",
+            "priceUsdPerMonth": 30,
+            "quota": "1,800 เครดิต/เดือน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://stability.ai/terms-of-service",
+              "lastVerified": "2026-09-19",
+              "note": "ข้อกำหนดของ Stability AI ระบุว่าบริษัทโอนสิทธิ์ใน Output ให้ผู้ใช้ ('you own the Output') แต่ไม่ได้เขียนคำว่าเชิงพาณิชย์แยกตามแผน และคำถามที่พบบ่อยบนหน้าราคายังอ้างชื่อแผนเก่า ('Pro และสูงกว่า') ทั้งที่แผนปัจจุบันชื่อ Solo/Session/Producer/Studio"
+            }
+          },
+          {
+            "name": "Producer",
+            "priceUsdPerMonth": 90,
+            "quota": "6,000 เครดิต/เดือน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://stability.ai/terms-of-service",
+              "lastVerified": "2026-09-19",
+              "note": "ข้อกำหนดของ Stability AI ระบุว่าบริษัทโอนสิทธิ์ใน Output ให้ผู้ใช้ ('you own the Output') แต่ไม่ได้เขียนคำว่าเชิงพาณิชย์แยกตามแผน และคำถามที่พบบ่อยบนหน้าราคายังอ้างชื่อแผนเก่า ('Pro และสูงกว่า') ทั้งที่แผนปัจจุบันชื่อ Solo/Session/Producer/Studio"
+            }
+          },
+          {
+            "name": "Studio",
+            "priceUsdPerMonth": 199,
+            "quota": "14,000 เครดิต/เดือน",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://stability.ai/terms-of-service",
+              "lastVerified": "2026-09-19",
+              "note": "ข้อกำหนดของ Stability AI ระบุว่าบริษัทโอนสิทธิ์ใน Output ให้ผู้ใช้ ('you own the Output') แต่ไม่ได้เขียนคำว่าเชิงพาณิชย์แยกตามแผน และคำถามที่พบบ่อยบนหน้าราคายังอ้างชื่อแผนเก่า ('Pro และสูงกว่า') ทั้งที่แผนปัจจุบันชื่อ Solo/Session/Producer/Studio"
+            }
+          }
+        ],
+        "freeQuota": null,
+        "commercialUseSummary": {
+          "value": "ข้อกำหนดของ Stability AI (ฉบับที่มีผล 30 ก.ย. 2026) ระบุว่าโอนสิทธิ์ใน Output ให้ผู้ใช้ จึงน่าจะนำไปใช้ในงานเชิงพาณิชย์ได้ แต่ข้อกำหนดไม่ได้ระบุคำว่าเชิงพาณิชย์แยกตามแผน และ FAQ บนหน้าราคายังใช้ชื่อแผนเก่า ควรอ่านข้อกำหนดฉบับเต็มก่อนนำไปหารายได้",
+          "confidence": "probable",
+          "sourceUrl": "https://stability.ai/terms-of-service",
+          "lastVerified": "2026-09-19"
+        },
+        "sourceUrl": "https://stableaudio.com/pricing",
+        "lastVerified": "2026-09-19"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-19",
+        "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
+      },
+      "usageSignals": [],
+      "strengths": [
+        "ทุกแผนใช้เว็บแอปและปลั๊กอิน DAW ได้ครบ ต่างกันแค่จำนวนเครดิต",
+        "ข้อกำหนดโอนสิทธิ์ใน Output ให้ผู้ใช้",
+        "แผนเริ่มต้น $12 ต่อเดือน"
+      ],
+      "weaknesses": [
+        "หน้าราคาทางการไม่แสดงแผนฟรี จึงทดลองก่อนซื้อไม่ได้ตามข้อมูลที่ตรวจ",
+        "สิทธิ์เชิงพาณิชย์ไม่ได้ระบุแยกตามแผนชัดเจน และ FAQ ยังอ้างชื่อแผนเก่า"
+      ],
+      "bestFor": [
+        "ครีเอเตอร์ที่ต้องการเพลงประกอบหรือเสียงประกอบสำหรับคลิปและพอดแคสต์",
+        "คนที่ทำเพลงใน DAW และอยากได้ปลั๊กอินช่วยสร้างเสียง"
+      ],
+      "promptWorkflow": {
+        "steps": [
+          "ระบุประเภทงานก่อน: เพลงประกอบหรือเสียงประกอบ (sound effect)",
+          "ตามด้วยแนวเพลงและอารมณ์",
+          "เพิ่มเครื่องดนตรีหรือรายละเอียดของเสียงที่ต้องการ"
+        ],
+        "recommendedStructure": "[ประเภทงาน] + [แนว/อารมณ์] + [เครื่องดนตรีหรือรายละเอียดเสียง]",
+        "example": "upbeat lo-fi hip hop background track, warm piano and soft drums, relaxed mood"
+      },
+      "lastUpdated": "2026-09-19",
+      "plansUrl": { "url": "https://stableaudio.com/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "fish-audio",
+      "name": "Fish Audio",
+      "vendor": "Fish Audio (Hanabi AI Inc.)",
+      "categories": [
+        "audio"
+      ],
+      "logoUrl": null,
+      "websiteUrl": "https://fish.audio",
+      "shortDescription": "แปลงข้อความเป็นเสียงและโคลนเสียง ใส่แท็กอารมณ์ในข้อความได้ เช่น [whispering] [laughing]",
+      "longDescription": "Fish Audio เป็นบริการแปลงข้อความเป็นเสียง โคลนเสียง และถอดเสียงเป็นข้อความ มีเครื่องมือเสริมเช่น Voice Changer, Story Studio, Audio Translation และ Sound Effects หน้าแรกระบุว่ามีเสียงในไลบรารีกว่า 2,000,000 เสียง (ตัวเลขจากผู้ให้บริการเอง) ควบคุมอารมณ์ของเสียงด้วยแท็กในวงเล็บเหลี่ยม ยังไม่ได้ยืนยันว่ารองรับภาษาไทยและคุณภาพเสียงไทยเป็นอย่างไร",
+      "launchDate": null,
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "8,000 เครดิต/เดือน (สร้างเสียงได้ไม่เกิน 7 นาที) ไม่เกิน 500 ตัวอักษรต่อครั้ง เสียงสาธารณะ 3 ช่อง ไม่ต้องใช้บัตรเครดิต",
+            "commercialUseAllowed": {
+              "value": false,
+              "confidence": "verified",
+              "sourceUrl": "https://fish.audio/plan/",
+              "lastVerified": "2026-09-19",
+              "note": "ผู้ใช้แผนฟรีใช้ได้เฉพาะโปรเจกต์ส่วนตัวที่ไม่ใช่เชิงพาณิชย์ ตามคำถามที่พบบ่อยบนหน้าราคา"
+            }
+          },
+          {
+            "name": "Plus",
+            "priceUsdPerMonth": 15,
+            "quota": "250,000 เครดิต/เดือน (ไม่เกิน 200 นาที) ไม่เกิน 15,000 ตัวอักษรต่อครั้ง เสียงส่วนตัว 10 ช่อง + เสียงมืออาชีพ 1 ช่อง",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://fish.audio/plan/",
+              "lastVerified": "2026-09-19",
+              "note": "ใช้เชิงพาณิชย์ได้เฉพาะ 'เสียงที่ยืนยันแล้วว่าเป็นของคุณ' (verified voices that you own) ตามคำถามที่พบบ่อยบนหน้าราคา"
+            },
+            "notes": "จ่ายรายปีตามโปรโมชันบนหน้าราคา: $66/ปี (เฉลี่ย $5.5/เดือน)"
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 100,
+            "quota": "2,000,000 เครดิต/เดือน (ไม่เกิน 1,620 นาที) ที่นั่งทีม 3 ที่ เสียงมืออาชีพ 5 ช่อง",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://fish.audio/plan/",
+              "lastVerified": "2026-09-19",
+              "note": "ใช้เชิงพาณิชย์ได้เฉพาะ 'เสียงที่ยืนยันแล้วว่าเป็นของคุณ' (verified voices that you own) ตามคำถามที่พบบ่อยบนหน้าราคา"
+            },
+            "notes": "จ่ายรายปีตามโปรโมชันบนหน้าราคา: $450/ปี (เฉลี่ย $37.5/เดือน)"
+          },
+          {
+            "name": "Max",
+            "priceUsdPerMonth": 999,
+            "quota": "25,000,000 เครดิต/เดือน (ไม่เกิน 6,250 นาที) ที่นั่งทีม 10 ที่ เสียงมืออาชีพ 15 ช่อง",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://fish.audio/plan/",
+              "lastVerified": "2026-09-19",
+              "note": "ใช้เชิงพาณิชย์ได้เฉพาะ 'เสียงที่ยืนยันแล้วว่าเป็นของคุณ' (verified voices that you own) ตามคำถามที่พบบ่อยบนหน้าราคา"
+            },
+            "notes": "จ่ายรายปีตามโปรโมชันบนหน้าราคา: $8,988/ปี (เฉลี่ย $749/เดือน)"
+          }
+        ],
+        "freeQuota": "8,000 เครดิต/เดือน (สร้างเสียงได้ไม่เกิน 7 นาที) ใช้ได้เฉพาะงานที่ไม่ใช่เชิงพาณิชย์",
+        "commercialUseSummary": {
+          "value": "แผนฟรีใช้ได้เฉพาะโปรเจกต์ส่วนตัวที่ไม่ใช่เชิงพาณิชย์ ส่วนแผนเสียเงินใช้เชิงพาณิชย์ได้ แต่เฉพาะ 'เสียงที่ยืนยันแล้วว่าเป็นของคุณ' ตามคำถามที่พบบ่อยบนหน้าราคา หน้าราคาไม่ได้ระบุว่าใช้เสียงสาธารณะของคนอื่นเชิงพาณิชย์ได้ ควรอ่านข้อกำหนดการใช้งานก่อน",
+          "confidence": "verified",
+          "sourceUrl": "https://fish.audio/plan/",
+          "lastVerified": "2026-09-19"
+        },
+        "sourceUrl": "https://fish.audio/plan/",
+        "lastVerified": "2026-09-19"
+      },
+      "reviews": {
+        "positiveThemes": [],
+        "negativeThemes": [],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": [],
+        "lastVerified": "2026-09-19",
+        "sampleSizeNote": "ยังไม่ได้รวบรวมรีวิวจากผู้ใช้จริงสำหรับเครื่องมือนี้ ข้อมูลในหน้านี้มาจากหน้าราคาและข้อกำหนดของผู้ให้บริการเท่านั้น"
+      },
+      "usageSignals": [],
+      "strengths": [
+        "ใส่แท็กอารมณ์ในข้อความได้ เช่น [whispering] [laughing] [long pause]",
+        "แผนฟรีทดลองได้โดยไม่ต้องใช้บัตรเครดิต",
+        "แผนเสียเงินเริ่มที่ $15 ต่อเดือน"
+      ],
+      "weaknesses": [
+        "แผนฟรีใช้เชิงพาณิชย์ไม่ได้ และจำกัด 500 ตัวอักษรต่อครั้ง",
+        "สิทธิ์เชิงพาณิชย์จำกัดเฉพาะเสียงที่ยืนยันว่าเป็นของคุณ",
+        "ยังไม่ได้ยืนยันว่ารองรับภาษาไทย ควรทดลองฟังก่อนใช้กับงานภาษาไทย"
+      ],
+      "bestFor": [
+        "ครีเอเตอร์ที่ต้องการพากย์ตัวละครหรือเล่าเรื่องโดยควบคุมอารมณ์ของเสียง",
+        "คนที่ต้องการโคลนเสียงตัวเองไปใช้ในคลิป"
+      ],
+      "promptWorkflow": {
+        "steps": [
+          "อ่านข้อความสคริปต์เป็นหลัก",
+          "แท็กในวงเล็บเหลี่ยมกำหนดอารมณ์และเสียงพิเศษ เช่น [whispering] [laughing]",
+          "เลือกเสียงแยกจากข้อความ"
+        ],
+        "recommendedStructure": "[แท็กอารมณ์] ข้อความที่ต้องการพากย์ ... [pause] [แท็กอารมณ์] ข้อความถัดไป",
+        "example": "[excited] You won't believe what just happened! [long pause] [whispering] Let me tell you a secret."
+      },
+      "lastUpdated": "2026-09-19",
+      "plansUrl": { "url": "https://fish.audio/plan/", "lastVerified": "2026-09-21" }
+    }
+  ]
+}

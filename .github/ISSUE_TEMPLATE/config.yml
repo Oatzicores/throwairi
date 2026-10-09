@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: แจ้งช่องโหว่ความปลอดภัย / Report a vulnerability (private)
+    url: https://github.com/Oatzicores/throwairi/security/advisories/new
+    about: อย่าเปิด Issue สาธารณะ ใช้ลิงก์นี้แทน / Do not open a public issue.

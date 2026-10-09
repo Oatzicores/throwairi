@@ -1,0 +1,30 @@
+name: Catalog link check
+
+# Weekly: every sourceUrl / websiteUrl in the catalog must still open.
+# Sites that answer bots with 401/403/429 are reported as "blocked", not
+# "broken", so they do not fail this job.
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+# Read-only token: no job here needs to write to the repo, so a compromised
+# dependency or action can't push, open releases or edit issues.
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      # Actions are pinned to a full commit SHA (the tag can be moved; the SHA can't).
+      # Dependabot (.github/dependabot.yml) opens a PR when a newer version is out.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run catalog:check -- --links --fail-on-broken-links

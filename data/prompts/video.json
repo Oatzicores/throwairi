@@ -1,0 +1,343 @@
+{
+  "category": "video",
+  "updatedAt": "2026-09-21",
+  "intro": "ชุด Prompt สร้างวิดีโอ เขียนโดยทีม ThrowAirI ตามโครงสร้างที่คู่มือทางการของแต่ละเครื่องมือแนะนำ (ลิงก์ท้ายหน้า) แต่ละชุดมีฉบับภาษาไทยก่อน แล้วตามด้วยฉบับอังกฤษแยกกัน พร้อมบอกว่าเหมาะสร้างงานแบบไหนและควรใช้เครื่องมือตัวไหน",
+  "overview": [
+    {
+      "headline": "คลิปที่ต้องมีเสียง/บทพูด",
+      "toolId": "google-veo",
+      "model": "Veo 3.1",
+      "role": "best",
+      "reason": "คู่มือของ Google ระบุวิธีเขียนบทพูด เสียงเอฟเฟกต์ และเสียงบรรยากาศไว้ในตัว Prompt ชัดเจน ส่วนคุณภาพภาพตามโหวตผู้ใช้อยู่ระดับเดียวกับ Kling",
+      "evidence": [
+        "veo-guide",
+        "aa-video-veo"
+      ]
+    },
+    {
+      "headline": "คลิปภาพล้วน เน้นคุณภาพตามโหวต",
+      "toolId": "kling-ai",
+      "model": "Kling 3.0 1080p (Pro)",
+      "role": "best",
+      "reason": "คะแนนโหวตสูงกว่า Veo 3.1 เล็กน้อย (1095 เทียบ 1088) แต่ส่วนต่างอยู่ในช่วงความคลาดเคลื่อนของอันดับ จึงถือว่าสูสี เลือกตามแผนราคาและความถนัดของคุณได้",
+      "evidence": [
+        "aa-video-kling",
+        "aa-video-veo"
+      ]
+    },
+    {
+      "headline": "ทำภาพนิ่งให้ขยับ",
+      "toolId": "runway",
+      "model": "Runway Gen-4",
+      "role": "best",
+      "reason": "คู่มือทางการของ Runway ออกแบบรอบวิธีนี้โดยตรง: ใส่ภาพนิ่งแล้วใช้ข้อความบรรยายเฉพาะการเคลื่อนไหว",
+      "evidence": [
+        "runway-guide"
+      ],
+      "caveat": "Runway ไม่อยู่ในตารางโหวตที่เราอ้างอิง จึงไม่มีตัวเลขเปรียบเทียบคุณภาพ คำแนะนำนี้อิงคู่มือทางการอย่างเดียว"
+    },
+    {
+      "headline": "พรีเซนเตอร์พูดตามสคริปต์ (ไม่ใช่ข้อความเป็นวิดีโอ)",
+      "toolId": "heygen",
+      "model": "HeyGen (อวตารอ่านสคริปต์)",
+      "role": "best",
+      "reason": "หน้าช่วยเหลือของ HeyGen ระบุภาษาไทยอยู่ในรายการภาษาเสียงที่รองรับ",
+      "evidence": [
+        "heygen-lang"
+      ],
+      "caveat": "เรายังไม่ได้ทดสอบคุณภาพเสียงไทยจริง และหน้าทางการไม่ระบุวันที่อัปเดต"
+    },
+    {
+      "headline": "อันดับสูงสุดบนตารางโหวต",
+      "toolId": "gemini",
+      "model": "Gemini Omni Flash (Google)",
+      "role": "alt",
+      "reason": "อยู่อันดับ 1 บนตารางโหวต ณ วันที่ตรวจ (1233) สูงกว่า Kling และ Veo 3.1 มาก",
+      "evidence": [
+        "aa-video-top"
+      ],
+      "caveat": "เรายังไม่ยืนยันว่าแผน Gemini แบบไหนใช้โมเดลนี้ได้ และเปิดให้ใช้ในไทยหรือไม่ ตรวจที่หน้าแผนของ Google ก่อนสมัคร"
+    },
+    {
+      "headline": "ตัวเลือกเพิ่มเติม",
+      "toolId": "vidu",
+      "model": "Vidu Q3 Pro",
+      "role": "alt",
+      "reason": "อันดับ 19 บนตารางโหวต ตามหลัง Kling และ Veo 3.1 เล็กน้อย (1078 เทียบ 1095 และ 1088)",
+      "evidence": [
+        "aa-video-vidu"
+      ],
+      "caveat": "เรายังไม่พบคู่มือ Prompt ทางการของ Vidu ที่อ่านแล้ว จึงไม่รับรองว่าโครงสร้าง Prompt ในหน้านี้เหมาะกับ Vidu"
+    },
+    {
+      "headline": "ตัวเลือกเพิ่มเติม",
+      "toolId": "grok",
+      "model": "Grok Imagine Video",
+      "role": "alt",
+      "reason": "อันดับ 23 บนตารางโหวต (1065)",
+      "evidence": [
+        "aa-video-grok"
+      ],
+      "caveat": "ตรวจสิทธิ์การใช้งานตามแผนที่หน้าแผนของ xAI และเรายังไม่พบคู่มือ Prompt ทางการที่อ่านแล้ว"
+    }
+  ],
+  "evidence": {
+    "aa-video-top": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Video Leaderboard (นับเสียงด้วย) ณ 2026-09-21: อันดับ 1 Gemini Omni Flash ของ Google คะแนน 1233 (อันดับ 2 Wan 3.0 = 1229)",
+      "sourceUrl": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-video-kling": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Video Leaderboard ณ 2026-09-21: Kling 3.0 1080p (Pro) คะแนน 1095 อันดับ 12 (ช่วงอันดับ 10-13)",
+      "sourceUrl": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-video-veo": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Video Leaderboard ณ 2026-09-21: Veo 3.1 คะแนน 1088 อันดับ 14 (ช่วงอันดับ 11-18)",
+      "sourceUrl": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "checkedAt": "2026-09-21"
+    },
+    "veo-guide": {
+      "kind": "vendor-guide",
+      "text": "Google Cloud: โครงสร้าง Prompt คือ Cinematography + Subject + Action + Context + Style & Ambiance, ใส่บทพูดในเครื่องหมายคำพูด, เขียนเสียงเอฟเฟกต์ขึ้นต้นด้วย \"SFX:\" และเสียงบรรยากาศด้วย \"Ambient noise:\", บน Vertex AI ได้ 16:9 หรือ 9:16 ยาว 4/6/8 วินาที (คู่มือไม่ได้ระบุว่ารองรับ Prompt ภาษาใดบ้าง)",
+      "sourceUrl": "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1",
+      "checkedAt": "2026-09-21"
+    },
+    "kling-i2v-guide": {
+      "kind": "vendor-guide",
+      "text": "Kling: สูตร \"Subject + Movement, Background + Movement\", ใช้คำและประโยคง่ายๆ, การเคลื่อนไหวควรเป็นไปตามฟิสิกส์และเป็นสิ่งที่น่าจะเกิดในภาพ, การเคลื่อนไหวที่ซับซ้อนมาก เช่น การกระดอนของลูกบอล ยังทำได้ยาก (คู่มือไม่ได้ระบุภาษาของ Prompt)",
+      "sourceUrl": "https://kling.ai/quickstart/image-to-video-guide",
+      "checkedAt": "2026-09-21"
+    },
+    "runway-guide": {
+      "kind": "vendor-guide",
+      "text": "Runway Gen-4: ให้ใช้ข้อความบรรยายเฉพาะการเคลื่อนไหว (ภาพนิ่งบอกหน้าตาอยู่แล้ว), เรียกตัวแบบว่า \"the subject\", ใช้ประโยคเชิงบวกไม่ใช้คำสั่งปฏิเสธ, เริ่มจาก Prompt สั้นแล้วเพิ่มทีละองค์ประกอบ: การเคลื่อนไหวของตัวแบบ กล้อง ฉาก และสไตล์",
+      "sourceUrl": "https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide",
+      "checkedAt": "2026-09-21"
+    },
+    "heygen-lang": {
+      "kind": "vendor-guide",
+      "text": "หน้าช่วยเหลือของ HeyGen \"Voice languages we support\" มี Thai อยู่ในรายการภาษาเสียง (หน้าไม่ระบุวันที่อัปเดต)",
+      "sourceUrl": "https://help.heygen.com/en/articles/11391932-voice-languages-we-support",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-video-vidu": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Video Leaderboard ณ 2026-09-21: Vidu Q3 Pro คะแนน 1078 อันดับ 19 (ช่วงอันดับ 15-22)",
+      "sourceUrl": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "checkedAt": "2026-09-21"
+    },
+    "aa-video-grok": {
+      "kind": "leaderboard",
+      "text": "Artificial Analysis Text to Video Leaderboard ณ 2026-09-21: grok-imagine-video (SpaceXAI) คะแนน 1065 อันดับ 23 (ช่วงอันดับ 23-24)",
+      "sourceUrl": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "checkedAt": "2026-09-21"
+    }
+  },
+  "guides": [
+    {
+      "title": "Google Cloud: คู่มือ Prompt Veo 3.1",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1"
+    },
+    {
+      "title": "Kling: คู่มือภาพเป็นวิดีโอ",
+      "url": "https://kling.ai/quickstart/image-to-video-guide"
+    },
+    {
+      "title": "Runway: Gen-4 Video Prompting Guide",
+      "url": "https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide"
+    },
+    {
+      "title": "HeyGen: ภาษาเสียงที่รองรับ",
+      "url": "https://help.heygen.com/en/articles/11391932-voice-languages-we-support"
+    },
+    {
+      "title": "Artificial Analysis: ตารางโหวต Text to Video",
+      "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "product-ad-drink",
+      "title": "โฆษณาสินค้า/เครื่องดื่มสั้นๆ",
+      "suitableFor": "คลิปโฆษณาสินค้าหรืออาหารความยาวไม่กี่วินาที สำหรับร้านคาเฟ่ ร้านอาหาร หรือหน้าร้านออนไลน์",
+      "thai": "กล้องดอลลี่เลื่อนช้าๆ เข้าหาแก้วชาไทยเย็นบนโต๊ะไม้ในร้านคาเฟ่ แสงแดดยามเช้าส่องผ่านหน้าต่าง มีหยดน้ำเกาะข้างแก้ว ฉากหลังเบลอ โทนสีอบอุ่น สไตล์โฆษณาอาหารระดับภาพยนตร์\nSFX: เสียงน้ำแข็งกระทบแก้วเบาๆ\nAmbient noise: เสียงพูดคุยเบาๆ ในร้านกาแฟ",
+      "english": "A slow dolly-in toward a glass of iced Thai milk tea on a wooden café table. Soft morning sunlight through the window, condensation beading on the glass, shallow depth of field, warm tones, cinematic food-commercial style.\nSFX: ice clinking gently in the glass\nAmbient noise: quiet café chatter",
+      "picks": [
+        {
+          "toolId": "google-veo",
+          "model": "Veo 3.1",
+          "role": "best",
+          "reason": "Prompt นี้เรียงตามสูตรของคู่มือ Veo (กล้อง → ตัวแบบ → การกระทำ → บริบท → สไตล์) และใช้รูปแบบ SFX / Ambient noise ตามที่คู่มือระบุ",
+          "evidence": [
+            "veo-guide",
+            "aa-video-veo"
+          ]
+        },
+        {
+          "toolId": "kling-ai",
+          "model": "Kling 3.0 1080p (Pro)",
+          "role": "alt",
+          "reason": "คะแนนโหวตสูสีกับ Veo 3.1 เหมาะถ้าคุณใช้ Kling อยู่แล้ว",
+          "evidence": [
+            "aa-video-kling"
+          ]
+        }
+      ],
+      "tips": [
+        "ใส่ชื่อแบรนด์หรือโลโก้จริงลงใน Prompt ไม่ควร เพราะโมเดลอาจวาดผิด ให้ใส่โลโก้ทีหลังด้วยโปรแกรมตัดต่อ"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "night-market-drone",
+      "title": "ท่องเที่ยว: ตลาดกลางคืน มุมโดรน",
+      "suitableFor": "คลิปเปิดเรื่อง (b-roll) สำหรับวล็อกท่องเที่ยว รีวิวร้านอาหารริมทาง หรือโปรโมตย่านการค้า",
+      "thai": "ภาพโดรนบินต่ำเหนือตลาดกลางคืนริมถนนในกรุงเทพฯ ผู้คนเดินเลือกซื้ออาหารสตรีทฟู้ด ควันจากเตาย่างลอยขึ้น ป้ายไฟนีออนสะท้อนบนพื้นเปียก กล้องเลื่อนตามฝูงคนช้าๆ บรรยากาศคึกคัก โทนสีอบอุ่น สไตล์ภาพยนตร์สารคดี",
+      "english": "Low aerial drone shot over a busy night market street in Bangkok. People browse street-food stalls, smoke rises from grills, neon signs reflect on the wet pavement. The camera glides slowly along the crowd. Lively atmosphere, warm color palette, cinematic documentary style.",
+      "picks": [
+        {
+          "toolId": "kling-ai",
+          "model": "Kling 3.0 1080p (Pro)",
+          "role": "best",
+          "reason": "งานภาพล้วนไม่ต้องมีบทพูด คะแนนโหวตสูงกว่า Veo 3.1 เล็กน้อย (1095 เทียบ 1088) แต่อยู่ในช่วงความคลาดเคลื่อน จึงถือว่าสูสี",
+          "evidence": [
+            "aa-video-kling",
+            "aa-video-veo"
+          ]
+        },
+        {
+          "toolId": "google-veo",
+          "model": "Veo 3.1",
+          "role": "alt",
+          "reason": "คะแนนอยู่ในช่วงใกล้เคียงกัน และเพิ่มเสียงบรรยากาศได้ด้วยรูปแบบ Ambient noise",
+          "evidence": [
+            "veo-guide",
+            "aa-video-veo"
+          ]
+        }
+      ],
+      "tips": [
+        "เขียนสถานที่ให้กว้างพอ (ตลาดกลางคืน ริมถนน) ไม่ต้องระบุชื่อสถานที่จริง โมเดลไม่รับประกันว่าจะวาดตรงกับที่จริง"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "still-to-motion",
+      "title": "ทำภาพนิ่งให้ขยับ (ภาพเป็นวิดีโอ)",
+      "suitableFor": "เปลี่ยนภาพพอร์เทรต ภาพสินค้า หรือภาพที่ทำจากเครื่องมือวาดภาพ ให้เป็นคลิปสั้นที่ตัวแบบขยับและกล้องเคลื่อน",
+      "thai": "ตัวแบบค่อยๆ หันมามองกล้องแล้วยิ้ม ผมพลิ้วตามลมเบาๆ กล้องแฮนด์เฮลด์เลื่อนเข้าใกล้เล็กน้อย ภาพเคลื่อนไหวแบบไลฟ์แอ็กชันสไตล์ภาพยนตร์",
+      "english": "The subject slowly turns toward the camera and smiles. Hair moves gently in the breeze. The handheld camera pushes in slightly. Cinematic live-action.",
+      "picks": [
+        {
+          "toolId": "runway",
+          "model": "Runway Gen-4",
+          "role": "best",
+          "reason": "Prompt นี้เขียนตามคู่มือ Runway: บรรยายเฉพาะการเคลื่อนไหว ใช้คำว่า \"the subject\" และไม่ใช้ประโยคปฏิเสธ",
+          "evidence": [
+            "runway-guide"
+          ]
+        },
+        {
+          "toolId": "kling-ai",
+          "model": "Kling 3.0",
+          "role": "alt",
+          "reason": "คู่มือภาพเป็นวิดีโอของ Kling แนะนำโครงสร้าง Subject + Movement คล้ายกัน",
+          "evidence": [
+            "kling-i2v-guide"
+          ]
+        }
+      ],
+      "tips": [
+        "เริ่มจาก Prompt สั้นที่สุดก่อน พอการเคลื่อนไหวหลักใช้ได้แล้วค่อยเพิ่มกล้อง ฉาก และสไตล์ทีละอย่าง (ตามคู่มือ Runway)",
+        "ใช้ภาพต้นฉบับที่คมชัดและไม่มีรอยผิดปกติ เพราะภาพเป็นตัวกำหนดหน้าตาของทั้งคลิป"
+      ],
+      "caveats": [
+        "คู่มือ Runway และ Kling ไม่ได้ระบุว่ารองรับ Prompt ภาษาไทยหรือไม่ ลองฉบับไทยก่อน ถ้าการเคลื่อนไหวไม่ตรงให้ลองฉบับอังกฤษ (ข้อสังเกตของทีมงาน ไม่ใช่ข้อมูลจากคู่มือ)"
+      ]
+    },
+    {
+      "id": "talking-with-sound",
+      "title": "ตัวละครพูดพร้อมเสียงประกอบ",
+      "suitableFor": "คลิปแนะนำเมนู/สินค้าที่ตัวละครมองกล้องแล้วพูดประโยคสั้นๆ พร้อมเสียงบรรยากาศ",
+      "thai": "ช็อตระยะใกล้ปานกลาง กล้องแฮนด์เฮลด์นิ่มๆ ผู้หญิงวัยสามสิบยืนหน้าร้านกาแฟตอนเช้า มองกล้องแล้วพูดว่า \"วันนี้เมนูใหม่พร้อมเสิร์ฟแล้วค่ะ\" แสงนุ่ม โทนอบอุ่น\nSFX: เสียงเครื่องชงกาแฟ\nAmbient noise: เสียงรถวิ่งเบาๆ ตามถนน",
+      "english": "Medium close-up, gentle handheld camera. A woman in her thirties stands outside a coffee shop in the morning, looks at the camera and says, \"Our new menu is ready to serve.\" Soft light, warm tones.\nSFX: espresso machine hissing\nAmbient noise: light street traffic",
+      "picks": [
+        {
+          "toolId": "google-veo",
+          "model": "Veo 3.1",
+          "role": "best",
+          "reason": "คู่มือของ Google ระบุรูปแบบบทพูดในเครื่องหมายคำพูด พร้อม SFX และ Ambient noise ไว้โดยตรง",
+          "evidence": [
+            "veo-guide"
+          ]
+        }
+      ],
+      "tips": [
+        "บทพูดให้สั้น เพราะคลิปยาวได้ 4, 6 หรือ 8 วินาทีเท่านั้น (บน Vertex AI ตามคู่มือ)"
+      ],
+      "caveats": [
+        "ยังไม่พบเอกสารทางการที่ยืนยันว่า Veo พูดภาษาไทยได้ถูกต้อง ทดลองสร้างสั้นๆ ก่อน ถ้าเสียงหรือคำผิดให้ใช้ฉบับอังกฤษแล้วใส่เสียงพากย์ไทยทีหลัง"
+      ]
+    },
+    {
+      "id": "vertical-food-asmr",
+      "title": "คลิปแนวตั้ง 9:16 สำหรับ TikTok/Reels",
+      "suitableFor": "คลิปสั้นแนวตั้งโชว์อาหาร แนว ASMR หรือโชว์ขั้นตอนทำอาหารสำหรับโซเชียล",
+      "thai": "วิดีโอแนวตั้ง 9:16 กล้องระดับสายตาเหนือโต๊ะครัว มือกำลังโรยพริกป่นลงบนก๋วยเตี๋ยวเรือชามร้อน ควันลอยขึ้นช้าๆ สโลว์โมชัน สีสดอบอุ่น\nSFX: เสียงซู่ของน้ำซุปและเสียงช้อนกระทบชามเบาๆ",
+      "english": "Vertical 9:16 video. Eye-level camera above a kitchen counter. A hand sprinkles chili flakes over a steaming bowl of boat noodles, steam rising slowly. Slow motion, vivid warm colors.\nSFX: soft sizzle of the broth and a spoon lightly clinking against the bowl",
+      "picks": [
+        {
+          "toolId": "google-veo",
+          "model": "Veo 3.1",
+          "role": "best",
+          "reason": "คู่มือระบุว่ารองรับสัดส่วน 9:16 และมีรูปแบบเขียนเสียงประกอบ ตรงกับงาน ASMR",
+          "evidence": [
+            "veo-guide",
+            "aa-video-veo"
+          ]
+        },
+        {
+          "toolId": "kling-ai",
+          "model": "Kling 3.0 1080p (Pro)",
+          "role": "alt",
+          "reason": "คะแนนโหวตสูสีกับ Veo 3.1",
+          "evidence": [
+            "aa-video-kling"
+          ]
+        }
+      ],
+      "tips": [
+        "คลิปต่อครั้งสั้น (4-8 วินาทีบน Veo) ให้สร้างหลายช็อตแล้วนำมาต่อกันในโปรแกรมตัดต่อ"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "avatar-presenter",
+      "title": "พรีเซนเตอร์อวตารอ่านสคริปต์",
+      "suitableFor": "วิดีโออธิบายสินค้า/บริการ ที่ให้พรีเซนเตอร์ AI พูดตามสคริปต์ ไม่ต้องถ่ายเอง (ตรงนี้ \"Prompt\" คือสคริปต์ที่พูด)",
+      "thai": "สวัสดีครับ วันนี้ขอแนะนำบริการจัดส่งอาหารเช้าถึงหน้าบ้าน สั่งก่อนสองทุ่ม รับของก่อนเจ็ดโมงเช้า เริ่มต้นเพียงเดือนละหนึ่งร้อยบาท สนใจทักไลน์ได้เลยครับ",
+      "english": "Hello! Today I'd like to introduce our breakfast delivery service. Order before 8 p.m. and get it at your door before 7 a.m. Plans start at just one hundred baht a month. Message us on LINE if you're interested.",
+      "picks": [
+        {
+          "toolId": "heygen",
+          "model": "HeyGen",
+          "role": "best",
+          "reason": "ภาษาไทยอยู่ในรายการภาษาเสียงที่หน้าช่วยเหลือของ HeyGen ระบุว่ารองรับ",
+          "evidence": [
+            "heygen-lang"
+          ]
+        }
+      ],
+      "tips": [
+        "สคริปต์ตัวอย่างเป็นข้อความสมมติ ให้แก้ราคาและช่องทางติดต่อเป็นของจริงของคุณ"
+      ],
+      "caveats": [
+        "เรายังไม่ได้ทดสอบคุณภาพน้ำเสียงและการออกเสียงไทยของ HeyGen ฟังตัวอย่างในเครื่องมือก่อนสมัครแผนเสียเงิน"
+      ]
+    }
+  ]
+}

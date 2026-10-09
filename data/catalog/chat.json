@@ -1,0 +1,810 @@
+{
+  "tools": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "categories": ["chat", "code", "search"],
+      "logoUrl": null,
+      "websiteUrl": "https://chatgpt.com",
+      "shortDescription": "แชทบอท AI ยอดนิยมที่สุดในโลก ใช้ได้ทั้งคุย เขียน สรุป ค้นข้อมูล และเขียนโค้ด",
+      "longDescription": "ChatGPT จาก OpenAI เป็นผู้บุกเบิกตลาดแชทบอท AI สาธารณะ มีฐานผู้ใช้กว้างที่สุด รองรับงานหลากหลายตั้งแต่สนทนาทั่วไป เขียนโค้ด วิเคราะห์ไฟล์ ไปจนถึง Deep Research และ Agent mode ในแผนระดับสูง",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-29",
+        "confidence": "verified",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "lastVerified": "2026-09-30",
+        "note": "OpenAI เปิดตัว GPT-6.1 Sol เมื่อ 29 ก.ย. 2026 ใช้ได้ใน ChatGPT Work และ Codex สำหรับแผน Plus/Pro/Business/Enterprise/Edu (ยังไม่มีใน Chat) และใน API ในชื่อ gpt-6.1-sol"
+      },
+      "capabilities": [
+        {
+          "dimension": "chat",
+          "score": {
+            "value": 92,
+            "confidence": "inference",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03",
+            "note": "อนุมานจากการที่ GPT-5.5 Pro อยู่ในกลุ่มผู้นำ ~1500 Elo บน LMArena text leaderboard (ส.ค. 2026)"
+          }
+        }
+      ],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "แชทข้อความไม่จำกัดบน GPT-5.6 Luna แต่จำกัดจำนวนภาพ/ไฟล์/เสียงต่อวัน มีโฆษณาในสหรัฐฯ",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://openai.com/policies/service-terms/",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Go",
+            "priceUsdPerMonth": 8,
+            "quota": "เพิ่มโควตาข้อความ/อัปโหลด/ภาพจาก Free ให้สูงขึ้น ไม่มี Agent mode / Deep Research",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://openai.com/policies/service-terms/",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Plus",
+            "priceUsdPerMonth": 20,
+            "quota": "~160 ข้อความ/3 ชม. บน GPT-5.6, Deep Research 10 งานเต็ม + 15 งานเบา/เดือน, มี Agent mode",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://openai.com/policies/service-terms/",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Pro 5x",
+            "priceUsdPerMonth": 100,
+            "quota": "โควตาสูงกว่า Plus ~5 เท่า เข้าถึง GPT-5.6 Sol Pro (แผน Pro ระดับล่าง เปิดตัว เม.ย. 2026 เพื่อเติมช่องว่างระหว่าง Plus กับ Pro $200)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://openai.com/policies/service-terms/",
+              "lastVerified": "2026-09-07",
+              "note": "ยังไม่พบหน้านโยบายที่แยกระบุ Pro $100 เป็นการเฉพาะ แต่ควรอยู่ภายใต้เงื่อนไข Service Terms เดียวกับแผนอื่น"
+            },
+            "notes": "พบจากบทวิเคราะห์ราคาบุคคลที่สาม (cloudzero.com, felloai.com) — ไม่พบยืนยันตรงจากหน้า openai.com/chatgpt/pricing (WebFetch ถูกบล็อก 403 ระหว่างตรวจสอบรอบนี้)"
+          },
+          {
+            "name": "Pro 20x",
+            "priceUsdPerMonth": 200,
+            "quota": "โควตาสูงสุด ~20 เท่าของ Plus, Deep Research ~250 งาน/เดือน, Sora ไม่จำกัด, context window 1M token, ประมวลผลความสำคัญสูง",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://openai.com/policies/service-terms/",
+              "lastVerified": "2026-09-03"
+            }
+          }
+        ],
+        "freeQuota": "แชทข้อความไม่จำกัด แต่จำกัดภาพ/ไฟล์/เสียงต่อวัน",
+        "commercialUseSummary": {
+          "value": "OpenAI มอบสิทธิ์ความเป็นเจ้าของ Output ให้ผู้ใช้ และอนุญาตให้นำไปขาย เผยแพร่ ทำการตลาดเชิงพาณิชย์ได้ แต่ไม่รับประกันว่า Output จะไม่ละเมิดลิขสิทธิ์บุคคลที่สาม และการคุ้มครองด้านทรัพย์สินทางปัญญา (indemnification) มีให้เฉพาะลูกค้าระดับ Enterprise",
+          "confidence": "verified",
+          "sourceUrl": "https://openai.com/policies/service-terms/",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://openai.com/chatgpt/pricing/",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ใช้งานง่าย ฐานผู้ใช้ใหญ่มีตัวอย่างการใช้งานเยอะ", "ความสามารถ Deep Research และ Agent mode ทรงพลัง", "รองรับปลั๊กอิน/GPT กำหนดเองจำนวนมาก"],
+        "negativeThemes": ["โควตา Plus ($20) เริ่มรู้สึกจำกัดเมื่อใช้งานหนัก", "ราคา Pro ($200) แพงสำหรับผู้ใช้ทั่วไป", "โฆษณาบนแผนฟรีในบางตลาด"],
+        "paidVerifiedSummary": "ผู้ใช้แผน Plus ส่วนใหญ่พอใจความคุ้มค่า แต่ผู้ใช้งานหนักมักอัปเกรดไป Pro เพราะโควตา Deep Research ของ Plus หมดเร็ว",
+        "freeTierSummary": "ผู้ใช้ฟรีพอใจที่แชทข้อความไม่จำกัด แต่บ่นเรื่องโฆษณาและโควตาภาพ/ไฟล์ที่จำกัด",
+        "sourceUrls": ["https://openai.com/chatgpt/pricing/"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา/ฟีเจอร์หลายแหล่งที่พบระหว่างค้นคว้า ไม่ใช่การอ่านรีวิวผู้ใช้ G2/Capterra โดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1500,
+            "confidence": "probable",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03",
+            "note": "GPT-5.5 Pro อยู่ในกลุ่มผู้นำระดับ 1500 Elo (ส.ค. 2026)"
+          },
+          "label": "LMArena Text ELO (GPT-5.5 Pro)"
+        }
+      ],
+      "versionHistory": [
+        {
+          "version": "GPT-5.6",
+          "releaseDate": {
+            "value": "2026-07-09",
+            "confidence": "verified",
+            "sourceUrl": "https://openai.com/index/gpt-5-6/",
+            "lastVerified": "2026-09-20"
+          },
+          "summary": "OpenAI ปล่อยตระกูลโมเดล GPT-5.6 แบบ 3 รุ่น: Sol (เรือธง เน้น reasoning/coding แบบ agentic), Terra (ตัวกลางสำหรับงานทั่วไป), Luna (ราคาถูก/เร็ว เน้นปริมาณ) พร้อมปรับโครงสร้างแอปทั้งหมด — แอปเดสก์ท็อปเดิมกลายเป็น \"ChatGPT Classic\" ส่วนแอปใหม่รวม Chat, โหมด agentic \"Work\", และ Codex ไว้ด้วยกัน โดย ChatGPT Work รันบน GPT-5.6",
+          "userSentiment": {
+            "summary": "วิเคราะห์ข้อมูลจากผู้ใช้งานจริงบน Reddit: ตัวโมเดลเองได้รับคำชมว่าดีจริง แต่ความไม่พอใจส่วนใหญ่มาจากการรีโครงสร้างสินค้า/UX ที่สับสน เช่น Work และ Codex ใช้โควตารวมกันจนแอบกินโควตา Codex โดยไม่รู้ตัว และผู้ใช้ต้องเดาว่าจะเปิดแอปไหน (Codex app, Windows Store app, Codex Beta) กว่าจะเจอโมเดลที่ต้องการ",
+            "starRating": 3.5,
+            "sourceUrls": ["https://hwbusters.com/news/gpt-5-6-is-finally-public-and-reddit-cant-decide-if-its-a-breakthrough-or-a-mess/"]
+          }
+        },
+        {
+          "version": "GPT-5.2",
+          "releaseDate": {
+            "value": "2025-12-11",
+            "confidence": "verified",
+            "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+            "lastVerified": "2026-09-20"
+          },
+          "summary": "เปิดตัว 3 โหมด: GPT-5.2 Instant, GPT-5.2 Thinking (แบบมาตรฐานและ extended thinking), และ GPT-5.2 Pro พร้อมรุ่นเฉพาะทางเขียนโค้ด GPT-5.2-Codex",
+          "userSentiment": {
+            "summary": "วิเคราะห์ข้อมูลจากผู้ใช้งานจริงและสื่อรีวิว: ผู้ใช้กลุ่มแรกจำนวนหนึ่งมองว่าเป็น \"ก้าวถอยหลัง\" (step backwards) เทียบกับเวอร์ชั่นก่อนหน้า ทำให้ TechRadar พาดหัวข่าวเรื่องความผิดหวังของผู้ใช้กลุ่มแรกโดยตรง",
+            "starRating": 3,
+            "sourceUrls": ["https://www.techradar.com/ai-platforms-assistants/openai/chatgpt-5-2-branded-a-step-backwards-by-disappointed-early-users-heres-why"]
+          }
+        },
+        {
+          "version": "GPT-5.1",
+          "releaseDate": {
+            "value": "2025-11-13",
+            "confidence": "verified",
+            "sourceUrl": "https://openai.com/index/gpt-5-1-for-developers/",
+            "lastVerified": "2026-09-20",
+            "note": "แก้จาก 2025-11-12 เป็น 2025-11-13 ตามวันที่ในบทความทางการของ OpenAI"
+          },
+          "summary": "เพิ่มบุคลิก (personality preset) ให้เลือกได้ 8 แบบ (Default, Professional, Friendly, Candid, Quirky, Efficient, Nerdy, Cynical) โทนการตอบอุ่นขึ้นและเป็นธรรมชาติกว่า GPT-5 เดิม",
+          "userSentiment": {
+            "summary": "วิเคราะห์ข้อมูลจากผู้ใช้งานจริง: ปฏิกิริยาผสมกัน — ฝั่งบวกชอบที่ตอบเป็นธรรมชาติขึ้น ไม่ประจบเกินไป (less sycophantic) แต่บางกลุ่มกังวลว่าการตอบแบบ \"เป็นเพื่อน\" มากขึ้นอาจเสี่ยงต่อผู้ใช้ที่เปราะบางทางอารมณ์ เส้นแบ่งระหว่างเครื่องมือกับความสัมพันธ์เสมือนเริ่มพร่าเลือน",
+            "starRating": 3.5,
+            "sourceUrls": ["https://www.axios.com/2025/11/13/chatgpt-personality-risks", "https://www.digitaltrends.com/computing/openai-launches-chatgpt-5-1-with-8-new-personalities-warmer-tone-and-quicker-replies/"]
+          }
+        },
+        {
+          "version": "GPT-5",
+          "releaseDate": {
+            "value": "2025-08-07",
+            "confidence": "verified",
+            "sourceUrl": "https://openai.com/index/gpt-5-new-era-of-work/",
+            "lastVerified": "2026-09-20"
+          },
+          "summary": "เปิดตัวรุ่นเรือธงใหม่ทั้งหมด รวมโมเดลเดิม (o3, GPT-4o ฯลฯ) เป็นระบบเดียวที่สลับโหมดคิดอัตโนมัติ context 400K token และปรับราคา API ใหม่",
+          "userSentiment": {
+            "summary": "วิเคราะห์ข้อมูลจากผู้ใช้งานจริงบน Reddit ช่วงเปิดตัว: กระแสต่อต้านรุนแรง ผู้ใช้จำนวนมากเรียกว่า \"disaster\", \"horrible\" แม้เป็นผู้ใช้แบบเสียเงินก็ตาม หลักๆ บ่นเรื่องคำตอบสั้น/เย็นชากว่า GPT-4o เดิม และการถูกตัดสิทธิ์เลือกโมเดลเองจนบางส่วนขู่ยกเลิกสมัครสมาชิก แม้ผู้ใช้ระดับสูง (power user) หลายคนยังชื่นชมความสามารถโดยรวมที่ดีขึ้นจริง",
+            "starRating": 2.5,
+            "sourceUrls": ["https://www.tomsguide.com/ai/chatgpt/chatgpt-5-users-are-not-impressed-heres-why-it-feels-like-a-downgrade", "https://tech.yahoo.com/ai/articles/chatgpt-fans-shredding-gpt-5-172451577.html"]
+          }
+        }
+      ],
+      "strengths": ["ฐานผู้ใช้และคอมมูนิตี้ใหญ่ที่สุด หาคำแนะนำ/ตัวอย่างง่าย", "ครบเครื่องทั้งแชท เขียนโค้ด ค้นข้อมูล และ Agent mode", "อัปเดตโมเดลใหม่บ่อย"],
+      "weaknesses": ["ราคาแผนสูงสุด (Pro $200) แพงกว่าคู่แข่งหลายเจ้า", "โควตาแผน Plus จำกัดสำหรับงานหนัก", "แผนราคาซับซ้อนหลายชั้น (Free/Go/Plus/Pro) ทำให้เลือกยาก"],
+      "bestFor": ["มือใหม่ที่อยากเริ่มใช้ AI แชทตัวแรก", "งานเขียน/สรุป/ค้นข้อมูลทั่วไป", "ทีมที่ต้องการ Deep Research"],
+      "promptAdherence": {
+        "imageAdherence": null,
+        "videoAdherence": null,
+        "audioAdherence": null,
+        "chatInstructionFollowing": {
+          "value": 90,
+          "confidence": "inference",
+          "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+          "lastVerified": "2026-09-03",
+          "note": "อนุมานจากอันดับ LMArena text leaderboard"
+        }
+      },
+      "promptWorkflow": {"steps":["อ่านคำสั่ง/บริบทที่ตั้งไว้ใน Custom Instructions ก่อน (ถ้าตั้งค่าไว้)","อ่านข้อความในแชทปัจจุบันเป็นคำสั่งหลัก","ให้น้ำหนักกับคำสั่งท้ายสุดในข้อความมากที่สุดเมื่อมีหลายคำสั่งปนกัน"],"recommendedStructure":"[บทบาทที่อยากให้ AI สวม] + [สิ่งที่ต้องการ] + [รูปแบบคำตอบที่ต้องการ เช่น ตาราง/bullet/ความยาว]","example":"สวมบทบาทเป็นบรรณาธิการ ช่วยแก้ไขบทความนี้ให้กระชับขึ้น ตอบกลับเป็น bullet point ไม่เกิน 5 ข้อ"},
+      "lastUpdated": "2026-09-07",
+      "roadmap": { "checkedAt": "2026-09-30", "note": "รายการด้านล่างเป็นกำหนดปิดโมเดลฝั่ง API ตามหน้า deprecations ของ OpenAI ไม่ใช่กำหนดของแอป ChatGPT (อ่านสรุปจากหน้าทางการ ควรเปิดตรวจซ้ำก่อนใช้งานจริง) ไม่พบประกาศรุ่นใหม่ล่วงหน้า", "items": [
+          { "kind": "retirement", "text": "โมเดลเสียง/เรียลไทม์รุ่นเก่า (Legacy audio/realtime) ใน API จะปิดให้บริการ (ประกาศ 20 ก.ค. 2026)", "when": "20 ม.ค. 2027", "sourceUrl": "https://developers.openai.com/api/docs/deprecations", "lastVerified": "2026-09-30" },
+          { "kind": "retirement", "text": "โมเดลถอดเสียง (transcription) รุ่นที่ระบุในหน้า deprecations จะปิดให้บริการ (ประกาศ 26 ส.ค. 2026)", "when": "26 ก.พ. 2027", "sourceUrl": "https://developers.openai.com/api/docs/deprecations", "lastVerified": "2026-09-30" }
+        ] },
+      "latestVersion": { "name": "GPT-6.1 Sol", "releaseDate": null, "sourceUrl": "https://chatgpt.com/th-TH/pricing/", "lastVerified": "2026-09-30", "note": "รุ่นแรกในตารางโมเดลของหน้าราคา ChatGPT (รุ่นอื่นในตาราง: GPT-6 Astra, GPT-6 Sol, GPT-6 Luna) ไม่ระบุวันเปิดตัว" },
+      "plansUrl": { "url": "https://openai.com/chatgpt/pricing/", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "claude-ai",
+      "name": "Claude",
+      "vendor": "Anthropic",
+      "categories": ["chat", "code"],
+      "logoUrl": null,
+      "websiteUrl": "https://claude.ai",
+      "shortDescription": "แชทบอท AI จาก Anthropic เด่นเรื่องการเขียน การให้เหตุผล และการเขียนโค้ด",
+      "longDescription": "Claude เป็นผู้นำอันดับต้นๆ บน LMArena text leaderboard เด่นเรื่องคุณภาพงานเขียน การให้เหตุผลซับซ้อน และการเขียนโค้ด รองรับ Claude Code สำหรับงานพัฒนาซอฟต์แวร์โดยเฉพาะ",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-28",
+        "confidence": "verified",
+        "sourceUrl": "https://www.anthropic.com/news",
+        "lastVerified": "2026-09-30",
+        "note": "Anthropic ประกาศ Claude Sonnet 5.5 (28 ก.ย. 2026), Claude Opus 5.5 (22 ก.ย. 2026) และ Claude Fable 5.1 / Mythos 5.1 (1 ก.ย. 2026) ตามหน้าข่าวทางการ"
+      },
+      "capabilities": [
+        {
+          "dimension": "chat",
+          "score": {
+            "value": 96,
+            "confidence": "inference",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03",
+            "note": "Claude Opus 4.8 นำอันดับที่ 1510+ Elo บน LMArena (ส.ค. 2026)"
+          }
+        },
+        {
+          "dimension": "code",
+          "score": {
+            "value": 96,
+            "confidence": "probable",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03",
+            "note": "รายงานว่า Claude Opus 4.8 อยู่อันดับ 1 ด้าน coding บน LMArena"
+          }
+        }
+      ],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "เข้าถึงโมเดล Sonnet และ Haiku ได้ฟรี โควตาจำกัดต่อวัน (ตามหน้าราคาทางการ)",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.anthropic.com/legal/commercial-terms",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Pro",
+            "priceUsdPerMonth": 20,
+            "quota": "$17/เดือนหากจ่ายรายปี หรือ $20 รายเดือน เข้าถึงโมเดล Fable (ใช้เครดิตเพิ่มเติม), Opus, Sonnet และ Haiku",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.anthropic.com/legal/commercial-terms",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Max 5x",
+            "priceUsdPerMonth": 100,
+            "quota": "โควตาประมาณ 5 เท่าของ Pro",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.anthropic.com/legal/commercial-terms",
+              "lastVerified": "2026-09-03"
+            }
+          },
+          {
+            "name": "Max 20x",
+            "priceUsdPerMonth": 200,
+            "quota": "โควตาประมาณ 20 เท่าของ Pro",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "verified",
+              "sourceUrl": "https://www.anthropic.com/legal/commercial-terms",
+              "lastVerified": "2026-09-03"
+            }
+          }
+        ],
+        "freeQuota": "ใช้ Claude Sonnet 5 ฟรี โควตาจำกัดต่อวัน",
+        "commercialUseSummary": {
+          "value": "Anthropic มอบสิทธิ์ Output ทั้งหมดให้ผู้ใช้ และอนุญาตใช้เชิงพาณิชย์ได้โดยไม่ต้องขอไลเซนส์เพิ่มเติม (ขาย สร้างสินค้า ส่งงานลูกค้าได้) แต่การคุ้มครองลิขสิทธิ์ตามกฎหมายยังเป็นเรื่องแยกจากเงื่อนไขการใช้งาน",
+          "confidence": "verified",
+          "sourceUrl": "https://www.anthropic.com/legal/commercial-terms",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.anthropic.com/pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["คุณภาพงานเขียนและการให้เหตุผลดีที่สุดกลุ่มหนึ่ง", "เขียนโค้ดแม่นยำ เป็นตัวเลือกยอดนิยมของนักพัฒนา", "แผน Pro ราคาถูกกว่า ChatGPT Plus เล็กน้อยแต่คุณภาพใกล้เคียงหรือดีกว่า"],
+        "negativeThemes": ["โควตาแผนฟรีค่อนข้างจำกัด", "แผน Max ราคาสูง ($100-200) สำหรับผู้ใช้งานหนัก", "ระบบนิเวศปลั๊กอิน/ส่วนเสริมยังน้อยกว่า ChatGPT"],
+        "paidVerifiedSummary": "ผู้ใช้ Pro จำนวนมากเลือก Claude เพราะคุณภาพงานเขียน/โค้ด แต่ผู้ใช้งานหนักมักต้องขยับไป Max เพื่อหลีกเลี่ยงโควตาหมด",
+        "freeTierSummary": "ผู้ใช้ฟรีชื่นชมที่ได้ใช้ Sonnet 5 แต่บ่นเรื่องโควตารายวันจำกัด",
+        "sourceUrls": ["https://www.anthropic.com/pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากข้อมูลราคา/ฟีเจอร์ที่ค้นคว้าได้ ไม่ใช่การอ่านรีวิว G2/Capterra โดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1510,
+            "confidence": "probable",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03",
+            "note": "Claude Opus 4.8 นำอันดับ 1 บน LMArena text leaderboard (ส.ค. 2026)"
+          },
+          "label": "LMArena Text ELO (Claude Opus 4.8)"
+        }
+      ],
+      "strengths": ["คุณภาพงานเขียนและการให้เหตุผลระดับแนวหน้า", "เขียนโค้ดแม่นยำ มี Claude Code แยกสำหรับงานพัฒนา", "ราคา Pro คุ้มค่าเมื่อเทียบกับคุณภาพ"],
+      "weaknesses": ["โควตาแผนฟรี/Pro จำกัดกว่าคู่แข่งบางเจ้า", "ระบบเสริม/ปลั๊กอินยังน้อยกว่า ChatGPT", "แผน Max ราคาสูงสำหรับผู้ใช้ทั่วไป"],
+      "bestFor": ["นักพัฒนาและนักเขียนที่เน้นคุณภาพเนื้อหา", "งานที่ต้องการการให้เหตุผลซับซ้อน", "ทีมที่ต้องการผู้ช่วยเขียนโค้ด"],
+      "promptAdherence": {
+        "imageAdherence": null,
+        "videoAdherence": null,
+        "audioAdherence": null,
+        "chatInstructionFollowing": {
+          "value": 95,
+          "confidence": "inference",
+          "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+          "lastVerified": "2026-09-03",
+          "note": "อนุมานจากอันดับ 1 บน LMArena text leaderboard"
+        }
+      },
+      "promptWorkflow": {"steps":["อ่านบริบททั้งหมดในแชทอย่างละเอียดรวมถึงไฟล์แนบ","ให้ความสำคัญกับโครงสร้างคำสั่งที่ชัดเจน เช่น การแบ่งหัวข้อ","ตอบตามรูปแบบที่ระบุไว้อย่างเคร่งครัดเมื่อบอกไว้ชัดเจน"],"recommendedStructure":"[บริบท/เป้าหมาย] + [ขั้นตอนหรือหัวข้อที่ต้องการให้ทำตามลำดับ] + [รูปแบบผลลัพธ์ที่ต้องการ]","example":"ช่วยสรุปเอกสารนี้ โดยแบ่งเป็น 3 หัวข้อ: ประเด็นหลัก, ข้อเสนอแนะ, ความเสี่ยง ตอบเป็นภาษาไทย"},
+      "lastUpdated": "2026-09-07",
+      "roadmap": { "checkedAt": "2026-09-30", "note": "กำหนดด้านบนคือ \"วันเลิกใช้โมเดลที่เร็วที่สุด (ไม่เร็วกว่า)\" ตามตารางสถานะโมเดลของ Anthropic สำหรับ API ไม่ใช่กำหนดของแอปแชต หน้าข่าวของ Anthropic ที่ตรวจไม่มีแผนรุ่นถัดไปที่ประกาศล่วงหน้า", "items": [
+          { "kind": "retirement", "text": "Claude Haiku 4.5 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic", "when": "ไม่เร็วกว่า 15 ต.ค. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
+          { "kind": "retirement", "text": "Claude Opus 4.5 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic", "when": "ไม่เร็วกว่า 24 พ.ย. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
+          { "kind": "retirement", "text": "Claude Opus 4.6 และ Sonnet 4.6 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic (Opus 4.6: 5 ก.พ. 2027, Sonnet 4.6: 17 ก.พ. 2027)", "when": "ไม่เร็วกว่า 5 ก.พ. 2027", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
+          { "kind": "intent", "text": "Anthropic ระบุว่าหวังจะนำโมเดลรุ่นเก่ากลับมาให้ใช้สาธารณะอีกครั้ง \"ในบางเวลา\" และยืนยันเก็บน้ำหนักโมเดลไว้ระยะยาว", "when": null, "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" }
+        ] },
+      "latestVersion": { "name": "Claude Opus 5.5 และ Sonnet 5.5", "releaseDate": "2026-09-28", "sourceUrl": "https://www.anthropic.com/news", "lastVerified": "2026-09-30", "note": "ตามหน้าข่าว Anthropic: Sonnet 5.5 (28 ก.ย. 2026) เร็วขึ้น 30% และถูกลงสูงสุด 30%, Opus 5.5 (22 ก.ย. 2026) ทำงานระดับ Fable 5.1 ในงานส่วนใหญ่และลดต้นทุน 40% เทียบ Opus 5; รุ่นบนสุดคือ Fable 5.1 (1 ก.ย. 2026)" },
+      "plansUrl": { "url": "https://claude.com/pricing", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "vendor": "Google",
+      "categories": ["chat", "search", "code"],
+      "logoUrl": null,
+      "websiteUrl": "https://gemini.google.com",
+      "shortDescription": "แชทบอท AI จาก Google ผสานกับ Search, Workspace และมี context window ยาวมาก",
+      "longDescription": "Gemini เชื่อมต่อกับระบบนิเวศ Google (Search, Docs, Gmail) ได้ลึก มี context window ถึง 1M token ในแผน Pro เหมาะกับงานที่ต้องอ้างอิงเอกสารยาวๆ หรือค้นข้อมูลควบคู่การแชท",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-22",
+        "confidence": "verified",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "lastVerified": "2026-09-30",
+        "note": "Google ปล่อย Gemini 3.8 Flash แบบ GA (2 ก.ย.), Gemini 3.8 Live (15 ก.ย.) และ Gemini 3.8 Flash TTS (22 ก.ย. 2026) ตามหน้า changelog ทางการ"
+      },
+      "capabilities": [
+        {
+          "dimension": "chat",
+          "score": {
+            "value": 90,
+            "confidence": "inference",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03",
+            "note": "Gemini 3.1 Pro อยู่ในกลุ่มผู้นำ ~1500 Elo บน LMArena (ส.ค. 2026)"
+          }
+        },
+        {
+          "dimension": "longContext",
+          "score": {
+            "value": 90,
+            "confidence": "verified",
+            "sourceUrl": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+            "lastVerified": "2026-09-20",
+            "note": "แก้แหล่งอ้างอิงที่ผิด (ลิงก์เดิมเป็นบทความราคาของ Claude ไม่เกี่ยวกับ Gemini เลย) เอกสารทางการของ Google ระบุ input token limit = 1,048,576 token (~1M)"
+          }
+        }
+      ],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Free",
+            "priceUsdPerMonth": 0,
+            "quota": "ใช้งานพื้นฐานฟรี",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://terms.law/ai-output-rights/gemini/",
+              "lastVerified": "2026-09-03",
+              "note": "Google ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output และอนุญาตใช้เชิงพาณิชย์ได้ทุกระดับรวมแผนฟรี ตามการวิเคราะห์ ToS ของ Google"
+            }
+          },
+          {
+            "name": "Google AI Plus",
+            "priceUsdPerMonth": 4.99,
+            "quota": "โควตาสูงกว่า Free",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" }
+          },
+          {
+            "name": "Google AI Pro",
+            "priceUsdPerMonth": 19.99,
+            "quota": "เข้าถึง Gemini 3.1 Pro พร้อม context window 1M token",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" }
+          },
+          {
+            "name": "Google AI Ultra",
+            "priceUsdPerMonth": 99.99,
+            "quota": "โควตา 5 เท่าของ Pro (มีระดับ $199.99 สำหรับ 20 เท่า)",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" }
+          }
+        ],
+        "freeQuota": "ใช้งาน Gemini พื้นฐานได้ฟรี โควตาจำกัด",
+        "commercialUseSummary": {
+          "value": "Google ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output ของผู้ใช้ (ทั้งฝั่ง consumer, Workspace, Vertex AI) และอนุญาตใช้เชิงพาณิชย์ได้โดยไม่ต้องจ่ายค่าลิขสิทธิ์เพิ่ม รวมถึงแผนฟรีด้วย แต่การไม่อ้างสิทธิ์ไม่ได้แปลว่า Output ทุกชิ้นมีลิขสิทธิ์คุ้มครองหรือปลอดจากการอ้างสิทธิ์ของบุคคลที่สาม",
+          "confidence": "probable",
+          "sourceUrl": "https://terms.law/ai-output-rights/gemini/",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.cloudzero.com/blog/gemini-pricing/",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ผสานกับ Google Search/Workspace ได้ลึก", "context window ยาวมาก เหมาะงานเอกสารยาว", "ราคาลดลงมากหลัง Google I/O 2026 (Ultra จาก $249.99 เหลือ $99.99)"],
+        "negativeThemes": ["โครงสร้างราคาหลายชั้นซับซ้อน (Free/Plus/Pro/Ultra)", "แบรนด์เปลี่ยนชื่อบ่อย (Advanced → Ultra) ทำให้สับสน"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": ["https://www.cloudzero.com/blog/gemini-pricing/"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1500,
+            "confidence": "probable",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03"
+          },
+          "label": "LMArena Text ELO (Gemini 3.1 Pro)"
+        }
+      ],
+      "strengths": ["เชื่อมต่อ Google Search/Workspace ได้ดีที่สุดในกลุ่ม", "Context window ยาวถึง 1M token", "ราคาลดลงมากในปี 2026 ทำให้เข้าถึงง่ายขึ้น"],
+      "weaknesses": ["โครงสร้างแผนราคาหลายชั้นทำให้เลือกยาก", "ไม่มี indemnification คุ้มครองลิขสิทธิ์ชัดเจนเท่า Microsoft Enterprise"],
+      "bestFor": ["ผู้ใช้ที่อยู่ในระบบนิเวศ Google อยู่แล้ว", "งานที่ต้องอ่าน/สรุปเอกสารยาวมาก", "งานค้นข้อมูลควบคู่แชท"],
+      "promptAdherence": {
+        "imageAdherence": null,
+        "videoAdherence": null,
+        "audioAdherence": null,
+        "chatInstructionFollowing": {
+          "value": 88,
+          "confidence": "inference",
+          "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+          "lastVerified": "2026-09-03"
+        }
+      },
+      "promptWorkflow": {"steps":["อ่านข้อมูลจากแอป Google ที่เชื่อมต่อไว้ก่อน (ถ้าเปิดใช้งาน)","อ่านข้อความคำสั่งในแชทเป็นเป้าหมายหลัก","ค้นข้อมูลเสริมจาก Google Search อัตโนมัติเมื่อจำเป็น"],"recommendedStructure":"[สิ่งที่ต้องการ] + ระบุแหล่งข้อมูล เช่น \"จากอีเมลล่าสุด\" หรือ \"จากเอกสารที่แชร์ไว้\" ถ้าต้องการให้ดึงข้อมูลจริง","example":"สรุปอีเมล 5 ฉบับล่าสุดจากหัวหน้าทีม แล้วช่วยร่างคำตอบให้แบบสุภาพ"},
+      "lastUpdated": "2026-09-07",
+      "roadmap": { "checkedAt": "2026-09-30", "note": "ตามหน้า deprecations ของ Gemini API (ฝั่งนักพัฒนา ไม่ใช่แอป Gemini) รุ่นเสถียรล่าสุด (3.8 Flash, 3.8 Live) ยังไม่มีกำหนดเลิกให้บริการ", "items": [
+          { "kind": "retirement", "text": "gemini-2.5-flash-image จะปิดให้บริการ แนะนำย้ายไป gemini-3.1-flash-image-preview", "when": "2 ต.ค. 2026", "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations", "lastVerified": "2026-09-30" }
+        ] },
+      "latestVersion": { "name": "Gemini 3.8 Flash", "releaseDate": null, "sourceUrl": "https://ai.google.dev/gemini-api/docs/models", "lastVerified": "2026-09-21", "note": "รุ่นที่หน้าโมเดลของ Google ติดป้าย New Stable (หน้าอัปเดตล่าสุด 2026-09-17) ไม่ได้แปลว่าเป็นรุ่นที่แรงที่สุดในตระกูล Gemini" },
+      "plansUrl": { "url": "https://gemini.google/subscriptions/", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "microsoft-copilot",
+      "name": "Microsoft Copilot",
+      "vendor": "Microsoft",
+      "categories": ["chat", "code"],
+      "logoUrl": null,
+      "websiteUrl": "https://copilot.microsoft.com",
+      "shortDescription": "ผู้ช่วย AI ของ Microsoft ผสานกับ Windows, Microsoft 365 และ Bing",
+      "longDescription": "Copilot เหมาะกับผู้ใช้ในระบบนิเวศ Microsoft 365 ผสานเข้ากับ Word, Excel, Outlook, Teams โดยตรง Microsoft ได้ปรับโครงสร้างแผนราคาใหม่ในปี 2026 โดยยกเลิก Copilot Pro แบบเดี่ยวและย้ายฟีเจอร์ไปอยู่ใน Microsoft 365 Premium แทน",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-25",
+        "confidence": "probable",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+        "lastVerified": "2026-09-30",
+        "note": "Microsoft เปิดตัว Copilot แบบใหม่ที่มี Home, Code และ Autopilot (25 ก.ย. 2026) โดย Home กับ Code เริ่มทยอยให้ผู้ใช้ Frontier ส่วน Autopilot ขยายเป็น private preview (อ้างตามผลค้นหาบล็อกทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          {
+            "name": "Copilot Free",
+            "priceUsdPerMonth": 0,
+            "quota": "ใช้งานพื้นฐานฟรี",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303",
+              "lastVerified": "2026-09-03",
+              "note": "Microsoft ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output และให้สิทธิ์ใช้เชิงพาณิชย์ได้ทั้งแผนฟรีและเสียเงิน แต่ Copyright Commitment (คุ้มครองการฟ้องร้องลิขสิทธิ์) ไม่ครอบคลุมแผนฟรี/consumer"
+            }
+          },
+          {
+            "name": "Microsoft 365 Premium",
+            "priceUsdPerMonth": 19.99,
+            "quota": "รวมฟีเจอร์ที่เคยอยู่ใน Copilot Pro (ยกเลิก Copilot Pro แยกเดี่ยว รองรับถึง 1 ส.ค. 2026)",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303", "lastVerified": "2026-09-03", "note": "เป็นผลิตภัณฑ์ consumer จึงยังไม่ครอบคลุมด้วย Copyright Commitment เช่นกัน" }
+          },
+          {
+            "name": "Microsoft 365 Copilot Business",
+            "priceUsdPerMonth": 21,
+            "quota": "ต่อผู้ใช้/เดือน (โปรโมชัน $18 ถึง 30 ก.ย. 2026)",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303", "lastVerified": "2026-09-03", "note": "ระดับ Business/Enterprise ได้รับความคุ้มครองจาก Microsoft Copilot Copyright Commitment (ตั้งแต่ 1 ต.ค. 2023)" }
+          },
+          {
+            "name": "Microsoft 365 Copilot Enterprise",
+            "priceUsdPerMonth": 30,
+            "quota": "ต่อผู้ใช้/เดือน บิลรายปี",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303", "lastVerified": "2026-09-03", "note": "ได้รับความคุ้มครองจาก Copyright Commitment เต็มรูปแบบ" }
+          }
+        ],
+        "freeQuota": "ใช้งานพื้นฐานฟรีผ่าน copilot.microsoft.com",
+        "commercialUseSummary": {
+          "value": "Microsoft ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output และให้สิทธิ์ใช้เชิงพาณิชย์ได้ทั้งแผนฟรีและเสียเงิน จุดสำคัญคือ 'Copyright Commitment' (Microsoft ช่วยว่าความ/ชดใช้หากถูกฟ้องเรื่องลิขสิทธิ์) ครอบคลุมเฉพาะลูกค้า Business/Enterprise เท่านั้น — ไม่ครอบคลุมแผนฟรีหรือผลิตภัณฑ์ consumer",
+          "confidence": "probable",
+          "sourceUrl": "https://techcommunity.microsoft.com/discussions/businessapplicationsforpartners/introducing-the-microsoft-copilot-copyright-commitment/3922303",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.gosearch.ai/blog/microsoft-copilot-pricing/",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ผสานเข้ากับ Microsoft 365 ได้ลึกที่สุดในกลุ่ม", "เหมาะกับองค์กรที่ใช้ Microsoft อยู่แล้ว"],
+        "negativeThemes": ["โครงสร้างแผนราคาเปลี่ยนบ่อยและซับซ้อน (ยกเลิก Copilot Pro แยกเดี่ยวปี 2026)", "แผนธุรกิจราคาสูงกว่าคู่แข่งบางเจ้า"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": ["https://www.gosearch.ai/blog/microsoft-copilot-pricing/"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["ผสานกับ Word/Excel/Outlook/Teams โดยตรง", "เหมาะกับองค์กรที่มี Microsoft 365 อยู่แล้ว"],
+      "weaknesses": ["โครงสร้างแผนราคาสับสนและเปลี่ยนบ่อย", "Copyright Commitment (คุ้มครองการฟ้องร้องลิขสิทธิ์) ไม่ครอบคลุมแผนฟรี/consumer ต้องอัปเป็น Business ขึ้นไป"],
+      "bestFor": ["องค์กรที่ใช้ Microsoft 365 อยู่แล้ว", "งานเอกสาร/สเปรดชีต/อีเมลในระบบนิเวศ Microsoft"],
+      "promptWorkflow": {"steps":["อ่านเนื้อหาไฟล์/อีเมลที่เปิดอยู่ในแอป Microsoft 365 เป็นบริบทก่อน","อ่านคำสั่งที่พิมพ์เป็นเป้าหมาย","ปรับผลลัพธ์ให้เข้ากับรูปแบบของแอปนั้นๆ เช่น สร้างสไลด์ใน PowerPoint"],"recommendedStructure":"[สิ่งที่ต้องการให้ทำกับไฟล์/อีเมลที่เปิดอยู่] + [รูปแบบผลลัพธ์ที่ต้องการ]","example":"สรุปเอกสาร Word นี้เป็นสไลด์ PowerPoint 5 หน้า เน้นประเด็นสำคัญ 3 ข้อแรก"},
+      "lastUpdated": "2026-09-03",
+      "plansUrl": { "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/personal", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "vendor": "Perplexity AI",
+      "categories": ["search", "chat"],
+      "logoUrl": null,
+      "websiteUrl": "https://www.perplexity.ai",
+      "shortDescription": "AI เครื่องมือค้นหาที่ตอบคำถามพร้อมอ้างอิงแหล่งที่มา เด่นเรื่องความน่าเชื่อถือของข้อมูล",
+      "longDescription": "Perplexity เน้นการค้นหาข้อมูลพร้อมอ้างอิงแหล่งที่มาชัดเจน ต่างจากแชทบอททั่วไปที่เน้นการสนทนา เหมาะกับงานวิจัย/หาข้อมูลที่ต้องการ citation",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-01",
+        "confidence": "probable",
+        "sourceUrl": "https://www.explainx.ai/blog/perplexity-mac-hybrid-compute-local-pii-september-2026",
+        "lastVerified": "2026-09-07",
+        "note": "Aravind Srinivas ประกาศ 'hybrid compute' สำหรับแอป Mac วันที่ 1 ก.ย. 2026 ให้ Perplexity Computer รันโมเดลบางส่วนบนเครื่อง Apple Silicon สำหรับงานที่แตะไฟล์ส่วนตัวที่ sensitive แทนที่จะส่งขึ้นคลาวด์ทั้งหมด (อัปเดตจากค่าเดิม 'Brain' 13 ก.ค. 2026 ซึ่งล้าสมัยกว่า)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "ค้นหาจำนวนจำกัดต่อวัน", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/", "lastVerified": "2026-09-03", "note": "ToS ของ Perplexity จำกัดให้ใช้เพื่อส่วนตัว ไม่เชิงพาณิชย์ (personal, non-commercial use only) สำหรับผลิตภัณฑ์ consumer" } },
+          { "name": "Pro", "priceUsdPerMonth": 20, "quota": "ไม่จำกัดการค้นหา + เลือกโมเดลระดับสูงได้ + Spaces สูงสุด 50 ไฟล์/Space + เครดิต Perplexity Computer $40", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/", "lastVerified": "2026-09-03", "note": "⚠️ แม้เป็นแผนเสียเงิน แต่ Perplexity ปรับ ToS ให้จำกัดเฉพาะการใช้ส่วนตัว ไม่ใช่เชิงพาณิชย์ ตามการวิเคราะห์ ToS ล่าสุด" } },
+          { "name": "Max", "priceUsdPerMonth": 200, "quota": "โควตาสูงสุด ไม่จำกัด Perplexity Labs, เข้าถึงโมเดลระดับสูงสุดก่อนใคร (เช่น o3-pro, Claude Opus) พร้อม Comet browser และ Perplexity Computer เต็มรูปแบบ ($2,000/ปีหากจ่ายรายปี)", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/", "lastVerified": "2026-09-03", "note": "เป็นแผน consumer เช่นกัน จึงอยู่ภายใต้ข้อจำกัดเดียวกับ Pro" }, "notes": "แก้ไขราคาจาก $50 เป็น $200/เดือน หลังตรวจสอบพบว่า Perplexity Max เปิดตัวที่ราคา $200/เดือน ตั้งแต่ ก.ค. 2025 และยังคงราคานี้ต่อเนื่องถึง ก.ย. 2026 (ค่าเดิม $50 ในไฟล์คลาดเคลื่อน)" }
+        ],
+        "freeQuota": "ค้นหาได้จำนวนจำกัดต่อวันแบบไม่เสียเงิน",
+        "commercialUseSummary": {
+          "value": "⚠️ สำคัญ: ToS ของ Perplexity ฉบับล่าสุดจำกัดให้ผลิตภัณฑ์ consumer (Free/Pro/Max) ใช้เพื่อส่วนตัวเท่านั้น ไม่ใช่เชิงพาณิชย์ — ต่างจาก ChatGPT/Claude/Gemini ที่อนุญาตเชิงพาณิชย์ตั้งแต่แผนฟรี สิทธิ์เชิงพาณิชย์ที่ระบุชัดเจนมีเฉพาะแผน API และ Enterprise เท่านั้น (Perplexity ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output และมอบให้ลูกค้าเต็มรูปแบบ) ผู้ที่จะใช้ Perplexity เพื่องานเชิงพาณิชย์ควรพิจารณาแผน Enterprise แทน",
+          "confidence": "probable",
+          "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://techcrunch.com/2025/07/02/perplexity-launches-a-200-monthly-subscription-plan/",
+        "lastVerified": "2026-09-07"
+      },
+      "reviews": {
+        "positiveThemes": ["ตอบพร้อมอ้างอิงแหล่งที่มาที่ตรวจสอบได้", "แผน Pro ราคาเท่า ChatGPT Plus แต่เน้นด้านค้นข้อมูลโดยเฉพาะ"],
+        "negativeThemes": ["ไม่เหมาะกับงานสนทนาทั่วไปหรือ Creative writing เท่าแชทบอทหลัก", "แผน Max ($50) ราคาสูงกว่า Pro ของคู่แข่งหลายเจ้า"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": ["https://www.finout.io/blog/perplexity-pricing-in-2026"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["อ้างอิงแหล่งที่มาชัดเจน เหมาะงานวิจัย", "เลือกโมเดลเบื้องหลังได้หลายตัวในแผน Pro"],
+      "weaknesses": ["⚠️ แผน Free/Pro/Max จำกัดให้ใช้ส่วนตัวเท่านั้น ไม่ใช่เชิงพาณิชย์ตาม ToS ล่าสุด", "ไม่เหมาะกับงาน Creative writing เท่าแชทบอททั่วไป", "แผน Max ราคาสูง"],
+      "bestFor": ["งานค้นคว้าวิจัยที่ต้องการอ้างอิงแหล่งที่มา", "นักเรียน/นักศึกษาที่ต้องการตรวจสอบข้อมูล"],
+      "promptWorkflow": {"steps":["อ่านคำถามเป็น search query ก่อนเพื่อค้นข้อมูลจริงจากเว็บ","สังเคราะห์คำตอบจากแหล่งที่ค้นเจอ","แนบอ้างอิงแหล่งที่มาให้ตรวจสอบได้"],"recommendedStructure":"ตั้งคำถามให้ชัดเจนเหมือนพิมพ์ค้นหา ระบุช่วงเวลา/ขอบเขตถ้าต้องการข้อมูลล่าสุด","example":"ราคาน้ำมันดิบ Brent ล่าสุดวันนี้เท่าไหร่ เทียบกับเมื่อสัปดาห์ที่แล้ว"},
+      "lastUpdated": "2026-09-07",
+      "plansUrl": { "url": "https://www.perplexity.ai/pro", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "vendor": "xAI",
+      "categories": ["chat"],
+      "logoUrl": null,
+      "websiteUrl": "https://grok.com",
+      "shortDescription": "แชทบอท AI จาก xAI (Elon Musk) ผสานกับแพลตฟอร์ม X เด่นเรื่องข้อมูลเรียลไทม์",
+      "longDescription": "Grok ผสานกับ X (Twitter) ทำให้เข้าถึงข้อมูล/เทรนด์เรียลไทม์ได้ดี มีหลายระดับแผนตั้งแต่ฟรีจนถึง SuperGrok Heavy สำหรับงาน multi-agent ที่ซับซ้อน",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-20",
+        "confidence": "probable",
+        "sourceUrl": "https://x.ai/news/grok-4-7",
+        "lastVerified": "2026-09-30",
+        "note": "xAI (SpaceXAI) เปิดตัว Grok 4.7 วันที่ 20 ก.ย. 2026 โมเดลเรือธงสำหรับเขียนโค้ดและงานเอเจนต์ context 500k (อ้างอิงหน้าข่าวทางการผ่านผลค้นหา ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "ใช้งานพื้นฐานฟรี", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://x.ai/legal/terms-of-service", "lastVerified": "2026-09-03", "note": "xAI ให้สิทธิ์ Output เป็นของผู้ใช้และอนุญาตเชิงพาณิชย์ได้ทุกระดับรวมแผนฟรี ไม่มีเกณฑ์รายได้ขั้นต่ำ แต่ไม่มี IP indemnification ในแผน consumer" } },
+          { "name": "SuperGrok Lite", "priceUsdPerMonth": 10, "quota": "เข้าถึง Grok Imagine โดยไม่ต้องจ่ายเต็ม $30", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://x.ai/legal/terms-of-service", "lastVerified": "2026-09-03" } },
+          { "name": "SuperGrok", "priceUsdPerMonth": 30, "quota": "โควตาสูงขึ้น เข้าถึง Grok 4.6", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://x.ai/legal/terms-of-service", "lastVerified": "2026-09-03" } },
+          { "name": "SuperGrok Heavy", "priceUsdPerMonth": 300, "quota": "เข้าถึง Grok 4 Heavy สำหรับงาน multi-agent ซับซ้อน", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://x.ai/legal/terms-of-service", "lastVerified": "2026-09-03" } }
+        ],
+        "freeQuota": "ใช้งานพื้นฐานฟรี",
+        "commercialUseSummary": {
+          "value": "xAI ให้สิทธิ์ความเป็นเจ้าของ Output แก่ผู้ใช้และอนุญาตใช้เชิงพาณิชย์ได้ทุกระดับแผนรวมถึงแผนฟรี ไม่มีเกณฑ์รายได้ขั้นต่ำแบบ Midjourney แต่ข้อควรระวังคือ xAI ไม่มี IP indemnification ในระดับ consumer เลย (ถ้า Output ละเมิดลิขสิทธิ์บุคคลที่สาม ผู้ใช้ต้องรับผิดชอบเอง) การคุ้มครองมีเฉพาะสัญญา Enterprise เท่านั้น",
+          "confidence": "probable",
+          "sourceUrl": "https://x.ai/legal/terms-of-service",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.ai-toolbox.co/grok-models/grok-pricing-plans-api-2026",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["เข้าถึงข้อมูล/เทรนด์เรียลไทม์จาก X ได้ดี", "มีตัวเลือกราคาเริ่มต้นต่ำ (Lite $10)"],
+        "negativeThemes": ["SuperGrok Heavy ราคาสูงมาก ($300/เดือน)", "โครงสร้างแผนหลายระดับทำให้เลือกยาก"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": ["https://www.ai-toolbox.co/grok-models/grok-pricing-plans-api-2026"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [],
+      "strengths": ["ข้อมูลเรียลไทม์จากแพลตฟอร์ม X", "มีแผนราคาเริ่มต้นต่ำ (Lite)"],
+      "weaknesses": ["แผนสูงสุดราคาแพงที่สุดในกลุ่มแชทบอท ($300)", "ไม่มี IP indemnification เลยในระดับ consumer — เสี่ยงเองถ้า Output ละเมิดลิขสิทธิ์บุคคลที่สาม"],
+      "bestFor": ["ผู้ใช้ X ที่ต้องการติดตามเทรนด์เรียลไทม์", "งานที่ต้องอ้างอิงเหตุการณ์ปัจจุบัน"],
+      "promptWorkflow": {"steps":["อ่านคำถาม/คำสั่งเป็นเป้าหมายหลัก","ดึงข้อมูลโพสต์ล่าสุดจาก X มาประกอบคำตอบเมื่อเกี่ยวข้อง","ตอบด้วยน้ำเสียงตรงไปตรงมา/มีอารมณ์ขันได้ตามสไตล์ของโมเดล"],"recommendedStructure":"[คำถาม/สิ่งที่ต้องการ] ระบุว่าอยากให้อ้างอิงกระแสบน X ล่าสุดหรือไม่","example":"ตอนนี้คนบน X พูดถึงเรื่องอะไรเกี่ยวกับการแข่งขันฟุตบอลคืนนี้บ้าง สรุปกระแสให้หน่อย"},
+      "lastUpdated": "2026-09-03",
+      "roadmap": { "checkedAt": "2026-09-30", "note": "ตรวจหน้าโมเดลของ xAI: ไม่พบกำหนดเลิกใช้หรือรุ่นที่ประกาศล่วงหน้า", "items": [] },
+      "latestVersion": { "name": "Grok 4.7", "releaseDate": null, "sourceUrl": "https://docs.x.ai/docs/models", "lastVerified": "2026-09-30", "note": "หน้าโมเดลของ xAI ระบุว่า \"the most capable model we've built\" และแนะนำเป็นค่าเริ่มต้น (ไม่ระบุวันเปิดตัว)" },
+      "plansUrl": { "url": "https://grok.com/plans", "lastVerified": "2026-09-21" }
+    },
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek Chat",
+      "vendor": "DeepSeek",
+      "categories": ["chat", "code"],
+      "logoUrl": null,
+      "websiteUrl": "https://chat.deepseek.com",
+      "shortDescription": "แชทบอท AI จากจีน ใช้งานฟรีไม่จำกัด เด่นเรื่องราคา API ที่ถูกมาก",
+      "longDescription": "DeepSeek Chat ใช้งานฟรีแบบไม่จำกัดจำนวนข้อความ ไม่มีการกั้นฟีเจอร์หลังกำแพงราคา เหมาะกับผู้ใช้งบน้อยที่ต้องการ AI คุณภาพสูงโดยไม่เสียเงิน โมเดล V4 Pro ติดอันดับ ~1450 Elo บน LMArena",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-10",
+        "confidence": "verified",
+        "sourceUrl": "https://api-docs.deepseek.com/updates",
+        "lastVerified": "2026-09-30",
+        "note": "DeepSeek เปิดตัว DeepSeek-V4.1-Flash (10 ก.ย. 2026) รองรับภาพแบบ native และลดราคา API พร้อมให้บริการ V4 Pro ต่อหลัง 14 ก.ย. 2026"
+      },
+      "capabilities": [
+        {
+          "dimension": "chat",
+          "score": {
+            "value": 82,
+            "confidence": "inference",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03",
+            "note": "DeepSeek V4 Pro อยู่ที่ ~1450 Elo บน LMArena (ส.ค. 2026)"
+          }
+        }
+      ],
+      "pricing": {
+        "tier": "free",
+        "plans": [
+          { "name": "Chat (เว็บ/แอป)", "priceUsdPerMonth": 0, "quota": "ไม่จำกัดข้อความ ไม่มีฟีเจอร์กั้นหลังกำแพงราคา", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://cdn.deepseek.com/policies/en-US/deepseek-terms-of-use.html", "lastVerified": "2026-09-03", "note": "DeepSeek มอบสิทธิ์ Output ให้ผู้ใช้และอนุญาตเชิงพาณิชย์ได้ทุกแผนรวมฟรี แต่สงวนสิทธิ์นำ Input/Output ไปใช้พัฒนา/ปรับปรุงบริการของตัวเอง (ผู้ใช้ไม่มีสิทธิ์ควบคุมข้อมูลแบบเอ็กซ์คลูซีฟ)" } }
+        ],
+        "freeQuota": "ไม่จำกัดข้อความ ไม่มีจำนวนครั้งต่อวัน",
+        "commercialUseSummary": {
+          "value": "DeepSeek มอบสิทธิ์ความเป็นเจ้าของ Output ให้ผู้ใช้และอนุญาตใช้เชิงพาณิชย์ได้ทุกแผนโดยไม่มีค่าไลเซนส์เพิ่ม (รวมถึงแผนฟรี) แต่ DeepSeek สงวนสิทธิ์นำ Input/Output ไปใช้ 'พัฒนา/ปรับปรุงบริการ' ของตัวเอง ผู้ใช้จึงไม่ควรคาดหวังว่าจะควบคุมข้อมูลได้แบบเอ็กซ์คลูซีฟเมื่อใช้ผ่านแพลตฟอร์มออนไลน์ของ DeepSeek",
+          "confidence": "probable",
+          "sourceUrl": "https://cdn.deepseek.com/policies/en-US/deepseek-terms-of-use.html",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://deepseek.ai/pricing",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ใช้งานฟรีไม่จำกัดข้อความ", "ราคา API ถูกมากเมื่อเทียบกับคู่แข่ง ($0.14-0.87/ล้าน token)", "คุณภาพโมเดลอยู่ระดับกลาง-สูงตาม LMArena"],
+        "negativeThemes": ["ให้บริการจากบริษัทจีน อาจมีข้อกังวลด้านความเป็นส่วนตัว/การเซนเซอร์เนื้อหาบางหัวข้อ", "ไม่มีแผนเสียเงินสำหรับฟีเจอร์พิเศษเพิ่มเติมในเว็บ/แอป"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": "ผู้ใช้ฟรีพอใจมากที่ไม่มีการจำกัดข้อความหรือฟีเจอร์เลย",
+        "sourceUrls": ["https://deepseek.ai/pricing"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1450,
+            "confidence": "probable",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03"
+          },
+          "label": "LMArena Text ELO (DeepSeek V4 Pro)"
+        }
+      ],
+      "strengths": ["ฟรี 100% ไม่จำกัดการใช้งาน", "ราคา API ถูกที่สุดกลุ่มหนึ่งในตลาด", "คุณภาพโมเดลใกล้เคียงผู้นำตลาด"],
+      "weaknesses": ["ข้อกังวลด้านความเป็นส่วนตัว/แหล่งกำเนิดข้อมูลจากบริษัทจีน", "ไม่มีสิทธิ์เชิงพาณิชย์ที่ระบุชัดเจน"],
+      "bestFor": ["มือใหม่ที่ไม่มีงบเลย", "นักพัฒนาที่ต้องการ API ราคาถูก"],
+      "promptAdherence": { "imageAdherence": null, "videoAdherence": null, "audioAdherence": null, "chatInstructionFollowing": { "value": 80, "confidence": "inference", "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text", "lastVerified": "2026-09-03" } },
+      "promptWorkflow": {"steps":["อ่านโจทย์/คำถามทั้งหมดก่อนเริ่มคิด","ให้น้ำหนักกับคำสั่งที่บอกให้ \"คิดทีละขั้น\" หรือ \"อธิบายเหตุผล\" เป็นพิเศษ","ตอบพร้อมแสดงเหตุผลประกอบเมื่อถูกร้องขอ"],"recommendedStructure":"[โจทย์/คำถาม] + \"ช่วยคิดทีละขั้นตอน\" หรือ \"อธิบายเหตุผลประกอบ\" ถ้าต้องการคำตอบที่ละเอียด","example":"ช่วยแก้โจทย์นี้ทีละขั้นตอนพร้อมอธิบายเหตุผล: ร้านค้าลดราคา 20% แล้วลดเพิ่มอีก 10% จากราคาลดแล้ว ราคาสุทธิลดไปกี่เปอร์เซ็นต์จากราคาเดิม"},
+      "lastUpdated": "2026-09-03",
+      "roadmap": { "checkedAt": "2026-09-30", "note": "หน้าอัปเดต API ของ DeepSeek ที่ตรวจไม่มีกำหนดเวลาในอนาคตที่ระบุไว้ (ชื่อโมเดลเก่า deepseek-chat/deepseek-reasoner ถูกเลิกแล้ว 24 ก.ค. 2026)", "items": [] },
+      "latestVersion": { "name": "DeepSeek-V4.1-Flash", "releaseDate": "2026-09-10", "sourceUrl": "https://api-docs.deepseek.com/updates", "lastVerified": "2026-09-30", "note": "ตามหน้าอัปเดตของ DeepSeek: รุ่น Flash ขนาดเล็กสุดของสถาปัตยกรรมใหม่ รองรับภาพแบบ native; V4 Pro ยังให้บริการต่อหลัง 14 ก.ย. 2026 ราคาเดิม" }
+    },
+    {
+      "id": "mistral-le-chat",
+      "name": "Le Chat",
+      "vendor": "Mistral AI",
+      "categories": ["chat", "code"],
+      "logoUrl": null,
+      "websiteUrl": "https://chat.mistral.ai",
+      "shortDescription": "แชทบอท AI จากบริษัทยุโรป (ฝรั่งเศส) ราคาแผนเสียเงินถูกที่สุดในกลุ่มผู้เล่นหลัก",
+      "longDescription": "Le Chat จาก Mistral AI เป็นทางเลือกจากยุโรป จุดขายคือราคา ถูกกว่า ChatGPT Plus และ Claude Pro ($14.99 เทียบกับ $20) แม้จะมี fair-use soft cap ที่จำกัดการใช้งานแบบ 'unlimited' จริงๆ ไว้ที่ราว 6 เท่าของแผนฟรี",
+      "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-09-14",
+        "confidence": "probable",
+        "sourceUrl": "https://docs.mistral.ai/resources/release-notes",
+        "lastVerified": "2026-09-30",
+        "note": "Mistral เริ่มทยอยรวม Chat กับ Work เป็น Vibe (14 ก.ย. 2026) บัญชี Free/Pro/Teams ก่อน ส่วน Enterprise เริ่ม 1 ต.ค. (อ้างตามผลค้นหาหน้าทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+      },
+      "capabilities": [],
+      "pricing": {
+        "tier": "freemium",
+        "plans": [
+          { "name": "Free", "priceUsdPerMonth": 0, "quota": "ใช้งานพื้นฐานฟรี", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://help.mistral.ai/en/articles/347630-who-owns-input-and-output-both-in-le-chat-or-mistral-s-apis", "lastVerified": "2026-09-03", "note": "Mistral ไม่อ้างสิทธิ์ความเป็นเจ้าของ Output ผู้ใช้เป็นเจ้าของและใช้เชิงพาณิชย์ได้ แต่แผน Free/Vibe เทรนโมเดลจากข้อมูลผู้ใช้โดยดีฟอลต์ (มี opt-out)" } },
+          { "name": "Pro", "priceUsdPerMonth": 14.99, "quota": "การันตี 'unlimited' แต่มี fair-use soft cap ~6 เท่าของ Free (ประมาณ 120-150 ข้อความมาตรฐาน)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://help.mistral.ai/en/articles/347630-who-owns-input-and-output-both-in-le-chat-or-mistral-s-apis", "lastVerified": "2026-09-03" } },
+          { "name": "Team", "priceUsdPerMonth": 24.99, "quota": "ต่อผู้ใช้/เดือน (หรือ $19.99 หากจ่ายรายปี)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://legal.mistral.ai/terms/commercial-terms-of-service", "lastVerified": "2026-09-03", "note": "หากนำ Mistral ไปผสานกับผลิตภัณฑ์ของตัวเองที่แจกจ่ายให้ผู้ใช้ปลายทาง ต้องอ่าน Commercial Terms of Service แยกต่างหาก" } }
+        ],
+        "freeQuota": "ใช้งานพื้นฐานฟรี",
+        "commercialUseSummary": {
+          "value": "Mistral ไม่อ้างสิทธิ์ความเป็นเจ้าของ Input/Output — ผู้ใช้เป็นเจ้าของ Output เต็มรูปแบบและใช้เชิงพาณิชย์ได้ทุกแผนรวมฟรี ข้อควรระวัง: แผน Free/Vibe เทรนโมเดลจากข้อมูลผู้ใช้โดยดีฟอลต์ (มี opt-out ให้เลือก) ส่วน Enterprise/API แบบจ่ายเงินไม่ถูกใช้เทรน หากจะนำ Mistral ไปผสานกับผลิตภัณฑ์ที่แจกจ่ายให้ผู้ใช้ปลายทางของตัวเอง ต้องอ่าน Commercial Terms of Service แยกต่างหาก",
+          "confidence": "probable",
+          "sourceUrl": "https://help.mistral.ai/en/articles/347630-who-owns-input-and-output-both-in-le-chat-or-mistral-s-apis",
+          "lastVerified": "2026-09-03"
+        },
+        "sourceUrl": "https://www.grizzlypeaksoftware.com/articles/p/mistral-ai-pricing-in-2026-pro-costs-free-tier-limits-and-api-rates-lx4o2n2v",
+        "lastVerified": "2026-09-03"
+      },
+      "reviews": {
+        "positiveThemes": ["ราคาแผน Pro ถูกที่สุดในกลุ่มผู้เล่นหลัก ($14.99)", "บริษัทยุโรป เหมาะผู้ใช้ที่ให้ความสำคัญกับ data residency ในยุโรป"],
+        "negativeThemes": ["'Unlimited' จริงๆ มี fair-use soft cap ทำให้ไม่ unlimited แท้จริง", "ฐานผู้ใช้/คอมมูนิตี้เล็กกว่า ChatGPT/Claude/Gemini มาก"],
+        "paidVerifiedSummary": null,
+        "freeTierSummary": null,
+        "sourceUrls": ["https://www.grizzlypeaksoftware.com/articles/p/mistral-ai-pricing-in-2026-pro-costs-free-tier-limits-and-api-rates-lx4o2n2v"],
+        "lastVerified": "2026-09-03",
+        "sampleSizeNote": "สังเคราะห์จากบทวิเคราะห์ราคา ไม่ใช่รีวิวผู้ใช้จริงโดยตรงในรอบนี้"
+      },
+      "usageSignals": [
+        {
+          "metric": "arena-elo",
+          "value": {
+            "value": 1300,
+            "confidence": "probable",
+            "sourceUrl": "https://llm-stats.com/benchmarks/lmarena-text",
+            "lastVerified": "2026-09-03",
+            "note": "Mistral Large 3 อยู่ในกลุ่ม 'Strong tier' ~1300 Elo — ต่ำกว่ากลุ่มผู้นำ (Claude/GPT/Gemini ~1500+) ค่อนข้างมาก"
+          },
+          "label": "LMArena Text ELO (Mistral Large 3)"
+        }
+      ],
+      "strengths": ["ราคาแผนเสียเงินถูกที่สุดในกลุ่มผู้เล่นหลัก", "บริษัทยุโรป เหมาะกับผู้ที่กังวลเรื่อง data residency"],
+      "weaknesses": ["'Unlimited' มี soft cap แอบแฝง", "ฐานผู้ใช้และคอมมูนิตี้เล็ก หาความช่วยเหลือยากกว่า"],
+      "bestFor": ["ผู้ใช้งบจำกัดที่ต้องการแผนเสียเงินราคาประหยัด", "ผู้ใช้ในยุโรปที่ต้องการ data residency ในยุโรป"],
+      "promptWorkflow": {"steps":["อ่านข้อความคำสั่งในแชทเป็นหลัก","รองรับหลายภาษาในยุโรปได้ดีเป็นพิเศษ","ให้น้ำหนักกับคำสั่งรูปแบบผลลัพธ์ที่ระบุไว้ชัดเจน"],"recommendedStructure":"[สิ่งที่ต้องการ] + [ภาษาที่ต้องการให้ตอบ ถ้าไม่ใช่ภาษาเดียวกับที่พิมพ์] + [รูปแบบคำตอบ]","example":"แปลอีเมลนี้เป็นภาษาฝรั่งเศสแบบเป็นทางการ แล้วตอบกลับเป็นภาษาฝรั่งเศสเท่านั้น"},
+      "lastUpdated": "2026-09-03",
+      "roadmap": { "checkedAt": "2026-09-30", "note": "ตรวจหน้ารายการโมเดลของ Mistral: กำหนดเลิกใช้ที่แสดงอยู่เป็นของอดีตทั้งหมด ไม่พบกำหนดในอนาคต", "items": [] },
+      "latestVersion": { "name": "Mistral Medium 3.5", "releaseDate": null, "sourceUrl": "https://docs.mistral.ai/getting-started/models/models_overview/", "lastVerified": "2026-09-21", "note": "รุ่นแรกในรายการ (เวอร์ชัน v26.04 ตามหน้าทางการ)" },
+      "plansUrl": { "url": "https://mistral.ai/pricing/", "lastVerified": "2026-09-21" }
+    }
+  ]
+}

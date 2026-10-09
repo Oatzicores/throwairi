@@ -1,0 +1,23 @@
+NOTICE: items NOT covered by the MIT license (LICENSE)
+
+1. Data (data/)
+   CC BY-NC 4.0, see data/LICENSE. Credit: "Data from ThrowAirI
+   (https://throwairi.vercel.app)". No commercial use without permission.
+
+2. Third-party logos and brand marks
+   public/logos/ (AI products), and the PromptPay / TrueMoney marks, belong to
+   their respective owners and are used only to identify those products.
+   They are not licensed under MIT. Where each file came from is recorded in
+   docs/logo-sources.json. Rights holders who want a logo removed: use the
+   private reporting channel in SECURITY.md.
+
+3. The ThrowAirI name and logo
+   The name "ThrowAirI" and its logo (public/logo-wordmark.webp and related
+   files in public/ and public/icons/) are reserved. You may fork and modify
+   the code under MIT, but a fork or derived site must use its own name and
+   logo and must not present itself as the official ThrowAirI. The only
+   official site is https://throwairi.vercel.app.
+
+4. Dependencies
+   Installed through npm, each under its own license (all MIT at the time of
+   writing: next, react, react-dom, rss-parser, zod, qrcode, @vercel/analytics).
