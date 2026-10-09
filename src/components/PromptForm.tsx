@@ -338,14 +338,14 @@ function ToggleGroup({
 }) {
   return (
     <div>
-      <div className="mb-2 text-center text-sm text-slate-300">{label}</div>
+      <div className="mb-2 text-center text-xs text-slate-400">{label}</div>
       <div className="flex overflow-hidden rounded-xl border border-slate-700 divide-x divide-slate-700">
         {options.map((opt) => (
           <button
             type="button"
             key={opt.value}
             onClick={() => onChange(opt.value)}
-            className={`min-h-[44px] flex-1 px-3 py-2 text-sm font-medium transition ${
+            className={`min-h-[44px] flex-1 px-3 py-2 text-xs transition ${
               value === opt.value
                 ? "bg-violet-600 text-white"
                 : "bg-slate-900 text-slate-400 hover:bg-slate-800"
