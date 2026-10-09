@@ -1,6 +1,6 @@
 import type { AICategory, AITool } from "@/lib/types/ai-tool";
 import { CATEGORY_LABELS, PRICING_TIER_LABELS } from "@/lib/labels";
-import type { KeywordHit, SkillLevel } from "./intent";
+import type { KeywordHit } from "./intent";
 import type { MatchResult } from "./score";
 
 // Splits a raw prompt into clause-sized chunks for the sentence-level
@@ -38,12 +38,6 @@ export function segmentPrompt(rawPrompt: string, hits: KeywordHit[]): PromptSegm
   });
 }
 
-const SKILL_LABELS: Record<SkillLevel, string> = {
-  beginner: "เริ่มต้น",
-  intermediate: "พอใช้เป็น",
-  advanced: "มืออาชีพ",
-};
-
 // Ties every explanation to a number the app actually computed
 // (score.ts's breakdown, or the tool's own category/pricing data) instead
 // of freeform text — so it's a real trace of the match, not a guess.
@@ -56,13 +50,9 @@ export function explainHit(hit: KeywordHit, tool: AITool, result: MatchResult): 
       ? `คำว่า "${hit.keyword}" ตีความว่าต้องการงาน "${label}" — ${tool.name} รองรับหมวดนี้โดยตรง (คะแนนตรงกับงาน ${breakdown.taskFit}/100)`
       : `คำว่า "${hit.keyword}" ตีความว่าต้องการงาน "${label}" — ${tool.name} ไม่ได้จัดอยู่ในหมวดนี้โดยตรง แต่มีความสามารถใกล้เคียงที่ยังนำมาพิจารณา (คะแนนตรงกับงาน ${breakdown.taskFit}/100)`;
   }
-  if (hit.kind === "budget") {
-    const tierLabel = PRICING_TIER_LABELS[tool.pricing.tier];
-    const wantsFree = hit.value === "free-only";
-    return `คำว่า "${hit.keyword}" ตีความว่า${wantsFree ? "ต้องการแผนฟรีเท่านั้น" : "ยอมจ่ายเงินได้"} — ${tool.name} เป็นแผน "${tierLabel}" (คะแนนตรงกับงบ ${breakdown.costFit}/100)`;
-  }
-  const skillLabel = SKILL_LABELS[hit.value as SkillLevel];
-  return `คำว่า "${hit.keyword}" ตีความระดับผู้ใช้ว่า "${skillLabel}" — นำมาพิจารณาความง่ายในการเริ่มใช้งานของ ${tool.name} (คะแนนใช้งานง่าย ${breakdown.accessibility}/100)`;
+  const tierLabel = PRICING_TIER_LABELS[tool.pricing.tier];
+  const wantsFree = hit.value === "free-only";
+  return `คำว่า "${hit.keyword}" ตีความว่า${wantsFree ? "ต้องการแผนฟรีเท่านั้น" : "ยอมจ่ายเงินได้"} — ${tool.name} เป็นแผน "${tierLabel}" (คะแนนตรงกับงบ ${breakdown.costFit}/100)`;
 }
 
 export interface AnnotatedSegment {

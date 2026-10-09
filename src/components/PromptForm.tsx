@@ -8,7 +8,6 @@ import { buildResultsHref } from "@/lib/resultsUrl";
 import { MAX_QUERY_LENGTH } from "@/lib/security/input";
 
 type Budget = "" | "free-only" | "paid-ok";
-type Skill = "" | "beginner" | "intermediate" | "advanced";
 
 // Each entry below was checked by fetching the cited page directly (not just
 // trusting a search-result summary) on 2026-09-19. Several stats from an
@@ -150,10 +149,9 @@ export function PromptForm() {
   const router = useRouter();
   const [prompt, setPrompt] = useState("");
   const [budget, setBudget] = useState<Budget>("");
-  const [skill, setSkill] = useState<Skill>("");
-  // Budget and skill are optional, so they stay folded away until asked for.
+  // Budget is optional, so it stays folded away until asked for.
   const [showOptions, setShowOptions] = useState(false);
-  const optionsSet = (budget ? 1 : 0) + (skill ? 1 : 0);
+  const optionsSet = budget ? 1 : 0;
 
   // Set when the prompt looks like an image/video prompt: the visitor is asked
   // which one before the results page opens (see categoryDetect.ts).
@@ -184,7 +182,7 @@ export function PromptForm() {
     const q = prompt.trim();
     if (!q) return;
     startNavigation(() => {
-      router.push(buildResultsHref({ q, budget, skill, category }));
+      router.push(buildResultsHref({ q, budget, category }));
     });
   }
 
@@ -219,7 +217,7 @@ export function PromptForm() {
           aria-controls="prompt-options"
           className="flex min-h-[44px] items-center gap-1 self-start text-sm text-violet-400 hover:text-violet-300 hover:underline sm:min-h-0"
         >
-          ตัวเลือกเพิ่มเติม (งบ, ระดับผู้ใช้){optionsSet > 0 && ` · เลือกแล้ว ${optionsSet}`} {showOptions ? "▴" : "▾"}
+          ตัวเลือกเพิ่มเติม (งบ){optionsSet > 0 && ` · เลือกแล้ว ${optionsSet}`} {showOptions ? "▴" : "▾"}
         </button>
         <button
           ref={submitRef}
@@ -288,20 +286,6 @@ export function PromptForm() {
               { value: "", label: "ไม่ระบุ" },
               { value: "free-only", label: "ฟรี" },
               { value: "paid-ok", label: "เสียเงิน" },
-            ]}
-          />
-          <ToggleGroup
-            label="ระดับผู้ใช้"
-            value={skill}
-            onChange={(v) => {
-              setSkill(v as Skill);
-              setPending(null);
-            }}
-            options={[
-              { value: "", label: "ไม่ระบุ" },
-              { value: "beginner", label: "เริ่มต้น" },
-              { value: "intermediate", label: "พอใช้เป็น" },
-              { value: "advanced", label: "มืออาชีพ" },
             ]}
           />
         </div>

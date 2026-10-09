@@ -272,8 +272,8 @@ export function parsePromptIntent(
 
 export interface KeywordHit {
   keyword: string; // the exact substring matched in the raw prompt
-  kind: "category" | "budget" | "skill";
-  value: string; // AICategory id, BudgetPreference, or SkillLevel
+  kind: "category" | "budget";
+  value: string; // AICategory id or BudgetPreference
 }
 
 // Re-runs the same substring matching parsePromptIntent uses internally,
@@ -293,15 +293,6 @@ export function findKeywordHits(rawPrompt: string): KeywordHit[] {
   }
   for (const keyword of countHits(rawPrompt, PAID_OK_KEYWORDS)) {
     hits.push({ keyword, kind: "budget", value: "paid-ok" });
-  }
-  for (const keyword of countHits(rawPrompt, BEGINNER_KEYWORDS)) {
-    hits.push({ keyword, kind: "skill", value: "beginner" });
-  }
-  for (const keyword of countHits(rawPrompt, INTERMEDIATE_KEYWORDS)) {
-    hits.push({ keyword, kind: "skill", value: "intermediate" });
-  }
-  for (const keyword of countHits(rawPrompt, ADVANCED_KEYWORDS)) {
-    hits.push({ keyword, kind: "skill", value: "advanced" });
   }
   return hits;
 }

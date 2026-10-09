@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import { loadCatalogWithDiagnostics } from "@/lib/data/loadCatalog";
 import { parsePromptIntent, findKeywordHits } from "@/lib/match/intent";
-import type { BudgetPreference, SkillLevel } from "@/lib/match/intent";
+import type { BudgetPreference } from "@/lib/match/intent";
 import { matchTools } from "@/lib/match/score";
 import { ResultsList } from "@/components/ResultsList";
 import { NewsPanel } from "@/components/NewsPanel";
@@ -20,7 +20,6 @@ interface ResultsPageProps {
   searchParams: Promise<{
     q?: string | string[];
     budget?: string | string[];
-    skill?: string | string[];
     category?: string | string[];
   }>;
 }
@@ -39,7 +38,6 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
   const params = await searchParams;
   const q = readQueryParam(params.q);
   const budgetParam = readQueryParam(params.budget);
-  const skillParam = readQueryParam(params.skill);
 
   if (!q) {
     return (
@@ -54,17 +52,13 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
 
   const budget: BudgetPreference | undefined =
     budgetParam === "free-only" || budgetParam === "paid-ok" ? budgetParam : undefined;
-  const skillLevel: SkillLevel | undefined =
-    skillParam === "beginner" || skillParam === "intermediate" || skillParam === "advanced"
-      ? skillParam
-      : undefined;
 
   // Chosen in the post-search picker. Validated against the registry; any
   // other value (hand-edited URL, repeated param) is ignored.
   const category = parseCategoryParam(params.category);
 
   const { tools: catalog, issues } = loadCatalogWithDiagnostics();
-  const intent = parsePromptIntent(q, { budget, skillLevel, category });
+  const intent = parsePromptIntent(q, { budget, category });
   const results = matchTools(catalog, intent);
   const keywordHits = findKeywordHits(q);
 
@@ -92,14 +86,14 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
                 .map((d) => (
                   <Link
                     key={d.id}
-                    href={buildResultsHref({ q, budget, skill: skillLevel, category: d.id })}
+                    href={buildResultsHref({ q, budget, category: d.id })}
                     className="text-violet-400 hover:underline"
                   >
                     {d.buttonLabel}
                   </Link>
                 ))}
               <Link
-                href={buildResultsHref({ q, budget, skill: skillLevel })}
+                href={buildResultsHref({ q, budget })}
                 className="text-violet-400 hover:underline"
               >
                 ไม่ระบุประเภท
@@ -108,11 +102,6 @@ export default async function ResultsPage({ searchParams }: ResultsPageProps) {
           )}
           {intent.budget !== "unspecified" && (
             <IntentChip label={`งบ: ${intent.budget === "free-only" ? "ฟรี" : "เสียเงิน"}`} />
-          )}
-          {intent.skillLevel !== "beginner" && (
-            <IntentChip
-              label={`ระดับผู้ใช้: ${intent.skillLevel === "intermediate" ? "พอใช้เป็น" : "มืออาชีพ"}`}
-            />
           )}
         </div>
         {category && (
