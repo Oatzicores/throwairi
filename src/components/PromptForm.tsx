@@ -6,139 +6,13 @@ import { detectGenerativeCategories, type CategoryDetection } from "@/lib/match/
 import { buildQuestion, pickableList, type PickableCategory } from "@/lib/match/categoryRegistry";
 import { buildResultsHref } from "@/lib/resultsUrl";
 import { MAX_QUERY_LENGTH } from "@/lib/security/input";
-import { EXAMPLE_PROMPTS } from "@/lib/prompts/examplePrompts";
+import { ALL_PROMPT_IDEAS, buildFullPrompt, type PromptIdea } from "@/lib/prompts/promptIdeas";
+import { CopyValueButton } from "@/components/CopyValueButton";
 
 type Budget = "" | "free-only" | "paid-ok";
 
-// Each entry below was checked by fetching the cited page directly (not just
-// trusting a search-result summary) on 2026-09-19. Several stats from an
-// earlier pass turned out to be wrong or unverifiable when the source page
-// was actually opened — those were dropped or corrected. See git history /
-// conversation log for the list of what got removed and why.
-// This list is static and does NOT poll a live feed — there's no API for
-// "trending AI prompts". Refresh by re-researching AND re-fetching each
-// source before editing this array.
-// Last verified: 2026-09-19.
-const ALL_TRENDING_PROMPTS = [
-  // --- วิดีโอ (Fiverr Fall 2025 Business Trends Index — growth in searches
-  // for these services ON FIVERR, May–Dec 2025; a freelance-demand signal,
-  // not a Google search-volume or usage stat) ---
-  {
-    text: "อยากทำช่อง YouTube แบบไม่โชว์หน้า ให้ AI พากย์เสียงและตัดต่อให้ทั้งหมด",
-    stat: "การค้นหาบริการ 'faceless YouTube video creator' บน Fiverr เพิ่มขึ้น 488% ในช่วง พ.ค.–ธ.ค. 2025",
-    sourceName: "Fiverr Fall 2025 Business Trends Index",
-    sourceUrl: "https://www.globenewswire.com/news-release/2025/12/10/3203122/0/en/Demand-for-AI-Video-Creators-Surges-66-As-Businesses-Race-to-Scale-Marketing-Campaigns.html",
-  },
-  {
-    text: "อยากสร้างอินฟลูเอนเซอร์เสมือน (AI influencer) เป็นของตัวเอง",
-    stat: "การค้นหาบริการ 'AI influencer' บน Fiverr เพิ่มขึ้น 43% ในช่วง พ.ค.–ธ.ค. 2025",
-    sourceName: "Fiverr Fall 2025 Business Trends Index",
-    sourceUrl: "https://www.globenewswire.com/news-release/2025/12/10/3203122/0/en/Demand-for-AI-Video-Creators-Surges-66-As-Businesses-Race-to-Scale-Marketing-Campaigns.html",
-  },
-  {
-    text: "อยากจ้าง/ใช้ AI ช่วยสร้างวิดีโอการตลาดให้ธุรกิจของตัวเอง",
-    stat: "ความต้องการนักสร้างวิดีโอ AI บน Fiverr โต 66% ในช่วง พ.ค.–ธ.ค. 2025",
-    sourceName: "Fiverr Fall 2025 Business Trends Index",
-    sourceUrl: "https://www.globenewswire.com/news-release/2025/12/10/3203122/0/en/Demand-for-AI-Video-Creators-Surges-66-As-Businesses-Race-to-Scale-Marketing-Campaigns.html",
-  },
-  // --- ภาพ ---
-  {
-    text: "อยากใช้ AI แต่งภาพสินค้าให้ดูมืออาชีพก่อนลงขายออนไลน์",
-    stat: "ร้านค้าที่ใช้ AI ปรับภาพสินค้าอัตโนมัติ (เช่น บน Shopify/WooCommerce) รายงานอัตราปิดการขายดีขึ้น 73%",
-    sourceName: "รายงานสถิติ AI Image Upscaler 2026",
-    sourceUrl: "https://pixelpanda.ai/blog/2026/03/16/best-ai-image-upscaler-2026/",
-  },
-  // --- แชท/งานเขียน ---
-  {
-    text: "อยากได้ AI ช่วยอธิบายเรื่องที่เข้าใจยากให้ง่ายขึ้น เหมือนมีติวเตอร์ส่วนตัว",
-    stat: "นักเรียน/นักศึกษาสหรัฐฯ ที่ใช้ AI ช่วยทำการบ้านเพิ่มจาก 48% เป็น 62% ในช่วง พ.ค.–ธ.ค. 2025",
-    sourceName: "RAND American Youth Panel",
-    sourceUrl: "https://www.rand.org/pubs/research_reports/RRA4742-1.html",
-  },
-  {
-    text: "อยากทำสไลด์นำเสนองานให้สวยและเสร็จเร็ว ไม่ต้องนั่งจัดเลย์เอาต์เอง",
-    stat: "Gen Z 57% และ Millennials 56% ใช้ AI สร้างงาน รวมถึงออกแบบสไลด์นำเสนอ ในการทำงานแล้ว",
-    sourceName: "รายงานสถิติการนำเสนองาน 2026",
-    sourceUrl: "https://www.presentations.ai/blog/presentation-statistics",
-  },
-  {
-    text: "อยากได้แชทบอทตอบลูกค้าอัตโนมัติให้ร้านหรือธุรกิจของตัวเอง",
-    stat: "52% ของศูนย์บริการลูกค้าลงทุนใน Conversational AI แล้ว และอีก 44% วางแผนจะใช้",
-    sourceName: "สถิติ AI ในงานบริการลูกค้า 2026",
-    sourceUrl: "https://masterofcode.com/blog/ai-in-customer-service-statistics",
-  },
-  // --- โค้ด ---
-  {
-    text: "อยากได้ AI ช่วยเขียนโค้ดตอนทำงานจริงทุกวัน ไม่ใช่แค่ลองเล่น",
-    stat: "นักพัฒนา 84% ใช้หรือวางแผนจะใช้ AI ช่วยเขียนโค้ด และ 51% ใช้งานทุกวันแล้ว",
-    sourceName: "Stack Overflow Developer Survey 2025",
-    sourceUrl: "https://uvik.net/blog/ai-coding-assistant-statistics/",
-  },
-  {
-    text: "อยากลองสร้างเว็บหรือแอปง่ายๆ เองโดยไม่ต้องเขียนโค้ดเป็นเลย",
-    stat: "63% ของผู้ใช้เครื่องมือ 'vibe coding' สร้างแอปด้วย AI โดยไม่มีพื้นฐานเขียนโปรแกรมมาก่อน",
-    sourceName: "ข้อมูลจาก Vercel",
-    sourceUrl: "https://www.hostinger.com/blog/vibe-coding-statistics/",
-  },
-  // --- เสียง/เพลง ---
-  {
-    text: "อยากแปลงบทความเป็นเสียงพากย์ทำ podcast หรือ audiobook เอง",
-    stat: "ตลาด AI พากย์เสียง/โคลนเสียงโต 23.9% ต่อปี จากดีมานด์ podcast และ audiobook เป็นหนึ่งในตัวขับเคลื่อนหลัก",
-    sourceName: "AI Voice Cloning Market Report",
-    sourceUrl: "https://www.researchandmarkets.com/reports/5948793/ai-voice-cloning-market-report",
-  },
-  {
-    text: "อยากลองแต่งเพลงเป็นของตัวเอง ไม่ต้องเล่นดนตรีหรือร้องเพลงเป็น",
-    stat: "เพลงที่สร้างด้วย Suno ครองสัดส่วนถึง 92.8% ของเพลง AI ที่ถูกปล่อยขึ้นสตรีมมิ่งจริงช่วง เม.ย.–ส.ค. 2026",
-    sourceName: "Sonic Intelligence Academy Mid-Year 2026 Report",
-    sourceUrl: "https://www.aimusicpreneur.com/ai-music-news/suno-92-percent-ai-music-market-share-mid-year-2026/",
-  },
-  {
-    text: "อยากแปลบทความ/เนื้อหาเป็นภาษาอื่นด้วย AI ให้ลูกค้าต่างชาติเข้าใจ",
-    stat: "87% ขององค์กรเพิ่มการใช้งาน AI แปลภาษา และ 85% เพิ่มการใช้ AI ทำซับไตเติลอัตโนมัติในปีที่ผ่านมา",
-    sourceName: "State of AI Translation & Captions 2026",
-    sourceUrl: "https://www.wordly.ai/research/state-of-ai-translation-2026",
-  },
-  // --- Agent/อัตโนมัติ ---
-  {
-    text: "อยากได้ AI agent ช่วยทำงานประจำแทนเรา เช่น จัดการอีเมลหรือนัดหมายให้อัตโนมัติ",
-    stat: "79% ของผู้บริหารในสหรัฐฯ บอกว่าบริษัทเริ่มนำ AI agent มาใช้งานแล้ว",
-    sourceName: "PwC AI Agent Survey (เม.ย. 2025)",
-    sourceUrl: "https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-agent-survey.html",
-  },
-  {
-    text: "อยากรู้ว่าบริษัทใหญ่ๆ เอา AI agent ไปใช้งานจริงกันแค่ไหนแล้ว",
-    stat: "80% ของแอปพลิเคชันองค์กรที่อัปเดตใน Q1 2026 ฝัง AI agent ไว้อย่างน้อย 1 ตัว แต่มีเพียง 31% ขององค์กรที่ใช้ agent ในงานจริงแล้ว",
-    sourceName: "Gartner / S&P Global Market Intelligence (Q1 2026)",
-    sourceUrl: "https://www.digitalapplied.com/blog/ai-agent-adoption-2026-enterprise-data-points",
-  },
-  {
-    text: "อยากรู้จัก 'AI automation' ให้ช่วยจัดการงานที่ทำซ้ำๆ ทุกวันแทนเรา",
-    stat: "การค้นหาบริการ 'AI automation' บน Fiverr เพิ่มขึ้น 136% ในช่วง พ.ค.–ธ.ค. 2025 มากที่สุดในหมวดบริการ AI",
-    sourceName: "Fiverr Fall 2025 Business Trends Index",
-    sourceUrl: "https://www.globenewswire.com/news-release/2025/12/10/3203122/0/en/Demand-for-AI-Video-Creators-Surges-66-As-Businesses-Race-to-Scale-Marketing-Campaigns.html",
-  },
-  {
-    text: "อยากเชื่อมแอปต่างๆ ที่ใช้อยู่ให้ทำงานอัตโนมัติเอง โดยไม่ต้องเขียนโค้ด",
-    stat: "ธุรกิจ SME ขยายการใช้ระบบอัตโนมัติแบบไม่ต้องเขียนโค้ด เติบโตเฉลี่ย 38.62% ต่อปี ไปจนถึงปี 2031",
-    sourceName: "Mordor Intelligence",
-    sourceUrl: "https://www.thisandthat.chat/blog/no-code-automation-adoption-statistics/",
-  },
-  {
-    text: "อยากได้ AI ช่วยเขียนเรซูเม่และจดหมายสมัครงานให้ดูเป็นมืออาชีพ",
-    stat: "ผู้หางานในสหรัฐฯ 74% ใช้ AI ในการหางาน และ 42.6% ใช้ AI ตอนอัปเดตเรซูเม่ล่าสุดของตัวเอง",
-    sourceName: "Greenhouse (2025) / Novoresume 2026 Resume Report",
-    sourceUrl: "https://novoresume.com/career-blog/resume-statistics",
-  },
-];
-
-const TRENDING_COUNT = 4;
-
-// "สุ่มใหม่" draws from the sourced ideas above plus our own plain example requests.
-const ALL_PROMPT_CHIPS: { text: string }[] = [
-  ...ALL_TRENDING_PROMPTS,
-  ...EXAMPLE_PROMPTS.map((text) => ({ text })),
-];
+// Three chips per row, two rows.
+const CHIP_COUNT = 6;
 
 function pickRandom<T>(pool: T[], count: number, exclude: T[] = []): T[] {
   // "Shuffle" must change every chip, so anything already on screen is left out
@@ -168,11 +42,13 @@ export function PromptForm() {
 
   // Server-rendered markup must be deterministic, so start with a fixed
   // slice and only randomize after mount (real refresh = fresh mount).
-  const [trendingPrompts, setTrendingPrompts] = useState(() => ALL_PROMPT_CHIPS.slice(0, TRENDING_COUNT));
+  // The idea whose full prompt is open under the chips (set when a chip is clicked).
+  const [openIdea, setOpenIdea] = useState<PromptIdea | null>(null);
+  const [chipIdeas, setChipIdeas] = useState(() => ALL_PROMPT_IDEAS.slice(0, CHIP_COUNT));
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setTrendingPrompts(pickRandom(ALL_PROMPT_CHIPS, TRENDING_COUNT));
+    setChipIdeas(pickRandom(ALL_PROMPT_IDEAS, CHIP_COUNT));
   }, []);
 
   // Move focus to the question when it appears (not to a button, so Enter
@@ -296,35 +172,66 @@ export function PromptForm() {
         </div>
       )}
 
-      {/* Two rows on sm+ and never a third: label + shuffle sit in the first grid column, the four chips fill
-          the other two columns and are cut off with "…" when too long (the full text still goes into the
-          box on click, and the tooltip carries the source). The layout no longer depends on how long the
-          picked prompts are, so "สุ่มใหม่" cannot move. On phones the chips stack one per line. */}
-      <div className="mt-5 grid grid-cols-1 items-center gap-2 text-xs sm:grid-cols-[auto_minmax(0,1fr)_minmax(0,1fr)]">
-        <div className="flex items-center gap-3 sm:row-span-2 sm:self-start sm:pt-1.5">
+      {/* Chips show a short keyword phrase (also the search text). Clicking one opens the long, ready-to-paste
+          Thai prompt underneath. Centered, three per row on sm+, one per line on phones. */}
+      <div className="mt-6 flex flex-col items-center gap-3 text-xs">
+        <div className="flex items-center justify-center gap-3">
+          <span className="text-slate-500">ลองดู:</span>
           <button
             type="button"
-            onClick={() => setTrendingPrompts((current) => pickRandom(ALL_PROMPT_CHIPS, TRENDING_COUNT, current))}
+            onClick={() => setChipIdeas((current) => pickRandom(ALL_PROMPT_IDEAS, CHIP_COUNT, current))}
             className="flex min-h-[44px] items-center gap-1 text-violet-400 hover:text-violet-300 hover:underline sm:min-h-0"
           >
             ↻ สุ่มใหม่
           </button>
-          <span className="text-slate-500">ลองดู:</span>
         </div>
-        {trendingPrompts.map((item) => (
-          <button
-            type="button"
-            key={item.text}
-            onClick={() => {
-              setPrompt(item.text);
-              setPending(null);
-            }}
-            title={item.text}
-            className="truncate rounded-full border border-slate-700 bg-slate-900/60 px-3 py-2.5 text-left text-slate-300 sm:py-1.5 hover:border-violet-500 hover:text-violet-300"
-          >
-            {item.text}
-          </button>
-        ))}
+        <div className="grid w-full grid-cols-1 gap-2 sm:grid-cols-3">
+          {chipIdeas.map((item) => (
+            <button
+              type="button"
+              key={item.kw}
+              onClick={() => {
+                setPrompt(item.kw);
+                setPending(null);
+                setOpenIdea(item);
+              }}
+              aria-pressed={openIdea?.kw === item.kw}
+              title={item.kw}
+              className={`truncate rounded-full border px-3 py-2.5 text-center sm:py-1.5 ${
+                openIdea?.kw === item.kw
+                  ? "border-violet-400 bg-violet-500/15 text-violet-200"
+                  : "border-slate-700 bg-slate-900/60 text-slate-300 hover:border-violet-500 hover:text-violet-300"
+              }`}
+            >
+              {item.kw}
+            </button>
+          ))}
+        </div>
+
+        {openIdea && (
+          <div className="w-full rounded-2xl border border-violet-500/30 bg-slate-900/70 p-4 text-left">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="text-sm font-medium text-white">Prompt ตัวเต็ม: {openIdea.kw}</p>
+              <div className="flex items-center gap-2">
+                <CopyValueButton value={buildFullPrompt(openIdea)} label="Prompt ตัวเต็ม" />
+                <button
+                  type="button"
+                  onClick={() => setOpenIdea(null)}
+                  className="min-h-[44px] rounded-lg border border-slate-600 px-3 py-1.5 text-xs text-slate-300 hover:border-slate-400 hover:text-white sm:min-h-[36px]"
+                >
+                  ปิด
+                </button>
+              </div>
+            </div>
+            <p className="mt-1 text-slate-400">
+              คัดลอกไปวางในเครื่องมือ AI ได้เลย แล้วแทนที่ข้อความในวงเล็บเหลี่ยม [ ] ด้วยข้อมูลของคุณ
+              หรือกด &quot;ค้นหา AI&quot; ด้านบนเพื่อดูว่าตัวไหนเหมาะกับงานนี้
+            </p>
+            <pre className="mt-3 max-h-72 overflow-auto whitespace-pre-wrap break-words rounded-xl bg-slate-950/70 p-3 font-sans text-xs leading-relaxed text-slate-300">
+              {buildFullPrompt(openIdea)}
+            </pre>
+          </div>
+        )}
       </div>
     </form>
   );
