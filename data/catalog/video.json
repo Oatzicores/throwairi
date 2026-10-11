@@ -64,11 +64,11 @@
       "longDescription": "Runway เป็นแพลตฟอร์มที่รวมโมเดลวิดีโอ/ภาพจากหลายค่ายไว้ในที่เดียว (Gen-4.5 ของตัวเอง, Nano Banana Pro, Kling 3.0, Veo 3.1) ทำให้เปรียบเทียบและเลือกโมเดลที่เหมาะกับงานได้ในแพลตฟอร์มเดียว รองรับทีมงานสูงสุด 10 คนในแผน Pro",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-03",
-        "confidence": "probable",
-        "sourceUrl": "https://runway.com/news",
-        "lastVerified": "2026-09-30",
-        "note": "Runway ประกาศ GWM Worlds 2 (3 ก.ย. 2026) สร้างโลกเสมือนแบบโต้ตอบเรียลไทม์ และเปิดแผน Team ใหม่ (4 ก.ย.) (อ้างตามผลค้นหาหน้าทางการ ยังไม่ได้เปิดอ่านเต็ม)"
+        "value": "2026-10-02",
+        "confidence": "verified",
+        "sourceUrl": "https://runway.com/changelog",
+        "lastVerified": "2026-10-11",
+        "note": "changelog ทางการของ Runway 2 ต.ค. 2026: Agent สร้างร่างวิดีโอเร็วด้วย Seedance 2.5 Draft Mode (480p) และรองรับ Ideogram 4.5 ใน Runway MCP"
       },
       "capabilities": [],
       "pricing": {
@@ -142,14 +142,54 @@
       "usageSignals": [],
       "versionHistory": [
         {
-          "version": "GWM Worlds 2",
+          "version": "Seedance 2.5 Draft Mode ใน Agent",
           "releaseDate": {
-            "value": "2026-09-03",
-            "confidence": "probable",
-            "sourceUrl": "https://runway.com/news",
-            "lastVerified": "2026-10-09"
+            "value": "2026-10-02",
+            "confidence": "verified",
+            "sourceUrl": "https://runway.com/changelog",
+            "lastVerified": "2026-10-11"
           },
-          "summary": "Runway ประกาศ GWM Worlds 2 สร้างโลกเสมือนแบบโต้ตอบเรียลไทม์ และเปิดแผน Team ใหม่ในวันที่ 4 ก.ย. (อ้างตามผลค้นหาหน้าทางการ ยังไม่ได้เปิดอ่านเต็ม หน้าข่าวไม่แสดงวันที่เมื่อเปิดตรวจ)"
+          "summary": "Agent สร้างร่างวิดีโอ 480p แบบเร็วด้วย Seedance 2.5 Draft Mode แล้วค่อยปรับคุณภาพหลังสร้าง (ทุกแผน) และวันเดียวกันรองรับ Ideogram 4.5 ใน Runway MCP (แผนเสียเงิน)"
+        },
+        {
+          "version": "Runway ใน OpenAI Dots",
+          "releaseDate": {
+            "value": "2026-10-01",
+            "confidence": "verified",
+            "sourceUrl": "https://runway.com/changelog",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "สั่งงาน Runway ผ่าน Dots ของ OpenAI ได้ (ให้ dot วางแผนช็อตแล้ว Runway สร้างวิดีโอให้)"
+        },
+        {
+          "version": "ElevenLabs V4 ใน Runway",
+          "releaseDate": {
+            "value": "2026-09-29",
+            "confidence": "verified",
+            "sourceUrl": "https://runway.com/changelog",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "สร้างเสียงด้วย ElevenLabs V4 ใน Runway ได้ (แผนเสียเงิน)"
+        },
+        {
+          "version": "ปลั๊กอิน DaVinci Resolve และ Runway MCP บน Cursor",
+          "releaseDate": {
+            "value": "2026-09-23",
+            "confidence": "verified",
+            "sourceUrl": "https://runway.com/changelog",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "ใช้ Runway ใน DaVinci Resolve ได้โดยตรง (แผนเสียเงิน) และ Runway MCP ขึ้น Marketplace ของ Cursor"
+        },
+        {
+          "version": "Enhance Frame Rate",
+          "releaseDate": {
+            "value": "2026-09-17",
+            "confidence": "verified",
+            "sourceUrl": "https://runway.com/changelog",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "แปลงวิดีโอใดก็ได้เป็น 25–120 fps สูงสุด 4K ยาว 5 นาที (แผน Max ขึ้นไป) และวันเดียวกันใช้ Runway เป็นปลั๊กอินใน Grok Bot ได้"
         },
         {
           "version": "โมเดล Gen-4.5, Aleph 2.0, Act-Two และ Solaris",
@@ -163,11 +203,16 @@
           "summary": "รายชื่อโมเดลวิจัยที่แสดงบนหน้าข่าวของ Runway โดยไม่ระบุวันที่"
         }
       ],
+      "roadmap": {
+        "checkedAt": "2026-10-11",
+        "note": "ตรวจหน้า changelog (runway.com/changelog) และหน้าข่าวแล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง (มีโปรโมชันองค์กร \"ใช้ฟรี 2 เดือนถ้าเซ็นภายใน 31 ต.ค.\" ซึ่งเป็นข้อเสนอขาย ไม่ใช่แผนผลิตภัณฑ์)",
+        "items": []
+      },
       "strengths": ["รวมหลายโมเดลชั้นนำในแพลตฟอร์มเดียว เทียบผลลัพธ์ได้ง่าย", "รองรับทีมงานหลายคนในแผน Pro"],
       "weaknesses": ["เครดิตแผนเริ่มต้นหมดเร็วมากเมื่อใช้โมเดลคุณภาพสูง", "แผนฟรีมีลายน้ำและซื้อเครดิตเพิ่มไม่ได้"],
       "bestFor": ["ทีมงานสร้างวิดีโอที่ต้องการเปรียบเทียบหลายโมเดล", "มืออาชีพที่พร้อมจ่ายเพื่อความยืดหยุ่นในการเลือกโมเดล"],
       "promptWorkflow": {"steps":["ถ้าอัปโหลดภาพ จะอ่านภาพเป็นฐานก่อน แล้วอ่าน prompt ข้อความเป็นคำสั่งการเคลื่อนไหว","อ่านคำอธิบายการเคลื่อนไหวของกล้อง/วัตถุ","ปรับความยาวคลิปและสไตล์จากค่าที่ตั้งเพิ่มเติม"],"recommendedStructure":"[คำอธิบายการเคลื่อนไหวของฉาก/กล้อง] (+ ภาพต้นทางถ้ามี)","example":"camera slowly zooms into the cafe window, steam rising from the coffee cup, soft morning light"},
-      "lastUpdated": "2026-10-09",
+      "lastUpdated": "2026-10-11",
       "plansUrl": { "url": "https://runway.com/pricing", "lastVerified": "2026-09-21" }
     },
     {
@@ -275,7 +320,7 @@
         "value": "2026-06-15",
         "confidence": "verified",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
-        "lastVerified": "2026-10-09",
+        "lastVerified": "2026-10-11",
         "note": "changelog ของ Gemini API (ai.google.dev) 15 มิ.ย. 2026 ประกาศเลิกใช้โมเดล Veo 2.0 และ Veo 3.0 (ปิด 30 มิ.ย. 2026) ให้ย้ายไป Veo 3.1 ก่อนหน้านั้น 31 มี.ค. 2026 เปิดตัว Veo 3.1 Lite Preview"
       },
       "capabilities": [],
@@ -286,7 +331,7 @@
           { "name": "Google AI Pro", "priceUsdPerMonth": 19.99, "quota": "1,000 Flow credits/เดือน (~100 Veo 3.1 Lite หรือ ~10 Veo 3.1 Quality)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" } },
           { "name": "Google AI Ultra (20x)", "priceUsdPerMonth": 200, "quota": "25,000 Flow credits/เดือน (~250 Veo 3.1 Quality) — ใช้งานได้ 20 เท่าของแผน Pro", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03", "note": "ราคาลดจาก $249.99 เหลือ $200/เดือน ประกาศที่งาน Google I/O 2026 (พ.ค. 2026)" } },
           { "name": "Google AI Ultra (5x, ใหม่)", "priceUsdPerMonth": 100, "quota": "ใช้งานได้ 5 เท่าของแผน Pro ในแอป Gemini/Antigravity (เครดิต Flow ที่แน่นอนยังไม่ยืนยันชัดเจน) เหมาะนักพัฒนา/ครีเอเตอร์ขั้นสูง", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-07", "note": "แผนใหม่เปิดตัวที่งาน Google I/O 2026 (19 พ.ค. 2026) แทรกกลางระหว่าง Pro และ Ultra เดิม" } },
-          { "name": "API (Gemini API)", "priceUsdPerMonth": null, "quota": "จ่ายตามวินาทีที่สร้างสำเร็จ: Veo 3.1 Lite $0.05/วิ, Fast $0.10/วิ, Standard $0.40/วิ", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ai.google.dev/gemini-api/terms", "lastVerified": "2026-09-03", "note": "ข้อมูลผ่าน API ไม่ถูกใช้เทรนโมเดล ต่างจากการใช้งานฟรีผ่านแอป" } }
+          { "name": "API (Gemini API)", "priceUsdPerMonth": null, "quota": "จ่ายตามวินาทีที่สร้างสำเร็จ (720p, มีเสียง): Veo 3.1 Lite $0.05/วิ, Fast $0.10/วิ, Standard $0.40/วิ (4K: Fast $0.30, Standard $0.60) ตามหน้าราคา Gemini API ตรวจ 11 ต.ค. 2026 ⚠️ โมเดล Veo 3.1 ใน API มีกำหนดปิด 22 ต.ค. 2026 ให้ย้ายไป Gemini Omni 1.1 Flash (คิดราว $0.10/วิ ที่ 720p)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ai.google.dev/gemini-api/terms", "lastVerified": "2026-09-03", "note": "ข้อมูลผ่าน API ไม่ถูกใช้เทรนโมเดล ต่างจากการใช้งานฟรีผ่านแอป" } }
         ],
         "freeQuota": "Veo 2 โควตาจำกัด 720p มีลายน้ำ",
         "commercialUseSummary": {
@@ -322,6 +367,11 @@
       ],
       "versionHistory": [
         {
+          "version": "Gemini Omni 1.1 Flash (GA) ใน Gemini API",
+          "releaseDate": { "value": "2026-08-27", "confidence": "verified", "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog", "lastVerified": "2026-10-11" },
+          "summary": "Google เปิด gemini-omni-1.1-flash (โมเดลสร้างวิดีโอความเร็วสูงที่เอกสารแนะนำเป็นค่าเริ่มต้นแทน Veo) เป็น GA และต่อมาหน้า deprecations กำหนดให้เป็นรุ่นที่มาแทนโมเดล Veo 3.1 ใน API"
+        },
+        {
           "version": "เลิกให้บริการ Veo 2.0 และ Veo 3.0 (ผ่าน Gemini API)",
           "releaseDate": { "value": "2026-06-15", "confidence": "verified", "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog", "lastVerified": "2026-10-09" },
           "summary": "Google ประกาศวันที่ 15 มิ.ย. 2026 ว่าโมเดล Veo 2.0 และ Veo 3.0 (รวม Fast) จะปิดวันที่ 30 มิ.ย. 2026 แนะนำให้ย้ายไป Veo 3.1 / 3.1 Fast"
@@ -353,12 +403,14 @@
       "bestFor": ["ผู้ใช้ในระบบนิเวศ Google ที่ต้องการสร้างวิดีโอควบคู่งานอื่น", "นักพัฒนาที่ต้องการราคา API แบบจ่ายตามจริง"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายฉากและตัวละครก่อน","อ่านคำสั่งกล้องแบบภาพยนตร์ (crane shot, dolly zoom)","อ่านคำบอกอารมณ์/สไตล์ภาพยนตร์ปิดท้าย"],"recommendedStructure":"[ฉาก] + [การเคลื่อนกล้องแบบภาพยนตร์] + [อารมณ์/สไตล์]","example":"a lone astronaut walking across a red desert, slow crane shot rising, epic sci-fi atmosphere"},
       "roadmap": {
-        "checkedAt": "2026-10-09",
-        "note": "ตรวจ changelog ของ Gemini API (ai.google.dev/gemini-api/docs/changelog) เรื่อง Veo แล้ว กำหนดเลิกใช้ Veo 2.0/3.0 (30 มิ.ย. 2026) ผ่านไปแล้ว ไม่พบแผนล่วงหน้าอื่นที่ยังค้างอยู่",
-        "items": []
+        "checkedAt": "2026-10-11",
+        "note": "ตรวจหน้า deprecations ของ Gemini API (ai.google.dev/gemini-api/docs/deprecations อัปเดต 9 ต.ค. 2026) วันที่เป็น \"วันปิดเร็วที่สุดที่เป็นไปได้\" และใช้กับ Gemini API เท่านั้น ไม่ใช่การสร้างวิดีโอในแอป Gemini/Flow (หน้า changelog ไม่มีรายการประกาศนี้แยก)",
+        "items": [
+          { "kind": "retirement", "text": "โมเดล Veo 3.1 ใน Gemini API (veo-3.1-generate-preview, veo-3.1-fast-generate-preview, veo-3.1-lite-generate-preview) และ gemini-omni-flash-preview จะปิดให้บริการ แนะนำย้ายไป gemini-omni-1.1-flash", "when": "22 ต.ค. 2026", "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations", "lastVerified": "2026-10-11" }
+        ]
       },
-      "lastUpdated": "2026-10-09",
-      "latestVersion": { "name": "Veo 3.1", "releaseDate": null, "sourceUrl": "https://ai.google.dev/gemini-api/docs/video", "lastVerified": "2026-09-30", "note": "เอกสารของ Google แนะนำ Gemini Omni Flash เป็นตัวเลือกเริ่มต้นสำหรับสร้างวิดีโอ ส่วน Veo 3.1 ใช้กับงานเฉพาะ เช่น ต่อคลิป/กำหนดเฟรม (ไม่ระบุวันเปิดตัว)" },
+      "lastUpdated": "2026-10-11",
+      "latestVersion": { "name": "Veo 3.1", "releaseDate": null, "sourceUrl": "https://ai.google.dev/gemini-api/docs/video", "lastVerified": "2026-10-11", "note": "เอกสารของ Google แนะนำ Gemini Omni Flash เป็นตัวเลือกเริ่มต้นสำหรับสร้างวิดีโอ ส่วน Veo 3.1 ใช้กับงานเฉพาะ เช่น ต่อคลิป/กำหนดเฟรม (ไม่ระบุวันเปิดตัว)" },
       "plansUrl": { "url": "https://gemini.google/subscriptions/", "lastVerified": "2026-09-21" }
     },
     {

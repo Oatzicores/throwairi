@@ -233,19 +233,19 @@
       "launchDate": null,
       "lastProductUpdate": {
         "value": "2026-06-03",
-        "confidence": "probable",
-        "sourceUrl": "https://ideogram.ai/news/ideogram-4.0/",
-        "lastVerified": "2026-09-03",
-        "note": "เปิดตัว Ideogram 4.0 โมเดล open-weight พร้อมไลเซนส์เชิงพาณิชย์"
+        "confidence": "verified",
+        "sourceUrl": "https://ideogram.ai/news/",
+        "lastVerified": "2026-10-11",
+        "note": "เปิดตัว Ideogram 4.0 โมเดล open-weight พร้อมแบรนด์ใหม่ของบริษัท (หน้าข่าวทางการลงวันที่ 3 มิ.ย. 2026 ณ 11 ต.ค. 2026 หน้าข่าวยังไม่มีประกาศใหม่กว่านี้ แต่เอกสาร docs.ideogram.ai อ้างถึง Ideogram 4.5 แล้วโดยไม่ระบุวันเปิดตัว)"
       },
       "capabilities": [],
       "pricing": {
         "tier": "freemium",
         "plans": [
           { "name": "Free", "priceUsdPerMonth": 0, "quota": "10 slow credits/สัปดาห์ (~10-40 ภาพ) ภาพเป็นสาธารณะ มีสิทธิ์เชิงพาณิชย์", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://fluxnote.io/guides/ideogram-pricing-guide-2026", "lastVerified": "2026-09-03" } },
-          { "name": "Plus", "priceUsdPerMonth": 20, "quota": "1,000 priority credits/เดือน + ภาพส่วนตัว + generation พร้อมกันสูงสุด 8 งาน (annual: $15/เดือน หรือ $180/ปี)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" } },
-          { "name": "Pro", "priceUsdPerMonth": 60, "quota": "3,500 priority credits/เดือน + คิวใหญ่ที่สุด + generation พร้อมกันสูงสุด 32 งาน (annual: $42/เดือน หรือ $504/ปี)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" } },
-          { "name": "Team", "priceUsdPerMonth": 30, "quota": "1,500 credits/user/เดือน ขั้นต่ำ 2 users (annual: $20/user/เดือน)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" } }
+          { "name": "Plus", "priceUsdPerMonth": 20, "quota": "2,400 priority credits/เดือน + slow credits ไม่จำกัด + ภาพส่วนตัว + generation พร้อมกันสูงสุด 8 งาน (annual: $15/เดือน หรือ $180/ปี)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" }, "notes": "เครดิตเพิ่มจาก 1,000 เป็น 2,400/เดือน ตามหน้าราคาทางการ (โหมดรายเดือน) ตรวจ 11 ต.ค. 2026" },
+          { "name": "Pro", "priceUsdPerMonth": 60, "quota": "7,500 priority credits/เดือน + slow credits ไม่จำกัด + Batch Generation + Quality export + คิวใหญ่ที่สุด + generation พร้อมกันสูงสุด 32 งาน (annual: $42/เดือน หรือ $504/ปี)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" }, "notes": "เครดิตเพิ่มจาก 3,500 เป็น 7,500/เดือน ตามหน้าราคาทางการ (โหมดรายเดือน) ตรวจ 11 ต.ค. 2026" },
+          { "name": "Team", "priceUsdPerMonth": 30, "quota": "3,600 credits/user/เดือน ขั้นต่ำ 2 users + บิลและแอดมินรวมศูนย์ + ฟีเจอร์ทำงานร่วมกัน (annual: $20/user/เดือน)", "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://ideogram.ai/pricing", "lastVerified": "2026-09-07" }, "notes": "เครดิตเพิ่มจาก 1,500 เป็น 3,600/user/เดือน ตามหน้าราคาทางการ ตรวจ 11 ต.ค. 2026" }
         ],
         "freeQuota": "10 slow credits/สัปดาห์ (~10-40 ภาพ ขึ้นกับโมเดล)",
         "commercialUseSummary": {
@@ -255,7 +255,7 @@
           "lastVerified": "2026-09-03"
         },
         "sourceUrl": "https://ideogram.ai/pricing",
-        "lastVerified": "2026-09-07"
+        "lastVerified": "2026-10-11"
       },
       "reviews": {
         "positiveThemes": ["เขียนตัวอักษร/ข้อความในภาพได้แม่นยำที่สุดในกลุ่ม", "แผนฟรีให้สิทธิ์เชิงพาณิชย์ตั้งแต่ต้น", "ราคาแผนเริ่มต้นถูกกว่า Midjourney"],
@@ -281,23 +281,39 @@
       ],
       "versionHistory": [
         {
+          "version": "Ideogram 4.5",
+          "releaseDate": {
+            "value": null,
+            "confidence": "unknown",
+            "sourceUrl": "https://docs.ideogram.ai/",
+            "lastVerified": "2026-10-11",
+            "note": "เอกสารทางการกล่าวถึง Ideogram 4.5 แต่ไม่ระบุวันเปิดตัว และหน้าข่าวทางการยังไม่มีประกาศ"
+          },
+          "summary": "เอกสารของ Ideogram ระบุว่าใช้โมเดลของ Ideogram เองได้ \"รวมถึง Ideogram 4.5\" (ยังไม่พบรายละเอียดความสามารถจากหน้าทางการ) changelog ของ Runway ระบุว่ารองรับ Ideogram 4.5 ใน Runway MCP ตั้งแต่ 2 ต.ค. 2026"
+        },
+        {
           "version": "Ideogram 4.0",
           "releaseDate": {
             "value": "2026-06-03",
-            "confidence": "probable",
-            "sourceUrl": "https://ideogram.ai/news/ideogram-4.0/",
-            "lastVerified": "2026-10-09"
+            "confidence": "verified",
+            "sourceUrl": "https://ideogram.ai/news/",
+            "lastVerified": "2026-10-11"
           },
-          "summary": "เปิดตัว Ideogram 4.0 โมเดล open-weight พร้อมไลเซนส์เชิงพาณิชย์ (เอกสารทางการระบุเป็นรุ่นล่าสุด แต่ไม่ระบุวันเปิดตัว วันที่ในระบบเป็นระดับ probable)"
+          "summary": "เปิดตัว Ideogram 4.0 โมเดลภาพระดับแนวหน้าแบบ open-weight พร้อมไลเซนส์เชิงพาณิชย์และแบรนด์ใหม่ของบริษัท วางรากฐานการสร้างภาพแบบเลเยอร์ (หน้าข่าวทางการลงวันที่ 3 มิ.ย. 2026)"
         }
       ],
       "strengths": ["เขียนตัวอักษร/ข้อความในภาพแม่นยำที่สุดในกลุ่ม", "มีแผนฟรีที่ใช้เชิงพาณิชย์ได้", "ราคาเริ่มต้นถูกกว่า Midjourney"],
       "weaknesses": ["ภาพแผนฟรีเป็นสาธารณะ ไม่มีความเป็นส่วนตัว", "ราคาแผน Pro/Team สูงขึ้นเมื่อจ่ายรายเดือนแทนรายปี (Pro $60 เทียบ $42 แบบรายปี)"],
       "bestFor": ["งานออกแบบโลโก้/โปสเตอร์ที่มีข้อความ", "มือใหม่ที่งบจำกัดและต้องการภาพมีตัวอักษรถูกต้อง"],
       "promptWorkflow": {"steps":["อ่านคำบรรยายภาพหลักก่อน","มองหาข้อความในเครื่องหมายคำพูดเพื่อ render เป็นตัวอักษรในภาพโดยเฉพาะ","อ่านคำสไตล์ที่ใส่ต่อท้ายเพื่อปรับโทนภาพ"],"recommendedStructure":"[คำบรรยายภาพ] + ข้อความที่ต้องการให้ปรากฏในภาพใส่ใน \"เครื่องหมายคำพูด\" + [สไตล์]","example":"โปสเตอร์ร้านกาแฟ มีข้อความ \"OPEN 24/7\" สีทองตัวใหญ่ตรงกลาง สไตล์ retro"},
-      "lastUpdated": "2026-10-09",
-      "latestVersion": { "name": "Ideogram 4.0", "releaseDate": null, "sourceUrl": "https://docs.ideogram.ai/", "lastVerified": "2026-09-21", "note": "เอกสารทางการระบุเป็นโมเดลรุ่นใหม่สุด (ไม่ระบุวันเปิดตัว)" },
-      "plansUrl": { "url": "https://ideogram.ai/pricing", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-11",
+      "latestVersion": { "name": "Ideogram 4.5", "releaseDate": null, "sourceUrl": "https://docs.ideogram.ai/", "lastVerified": "2026-10-11", "note": "เอกสารทางการกล่าวถึง Ideogram 4.5 เป็นโมเดลของ Ideogram เอง (ไม่ระบุวันเปิดตัว) ส่วนรุ่นก่อนหน้า 4.0 ประกาศบนหน้าข่าววันที่ 3 มิ.ย. 2026" },
+      "plansUrl": { "url": "https://ideogram.ai/pricing", "lastVerified": "2026-10-11" },
+      "roadmap": {
+        "checkedAt": "2026-10-11",
+        "note": "ตรวจหน้าข่าว (ideogram.ai/news) และหน้าราคา (ideogram.ai/pricing) แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
+        "items": []
+      }
     },
     {
       "id": "leonardo-ai",

@@ -11,11 +11,11 @@
       "longDescription": "GitHub Copilot เป็นผู้บุกเบิกตลาดผู้ช่วยเขียนโค้ด AI ผสานกับ GitHub/VS Code ได้ลึก ในปี 2026 เปลี่ยนมาใช้ระบบ AI Credits แบบ usage-based สำหรับ agent mode/chat/code review ขณะที่ code completion ยังฟรีในทุกแผนเสียเงิน",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-07",
+        "value": "2026-10-10",
         "confidence": "probable",
-        "sourceUrl": "https://github.blog/changelog/label/copilot/",
-        "lastVerified": "2026-10-09",
-        "note": "GitHub Copilot รองรับ Claude Haiku 5.5 และ local sandboxing GA เมื่อ 7 ต.ค. 2026 (github.blog จึงได้แค่ probable ตามกฎ catalog:check)"
+        "sourceUrl": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
+        "lastVerified": "2026-10-11",
+        "note": "Copilot สำหรับ JetBrains เพิ่มการตั้งโมเดลเริ่มต้นโดยแอดมินและปรับปรุงแชท เมื่อ 10 ต.ค. 2026 (github.blog จึงได้แค่ probable ตามกฎ catalog:check)"
       },
       "capabilities": [],
       "pricing": {
@@ -102,6 +102,26 @@
       "usageSignals": [],
       "versionHistory": [
         {
+          "version": "Copilot for JetBrains: การควบคุมใหม่และปรับปรุงแชท",
+          "releaseDate": {
+            "value": "2026-10-10",
+            "confidence": "probable",
+            "sourceUrl": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "แอดมินองค์กรตั้งโมเดลเริ่มต้นของบทสนทนาใหม่ได้ ปิดการเริ่ม MCP server อัตโนมัติได้ เมนูวินิจฉัยมีปุ่ม Fix ที่เปิดแชทอินไลน์ให้แก้ปัญหา และเลิกรองรับ JetBrains IDE 2025.1 (ต้องใช้ 2025.2 ขึ้นไป)"
+        },
+        {
+          "version": "Copilot code review: ตัวเลือกบิลระดับองค์กร",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "probable",
+            "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "เจ้าขององค์กรเลือกให้ code review ของสมาชิกที่มีไลเซนส์ Copilot คิดเงินเข้า cost center ขององค์กร (ไม่กินโควตาส่วนตัว) และบังคับให้คำขอรีวิวมาจากไลเซนส์ขององค์กรเท่านั้นได้"
+        },
+        {
           "version": "Claude Haiku 5.5 ใน GitHub Copilot",
           "releaseDate": {
             "value": "2026-10-07",
@@ -130,26 +150,16 @@
             "lastVerified": "2026-10-09"
           },
           "summary": "แนะนำโมเดลเฉพาะทางสำหรับตรวจจับความลับ (secrets) ที่รั่วไหล"
-        },
-        {
-          "version": "Copilot code review: รองรับ API และเปลี่ยนระดับ effort เริ่มต้น",
-          "releaseDate": {
-            "value": "2026-10-02",
-            "confidence": "probable",
-            "sourceUrl": "https://github.blog/changelog/label/copilot/",
-            "lastVerified": "2026-10-09"
-          },
-          "summary": "เพิ่ม API สำหรับ code review และปรับระดับ effort ค่าเริ่มต้น"
         }
       ],
       "strengths": ["ผสานกับ GitHub/VS Code ลึกที่สุดในตลาด", "Code completion ฟรีไม่จำกัดทุกแผนเสียเงิน", "รองรับ IDE หลากหลาย"],
       "weaknesses": ["เปลี่ยนเป็น usage-based billing ทำให้ค่าใช้จ่ายคาดเดายากขึ้น", "IP indemnification มีเฉพาะ Business/Enterprise — แผน Free/Pro เสี่ยงเองถ้าโค้ดที่ได้ละเมิดลิขสิทธิ์บุคคลที่สาม", "ข้อมูล Free/Pro/Pro+ ถูกใช้เทรนโมเดล AI โดยดีฟอลต์ตั้งแต่ เม.ย. 2026"],
       "bestFor": ["นักพัฒนาที่ใช้ GitHub/VS Code เป็นหลัก", "ทีมองค์กรที่ต้องการ admin controls"],
       "promptWorkflow": {"steps":["อ่านโค้ดรอบเคอร์เซอร์และไฟล์ที่เปิดอยู่เป็นบริบทหลัก","อ่านคอมเมนต์ที่พิมพ์บอกสิ่งที่ต้องการทำเป็นคำสั่งหลัก","เดาความต่อเนื่องจากชื่อฟังก์ชัน/ตัวแปรที่ตั้งไว้"],"recommendedStructure":"// คอมเมนต์บอกสิ่งที่ต้องการให้ฟังก์ชันทำ ตามด้วยชื่อฟังก์ชันที่สื่อความหมาย","example":"// ฟังก์ชันคำนวณราคารวมหลังหักส่วนลด รับ array ของราคาสินค้าและเปอร์เซ็นต์ส่วนลด\nfunction calculateDiscountedTotal(prices, discountPercent) {"},
-      "lastUpdated": "2026-10-09",
+      "lastUpdated": "2026-10-11",
       "plansUrl": { "url": "https://github.com/features/copilot/plans", "lastVerified": "2026-09-21" },
       "roadmap": {
-        "checkedAt": "2026-10-09",
+        "checkedAt": "2026-10-11",
         "note": "ตรวจหน้า changelog ของ GitHub Copilot (github.blog/changelog/label/copilot) พบหัวข้อ 'Selected models in GitHub Copilot deprecated' ลงวันที่ 2 ต.ค. 2026 แต่หน้ารายการไม่แสดงรายละเอียดว่าโมเดลใดและเมื่อไร จึงไม่ลงเป็นกำหนดการแล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
         "items": []
       }
@@ -383,11 +393,11 @@
       "longDescription": "Claude Code เป็นเครื่องมือ agentic แบบ command-line ที่เชื่อมกับโมเดล Claude โดยตรง ไม่มีค่าบริการแยกต่างหาก แต่ใช้โควตาร่วมกับแผน Claude ปกติ (Pro/Max/Team) หรือจ่ายตามการใช้งานจริงผ่าน API key",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-08",
+        "value": "2026-10-09",
         "confidence": "verified",
         "sourceUrl": "https://code.claude.com/docs/en/changelog",
-        "lastVerified": "2026-10-09",
-        "note": "Claude Code 2.1.295 ออกเมื่อ 8 ต.ค. 2026 ตาม changelog บน code.claude.com"
+        "lastVerified": "2026-10-11",
+        "note": "Claude Code 2.1.296 ออกเมื่อ 9 ต.ค. 2026 ตาม changelog บน code.claude.com"
       },
       "capabilities": [],
       "pricing": {
@@ -418,6 +428,16 @@
       },
       "usageSignals": [],
       "versionHistory": [
+        {
+          "version": "2.1.296",
+          "releaseDate": {
+            "value": "2026-10-09",
+            "confidence": "verified",
+            "sourceUrl": "https://code.claude.com/docs/en/changelog",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "เพิ่มตัวเลือก allow_large ให้เครื่องมือ Read, autoCompactWindow สำหรับ subagent และตัวแปร CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL/CLAUDE_CODE_OVERLOADED_RETRY_MAX_DELAY_MS; ค่า cache read ของ Sonnet 5.5 ลดเป็น $0.10 ต่อล้าน token (จาก $0.20) และคำอธิบายเครื่องมือ MCP ยาวได้ 4,096 ตัวอักษร (จาก 2,048) แก้บั๊ก 56 รายการ"
+        },
         {
           "version": "2.1.295",
           "releaseDate": {
@@ -457,33 +477,23 @@
             "lastVerified": "2026-10-09"
           },
           "summary": "เพิ่ม --marketplace <source> ให้ claude plugin install (เพิ่ม marketplace ให้ถ้ายังไม่มีแล้วติดตั้ง), พารามิเตอร์ effort ของเครื่องมือ Agent, ตัวแปร CLAUDE_CODE_OVERLOADED_RETRY_BASE_DELAY_MS สำหรับ retry 529 และให้ MCP แบบ stdio ในเครื่องเจรจา protocol 2026-07-28 เป็นค่าเริ่มต้น ชื่อ agent ที่ยาวเกิน 256 ตัวอักษรจะถูกปฏิเสธ"
-        },
-        {
-          "version": "2.1.290",
-          "releaseDate": {
-            "value": "2026-10-05",
-            "confidence": "verified",
-            "sourceUrl": "https://code.claude.com/docs/en/changelog",
-            "lastVerified": "2026-10-09"
-          },
-          "summary": "claude attach/logs รับชื่อ session บางส่วนแทน ID ได้, เปิด Claude in Chrome จากไฟล์ตั้งค่าของโปรเจกต์ไม่ได้อีก (ต้องใช้ --chrome, /chrome หรือการตั้งค่าผู้ใช้) และโควตา WebSearch ใน session โต้ตอบเติมรอบละ 100 ครั้งต่อชั่วโมงแทนการหมดที่ 200 ครั้ง"
         }
       ],
       "strengths": ["เขียน/แก้โค้ดในเทอร์มินัลโดยตรง เหมาะ workflow นักพัฒนาสาย CLI", "ใช้โควตาร่วมกับ Claude Pro/Max ที่มีอยู่แล้วได้", "สิทธิ์เชิงพาณิชย์ชัดเจนตาม Anthropic ToS"],
       "weaknesses": ["ไม่มีแผนฟรีเฉพาะ ต้องมี Claude Pro ขึ้นไป", "โควตาใช้ร่วมกับแชท Claude ทำให้หมดเร็วถ้าใช้หนักทั้งคู่"],
       "bestFor": ["นักพัฒนาที่ถนัดทำงานผ่านเทอร์มินัล/CLI", "ผู้ใช้ Claude Pro/Max อยู่แล้วที่อยากได้เครื่องมือเขียนโค้ด"],
       "promptWorkflow": {"steps":["อ่านโครงสร้างโปรเจกต์และไฟล์ที่เกี่ยวข้องเองโดยอัตโนมัติ","อ่านคำสั่งที่พิมพ์เป็นเป้าหมายงานระดับสูง","วางแผนและลงมือแก้ไขหลายไฟล์/รันคำสั่งเทอร์มินัลได้เองตามบริบท"],"recommendedStructure":"อธิบายเป้าหมายเป็นภาษาพูดธรรมชาติ ระบุไฟล์/โฟลเดอร์ที่เกี่ยวข้องถ้ารู้ ปล่อยให้ AI สำรวจโค้ดเองได้","example":"ช่วยแก้บั๊กที่หน้า login แล้ว error เวลากรอกอีเมลผิดฟอร์แมต ให้โชว์ข้อความแจ้งเตือนใต้ช่องกรอกแทน"},
-      "lastUpdated": "2026-10-09",
+      "lastUpdated": "2026-10-11",
       "plansUrl": { "url": "https://claude.com/pricing", "lastVerified": "2026-09-21" },
       "latestVersion": {
-        "name": "Claude Code 2.1.295",
-        "releaseDate": "2026-10-08",
+        "name": "Claude Code 2.1.296",
+        "releaseDate": "2026-10-09",
         "sourceUrl": "https://code.claude.com/docs/en/changelog",
-        "lastVerified": "2026-10-09",
-        "note": "ตาม changelog ทางการของ Claude Code (ออก 2.1.293–2.1.295 ภายใน 7–8 ต.ค. 2026)"
+        "lastVerified": "2026-10-11",
+        "note": "ตาม changelog ทางการของ Claude Code (ออก 2.1.294–2.1.296 ภายใน 8–9 ต.ค. 2026)"
       },
       "roadmap": {
-        "checkedAt": "2026-10-09",
+        "checkedAt": "2026-10-11",
         "note": "หน้าผลิตภัณฑ์ claude.com/product/claude-code และ changelog ไม่ประกาศกำหนดการล่วงหน้าหรือการเลิกใช้งานของ Claude Code เอง รายการที่เห็นเป็นฟีเจอร์ที่เปิดแล้วหรืออยู่ใน preview (fast mode เป็น research preview, self-hosted environments เป็น public beta) ไม่ใช่แผนในอนาคต",
         "items": []
       }
@@ -700,11 +710,11 @@
       "longDescription": "Replit Agent เด่นเรื่องการสร้างแอปทั้งตัวจากคำสั่งภาษาธรรมชาติในเบราว์เซอร์ ไม่ต้องติดตั้งอะไรเลย เหมาะกับมือใหม่ที่อยากลองสร้างแอปโดยไม่ต้องตั้งค่าเครื่องมือพัฒนาเอง ใช้ระบบ effort-based pricing ที่คิดค่าใช้จ่ายตามความซับซ้อนของงานจริง",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-02",
+        "value": "2026-10-09",
         "confidence": "verified",
         "sourceUrl": "https://docs.replit.com/updates",
-        "lastVerified": "2026-10-09",
-        "note": "Replit Agent เพิ่ม GPT-6.1 Sol และ Claude Sonnet 5.5 และหน้า Settings ใหม่ เมื่อ 2 ต.ค. 2026"
+        "lastVerified": "2026-10-11",
+        "note": "9 ต.ค. 2026: Replit Desktop บน Windows (private preview ร่วมกับ Microsoft และ NVIDIA), สั่งงานข้ามโปรเจกต์จากแชทเดียว และสร้าง/จัดการโฆษณา TikTok ผ่าน MCP"
       },
       "capabilities": [],
       "pricing": {
@@ -721,8 +731,8 @@
           "sourceUrl": "https://replit.com/terms-of-service",
           "lastVerified": "2026-09-07"
         },
-        "sourceUrl": "https://replit.com/blog/pro-plan",
-        "lastVerified": "2026-09-07"
+        "sourceUrl": "https://replit.com/pricing",
+        "lastVerified": "2026-10-11"
       },
       "reviews": {
         "positiveThemes": ["สร้างแอปได้ทั้งตัวโดยไม่ต้องติดตั้งเครื่องมือใดๆ เหมาะมือใหม่มาก", "effort-based pricing ทำให้งานง่ายๆ ราคาถูกลง (ต่ำกว่า $0.25 ต่อการแก้ไขเล็กน้อย)"],
@@ -735,6 +745,26 @@
       },
       "usageSignals": [],
       "versionHistory": [
+        {
+          "version": "Replit Desktop บน Windows (private preview)",
+          "releaseDate": {
+            "value": "2026-10-09",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.replit.com/updates",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "Replit Desktop สร้างและรันแอปในเครื่อง Windows ได้ (private preview ร่วมกับ Microsoft และ NVIDIA ต้องลงชื่อรอคิว) แต่ละ build รันใน sandbox แยก"
+        },
+        {
+          "version": "ทำงานข้ามโปรเจกต์จากแชทเดียว",
+          "releaseDate": {
+            "value": "2026-10-09",
+            "confidence": "verified",
+            "sourceUrl": "https://docs.replit.com/updates",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "สั่ง Replit ค้นหาโปรเจกต์ อ่านไฟล์ และส่งงานให้โปรเจกต์อื่นจากแชทเดียว งานรันเป็น background task ให้ตรวจก่อน ไม่เผยแพร่เองอัตโนมัติ และสร้าง/ติดตามโฆษณา TikTok ผ่าน MCP ได้"
+        },
         {
           "version": "Jev ใน Replit AI Integrations",
           "releaseDate": {
@@ -764,26 +794,16 @@
             "lastVerified": "2026-10-09"
           },
           "summary": "Settings เปิดเป็นหน้าเต็มแทนหน้าต่างป๊อปอัป โดย Integrations และ Security มีหน้าของตัวเอง"
-        },
-        {
-          "version": "Workspace settings",
-          "releaseDate": {
-            "value": "2026-10-02",
-            "confidence": "verified",
-            "sourceUrl": "https://docs.replit.com/updates",
-            "lastVerified": "2026-10-09"
-          },
-          "summary": "ผู้ดูแลตั้งกฎทั้งบริษัท สร้างข้อยกเว้นระดับทีม และมอบหมายการตั้งค่าบางส่วนให้แอดมิน Workspace"
         }
       ],
       "strengths": ["สร้างแอปครบวงจรในเบราว์เซอร์ ไม่ต้องตั้งค่าเครื่องมือ", "effort-based pricing ทำให้งานเล็กราคาประหยัด", "เหมาะมือใหม่ที่สุดในกลุ่ม code agent"],
       "weaknesses": ["ค่าใช้จ่ายรวมคาดเดายากสำหรับงานใหญ่/ซับซ้อน", "deployment มีค่าใช้จ่ายแยกต่างหาก", "⚠️ แผน Core ($20/เดือน) ไม่ครอบคลุมการใช้งานเชิงพาณิชย์ตาม ToS ต้องอัปเกรดเป็น Pro ($100) ขึ้นไป (แผน Teams เดิมถูกยกเลิกและรวมเข้า Pro ตั้งแต่ ก.พ. 2026)"],
       "bestFor": ["มือใหม่ที่อยากลองสร้างแอปโดยไม่ตั้งค่าเครื่องมือเอง", "การสร้างต้นแบบ (prototype) อย่างรวดเร็ว"],
       "promptWorkflow": {"steps":["อ่านคำอธิบายเป้าหมายแอปโดยรวมก่อนเป็นอันดับแรก","วางแผนโครงสร้างไฟล์/stack ที่จะใช้เอง","ลงมือสร้างและรันโปรเจกต์ทั้งหมดให้อัตโนมัติ"],"recommendedStructure":"อธิบายว่าอยากได้แอปแบบไหน ทำอะไรได้บ้าง กลุ่มผู้ใช้คือใคร ไม่ต้องระบุเทคนิคการเขียนโค้ด","example":"สร้างเว็บแอปจดบันทึกรายรับรายจ่ายส่วนตัว มีกราฟสรุปรายเดือน และให้ล็อกอินด้วยอีเมลได้"},
-      "lastUpdated": "2026-10-09",
+      "lastUpdated": "2026-10-11",
       "plansUrl": { "url": "https://replit.com/pricing", "lastVerified": "2026-09-21" },
       "roadmap": {
-        "checkedAt": "2026-10-09",
+        "checkedAt": "2026-10-11",
         "note": "ตรวจหน้า updates ของ Replit (docs.replit.com/updates)แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง",
         "items": []
       }

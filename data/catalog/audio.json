@@ -702,14 +702,24 @@
       "usageSignals": [],
       "versionHistory": [
         {
+          "version": "ปลั๊กอิน DAW (เบต้า) และเว็บแอปแบบใหม่",
+          "releaseDate": {
+            "value": "2026-08-18",
+            "confidence": "probable",
+            "sourceUrl": "https://stability.ai/news-updates/sharing-a-new-way-to-work-with-stable-audio",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "เครื่องมือเบต้า 2 อย่างสำหรับ Stable Audio 3.0: ปลั๊กอิน DAW (AU บน macOS และ VST3 ใช้เป็นเครื่องดนตรีใน Ableton Live/Logic Pro ได้) สร้างเสียงบนแทร็กตามจังหวะของ session ยาวสูงสุด 6 นาที เก็บหลายเทคได้ และเว็บ StableAudio.com ที่สั่งปรับซ้ำได้ ทำ variation จากเสียง และมิกซ์/ใส่เอฟเฟกต์ต่อแทร็กแล้วส่งออก"
+        },
+        {
           "version": "Stable Audio 3.0",
           "releaseDate": {
             "value": "2026-05-20",
             "confidence": "probable",
-            "sourceUrl": "https://stability.ai/news-updates",
-            "lastVerified": "2026-10-09"
+            "sourceUrl": "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models",
+            "lastVerified": "2026-10-11"
           },
-          "summary": "ประกาศ Stable Audio 3.0 ตระกูลโมเดลที่สร้างมาสำหรับการทดลองเชิงศิลป์ พร้อมโมเดลน้ำหนักเปิด (ตามหัวข้อข่าวของ Stability AI ยังไม่ได้อ่านเนื้อหา)"
+          "summary": "ตระกูลโมเดล 4 ขนาด: Small SFX, Small และ Medium เป็น open-weight ดาวน์โหลดได้จาก Hugging Face ส่วน Large ใช้ผ่าน API ของ Stability AI และติดตั้งเองระดับองค์กร (เทรนด้วยข้อมูลที่มีไลเซนส์)"
         }
       ],
       "strengths": [
@@ -734,14 +744,14 @@
         "recommendedStructure": "[ประเภทงาน] + [แนว/อารมณ์] + [เครื่องดนตรีหรือรายละเอียดเสียง]",
         "example": "upbeat lo-fi hip hop background track, warm piano and soft drums, relaxed mood"
       },
-      "lastUpdated": "2026-10-09",
+      "lastUpdated": "2026-10-11",
       "plansUrl": { "url": "https://stableaudio.com/pricing", "lastVerified": "2026-09-21" },
       "lastProductUpdate": {
         "value": "2026-08-18",
         "confidence": "probable",
-        "sourceUrl": "https://stability.ai/news-updates",
-        "lastVerified": "2026-10-09",
-        "note": "Stability AI ลงโพสต์ 'Sharing a new way to work with Stable Audio' เมื่อ 18 ส.ค. 2026 (ยังไม่ได้อ่านเนื้อหาในโพสต์ ระดับ probable เพราะโดเมน stability.ai ไม่ใช่โดเมน stableaudio.com ของตัวผลิตภัณฑ์)"
+        "sourceUrl": "https://stability.ai/news-updates/sharing-a-new-way-to-work-with-stable-audio",
+        "lastVerified": "2026-10-11",
+        "note": "Stability AI เปิดปลั๊กอิน DAW (เบต้า) และเว็บแอป StableAudio.com แบบใหม่สำหรับ Stable Audio 3.0 เมื่อ 18 ส.ค. 2026 (ตัวโพสต์ไม่แสดงปี ปีมาจากหน้ารายการข่าว 8/18/26; ระดับ probable เพราะโดเมน stability.ai ไม่ใช่โดเมน stableaudio.com ของตัวผลิตภัณฑ์ตามกฎ catalog:check) ณ 11 ต.ค. 2026 ยังไม่มีโพสต์ Stable Audio ใหม่กว่านี้"
       }
     },
     {
@@ -756,6 +766,13 @@
       "shortDescription": "แปลงข้อความเป็นเสียงและโคลนเสียง ใส่แท็กอารมณ์ในข้อความได้ เช่น [whispering] [laughing]",
       "longDescription": "Fish Audio เป็นบริการแปลงข้อความเป็นเสียง โคลนเสียง และถอดเสียงเป็นข้อความ มีเครื่องมือเสริมเช่น Voice Changer, Story Studio, Audio Translation และ Sound Effects หน้าแรกระบุว่ามีเสียงในไลบรารีกว่า 2,000,000 เสียง (ตัวเลขจากผู้ให้บริการเอง) ควบคุมอารมณ์ของเสียงด้วยแท็กในวงเล็บเหลี่ยม ยังไม่ได้ยืนยันว่ารองรับภาษาไทยและคุณภาพเสียงไทยเป็นอย่างไร",
       "launchDate": null,
+      "lastProductUpdate": {
+        "value": "2026-06-23",
+        "confidence": "verified",
+        "sourceUrl": "https://fish.audio/blog/s2-1-pro-free-api/",
+        "lastVerified": "2026-10-11",
+        "note": "เปิดตัว S2.1 Pro (ผู้ให้บริการเรียกว่าโมเดลเสียงที่ดีที่สุดของตน) พร้อม API แปลงข้อความเป็นเสียงแบบฟรีสำหรับนักพัฒนา ตามบล็อกทางการลงวันที่ 23 มิ.ย. 2026 (โพสต์ที่ใหม่กว่าในบล็อกเป็นบทความเบื้องหลัง/บริษัท ไม่ใช่การเปิดตัว)"
+      },
       "capabilities": [],
       "pricing": {
         "tier": "freemium",
@@ -783,12 +800,12 @@
               "lastVerified": "2026-09-19",
               "note": "ใช้เชิงพาณิชย์ได้เฉพาะ 'เสียงที่ยืนยันแล้วว่าเป็นของคุณ' (verified voices that you own) ตามคำถามที่พบบ่อยบนหน้าราคา"
             },
-            "notes": "จ่ายรายปีตามโปรโมชันบนหน้าราคา: $66/ปี (เฉลี่ย $5.5/เดือน)"
+            "notes": "จ่ายรายปีตามหน้าราคา (ตรวจ 11 ต.ค. 2026): $132/ปี (เฉลี่ย $11/เดือน)"
           },
           {
             "name": "Pro",
             "priceUsdPerMonth": 100,
-            "quota": "2,000,000 เครดิต/เดือน (ไม่เกิน 1,620 นาที) ที่นั่งทีม 3 ที่ เสียงมืออาชีพ 5 ช่อง",
+            "quota": "2,000,000 เครดิต/เดือน (ไม่เกิน 1,620 นาที) ไม่เกิน 30,000 ตัวอักษรต่อครั้ง ช่องเสียงไม่จำกัด ที่นั่งทีม 3 ที่ เสียงมืออาชีพ 5 ช่อง",
             "commercialUseAllowed": {
               "value": true,
               "confidence": "verified",
@@ -796,7 +813,7 @@
               "lastVerified": "2026-09-19",
               "note": "ใช้เชิงพาณิชย์ได้เฉพาะ 'เสียงที่ยืนยันแล้วว่าเป็นของคุณ' (verified voices that you own) ตามคำถามที่พบบ่อยบนหน้าราคา"
             },
-            "notes": "จ่ายรายปีตามโปรโมชันบนหน้าราคา: $450/ปี (เฉลี่ย $37.5/เดือน)"
+            "notes": "จ่ายรายปีตามหน้าราคา (ตรวจ 11 ต.ค. 2026): $900/ปี (เฉลี่ย $75/เดือน)"
           },
           {
             "name": "Max",
@@ -820,7 +837,7 @@
           "lastVerified": "2026-09-19"
         },
         "sourceUrl": "https://fish.audio/plan/",
-        "lastVerified": "2026-09-19"
+        "lastVerified": "2026-10-11"
       },
       "reviews": {
         "positiveThemes": [],
@@ -834,15 +851,14 @@
       "usageSignals": [],
       "versionHistory": [
         {
-          "version": "ยังไม่มีข้อมูลอัปเดตที่ยืนยันวันที่ได้",
+          "version": "S2.1 Pro + API ฟรี",
           "releaseDate": {
-            "value": null,
-            "confidence": "unknown",
-            "sourceUrl": null,
-            "lastVerified": "2026-10-09",
-            "note": "ไม่มีวันที่ที่ชัดเจน"
+            "value": "2026-06-23",
+            "confidence": "verified",
+            "sourceUrl": "https://fish.audio/blog/s2-1-pro-free-api/",
+            "lastVerified": "2026-10-11"
           },
-          "summary": "ยังไม่พบประกาศรุ่นหรืออัปเดตของ Fish Audio ที่ระบุวันที่ชัดเจนจากผู้ให้บริการ (หน้าราคาที่ลองเปิดตอบ 404)"
+          "summary": "เปิดตัวโมเดลเสียง S2.1 Pro ซึ่งผู้ให้บริการเรียกว่าดีที่สุดของตน พร้อม API ฟรี (s2.1-pro-free) ภายใต้ Fair Use ไม่มี SLA คำขออาจถูกใช้ปรับปรุงโมเดล และผลิตภัณฑ์รายได้เกิน $1M ต่อปีต้องติดต่อก่อน (วันสิ้นสุดของ API ฟรีในโพสต์ไม่ชัดเจน)"
         }
       ],
       "strengths": [
@@ -868,8 +884,14 @@
         "recommendedStructure": "[แท็กอารมณ์] ข้อความที่ต้องการพากย์ ... [pause] [แท็กอารมณ์] ข้อความถัดไป",
         "example": "[excited] You won't believe what just happened! [long pause] [whispering] Let me tell you a secret."
       },
-      "lastUpdated": "2026-10-09",
-      "plansUrl": { "url": "https://fish.audio/plan/", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-11",
+      "plansUrl": { "url": "https://fish.audio/plan/", "lastVerified": "2026-10-11" },
+      "latestVersion": { "name": "S2.1 Pro", "releaseDate": "2026-06-23", "sourceUrl": "https://fish.audio/blog/s2-1-pro-free-api/", "lastVerified": "2026-10-11", "note": "บล็อกทางการลงวันที่ 23 มิ.ย. 2026 เรียก S2.1 Pro ว่าโมเดลเสียงที่ดีที่สุดในปัจจุบันของ Fish Audio" },
+      "roadmap": {
+        "checkedAt": "2026-10-11",
+        "note": "ตรวจบล็อก (fish.audio/blog) และหน้าแผน (fish.audio/plan) แล้ว ไม่พบแผนในอนาคตที่ระบุวันชัดเจน (โพสต์ API ฟรีมีหลายวันที่สิ้นสุดที่ขัดกันเอง จึงไม่ลงเป็นกำหนดการ; Enterprise ระบุ custom SSO ว่า coming soon โดยไม่มีวัน)",
+        "items": []
+      }
     }
   ]
 }

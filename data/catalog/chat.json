@@ -11,11 +11,11 @@
       "longDescription": "ChatGPT จาก OpenAI เป็นผู้บุกเบิกตลาดแชทบอท AI สาธารณะ มีฐานผู้ใช้กว้างที่สุด รองรับงานหลากหลายตั้งแต่สนทนาทั่วไป เขียนโค้ด วิเคราะห์ไฟล์ ไปจนถึง Deep Research และ Agent mode ในแผนระดับสูง",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-29",
+        "value": "2026-10-09",
         "confidence": "verified",
-        "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-sol/",
-        "lastVerified": "2026-09-30",
-        "note": "OpenAI เปิดตัว GPT-6.1 Sol เมื่อ 29 ก.ย. 2026 ใช้ได้ใน ChatGPT Work และ Codex สำหรับแผน Plus/Pro/Business/Enterprise/Edu (ยังไม่มีใน Chat) และใน API ในชื่อ gpt-6.1-sol"
+        "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "lastVerified": "2026-10-11",
+        "note": "ตาม release notes ของ ChatGPT: 9 ต.ค. 2026 เพิ่ม Composer predictions (เบต้า) ใน Codex สำหรับ Pro; ก่อนหน้านั้น 7 ต.ค. 2026 ใช้ GPT-6 พร้อม Intelligent UI ในแท็บ Chat (Plus/Pro/Business/Enterprise ใช้ GPT-6 Sol, Free/Go ใช้ GPT-6 Luna)"
       },
       "capabilities": [
         {
@@ -35,7 +35,7 @@
           {
             "name": "Free",
             "priceUsdPerMonth": 0,
-            "quota": "แชทข้อความไม่จำกัดบน GPT-5.6 Luna แต่จำกัดจำนวนภาพ/ไฟล์/เสียงต่อวัน มีโฆษณาในสหรัฐฯ",
+            "quota": "แชทข้อความไม่จำกัดด้วย GPT-6 (Free ใช้ GPT-6 Luna) แต่จำกัดข้อความที่มีไฟล์ การสร้างภาพ เสียง Deep Research และ Codex",
             "commercialUseAllowed": {
               "value": true,
               "confidence": "verified",
@@ -46,29 +46,31 @@
           {
             "name": "Go",
             "priceUsdPerMonth": 8,
-            "quota": "เพิ่มโควตาข้อความ/อัปโหลด/ภาพจาก Free ให้สูงขึ้น ไม่มี Agent mode / Deep Research",
+            "quota": "เพิ่มโควตาข้อความที่ใช้เครื่องมือ อัปโหลด การสร้างภาพ และแชทเสียงจาก Free ความจำยาวขึ้น อาจมีโฆษณา (ใช้ GPT-6 Luna)",
             "commercialUseAllowed": {
               "value": true,
               "confidence": "verified",
               "sourceUrl": "https://openai.com/policies/service-terms/",
               "lastVerified": "2026-09-03"
-            }
+            },
+            "notes": "ราคา $8 ยังยืนยันจากหน้าทางการไม่ได้ (หน้าราคาแสดงตามประเทศ ตรวจ 11 ต.ค. 2026 เห็น THB 259/เดือน)"
           },
           {
             "name": "Plus",
             "priceUsdPerMonth": 20,
-            "quota": "~160 ข้อความ/3 ชม. บน GPT-5.6, Deep Research 10 งานเต็ม + 15 งานเบา/เดือน, มี Agent mode",
+            "quota": "ใช้ GPT-6 Sol พร้อมโหมด reasoning, ขยายโควตาข้อความ อัปโหลด Deep Research และ Codex, มี Projects/scheduled tasks/custom GPTs และ ChatGPT Work บนเดสก์ท็อป เว็บ และมือถือ (OpenAI ไม่ระบุจำนวนข้อความตายตัว)",
             "commercialUseAllowed": {
               "value": true,
               "confidence": "verified",
               "sourceUrl": "https://openai.com/policies/service-terms/",
               "lastVerified": "2026-09-03"
-            }
+            },
+            "notes": "ราคา $20/เดือน (บิลรายเดือน) ตามหน้า What is ChatGPT Plus? บน help.openai.com ตรวจ 11 ต.ค. 2026"
           },
           {
-            "name": "Pro 5x",
+            "name": "Pro 100",
             "priceUsdPerMonth": 100,
-            "quota": "โควตาสูงกว่า Plus ~5 เท่า เข้าถึง GPT-5.6 Sol Pro (แผน Pro ระดับล่าง เปิดตัว เม.ย. 2026 เพื่อเติมช่องว่างระหว่าง Plus กับ Pro $200)",
+            "quota": "แผน Pro ระดับเริ่มต้น: ทุกอย่างใน Plus + Pro reasoning ด้วย GPT-6 Astra, เซสชัน Codex/ChatGPT Work ยาวขึ้น, Dot (เอเจนต์ที่ทำงานตลอด) และสร้างภาพได้ไม่จำกัด ไม่รวม Ultrafast",
             "commercialUseAllowed": {
               "value": true,
               "confidence": "probable",
@@ -76,18 +78,32 @@
               "lastVerified": "2026-09-07",
               "note": "ยังไม่พบหน้านโยบายที่แยกระบุ Pro $100 เป็นการเฉพาะ แต่ควรอยู่ภายใต้เงื่อนไข Service Terms เดียวกับแผนอื่น"
             },
-            "notes": "พบจากบทวิเคราะห์ราคาบุคคลที่สาม (cloudzero.com, felloai.com) — ไม่พบยืนยันตรงจากหน้า openai.com/chatgpt/pricing (WebFetch ถูกบล็อก 403 ระหว่างตรวจสอบรอบนี้)"
+            "notes": "ชื่อแผนและราคา $100/เดือนตามตาราง Pro plans ในหน้า About ChatGPT Pro tiers บน help.openai.com ตรวจ 11 ต.ค. 2026 (เดิมในแคตตาล็อกเรียก Pro 5x)"
           },
           {
-            "name": "Pro 20x",
+            "name": "Pro 200",
             "priceUsdPerMonth": 200,
-            "quota": "โควตาสูงสุด ~20 เท่าของ Plus, Deep Research ~250 งาน/เดือน, Sora ไม่จำกัด, context window 1M token, ประมวลผลความสำคัญสูง",
+            "quota": "โควตามากกว่า Pro 100 ไม่รวม Ultrafast; ผู้สมัครใหม่ที่ไม่เข้าเงื่อนไขคงสิทธิ์เดิมได้โควตาต่ำกว่าเดิม (ราคายังเป็น $200)",
             "commercialUseAllowed": {
               "value": true,
               "confidence": "verified",
               "sourceUrl": "https://openai.com/policies/service-terms/",
               "lastVerified": "2026-09-03"
-            }
+            },
+            "notes": "ตามหน้า About ChatGPT Pro tiers บน help.openai.com ตรวจ 11 ต.ค. 2026 (เดิมในแคตตาล็อกเรียก Pro 20x)"
+          },
+          {
+            "name": "Pro 500",
+            "priceUsdPerMonth": 500,
+            "quota": "โควตารวมสูงสุดของแผน Pro และใช้ Ultrafast ของ GPT-6 Astra และ GPT-6.1 Sol ได้ (Ultrafast กินโควตา 8 เท่าของโหมดปกติ) เปิดตัว 29 ก.ย. 2026",
+            "commercialUseAllowed": {
+              "value": true,
+              "confidence": "probable",
+              "sourceUrl": "https://openai.com/policies/service-terms/",
+              "lastVerified": "2026-10-11",
+              "note": "ยังไม่พบหน้านโยบายที่แยกระบุ Pro 500 แต่ควรอยู่ภายใต้เงื่อนไข Service Terms เดียวกับแผนอื่น"
+            },
+            "notes": "ตามหน้า About ChatGPT Pro tiers และ release notes 29 ก.ย. 2026 บน help.openai.com ตรวจ 11 ต.ค. 2026"
           }
         ],
         "freeQuota": "แชทข้อความไม่จำกัด แต่จำกัดภาพ/ไฟล์/เสียงต่อวัน",
@@ -97,8 +113,8 @@
           "sourceUrl": "https://openai.com/policies/service-terms/",
           "lastVerified": "2026-09-03"
         },
-        "sourceUrl": "https://openai.com/chatgpt/pricing/",
-        "lastVerified": "2026-09-03"
+        "sourceUrl": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+        "lastVerified": "2026-10-11"
       },
       "reviews": {
         "positiveThemes": ["ใช้งานง่าย ฐานผู้ใช้ใหญ่มีตัวอย่างการใช้งานเยอะ", "ความสามารถ Deep Research และ Agent mode ทรงพลัง", "รองรับปลั๊กอิน/GPT กำหนดเองจำนวนมาก"],
@@ -123,6 +139,46 @@
         }
       ],
       "versionHistory": [
+        {
+          "version": "GPT-6 ในแท็บ Chat + Intelligent UI",
+          "releaseDate": {
+            "value": "2026-10-07",
+            "confidence": "verified",
+            "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "แท็บ Chat เปลี่ยนมาใช้ GPT-6 พร้อม Intelligent UI ที่ตอบเป็นข้อความ ภาพ หรือชิ้นส่วนโต้ตอบได้ (ตารางเทียบ ไดอะแกรม เครื่องคิดเลข เกม) และเริ่มตอบได้ระหว่างที่ยังคิดหรือใช้เครื่องมืออยู่ Plus/Pro/Business/Enterprise ใช้ GPT-6 Sol ส่วน Free/Go ใช้ GPT-6 Luna (เริ่มทยอยเปิดให้ Free/Go วันถัดไป) ตัวเลือก Pro reasoning ยังใช้ GPT-6 Astra"
+        },
+        {
+          "version": "GPT-6.1 Sol",
+          "releaseDate": {
+            "value": "2026-09-29",
+            "confidence": "verified",
+            "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "รุ่นปรับปรุงจาก GPT-6 Sol เก่งขึ้นด้านเขียนโค้ดแบบเอเจนต์ การควบคุมคอมพิวเตอร์ และงานมืออาชีพ เปิดใน ChatGPT Work และ Codex เริ่มจาก Pro แล้วขยายไป Plus/Business/Enterprise วันเดียวกันเปิดแผน Pro 500 ($500/เดือน) ที่มี Ultrafast"
+        },
+        {
+          "version": "GPT-6 Sol และ GPT-6 Luna (Work/Codex)",
+          "releaseDate": {
+            "value": "2026-09-22",
+            "confidence": "verified",
+            "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "เพิ่ม GPT-6 Sol และ GPT-6 Luna ใน ChatGPT Work และ Codex (ตอนนั้นยังแยกจากโมเดลในแท็บ Chat)"
+        },
+        {
+          "version": "GPT-6 Astra",
+          "releaseDate": {
+            "value": "2026-09-03",
+            "confidence": "verified",
+            "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "เปิดตัว GPT-6 Astra เก่งขึ้นด้านเขียนโค้ด ค้นคว้า ควบคุมคอมพิวเตอร์ และงานหลายขั้นตอน สร้างเอกสาร สเปรดชีต และสไลด์ตามเทมเพลตได้ มีระบบเฝ้าระวังที่อาจหยุดบทสนทนาถ้าเอเจนต์ตีความคำสั่งผิด (เริ่มจากองค์กรจำนวนจำกัด)"
+        },
         {
           "version": "GPT-5.6",
           "releaseDate": {
@@ -186,7 +242,7 @@
         }
       ],
       "strengths": ["ฐานผู้ใช้และคอมมูนิตี้ใหญ่ที่สุด หาคำแนะนำ/ตัวอย่างง่าย", "ครบเครื่องทั้งแชท เขียนโค้ด ค้นข้อมูล และ Agent mode", "อัปเดตโมเดลใหม่บ่อย"],
-      "weaknesses": ["ราคาแผนสูงสุด (Pro $200) แพงกว่าคู่แข่งหลายเจ้า", "โควตาแผน Plus จำกัดสำหรับงานหนัก", "แผนราคาซับซ้อนหลายชั้น (Free/Go/Plus/Pro) ทำให้เลือกยาก"],
+      "weaknesses": ["ราคาแผนสูงสุด (Pro 500 = $500/เดือน) แพงกว่าคู่แข่งหลายเจ้า", "โควตาแผน Plus จำกัดสำหรับงานหนัก", "แผนราคาซับซ้อนหลายชั้น (Free/Go/Plus/Pro 100/Pro 200/Pro 500) ทำให้เลือกยาก"],
       "bestFor": ["มือใหม่ที่อยากเริ่มใช้ AI แชทตัวแรก", "งานเขียน/สรุป/ค้นข้อมูลทั่วไป", "ทีมที่ต้องการ Deep Research"],
       "promptAdherence": {
         "imageAdherence": null,
@@ -201,12 +257,13 @@
         }
       },
       "promptWorkflow": {"steps":["อ่านคำสั่ง/บริบทที่ตั้งไว้ใน Custom Instructions ก่อน (ถ้าตั้งค่าไว้)","อ่านข้อความในแชทปัจจุบันเป็นคำสั่งหลัก","ให้น้ำหนักกับคำสั่งท้ายสุดในข้อความมากที่สุดเมื่อมีหลายคำสั่งปนกัน"],"recommendedStructure":"[บทบาทที่อยากให้ AI สวม] + [สิ่งที่ต้องการ] + [รูปแบบคำตอบที่ต้องการ เช่น ตาราง/bullet/ความยาว]","example":"สวมบทบาทเป็นบรรณาธิการ ช่วยแก้ไขบทความนี้ให้กระชับขึ้น ตอบกลับเป็น bullet point ไม่เกิน 5 ข้อ"},
-      "lastUpdated": "2026-09-07",
-      "roadmap": { "checkedAt": "2026-09-30", "note": "รายการด้านล่างเป็นกำหนดปิดโมเดลฝั่ง API ตามหน้า deprecations ของ OpenAI ไม่ใช่กำหนดของแอป ChatGPT (อ่านสรุปจากหน้าทางการ ควรเปิดตรวจซ้ำก่อนใช้งานจริง) ไม่พบประกาศรุ่นใหม่ล่วงหน้า", "items": [
+      "lastUpdated": "2026-10-11",
+      "roadmap": { "checkedAt": "2026-10-11", "note": "รายการปิดโมเดลฝั่ง API มาจากหน้า deprecations ของ OpenAI (ตรวจ 30 ก.ย. ไม่ใช่กำหนดของแอป ChatGPT) ส่วนกำหนดของแผน Pro 200 มาจากหน้า About ChatGPT Pro tiers (ตรวจ 11 ต.ค. 2026) ไม่พบประกาศรุ่นใหม่ล่วงหน้า", "items": [
+          { "kind": "announced", "text": "ผู้ใช้ Pro 200 ที่เข้าเงื่อนไขคงสิทธิ์ (มีแผน Pro 200 อยู่ช่วง 22–29 ก.ย. 2026) ใช้โควตาเดิมได้ถึงวันนี้ หลังจากนั้นจะย้ายไปโควตาที่ต่ำลง ราคายังเป็น $200/เดือน", "when": "29 ต.ค. 2026", "sourceUrl": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers", "lastVerified": "2026-10-11" },
           { "kind": "retirement", "text": "โมเดลเสียง/เรียลไทม์รุ่นเก่า (Legacy audio/realtime) ใน API จะปิดให้บริการ (ประกาศ 20 ก.ค. 2026)", "when": "20 ม.ค. 2027", "sourceUrl": "https://developers.openai.com/api/docs/deprecations", "lastVerified": "2026-09-30" },
           { "kind": "retirement", "text": "โมเดลถอดเสียง (transcription) รุ่นที่ระบุในหน้า deprecations จะปิดให้บริการ (ประกาศ 26 ส.ค. 2026)", "when": "26 ก.พ. 2027", "sourceUrl": "https://developers.openai.com/api/docs/deprecations", "lastVerified": "2026-09-30" }
         ] },
-      "latestVersion": { "name": "GPT-6.1 Sol", "releaseDate": null, "sourceUrl": "https://chatgpt.com/th-TH/pricing/", "lastVerified": "2026-09-30", "note": "รุ่นแรกในตารางโมเดลของหน้าราคา ChatGPT (รุ่นอื่นในตาราง: GPT-6 Astra, GPT-6 Sol, GPT-6 Luna) ไม่ระบุวันเปิดตัว" },
+      "latestVersion": { "name": "GPT-6.1 Sol", "releaseDate": "2026-09-29", "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes", "lastVerified": "2026-10-11", "note": "รุ่นใหม่สุดตาม release notes ของ ChatGPT (ใน Work และ Codex) และเป็นรุ่นแรกในตารางโมเดลของหน้าราคา ส่วนแท็บ Chat ใช้ GPT-6 Sol/Luna ตั้งแต่ 7 ต.ค. 2026" },
       "plansUrl": { "url": "https://openai.com/chatgpt/pricing/", "lastVerified": "2026-09-21" }
     },
     {
@@ -376,10 +433,12 @@
         }
       },
       "promptWorkflow": {"steps":["อ่านบริบททั้งหมดในแชทอย่างละเอียดรวมถึงไฟล์แนบ","ให้ความสำคัญกับโครงสร้างคำสั่งที่ชัดเจน เช่น การแบ่งหัวข้อ","ตอบตามรูปแบบที่ระบุไว้อย่างเคร่งครัดเมื่อบอกไว้ชัดเจน"],"recommendedStructure":"[บริบท/เป้าหมาย] + [ขั้นตอนหรือหัวข้อที่ต้องการให้ทำตามลำดับ] + [รูปแบบผลลัพธ์ที่ต้องการ]","example":"ช่วยสรุปเอกสารนี้ โดยแบ่งเป็น 3 หัวข้อ: ประเด็นหลัก, ข้อเสนอแนะ, ความเสี่ยง ตอบเป็นภาษาไทย"},
-      "lastUpdated": "2026-10-09",
-      "roadmap": { "checkedAt": "2026-09-30", "note": "กำหนดด้านบนคือ \"วันเลิกใช้โมเดลที่เร็วที่สุด (ไม่เร็วกว่า)\" ตามตารางสถานะโมเดลของ Anthropic สำหรับ API ไม่ใช่กำหนดของแอปแชต หน้าข่าวของ Anthropic ที่ตรวจไม่มีแผนรุ่นถัดไปที่ประกาศล่วงหน้า", "items": [
-          { "kind": "retirement", "text": "Claude Haiku 4.5 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic", "when": "ไม่เร็วกว่า 15 ต.ค. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
-          { "kind": "retirement", "text": "Claude Opus 4.5 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic", "when": "ไม่เร็วกว่า 24 พ.ย. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
+      "lastUpdated": "2026-10-11",
+      "roadmap": { "checkedAt": "2026-10-11", "note": "กำหนดเลิกโมเดลคือ \"วันเลิกใช้โมเดลที่เร็วที่สุด (ไม่เร็วกว่า)\" ตามตารางสถานะโมเดลของ Anthropic สำหรับ API ไม่ใช่กำหนดของแอปแชต (ยกเว้น Sonnet 4.5 ที่ประกาศวันเลิกแน่นอนแล้ว) ส่วน Usage Policy ใหม่มาจากหน้าข่าวของ Anthropic หน้าข่าวที่ตรวจไม่มีแผนรุ่นถัดไปที่ประกาศล่วงหน้า", "items": [
+          { "kind": "announced", "text": "Usage Policy ฉบับปรับปรุงปี 2026 มีผล (ประกาศ 8 ต.ค. 2026: รวมข้อห้ามแคมเปญหลอกลวง/กิจกรรมปลอม ปรับหมวดการเลือกตั้ง อาวุธ การสอดแนม และข้อกำหนดฮาร์ดแวร์อัตโนมัติ ส่วนใหญ่เป็นการทำให้กฎเดิมชัดขึ้น)", "when": "12 พ.ย. 2026", "sourceUrl": "https://www.anthropic.com/news/2026-usage-policy-update", "lastVerified": "2026-10-11" },
+          { "kind": "retirement", "text": "Claude Haiku 4.5 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic", "when": "ไม่เร็วกว่า 15 ต.ค. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-10-11" },
+          { "kind": "retirement", "text": "Claude Opus 4.5 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic", "when": "ไม่เร็วกว่า 24 พ.ย. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-10-11" },
+          { "kind": "retirement", "text": "Claude Sonnet 4.5 (API) ถูกประกาศเลิกใช้เมื่อ 30 ก.ย. 2026 และจะปิดให้บริการ แนะนำย้ายไป Claude Sonnet 5.5", "when": "30 พ.ย. 2026", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-10-11" },
           { "kind": "retirement", "text": "Claude Opus 4.6 และ Sonnet 4.6 (API): วันเลิกให้บริการที่เร็วที่สุดตามตารางสถานะของ Anthropic (Opus 4.6: 5 ก.พ. 2027, Sonnet 4.6: 17 ก.พ. 2027)", "when": "ไม่เร็วกว่า 5 ก.พ. 2027", "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" },
           { "kind": "intent", "text": "Anthropic ระบุว่าหวังจะนำโมเดลรุ่นเก่ากลับมาให้ใช้สาธารณะอีกครั้ง \"ในบางเวลา\" และยืนยันเก็บน้ำหนักโมเดลไว้ระยะยาว", "when": null, "sourceUrl": "https://platform.claude.com/docs/en/about-claude/model-deprecations", "lastVerified": "2026-09-30" }
         ] },
@@ -400,14 +459,14 @@
       "logoUrl": null,
       "websiteUrl": "https://gemini.google.com",
       "shortDescription": "แชทบอท AI จาก Google ผสานกับ Search, Workspace และมี context window ยาวมาก",
-      "longDescription": "Gemini เชื่อมต่อกับระบบนิเวศ Google (Search, Docs, Gmail) ได้ลึก มี context window ถึง 1M token ในแผน Pro เหมาะกับงานที่ต้องอ้างอิงเอกสารยาวๆ หรือค้นข้อมูลควบคู่การแชท",
+      "longDescription": "Gemini เชื่อมต่อกับระบบนิเวศ Google (Search, Docs, Gmail) ได้ลึก มี context window ถึง 1M token ในแผน Pro (ใช้ Gemini 3.8 Flash และ 3.1 Pro) เหมาะกับงานที่ต้องอ้างอิงเอกสารยาวๆ หรือค้นข้อมูลควบคู่การแชท",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-06",
+        "value": "2026-10-08",
         "confidence": "verified",
         "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
-        "lastVerified": "2026-10-09",
-        "note": "Gemini Nano Banana 2.1 เข้าสู่ GA เมื่อ 6 ต.ค. 2026 ตาม changelog ของ Gemini API"
+        "lastVerified": "2026-10-11",
+        "note": "8 ต.ค. 2026 changelog ของ Gemini API ประกาศเลิกใช้ gemini-3.7-flash และ gemini-3.5-flash (ส่งคำขอต่อไปยัง 3.8 Flash / 3.6 Flash อัตโนมัติ) และกำหนดปิด Deep Research รุ่นพรีวิวเก่า; ก่อนหน้านั้น 6 ต.ค. Nano Banana 2.1 เข้าสู่ GA (release notes ของแอป Gemini ล่าสุดยังเป็น 30 ก.ย.)"
       },
       "capabilities": [
         {
@@ -437,7 +496,7 @@
           {
             "name": "Free",
             "priceUsdPerMonth": 0,
-            "quota": "ใช้งานพื้นฐานฟรี",
+            "quota": "ใช้งานพื้นฐานฟรีด้วย Gemini 3.5 Flash-Lite พื้นที่ 15 GB (ตามหน้า gemini.google/subscriptions ตรวจ 11 ต.ค. 2026)",
             "commercialUseAllowed": {
               "value": true,
               "confidence": "probable",
@@ -449,20 +508,23 @@
           {
             "name": "Google AI Plus",
             "priceUsdPerMonth": 4.99,
-            "quota": "โควตาสูงกว่า Free",
-            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" }
+            "quota": "โควตา 2 เท่าของ Free ใช้ Gemini 3.6 Flash และ 3.1 Pro พื้นที่ 400 GB",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" },
+            "notes": "สิทธิ์ตามหน้า gemini.google/subscriptions ตรวจ 11 ต.ค. 2026 (หน้าแสดงราคาไทย ฿189/เดือน ราคา USD ยังยืนยันจากหน้าทางการไม่ได้)"
           },
           {
             "name": "Google AI Pro",
             "priceUsdPerMonth": 19.99,
-            "quota": "เข้าถึง Gemini 3.1 Pro พร้อม context window 1M token",
-            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" }
+            "quota": "โควตา 4 เท่าของ Free ใช้ Gemini 3.8 Flash และ 3.1 Pro พร้อม context window 1M token พื้นที่ 5 TB",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" },
+            "notes": "สิทธิ์ตามหน้า gemini.google/subscriptions ตรวจ 11 ต.ค. 2026 (หน้าแสดงราคาไทย ฿750/เดือน ราคา USD ยังยืนยันจากหน้าทางการไม่ได้)"
           },
           {
             "name": "Google AI Ultra",
             "priceUsdPerMonth": 99.99,
-            "quota": "โควตา 5 เท่าของ Pro (มีระดับ $199.99 สำหรับ 20 เท่า)",
-            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" }
+            "quota": "โควตา 5 เท่าของ Pro (มีระดับ $199.99 สำหรับ 20 เท่า) ใช้ 3.8 Flash, 3.1 Pro และเข้าถึงฟีเจอร์ขั้นสูงก่อน เช่น Deep Think พื้นที่เริ่มที่ 20 TB",
+            "commercialUseAllowed": { "value": true, "confidence": "probable", "sourceUrl": "https://terms.law/ai-output-rights/gemini/", "lastVerified": "2026-09-03" },
+            "notes": "สิทธิ์ตามหน้า gemini.google/subscriptions ตรวจ 11 ต.ค. 2026 (หน้าแสดงราคาไทย ฿3,500 สำหรับ 5 เท่า / ฿7,500 สำหรับ 20 เท่า ราคา USD ยังยืนยันจากหน้าทางการไม่ได้)"
           }
         ],
         "freeQuota": "ใช้งาน Gemini พื้นฐานได้ฟรี โควตาจำกัด",
@@ -497,6 +559,16 @@
         }
       ],
       "versionHistory": [
+        {
+          "version": "เลิกใช้ Gemini 3.7 Flash และ 3.5 Flash (API)",
+          "releaseDate": {
+            "value": "2026-10-08",
+            "confidence": "verified",
+            "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "gemini-3.7-flash ถูกแทนด้วย gemini-3.8-flash และ gemini-3.5-flash ถูกแทนด้วย gemini-3.6-flash โดยคำขอที่ใช้ชื่อเดิมถูกส่งต่อไปรุ่นใหม่อัตโนมัติ และประกาศปิด deep-research-pro-preview-12-2025 วันที่ 23 ต.ค. 2026"
+        },
         {
           "version": "Gemini Nano Banana 2.1 (GA)",
           "releaseDate": {
@@ -536,16 +608,6 @@
             "lastVerified": "2026-10-09"
           },
           "summary": "โมเดลเสียงแบบเรียลไทม์เข้าสู่ GA"
-        },
-        {
-          "version": "แอป Gemini สำหรับ Windows",
-          "releaseDate": {
-            "value": "2026-09-10",
-            "confidence": "verified",
-            "sourceUrl": "https://gemini.google/release-notes/",
-            "lastVerified": "2026-10-09"
-          },
-          "summary": "แอปบน Windows 10 ขึ้นไป กด Alt + Space เพื่อเรียก Gemini จากโปรแกรมไหนก็ได้"
         }
       ],
       "strengths": ["เชื่อมต่อ Google Search/Workspace ได้ดีที่สุดในกลุ่ม", "Context window ยาวถึง 1M token", "ราคาลดลงมากในปี 2026 ทำให้เข้าถึงง่ายขึ้น"],
@@ -563,11 +625,13 @@
         }
       },
       "promptWorkflow": {"steps":["อ่านข้อมูลจากแอป Google ที่เชื่อมต่อไว้ก่อน (ถ้าเปิดใช้งาน)","อ่านข้อความคำสั่งในแชทเป็นเป้าหมายหลัก","ค้นข้อมูลเสริมจาก Google Search อัตโนมัติเมื่อจำเป็น"],"recommendedStructure":"[สิ่งที่ต้องการ] + ระบุแหล่งข้อมูล เช่น \"จากอีเมลล่าสุด\" หรือ \"จากเอกสารที่แชร์ไว้\" ถ้าต้องการให้ดึงข้อมูลจริง","example":"สรุปอีเมล 5 ฉบับล่าสุดจากหัวหน้าทีม แล้วช่วยร่างคำตอบให้แบบสุภาพ"},
-      "lastUpdated": "2026-10-09",
-      "roadmap": { "checkedAt": "2026-09-30", "note": "ตามหน้า deprecations ของ Gemini API (ฝั่งนักพัฒนา ไม่ใช่แอป Gemini) รุ่นเสถียรล่าสุด (3.8 Flash, 3.8 Live) ยังไม่มีกำหนดเลิกให้บริการ", "items": [
-          { "kind": "retirement", "text": "gemini-2.5-flash-image จะปิดให้บริการ แนะนำย้ายไป gemini-3.1-flash-image-preview", "when": "2 ต.ค. 2026", "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations", "lastVerified": "2026-09-30" }
+      "lastUpdated": "2026-10-11",
+      "roadmap": { "checkedAt": "2026-10-11", "note": "ตามหน้า deprecations ของ Gemini API (ฝั่งนักพัฒนา ไม่ใช่แอป Gemini อัปเดต 9 ต.ค. 2026) วันที่เป็น \"วันปิดเร็วที่สุดที่เป็นไปได้\" รุ่นเสถียรล่าสุด (3.8 Flash, 3.8 Live) ยังไม่มีกำหนดเลิกให้บริการ ส่วนกำหนดปิด gemini-2.5-flash-image ถูกเลื่อนจาก 2 ต.ค. 2026 เป็น 15 มี.ค. 2027 (ย้ายไป gemini-3.1-flash-lite-image) และแอป Gemini ประกาศว่า Skills จะมาแทน Gems โดยไม่ระบุวัน", "items": [
+          { "kind": "retirement", "text": "deep-research-pro-preview-12-2025 จะปิดให้บริการ ให้ย้ายไป deep-research-preview-04-2026 หรือ deep-research-max-preview-04-2026", "when": "23 ต.ค. 2026", "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations", "lastVerified": "2026-10-11" },
+          { "kind": "retirement", "text": "โมเดล TTS และ Live รุ่นพรีวิวเก่า (เช่น gemini-3.1-flash-tts-preview, gemini-2.5-pro-preview-tts, gemini-3.1-flash-live-preview) จะปิด ให้ย้ายไป Gemini 3.8 Flash TTS / 3.8 Live", "when": "17 พ.ย. 2026", "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations", "lastVerified": "2026-10-11" },
+          { "kind": "retirement", "text": "gemini-2.5-flash-image จะปิดให้บริการ แนะนำย้ายไป gemini-3.1-flash-lite-image", "when": "15 มี.ค. 2027", "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations", "lastVerified": "2026-10-11" }
         ] },
-      "latestVersion": { "name": "Gemini 3.8 Flash", "releaseDate": null, "sourceUrl": "https://ai.google.dev/gemini-api/docs/models", "lastVerified": "2026-09-21", "note": "รุ่นที่หน้าโมเดลของ Google ติดป้าย New Stable (หน้าอัปเดตล่าสุด 2026-09-17) ไม่ได้แปลว่าเป็นรุ่นที่แรงที่สุดในตระกูล Gemini" },
+      "latestVersion": { "name": "Gemini 3.8 Flash", "releaseDate": null, "sourceUrl": "https://ai.google.dev/gemini-api/docs/models", "lastVerified": "2026-10-11", "note": "รุ่นที่หน้าโมเดลของ Google ติดป้าย New Stable และเรียกว่า Flash ที่ฉลาดที่สุด (หน้าอัปเดตล่าสุด 2026-10-09) ไม่ได้แปลว่าเป็นรุ่นที่แรงที่สุดในตระกูล Gemini" },
       "plansUrl": { "url": "https://gemini.google/subscriptions/", "lastVerified": "2026-09-21" }
     },
     {
@@ -709,19 +773,19 @@
       "longDescription": "Perplexity เน้นการค้นหาข้อมูลพร้อมอ้างอิงแหล่งที่มาชัดเจน ต่างจากแชทบอททั่วไปที่เน้นการสนทนา เหมาะกับงานวิจัย/หาข้อมูลที่ต้องการ citation",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-01",
-        "confidence": "probable",
-        "sourceUrl": "https://www.explainx.ai/blog/perplexity-mac-hybrid-compute-local-pii-september-2026",
-        "lastVerified": "2026-09-07",
-        "note": "Aravind Srinivas ประกาศ 'hybrid compute' สำหรับแอป Mac วันที่ 1 ก.ย. 2026 ให้ Perplexity Computer รันโมเดลบางส่วนบนเครื่อง Apple Silicon สำหรับงานที่แตะไฟล์ส่วนตัวที่ sensitive แทนที่จะส่งขึ้นคลาวด์ทั้งหมด (อัปเดตจากค่าเดิม 'Brain' 13 ก.ค. 2026 ซึ่งล้าสมัยกว่า)"
+        "value": "2026-10-05",
+        "confidence": "verified",
+        "sourceUrl": "https://www.perplexity.ai/changelog/automations-inline-visualizations-and-gpt-6-1-sol",
+        "lastVerified": "2026-10-11",
+        "note": "changelog ทางการของ Perplexity 5 ต.ค. 2026: Automations ใน Computer, กราฟ/ภาพโต้ตอบในเธรด, GPT-6.1 Sol และ Claude Opus 5.5, สร้างวิดีโอด้วย MiniMax H3 และ Seedance 2.5"
       },
       "capabilities": [],
       "pricing": {
         "tier": "freemium",
         "plans": [
           { "name": "Free", "priceUsdPerMonth": 0, "quota": "ค้นหาจำนวนจำกัดต่อวัน", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/", "lastVerified": "2026-09-03", "note": "ToS ของ Perplexity จำกัดให้ใช้เพื่อส่วนตัว ไม่เชิงพาณิชย์ (personal, non-commercial use only) สำหรับผลิตภัณฑ์ consumer" } },
-          { "name": "Pro", "priceUsdPerMonth": 20, "quota": "ไม่จำกัดการค้นหา + เลือกโมเดลระดับสูงได้ + Spaces สูงสุด 50 ไฟล์/Space + เครดิต Perplexity Computer $40", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/", "lastVerified": "2026-09-03", "note": "⚠️ แม้เป็นแผนเสียเงิน แต่ Perplexity ปรับ ToS ให้จำกัดเฉพาะการใช้ส่วนตัว ไม่ใช่เชิงพาณิชย์ ตามการวิเคราะห์ ToS ล่าสุด" } },
-          { "name": "Max", "priceUsdPerMonth": 200, "quota": "โควตาสูงสุด ไม่จำกัด Perplexity Labs, เข้าถึงโมเดลระดับสูงสุดก่อนใคร (เช่น o3-pro, Claude Opus) พร้อม Comet browser และ Perplexity Computer เต็มรูปแบบ ($2,000/ปีหากจ่ายรายปี)", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/", "lastVerified": "2026-09-03", "note": "เป็นแผน consumer เช่นกัน จึงอยู่ภายใต้ข้อจำกัดเดียวกับ Pro" }, "notes": "แก้ไขราคาจาก $50 เป็น $200/เดือน หลังตรวจสอบพบว่า Perplexity Max เปิดตัวที่ราคา $200/เดือน ตั้งแต่ ก.ค. 2025 และยังคงราคานี้ต่อเนื่องถึง ก.ย. 2026 (ค่าเดิม $50 ในไฟล์คลาดเคลื่อน)" }
+          { "name": "Pro", "priceUsdPerMonth": 20, "quota": "Deep research, เลือกโมเดลระดับสูงได้ (เช่น GPT-6.1 Sol, Gemini 3.8 Flash, Claude Sonnet 5.5, Grok 4.7), ใช้ Perplexity Computer มากขึ้น + เครดิตโบนัส 4,000 (โปรโมชันช่วงจำกัด: เครดิต Computer ฟรี $40)", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/", "lastVerified": "2026-09-03", "note": "⚠️ แม้เป็นแผนเสียเงิน แต่ Perplexity ปรับ ToS ให้จำกัดเฉพาะการใช้ส่วนตัว ไม่ใช่เชิงพาณิชย์ ตามการวิเคราะห์ ToS ล่าสุด (หน้า perplexity.ai/pro ระบุ \"For personal use only\" ตรวจ 11 ต.ค. 2026)" }, "notes": "หน้า perplexity.ai/pro (ตรวจ 11 ต.ค. 2026) แสดงเฉพาะราคาบิลรายปี $17/เดือน ไม่มีสวิตช์รายเดือน ราคา $20 รายเดือนจึงยังยืนยันจากหน้าทางการไม่ได้" },
+          { "name": "Max", "priceUsdPerMonth": 200, "quota": "ใช้ Perplexity Computer ได้สูงสุด เครดิต 10,000/เดือน + โบนัส 35,000 (โปรโมชันช่วงจำกัด: เครดิต Computer ฟรี $450), โมเดลระดับ frontier, โควตาและความจำสูงสุด และได้ฟีเจอร์ใหม่ก่อน (บิลรายปีเท่ากับ $167/เดือน)", "commercialUseAllowed": { "value": false, "confidence": "probable", "sourceUrl": "https://terms.law/2024/12/26/who-owns-perplexitys-outputs-decoding-the-terms-copyright-law/", "lastVerified": "2026-09-03", "note": "เป็นแผน consumer เช่นกัน จึงอยู่ภายใต้ข้อจำกัดเดียวกับ Pro" }, "notes": "ราคา $200 รายเดือนมาจากข่าวเปิดตัว (TechCrunch ก.ค. 2025) หน้า perplexity.ai/pro ตรวจ 11 ต.ค. 2026 แสดงเฉพาะราคาบิลรายปี $167/เดือน จึงยังยืนยันราคารายเดือนจากหน้าทางการไม่ได้" }
         ],
         "freeQuota": "ค้นหาได้จำนวนจำกัดต่อวันแบบไม่เสียเงิน",
         "commercialUseSummary": {
@@ -745,6 +809,26 @@
       "usageSignals": [],
       "versionHistory": [
         {
+          "version": "Automations, inline visualizations และ GPT-6.1 Sol",
+          "releaseDate": {
+            "value": "2026-10-05",
+            "confidence": "verified",
+            "sourceUrl": "https://www.perplexity.ai/changelog/automations-inline-visualizations-and-gpt-6-1-sol",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "Computer บนเว็บรันงานซ้ำตามตารางเวลาหรือเมื่อมีเหตุการณ์ในแอปที่เชื่อมไว้ (หยุดให้ตรวจก่อนทำสิ่งสำคัญ), สร้างกราฟและภาพ 3 มิติแบบโต้ตอบในเธรด, เพิ่ม GPT-6.1 Sol (ใช้ในโหมด Light) และ Claude Opus 5.5 (โหมด Standard) และให้ Pro/Max สร้างวิดีโอด้วย MiniMax H3 และ Seedance 2.5"
+        },
+        {
+          "version": "Effort Mode, GPT-6 Astra และ Skills Marketplace",
+          "releaseDate": {
+            "value": "2026-09-21",
+            "confidence": "verified",
+            "sourceUrl": "https://www.perplexity.ai/changelog/effort-mode-gpt-6-astra-and-skills-marketplace",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "เลือกระดับ effort ของ Computer ได้, ใช้ GPT-6 Astra, ค้นหา skills ที่ใช้ซ้ำได้จาก Marketplace, Hybrid compute บน Mac (ผสมโมเดลคลาวด์กับโมเดลในเครื่อง) และถามแทรกด้วย Side Chat (สรุปจากรายการ changelog ทางการ)"
+        },
+        {
           "version": "API: Claude Haiku 5.5, Decisions API และเครื่องมือ image_search",
           "releaseDate": {
             "value": null,
@@ -754,24 +838,19 @@
             "note": "ไม่มีวันที่ที่ชัดเจน"
           },
           "summary": "changelog ของ Perplexity API ลงรายการเดือน ต.ค. 2026 แต่ไม่ระบุวัน: Agent API รองรับ Claude Haiku 5.5 (พรอมต์เกิน 100k token เรตสูงกว่า), Decisions API ใหม่ที่ตอบเป็นความน่าจะเป็น (ราคา input $0.04 ต่อล้าน token ลดเหลือ $0.02 เมื่อใช้ pplx-decider-v1.1-27b), Agent API รับไฟล์ PDF/DOC/DOCX/TXT/RTF และเครื่องมือ image_search ($2.50 ต่อ 1,000 ครั้งที่สำเร็จ)"
-        },
-        {
-          "version": "Hybrid compute สำหรับแอป Mac",
-          "releaseDate": {
-            "value": "2026-09-01",
-            "confidence": "probable",
-            "sourceUrl": "https://www.explainx.ai/blog/perplexity-mac-hybrid-compute-local-pii-september-2026",
-            "lastVerified": "2026-10-09"
-          },
-          "summary": "ประกาศว่า Perplexity Computer บน Mac จะรันโมเดลบางส่วนในเครื่อง Apple Silicon สำหรับงานที่แตะไฟล์ส่วนตัว (อ้างตามบล็อกบุคคลที่สาม ไม่ใช่หน้าทางการ)"
         }
       ],
       "strengths": ["อ้างอิงแหล่งที่มาชัดเจน เหมาะงานวิจัย", "เลือกโมเดลเบื้องหลังได้หลายตัวในแผน Pro"],
       "weaknesses": ["⚠️ แผน Free/Pro/Max จำกัดให้ใช้ส่วนตัวเท่านั้น ไม่ใช่เชิงพาณิชย์ตาม ToS ล่าสุด", "ไม่เหมาะกับงาน Creative writing เท่าแชทบอททั่วไป", "แผน Max ราคาสูง"],
       "bestFor": ["งานค้นคว้าวิจัยที่ต้องการอ้างอิงแหล่งที่มา", "นักเรียน/นักศึกษาที่ต้องการตรวจสอบข้อมูล"],
       "promptWorkflow": {"steps":["อ่านคำถามเป็น search query ก่อนเพื่อค้นข้อมูลจริงจากเว็บ","สังเคราะห์คำตอบจากแหล่งที่ค้นเจอ","แนบอ้างอิงแหล่งที่มาให้ตรวจสอบได้"],"recommendedStructure":"ตั้งคำถามให้ชัดเจนเหมือนพิมพ์ค้นหา ระบุช่วงเวลา/ขอบเขตถ้าต้องการข้อมูลล่าสุด","example":"ราคาน้ำมันดิบ Brent ล่าสุดวันนี้เท่าไหร่ เทียบกับเมื่อสัปดาห์ที่แล้ว"},
-      "lastUpdated": "2026-10-09",
-      "plansUrl": { "url": "https://www.perplexity.ai/pro", "lastVerified": "2026-09-21" }
+      "lastUpdated": "2026-10-11",
+      "plansUrl": { "url": "https://www.perplexity.ai/pro", "lastVerified": "2026-10-11" },
+      "roadmap": {
+        "checkedAt": "2026-10-11",
+        "note": "ตรวจหน้า changelog ทางการ (perplexity.ai/changelog) และหน้าแผน (perplexity.ai/pro) แล้ว ไม่พบแผนหรือกำหนดเวลาในอนาคตที่ผู้ให้บริการประกาศไว้เอง (เครดิตฟรีเป็นโปรโมชัน \"limited time\" ไม่ระบุวันสิ้นสุด)",
+        "items": []
+      }
     },
     {
       "id": "grok",
@@ -784,11 +863,11 @@
       "longDescription": "Grok ผสานกับ X (Twitter) ทำให้เข้าถึงข้อมูล/เทรนด์เรียลไทม์ได้ดี มีหลายระดับแผนตั้งแต่ฟรีจนถึง SuperGrok Heavy สำหรับงาน multi-agent ที่ซับซ้อน",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-21",
+        "value": "2026-09-28",
         "confidence": "verified",
-        "sourceUrl": "https://x.ai/news/grok-4-7",
-        "lastVerified": "2026-10-09",
-        "note": "เปิดตัว Grok 4.7 เมื่อ 21 ก.ย. 2026 (ประกาศบน x.ai)"
+        "sourceUrl": "https://x.ai/news/team-bots",
+        "lastVerified": "2026-10-11",
+        "note": "เปิดตัว Team Bots (Grok Bot ที่แชร์ให้ทั้งทีมใช้บริบทเดียวกัน) เมื่อ 28 ก.ย. 2026 ตามหน้าข่าวบน x.ai; ก่อนหน้านั้น 21 ก.ย. เปิดตัว Grok 4.7 (หน้าข่าว ณ 11 ต.ค. 2026 ยังไม่มีโพสต์ใหม่กว่านี้)"
       },
       "capabilities": [],
       "pricing": {
@@ -821,6 +900,16 @@
       "usageSignals": [],
       "versionHistory": [
         {
+          "version": "Team Bots (Grok Bot แบบแชร์ทีม)",
+          "releaseDate": {
+            "value": "2026-09-28",
+            "confidence": "verified",
+            "sourceUrl": "https://x.ai/news/team-bots",
+            "lastVerified": "2026-10-11"
+          },
+          "summary": "สร้าง Grok Bot ตามบทบาทงานแล้วแชร์ให้ทั้งทีมใช้ โดยให้ไฟล์/คำสั่ง/skills, ปลั๊กอิน (เช่น Salesforce, Notion, GitHub), credentials สำหรับ API และความจำที่เรียนรู้จากงาน บทสนทนาของแต่ละคนยังเป็นส่วนตัว และเรียกใช้ใน Slack ได้"
+        },
+        {
           "version": "Grok 4.7",
           "releaseDate": {
             "value": "2026-09-21",
@@ -835,21 +924,21 @@
       "weaknesses": ["แผนสูงสุดราคาแพงที่สุดในกลุ่มแชทบอท ($300)", "ไม่มี IP indemnification เลยในระดับ consumer — เสี่ยงเองถ้า Output ละเมิดลิขสิทธิ์บุคคลที่สาม"],
       "bestFor": ["ผู้ใช้ X ที่ต้องการติดตามเทรนด์เรียลไทม์", "งานที่ต้องอ้างอิงเหตุการณ์ปัจจุบัน"],
       "promptWorkflow": {"steps":["อ่านคำถาม/คำสั่งเป็นเป้าหมายหลัก","ดึงข้อมูลโพสต์ล่าสุดจาก X มาประกอบคำตอบเมื่อเกี่ยวข้อง","ตอบด้วยน้ำเสียงตรงไปตรงมา/มีอารมณ์ขันได้ตามสไตล์ของโมเดล"],"recommendedStructure":"[คำถาม/สิ่งที่ต้องการ] ระบุว่าอยากให้อ้างอิงกระแสบน X ล่าสุดหรือไม่","example":"ตอนนี้คนบน X พูดถึงเรื่องอะไรเกี่ยวกับการแข่งขันฟุตบอลคืนนี้บ้าง สรุปกระแสให้หน่อย"},
-      "lastUpdated": "2026-10-09",
+      "lastUpdated": "2026-10-11",
       "roadmap": {
-        "checkedAt": "2026-10-09",
-        "note": "รายการด้านล่างเป็นกำหนดเลิกโมเดลฝั่ง API ตามหน้า release notes ของ docs.x.ai ไม่ใช่แผนของแอป Grok และไม่พบประกาศรุ่นใหม่ล่วงหน้า",
+        "checkedAt": "2026-10-11",
+        "note": "รายการด้านล่างเป็นกำหนดเลิกโมเดลฝั่ง API ตามหน้า release notes ของ docs.x.ai ไม่ใช่แผนของแอป Grok และไม่พบประกาศรุ่นใหม่ล่วงหน้า (grok-voice-transcribe-1.0 หมดอายุไปแล้ว 2 ต.ค. 2026 โดยส่งต่อไป 2.0)",
         "items": [
           {
             "kind": "retirement",
             "text": "โมเดลสร้างภาพ grok-imagine-image-quality (API) จะเลิกใช้ และคำขอจะถูกส่งไป grok-imagine-image-2.0 ที่ quality=low",
             "when": "2 พ.ย. 2026",
             "sourceUrl": "https://docs.x.ai/docs/release-notes",
-            "lastVerified": "2026-10-09"
+            "lastVerified": "2026-10-11"
           }
         ]
       },
-      "latestVersion": { "name": "Grok 4.7", "releaseDate": null, "sourceUrl": "https://docs.x.ai/docs/models", "lastVerified": "2026-09-30", "note": "หน้าโมเดลของ xAI ระบุว่า \"the most capable model we've built\" และแนะนำเป็นค่าเริ่มต้น (ไม่ระบุวันเปิดตัว)" },
+      "latestVersion": { "name": "Grok 4.7", "releaseDate": null, "sourceUrl": "https://docs.x.ai/docs/models", "lastVerified": "2026-10-11", "note": "หน้าโมเดลของ xAI ระบุว่า \"the most capable model we've built\" และแนะนำเป็นค่าเริ่มต้น (ไม่ระบุวันเปิดตัว)" },
       "plansUrl": { "url": "https://grok.com/plans", "lastVerified": "2026-09-21" }
     },
     {
