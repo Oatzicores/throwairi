@@ -241,11 +241,11 @@
       "longDescription": "n8n เป็นเครื่องมือ automation แบบ low-code ที่รองรับ AI agent node ในตัว จุดเด่นคือ self-hosted แบบโอเพนซอร์สฟรีสมบูรณ์ (ต้องมีเซิร์ฟเวอร์เอง) หรือใช้เวอร์ชันคลาวด์ที่คิดราคาตาม 'execution' ไม่ใช่ตาม step ทำให้ workflow ซับซ้อนไม่แพงขึ้นตามจำนวน node",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-06",
+        "value": "2026-10-27",
         "confidence": "verified",
         "sourceUrl": "https://docs.n8n.io/release-notes/",
-        "lastVerified": "2026-10-09",
-        "note": "n8n 2.43 ออกเมื่อ 6 ต.ค. 2026 ตาม release notes บน docs.n8n.io"
+        "lastVerified": "2026-11-05",
+        "note": "n8n 3.0 ออก 27 ต.ค. 2026 (มี breaking changes ต้องดูคู่มือย้ายก่อนอัปเกรด); 2.45.4 เมื่อ 26 ต.ค."
       },
       "capabilities": [],
       "pricing": {
@@ -325,11 +325,11 @@
       "lastUpdated": "2026-10-09",
       "plansUrl": { "url": "https://n8n.io/pricing/", "lastVerified": "2026-09-21" },
       "latestVersion": {
-        "name": "n8n 2.43",
-        "releaseDate": "2026-10-06",
+        "name": "n8n 3.0",
+        "releaseDate": "2026-10-27",
         "sourceUrl": "https://docs.n8n.io/release-notes/",
-        "lastVerified": "2026-10-09",
-        "note": "ตาม release notes ทางการบน docs.n8n.io (n8n ออกรุ่นย่อยรายสัปดาห์)"
+        "lastVerified": "2026-11-05",
+        "note": "ตาม release notes ทางการบน docs.n8n.io (รุ่นหลักมี breaking changes)"
       },
       "roadmap": {
         "checkedAt": "2026-10-09",

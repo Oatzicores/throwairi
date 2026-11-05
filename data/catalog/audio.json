@@ -145,11 +145,11 @@
       "longDescription": "Suno เป็น AI สร้างเพลงที่ได้รับความนิยมสูงสุดในตลาด สร้างเพลงพร้อมเนื้อร้อง/ทำนอง/เสียงร้องจากข้อความบรรยายได้ในไม่กี่วินาที มีข้อจำกัดเรื่องจำนวนดาวน์โหลดที่เพิ่งประกาศเปลี่ยนแปลง (มีผล ก.ย. 2026)",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-08",
+        "value": "2026-10-29",
         "confidence": "verified",
         "sourceUrl": "https://suno.com/release-notes",
-        "lastVerified": "2026-10-09",
-        "note": "Suno อัปเดต Studio (ตรวจจับ downbeat ดีขึ้น ยืดคลิปด้วย shift-click เฟดโค้ง หน้าต่างปลั๊กอินแบบ pop-out) เมื่อ 8 ต.ค. 2026 ตามหมายเหตุการออกรุ่นบน suno.com"
+        "lastVerified": "2026-11-05",
+        "note": "release notes ทางการ 29 ต.ค. 2026: Studio updates; 28 ต.ค.: Suno MCP (beta)"
       },
       "capabilities": [],
       "pricing": {
@@ -319,11 +319,11 @@
       "longDescription": "Murf AI เน้นตลาดงานนำเสนอ/วิดีโอองค์กร/อีเลิร์นนิง มีเสียงให้เลือกกว่า 200 เสียงหลายภาษา แผนฟรีให้ทดลองฟังได้แต่ดาวน์โหลดไม่ได้ ต้องอัปเกรดเป็น Creator ขึ้นไปจึงดาวน์โหลดและใช้เชิงพาณิชย์ได้",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-05",
+        "value": "2026-11-02",
         "confidence": "verified",
         "sourceUrl": "https://murf.ai/api/docs/changelog",
-        "lastVerified": "2026-10-09",
-        "note": "changelog ทางการของ Murf API ระบุว่า 5 ต.ค. 2026 เลิกให้บริการ Gen2 แบบสตรีมมิง (ให้ย้ายไป Falcon 2) ส่วน Gen2 แบบ non-streaming ยังใช้ได้"
+        "lastVerified": "2026-11-05",
+        "note": "changelog API 2 พ.ย. 2026: STT ต้องระบุ model; Falcon 2.1 เปิดตัว 19 ต.ค. 2026"
       },
       "capabilities": [],
       "pricing": {

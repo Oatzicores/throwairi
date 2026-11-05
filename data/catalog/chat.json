@@ -462,11 +462,11 @@
       "longDescription": "Gemini เชื่อมต่อกับระบบนิเวศ Google (Search, Docs, Gmail) ได้ลึก มี context window ถึง 1M token ในแผน Pro (ใช้ Gemini 3.8 Flash และ 3.1 Pro) เหมาะกับงานที่ต้องอ้างอิงเอกสารยาวๆ หรือค้นข้อมูลควบคู่การแชท",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-08",
+        "value": "2026-11-04",
         "confidence": "verified",
-        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
-        "lastVerified": "2026-10-11",
-        "note": "8 ต.ค. 2026 changelog ของ Gemini API ประกาศเลิกใช้ gemini-3.7-flash และ gemini-3.5-flash (ส่งคำขอต่อไปยัง 3.8 Flash / 3.6 Flash อัตโนมัติ) และกำหนดปิด Deep Research รุ่นพรีวิวเก่า; ก่อนหน้านั้น 6 ต.ค. Nano Banana 2.1 เข้าสู่ GA (release notes ของแอป Gemini ล่าสุดยังเป็น 30 ก.ย.)"
+        "sourceUrl": "https://aistudio.google.com/docs/changelog",
+        "lastVerified": "2026-11-05",
+        "note": "changelog ทางการ 4 พ.ย. 2026 (voice remixing); Gemini 4 Argon ใช้งานทั่วไป 13 ต.ค. 2026; 2.5 Pro/Flash ถูกประกาศเลิก 2 พ.ย. (ย้ายเส้นทางจาก 1 ธ.ค. 2026)"
       },
       "capabilities": [
         {
@@ -773,11 +773,11 @@
       "longDescription": "Perplexity เน้นการค้นหาข้อมูลพร้อมอ้างอิงแหล่งที่มาชัดเจน ต่างจากแชทบอททั่วไปที่เน้นการสนทนา เหมาะกับงานวิจัย/หาข้อมูลที่ต้องการ citation",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-05",
+        "value": "2026-10-19",
         "confidence": "verified",
-        "sourceUrl": "https://www.perplexity.ai/changelog/automations-inline-visualizations-and-gpt-6-1-sol",
-        "lastVerified": "2026-10-11",
-        "note": "changelog ทางการของ Perplexity 5 ต.ค. 2026: Automations ใน Computer, กราฟ/ภาพโต้ตอบในเธรด, GPT-6.1 Sol และ Claude Opus 5.5, สร้างวิดีโอด้วย MiniMax H3 และ Seedance 2.5"
+        "sourceUrl": "https://www.perplexity.ai/changelog",
+        "lastVerified": "2026-11-05",
+        "note": "changelog ทางการ 19 ต.ค. 2026: Ultrafast Computer models, Decisions API, connector controls"
       },
       "capabilities": [],
       "pricing": {
@@ -952,11 +952,11 @@
       "longDescription": "DeepSeek Chat ใช้งานฟรีแบบไม่จำกัดจำนวนข้อความ ไม่มีการกั้นฟีเจอร์หลังกำแพงราคา เหมาะกับผู้ใช้งบน้อยที่ต้องการ AI คุณภาพสูงโดยไม่เสียเงิน โมเดล V4 Pro ติดอันดับ ~1450 Elo บน LMArena",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-10",
+        "value": "2026-10-17",
         "confidence": "verified",
         "sourceUrl": "https://api-docs.deepseek.com/updates",
-        "lastVerified": "2026-10-09",
-        "note": "DeepSeek เปิดตัว DeepSeek-V4.1-Flash (10 ก.ย. 2026) รองรับภาพแบบ native และลดราคา API พร้อมให้บริการ V4 Pro ต่อหลัง 14 ก.ย. 2026"
+        "lastVerified": "2026-11-05",
+        "note": "17 ต.ค. 2026: อัปเกรด V4.1-Flash เป็น V4.1-Flash-1017 (ราคาเท่าเดิม) และเปิด Search/Fetch API"
       },
       "capabilities": [
         {

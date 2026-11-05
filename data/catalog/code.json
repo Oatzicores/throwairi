@@ -11,11 +11,11 @@
       "longDescription": "GitHub Copilot เป็นผู้บุกเบิกตลาดผู้ช่วยเขียนโค้ด AI ผสานกับ GitHub/VS Code ได้ลึก ในปี 2026 เปลี่ยนมาใช้ระบบ AI Credits แบบ usage-based สำหรับ agent mode/chat/code review ขณะที่ code completion ยังฟรีในทุกแผนเสียเงิน",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-10",
+        "value": "2026-11-04",
         "confidence": "probable",
-        "sourceUrl": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
-        "lastVerified": "2026-10-11",
-        "note": "Copilot สำหรับ JetBrains เพิ่มการตั้งโมเดลเริ่มต้นโดยแอดมินและปรับปรุงแชท เมื่อ 10 ต.ค. 2026 (github.blog จึงได้แค่ probable ตามกฎ catalog:check)"
+        "sourceUrl": "https://github.blog/changelog/label/copilot/",
+        "lastVerified": "2026-11-05",
+        "note": "github.blog 4 พ.ย. 2026: Copilot ใน Xcode; 3 พ.ย.: JetBrains Air"
       },
       "capabilities": [],
       "pricing": {
@@ -175,11 +175,11 @@
       "longDescription": "Cursor เป็น code editor ที่สร้างขึ้นมาเพื่อ AI โดยเฉพาะ (ไม่ใช่ปลั๊กอินเสริม) มี agent mode ที่ทำงานอัตโนมัติหลายไฟล์พร้อมกัน ราคาแบบ credit-based ทำให้ต้นทุนจริงขึ้นกับการเลือกโมเดล",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-06",
+        "value": "2026-10-20",
         "confidence": "verified",
         "sourceUrl": "https://cursor.com/changelog",
-        "lastVerified": "2026-10-09",
-        "note": "Cursor เพิ่มการควบคุมเอเจนต์ในเครื่องจากแอป iOS เมื่อ 6 ต.ค. 2026"
+        "lastVerified": "2026-11-05",
+        "note": "changelog ทางการ 20 ต.ค. 2026: Agent SDK"
       },
       "capabilities": [],
       "pricing": {
@@ -393,11 +393,11 @@
       "longDescription": "Claude Code เป็นเครื่องมือ agentic แบบ command-line ที่เชื่อมกับโมเดล Claude โดยตรง ไม่มีค่าบริการแยกต่างหาก แต่ใช้โควตาร่วมกับแผน Claude ปกติ (Pro/Max/Team) หรือจ่ายตามการใช้งานจริงผ่าน API key",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-09",
+        "value": "2026-11-04",
         "confidence": "verified",
         "sourceUrl": "https://code.claude.com/docs/en/changelog",
-        "lastVerified": "2026-10-11",
-        "note": "Claude Code 2.1.296 ออกเมื่อ 9 ต.ค. 2026 ตาม changelog บน code.claude.com"
+        "lastVerified": "2026-11-05",
+        "note": "Claude Code 2.1.318 (4 พ.ย. 2026); ฟีเจอร์ fast mode ของ Opus 4.8 ถูกประกาศเลิก (ปิดใช้ 30 พ.ย. 2026) แนะนำย้ายไป Opus 5.5"
       },
       "capabilities": [],
       "pricing": {
@@ -605,11 +605,11 @@
       "longDescription": "Tabnine เน้นตลาดองค์กรที่ต้องการควบคุมความเป็นส่วนตัวของโค้ด (IP protection, self-hosted deployment) ยกเลิกแผนฟรีไปแล้วตั้งแต่ปี 2025 ปัจจุบันมีเฉพาะแผนเสียเงินราคาสูง (หมายเหตุ 2026-09-30: เว็บ tabnine.com ถูกส่งต่อไปที่ Tricentis จึงยังยืนยันจากผู้ให้บริการไม่ได้ว่าผลิตภัณฑ์และราคายังเปิดขายตามข้อมูลนี้หรือไม่)",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-08",
+        "value": "2026-10-21",
         "confidence": "verified",
         "sourceUrl": "https://docs.tabnine.com/main/administering-tabnine/release-notes",
-        "lastVerified": "2026-10-09",
-        "note": "Tabnine v6.6.9 (8 ต.ค. 2026) เพิ่มการอ่านปัญหา Jira แบบอ่านอย่างเดียวใน Tabnine CLI ตามหมายเหตุการออกรุ่นบน docs.tabnine.com (หมายเหตุ: tabnine.com เด้งไป Tricentis ยืนยันสถานะผลิตภัณฑ์ไม่ได้)"
+        "lastVerified": "2026-11-05",
+        "note": "v6.7.0 (21 ต.ค. 2026): Tabnine Agent สำหรับทีมที่มีสิทธิ์; v6.7.1 มีแพตช์ความปลอดภัยแต่ไม่ระบุวัน"
       },
       "capabilities": [],
       "pricing": {
@@ -710,11 +710,11 @@
       "longDescription": "Replit Agent เด่นเรื่องการสร้างแอปทั้งตัวจากคำสั่งภาษาธรรมชาติในเบราว์เซอร์ ไม่ต้องติดตั้งอะไรเลย เหมาะกับมือใหม่ที่อยากลองสร้างแอปโดยไม่ต้องตั้งค่าเครื่องมือพัฒนาเอง ใช้ระบบ effort-based pricing ที่คิดค่าใช้จ่ายตามความซับซ้อนของงานจริง",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-09",
+        "value": "2026-10-30",
         "confidence": "verified",
         "sourceUrl": "https://docs.replit.com/updates",
-        "lastVerified": "2026-10-11",
-        "note": "9 ต.ค. 2026: Replit Desktop บน Windows (private preview ร่วมกับ Microsoft และ NVIDIA), สั่งงานข้ามโปรเจกต์จากแชทเดียว และสร้าง/จัดการโฆษณา TikTok ผ่าน MCP"
+        "lastVerified": "2026-11-05",
+        "note": "30 ต.ค. 2026: Cloud Agents สำหรับ Enterprise, GPT-6.1 Terra ในตัวเลือกโมเดล"
       },
       "capabilities": [],
       "pricing": {

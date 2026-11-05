@@ -64,11 +64,11 @@
       "longDescription": "Runway เป็นแพลตฟอร์มที่รวมโมเดลวิดีโอ/ภาพจากหลายค่ายไว้ในที่เดียว (Gen-4.5 ของตัวเอง, Nano Banana Pro, Kling 3.0, Veo 3.1) ทำให้เปรียบเทียบและเลือกโมเดลที่เหมาะกับงานได้ในแพลตฟอร์มเดียว รองรับทีมงานสูงสุด 10 คนในแผน Pro",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-02",
+        "value": "2026-10-27",
         "confidence": "verified",
         "sourceUrl": "https://runway.com/changelog",
-        "lastVerified": "2026-10-11",
-        "note": "changelog ทางการของ Runway 2 ต.ค. 2026: Agent สร้างร่างวิดีโอเร็วด้วย Seedance 2.5 Draft Mode (480p) และรองรับ Ideogram 4.5 ใน Runway MCP"
+        "lastVerified": "2026-11-05",
+        "note": "changelog ทางการ 27 ต.ค. 2026: Runway Ads; 4 ก.ย. 2026 เปิดแผน Team (6,900 เครดิตต่อที่นั่งในพูลร่วม สูงสุด 9 คน 1TB) ไม่ระบุราคาในหน้า changelog"
       },
       "capabilities": [],
       "pricing": {
@@ -424,11 +424,11 @@
       "longDescription": "Pika มีแผน Free/Starter/Creator/Fancy ตามหน้าราคาทางการ ทุกแผนรวมถึง Free ไม่มีลายน้ำ แต่ Commercial license เริ่มที่แผน Creator ($35/เดือน จ่ายรายเดือน) ราคาในรายการนี้เป็นราคาจ่ายรายเดือน บิลรายปีลด 20% ตามที่หน้าราคาระบุ",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-09-17",
+        "value": "2026-10-29",
         "confidence": "verified",
         "sourceUrl": "https://pika.art/blog",
-        "lastVerified": "2026-10-09",
-        "note": "Pika เปิดตัว 'New Pika' เมื่อ 17 ก.ย. 2026 (โพสต์ 24 ก.ย. เป็นแค่การแนะนำสมาชิก API Club ไม่ใช่ผลิตภัณฑ์)"
+        "lastVerified": "2026-11-05",
+        "note": "บล็อกทางการ 29 ต.ค. 2026: เปิดตัว Pika H3 Flex"
       },
       "capabilities": [],
       "pricing": {
@@ -545,11 +545,11 @@
       "longDescription": "Luma Dream Machine ใช้ระบบ 'Luma Agents' จัดสรรโควตาแทนการคิดเครดิตต่อคลิปแบบทั่วไป เหมาะกับทีมที่ต้องการรัน workflow การสร้างวิดีโอแบบหลายขั้นตอนพร้อมกัน ราคาสูงกว่า Pika/Kling ในระดับเริ่มต้นชัดเจน",
       "launchDate": null,
       "lastProductUpdate": {
-        "value": "2026-10-08",
+        "value": "2026-11-03",
         "confidence": "verified",
         "sourceUrl": "https://lumalabs.ai/news",
-        "lastVerified": "2026-10-09",
-        "note": "Luma ประกาศการเชื่อมกับ Claude Motion เมื่อ 8 ต.ค. 2026 (ก่อนหน้านี้ 1 ต.ค. เปิด Luma Variants) ตามหน้า news บน lumalabs.ai"
+        "lastVerified": "2026-11-05",
+        "note": "หน้าข่าวทางการ 3 พ.ย. 2026: Connect Luma to ChatGPT and Claude"
       },
       "capabilities": [],
       "pricing": {
